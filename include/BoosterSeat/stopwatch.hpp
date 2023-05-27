@@ -1,7 +1,7 @@
 #ifndef STOPWATCH_HPP_
 #define STOPWATCH_HPP_
 
-#include "time.hpp"
+#include "clock.hpp"
 #include "exception.hpp"
 
 namespace BoosterSeat {
@@ -24,10 +24,10 @@ class Stopwatch {
   double elapsed(Resolution resolution = Resolution::SECONDS) const;
 
  private:
-  time::Clock clock_ = time::Clock();
-  time::TimePoint start_ = time::TimePoint::min();
-  time::TimePoint stop_time_ = time::TimePoint::min();
-  time::Duration elapsed_ = time::Duration::zero();
+  clck::Clock clock_ = clck::Clock();
+  clck::TimePoint start_ = clck::TimePoint::min();
+  clck::TimePoint stop_time_ = clck::TimePoint::min();
+  clck::Duration elapsed_ = clck::Duration::zero();
   State state_ = State::STOPPED;
 };
 }  // namespace BoosterSeat

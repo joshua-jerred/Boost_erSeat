@@ -5,10 +5,12 @@ project(BoosterSeat VERSION 1.0)
 set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED True)
 
-set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Werror")
+set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Wno-unused-parameter")
 
 set(SOURCE_FILES 
   src/stopwatch.cpp
+  src/string_format.cpp
+  src/time.cpp
 )
 
 add_library(BoosterSeat STATIC)

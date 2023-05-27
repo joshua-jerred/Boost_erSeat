@@ -16,3 +16,8 @@ add_executable(string_format_test
   string_format_test.cpp
 )
 target_link_libraries(string_format_test BoosterSeat)
+
+add_executable(time_output_test
+  time_output_test.cpp
+)
+target_link_libraries(time_output_test BoosterSeat)

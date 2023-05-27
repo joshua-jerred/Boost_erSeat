@@ -34,7 +34,7 @@ void Stopwatch::stop() {
 }
 
 void Stopwatch::reset() {
-  elapsed_ = time::Duration::zero();
+  elapsed_ = clck::Duration::zero();
   state_ = State::STOPPED;
 }
 
@@ -46,15 +46,15 @@ double Stopwatch::elapsed(Resolution resolution) const {
   double elapsed = 0.0;
   switch (resolution) {
     case Resolution::SECONDS:
-      elapsed = std::chrono::duration_cast<time::units::Seconds>(elapsed_).count();
+      elapsed = std::chrono::duration_cast<clck::units::Seconds>(elapsed_).count();
       break;
     case Resolution::MILLISECONDS:
       elapsed =
-          std::chrono::duration_cast<time::units::Milliseconds>(elapsed_).count();
+          std::chrono::duration_cast<clck::units::Milliseconds>(elapsed_).count();
       break;
     case Resolution::MICROSECONDS:
       elapsed =
-          std::chrono::duration_cast<time::units::Microseconds>(elapsed_).count();
+          std::chrono::duration_cast<clck::units::Microseconds>(elapsed_).count();
       break;
   }
   return elapsed;
