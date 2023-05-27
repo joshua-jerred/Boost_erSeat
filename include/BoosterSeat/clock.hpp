@@ -25,6 +25,12 @@ inline int secondsElapsed(const TimePoint &time_point) {
       .count();
 }
 
+inline int millisecondsElapsed(const TimePoint &time_point) {
+  return std::chrono::duration_cast<units::Milliseconds>(
+             now() - time_point)
+      .count();
+}
+
 }  // namespace clck
 }  // namespace BoosterSeat
 
