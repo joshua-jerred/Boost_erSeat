@@ -11,12 +11,11 @@ void Stopwatch::start() {
     start_ = clock_.now();
     state_ = State::RUNNING;
   }
-
-  #ifndef BOOSTERSEAT_NO_EXCEPTION
+#ifndef BOOSTERSEAT_NO_EXCEPTION
   else {
     throw BoosterSeatException("Stopwatch is already running.");
   }
-  #endif
+#endif
 }
 
 void Stopwatch::stop() {
@@ -25,12 +24,11 @@ void Stopwatch::stop() {
     elapsed_ += stop_time_ - start_;
     state_ = State::STOPPED;
   }
-
-  #ifndef BOOSTERSEAT_NO_EXCEPTION
+#ifndef BOOSTERSEAT_NO_EXCEPTION
   else {
     throw BoosterSeatException("Stopwatch is not running.");
   }
-  #endif
+#endif
 }
 
 void Stopwatch::reset() {
@@ -43,19 +41,25 @@ Stopwatch::State Stopwatch::state() const {
 }
 
 double Stopwatch::elapsed(Resolution resolution) const {
-  double elapsed = 0.0;
+  BoosterSeat::clck::Duration elapsed = elapsed_;
+
+  if (state_ == State::RUNNING) {
+    elapsed += clock_.now() - start_;
+  }
+
   switch (resolution) {
     case Resolution::SECONDS:
-      elapsed = std::chrono::duration_cast<clck::units::Seconds>(elapsed_).count();
+      return std::chrono::duration_cast<clck::units::Seconds>(elapsed).count();
       break;
     case Resolution::MILLISECONDS:
-      elapsed =
-          std::chrono::duration_cast<clck::units::Milliseconds>(elapsed_).count();
+      return std::chrono::duration_cast<clck::units::Milliseconds>(elapsed)
+          .count();
       break;
     case Resolution::MICROSECONDS:
-      elapsed =
-          std::chrono::duration_cast<clck::units::Microseconds>(elapsed_).count();
+      return std::chrono::duration_cast<clck::units::Microseconds>(elapsed)
+          .count();
       break;
+    default:
+      throw BoosterSeatException("Invalid resolution.");
   }
-  return elapsed;
 }
