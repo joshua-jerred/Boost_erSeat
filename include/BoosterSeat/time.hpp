@@ -11,6 +11,7 @@ namespace time {
 
 std::string utcTimeString();
 std::string localTimeString();
+std::string getDateAndTimeStr();
 
 std::string elapsedAsciiClock(const BoosterSeat::clck::TimePoint &time_point);
 

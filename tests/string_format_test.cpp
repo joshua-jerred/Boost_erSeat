@@ -1,6 +1,7 @@
 // just a simple visual test
 
 #include <BoosterSeat/string_formatting.hpp>
+#include <BoosterSeat/time.hpp>
 #include <iostream>
 #include <string>
 #include <vector>
@@ -24,5 +25,7 @@ int main() {
 
   std::cout << BoosterSeat::layout::fixedWidthRow(row, align, row_width) << std::endl;
   std::cout << BoosterSeat::layout::fixedWidthString("hello", BoosterSeat::layout::Alignment::RIGHT, 10) << std::endl;
+
+  std::cout << BoosterSeat::time::getDateAndTimeStr() << std::endl;
   return 0;
 }
