@@ -11,6 +11,7 @@ set(SOURCE_FILES
   src/stopwatch.cpp
   src/string_format.cpp
   src/time.cpp
+  src/filesystem.cpp
 )
 
 add_library(BoosterSeat STATIC)

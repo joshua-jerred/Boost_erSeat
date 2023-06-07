@@ -21,3 +21,8 @@ add_executable(time_output_test
   time_output_test.cpp
 )
 target_link_libraries(time_output_test BoosterSeat)
+
+add_executable(filesystem_test
+  filesystem_test.cpp
+)
+target_link_libraries(filesystem_test BoosterSeat gtest_main)

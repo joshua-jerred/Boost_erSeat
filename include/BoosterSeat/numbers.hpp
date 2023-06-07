@@ -1,7 +1,11 @@
 #ifndef NUMBERS_HPP_
 #define NUMBERS_HPP_
 
+#include <cmath>
+
 namespace BoosterSeat {
+
+namespace numbers {
 
 /**
  * @brief Rounds a double to two decimal places.
@@ -18,6 +22,40 @@ inline double doubleToPrecisionTwo(double d) {
   return (i / 100.0);
 }
 
-}  // namespace BoosterSeat
+/**
+ * @todo needs to be tested.
+ * 
+ * @brief Just a simple function to compare two doubles by a given epsilon.
+ *
+ * @param a - The first double.
+ * @param b - The second double.
+ * @param epsilon - The maximum difference between the two doubles.
+ * @return true - The two doubles are equal.
+ * @return false - The two doubles are not equal.
+ */
+inline bool isApproxEqual(const double a, const double b, const double epsilon) {
+  return std::abs(a - b) <= epsilon;
+}
+
+/**
+ * 
+ * @todo needs to be tested.
+ * 
+ * @brief 
+ * 
+ * @param a 
+ * @param b 
+ * @param percent - value between 0.0 and 1.0
+ * @return true 
+ * @return false 
+ */
+inline bool isApproxEqualPercent(const double a, const double b,
+                          const double percent) {
+  return isApproxEqual(a, b, percent * std::max(a, b));
+}
+
+} // namespace numbers
+
+} // namespace BoosterSeat
 
 #endif /* NUMBERS_HPP_ */
