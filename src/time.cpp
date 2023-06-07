@@ -41,6 +41,14 @@ std::string BoosterSeat::time::localTimeString() {
   return ss.str();
 }
 
+std::string BoosterSeat::time::getDateString() {
+  auto time = std::time(nullptr);
+  auto tm = *std::localtime(&time);
+  std::stringstream ss;
+  ss << std::put_time(&tm, "%Y-%m-%d");
+  return ss.str();
+}
+
 std::string BoosterSeat::time::getDateAndTimeStr() {
   auto time = std::time(nullptr);
   auto tm = *std::localtime(&time);
