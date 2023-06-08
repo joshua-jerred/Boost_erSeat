@@ -57,6 +57,11 @@ enum class ErrorNumber {
    * @brief Thrown if an invalid size unit is used.
    */
   FS_INVALID_SIZE_UNIT = 8,
+
+  /**
+   * @brief Thrown if an invalid time zone is used.
+   */
+  TIME_INVALID_TIMEZONE = 9,
 };
 
 class BoosterSeatException : public std::exception {

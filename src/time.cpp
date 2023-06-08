@@ -1,4 +1,9 @@
+#include <BoosterSeat/exception.hpp>
 #include <BoosterSeat/time.hpp>
+
+inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time);
+inline std::string timeFormatString(const char delimiter);
+inline std::string dateFormatString(const char delimiter);
 
 std::string BoosterSeat::time::elapsedAsciiClock(
     const BoosterSeat::clck::TimePoint &time_point) {
@@ -25,34 +30,72 @@ std::string BoosterSeat::time::elapsedAsciiClock(
   return hours_str + ":" + minutes_str + ":" + seconds_str;
 }
 
-std::string BoosterSeat::time::utcTimeString() {
-  auto time = std::time(nullptr);
-  auto tm = *std::gmtime(&time);
+std::string BoosterSeat::time::timeString(TimeZone time_zone, char delimiter) {
+  time_t time = std::time(nullptr);
+  std::tm tm = getTm(time_zone, time);
   std::stringstream ss;
-  ss << std::put_time(&tm, "%H:%M:%S");
+  ss << std::put_time(&tm, timeFormatString(delimiter).c_str());
   return ss.str();
 }
 
-std::string BoosterSeat::time::localTimeString() {
+std::string BoosterSeat::time::dateString(TimeZone time_zone, char delimiter) {
   auto time = std::time(nullptr);
-  auto tm = *std::localtime(&time);
+  std::tm tm = getTm(time_zone, time);
   std::stringstream ss;
-  ss << std::put_time(&tm, "%H:%M:%S");
+  ss << std::put_time(&tm, dateFormatString(delimiter).c_str());
   return ss.str();
 }
 
-std::string BoosterSeat::time::getDateString() {
+std::string BoosterSeat::time::dateAndTimeString(TimeZone time_zone,
+                                                 char date_delimiter,
+                                                 char between_delimiter,
+                                                 char time_delimiter) {
   auto time = std::time(nullptr);
-  auto tm = *std::localtime(&time);
+  std::tm tm = getTm(time_zone, time);
+
+  std::string format_string = dateFormatString(date_delimiter) +
+                              std::string(1, between_delimiter) +
+                              timeFormatString(time_delimiter);
+
   std::stringstream ss;
-  ss << std::put_time(&tm, "%Y-%m-%d");
+  ss << std::put_time(&tm, format_string.c_str());
   return ss.str();
 }
 
-std::string BoosterSeat::time::getDateAndTimeStr() {
-  auto time = std::time(nullptr);
-  auto tm = *std::localtime(&time);
-  std::stringstream ss;
-  ss << std::put_time(&tm, "%Y-%m-%d %H:%M:%S");
-  return ss.str();
+inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time) {
+  std::tm tm;
+  switch (time_zone) {
+  case BoosterSeat::time::TimeZone::UTC:
+    tm = *std::gmtime(&time);
+    break;
+  case BoosterSeat::time::TimeZone::LOCAL:
+    tm = *std::localtime(&time);
+    break;
+  default:
+    throw BoosterSeat::BoosterSeatException(
+        "Invalid time zone", BoosterSeat::ErrorNumber::TIME_INVALID_TIMEZONE);
+  }
+  return tm;
+}
+
+inline std::string timeFormatString(const char delimiter) {
+  std::string format_string;
+  if (delimiter == '\0') {
+    format_string = "%H%M%S";
+  } else {
+    format_string = "%H" + std::string(1, delimiter) + "%M" +
+                    std::string(1, delimiter) + "%S";
+  }
+  return format_string;
+}
+
+inline std::string dateFormatString(const char delimiter) {
+  std::string format_string;
+  if (delimiter == '\0') {
+    format_string = "%Y%m%d";
+  } else {
+    format_string = "%Y" + std::string(1, delimiter) + "%m" +
+                    std::string(1, delimiter) + "%d";
+  }
+  return format_string;
 }
