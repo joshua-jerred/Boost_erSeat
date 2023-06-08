@@ -141,6 +141,14 @@ bool hasWritePermission(const std::string &path);
  */
 bool hasReadPermission(const std::string &path);
 
+/**
+ * @brief Move a file from one location to another.
+ *
+ * @param source_path - The path to the file to move.
+ * @param destination_path - The path to move the file to.
+ */
+void moveFile(const std::string &source_path,
+              const std::string &destination_path, bool overwrite = false);
 } // namespace filesystem
 } // namespace BoosterSeat
 

@@ -62,6 +62,11 @@ enum class ErrorNumber {
    * @brief Thrown if an invalid time zone is used.
    */
   TIME_INVALID_TIMEZONE = 9,
+
+  /**
+   * @brief Throws if a feature is not yet implemented.
+   */
+  NOT_YET_IMPLEMENTED = 10,
 };
 
 class BoosterSeatException : public std::exception {

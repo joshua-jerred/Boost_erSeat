@@ -265,7 +265,7 @@ double fs::getFileSize(const std::string &file_path,
 void fs::deleteFile(const std::string &file_path) {
   Path path(file_path);
   assertions::IsRegularFile(path);
-  //assertions::WritePermissions(path); // Causing an exception
+  // assertions::WritePermissions(path); // Causing an exception
   std::filesystem::remove(path);
 }
 
@@ -313,4 +313,18 @@ bool fs::hasWritePermission(const std::string &object_path) {
 bool fs::hasReadPermission(const std::string &object_path) {
   Path path(object_path);
   return internal::has_read_permissions(path);
+}
+
+void fs::moveFile(const std::string &source_file_path,
+                  const std::string &dest_file_path, bool overwrite) {
+  if (overwrite) {
+    throw bs::BoosterSeatException("Overwrite not implemented yet.",
+                                   ErrNum::NOT_YET_IMPLEMENTED);
+  }
+
+  Path source_path(source_file_path);
+  Path dest_path(dest_file_path);
+  assertions::IsRegularFile(source_path);
+  assertions::DoesNotExist(dest_path);
+  std::filesystem::rename(source_path, dest_path);
 }

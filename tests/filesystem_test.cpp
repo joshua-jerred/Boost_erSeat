@@ -296,3 +296,30 @@ TEST(FileSystemTests, NO_PERM_hasWritePermission) {
       bsfs::hasWritePermission("perm_test_dir/perm_test_file.txt")); // File
 }
 #endif
+
+TEST(FileSystemTests, moveFileTest) {
+  const std::string file_name = "move_test_file.txt";
+  const std::string directory_name = "move_test_directory";
+
+  // Clean up from previous test runs.
+  if (std::filesystem::exists(file_name)) {
+    std::filesystem::remove(file_name);
+  }
+  if (std::filesystem::exists(directory_name)) {
+    std::filesystem::remove_all(directory_name);
+  }
+
+  // Create a file to move and a directory to move it to.
+  std::ofstream file(file_name);
+  ASSERT_TRUE(file.is_open()) << "Failed to create file to set up test.";
+  file.close();
+  bsfs::createDirectory(directory_name);
+
+  // Move the file.
+  const std::string new_file_name = directory_name + "/move_test_file.txt";
+  bsfs::moveFile(file_name, new_file_name);
+
+  // Test that the file was moved.
+  EXPECT_FALSE(bsfs::doesFileExist(file_name));
+  EXPECT_TRUE(bsfs::doesFileExist(new_file_name));
+}
