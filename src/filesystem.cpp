@@ -328,3 +328,8 @@ void fs::moveFile(const std::string &source_file_path,
   assertions::DoesNotExist(dest_path);
   std::filesystem::rename(source_path, dest_path);
 }
+
+std::string fs::getFileName(const std::string &file_path) {
+  Path path(file_path);
+  return path.filename().string();
+}

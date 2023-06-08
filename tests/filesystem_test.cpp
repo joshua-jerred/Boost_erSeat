@@ -323,3 +323,11 @@ TEST(FileSystemTests, moveFileTest) {
   EXPECT_FALSE(bsfs::doesFileExist(file_name));
   EXPECT_TRUE(bsfs::doesFileExist(new_file_name));
 }
+
+TEST(FileSystemTests, getFileName) {
+  std::string file_name = "test.file";
+  std::string dir = "nested/test/dir/";
+  std::string full_path = dir + file_name;
+
+  EXPECT_EQ(bsfs::getFileName(full_path), file_name);
+}

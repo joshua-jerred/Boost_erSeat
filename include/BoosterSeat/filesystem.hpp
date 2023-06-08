@@ -149,6 +149,15 @@ bool hasReadPermission(const std::string &path);
  */
 void moveFile(const std::string &source_path,
               const std::string &destination_path, bool overwrite = false);
+
+/**
+ * @brief Get the File Name from a path. Does not need to exist.
+ * 
+ * @param file_path - The path to the file.
+ * @return std::string - The file name.
+ */
+std::string getFileName(const std::string &file_path);
+
 } // namespace filesystem
 } // namespace BoosterSeat
 
