@@ -5,8 +5,6 @@
 
 namespace BoosterSeat {
 
-namespace numbers {
-
 /**
  * @brief Rounds a double to two decimal places.
  * @example 1.2345 -> 1.23
@@ -24,7 +22,7 @@ inline double doubleToPrecisionTwo(double d) {
 
 /**
  * @todo needs to be tested.
- * 
+ *
  * @brief Just a simple function to compare two doubles by a given epsilon.
  *
  * @param a - The first double.
@@ -33,28 +31,27 @@ inline double doubleToPrecisionTwo(double d) {
  * @return true - The two doubles are equal.
  * @return false - The two doubles are not equal.
  */
-inline bool isApproxEqual(const double a, const double b, const double epsilon) {
+inline bool isApproxEqual(const double a, const double b,
+                          const double epsilon) {
   return std::abs(a - b) <= epsilon;
 }
 
 /**
- * 
+ *
  * @todo needs to be tested.
- * 
- * @brief 
- * 
- * @param a 
- * @param b 
+ *
+ * @brief
+ *
+ * @param a
+ * @param b
  * @param percent - value between 0.0 and 1.0
- * @return true 
- * @return false 
+ * @return true
+ * @return false
  */
 inline bool isApproxEqualPercent(const double a, const double b,
-                          const double percent) {
+                                 const double percent) {
   return isApproxEqual(a, b, percent * std::max(a, b));
 }
-
-} // namespace numbers
 
 } // namespace BoosterSeat
 

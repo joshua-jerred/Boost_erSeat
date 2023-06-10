@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include <BoosterSeat/stopwatch.hpp>
 #include <BoosterSeat/sleep.hpp>
+#include <BoosterSeat/stopwatch.hpp>
 
 #include "gtest/gtest.h"
 
@@ -30,7 +30,7 @@ TEST(Stopwatch, Units) {
 
   Stopwatch stopwatch;
   stopwatch.start();
-  util::sleep(10);
+  threadSleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(Resolution::SECONDS), 0.01, kEpsilon);
   secondsEq(stopwatch.elapsed(Resolution::MILLISECONDS), 10.0, kEpsilon * 1000);
@@ -43,21 +43,21 @@ TEST(StopwatchTest, KeepsRunningTotal) {
 
   Stopwatch stopwatch;
   stopwatch.start();
-  util::sleep(10);
+  threadSleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 0.01, kEpsilon);
 
-  util::sleep(20);
+  threadSleep(20);
 
   stopwatch.start();
-  util::sleep(10);
+  threadSleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 0.02, kEpsilon);
 
-  util::sleep(20);
+  threadSleep(20);
 
   stopwatch.start();
-  util::sleep(980);
+  threadSleep(980);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 1.0, kEpsilon);
 }

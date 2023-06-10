@@ -148,7 +148,7 @@ TEST(FileSystemTests, overwriteFile) {
 
 inline void validateSize(const double size, const double expected_size) {
   constexpr double tolerance = 0.001; // 0.1% tolerance.
-  EXPECT_TRUE(numbers::isApproxEqualPercent(size, expected_size, tolerance))
+  EXPECT_TRUE(isApproxEqualPercent(size, expected_size, tolerance))
       << "Size: " << size << " Expected size: " << expected_size;
 }
 
@@ -193,7 +193,7 @@ TEST(FileSystemTests, deleteFile) {
   EXPECT_TRUE(bsfs::doesFileExist(file_name));
   // Test that the file is deleted.
   bsfs::deleteFile(file_name);
-  
+
   EXPECT_FALSE(bsfs::doesFileExist(file_name));
 
   // Test that a file that does not exist raises an exception.

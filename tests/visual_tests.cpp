@@ -50,7 +50,7 @@ int main() {
   auto time_point = BoosterSeat::clck::now();
   std::cout << "elapsedAsciiClock | "
             << BoosterSeat::time::elapsedAsciiClock(time_point) << std::endl;
-  BoosterSeat::util::sleep(1000);
+  BoosterSeat::threadSleep(1000);
   std::cout << "elapsedAsciiClock | "
             << BoosterSeat::time::elapsedAsciiClock(time_point) << std::endl;
 
