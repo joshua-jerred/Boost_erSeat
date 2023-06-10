@@ -7,7 +7,7 @@
 using namespace BoosterSeat;
 
 TEST(StopwatchTest, DefaultConstructor) {
-  RollingAverage<double> avg(4);
+  RollingAverage avg(4);
   EXPECT_EQ(avg.getAverage(), 0.0);
   avg.count();
   EXPECT_EQ(avg.getAverage(), 0.0);

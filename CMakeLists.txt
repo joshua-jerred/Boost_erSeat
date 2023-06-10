@@ -14,6 +14,7 @@ set(SOURCE_FILES
   src/filesystem.cpp
   src/random.cpp
   src/timer.cpp
+  src/rolling_average.cpp
 )
 
 add_library(BoosterSeat STATIC)
