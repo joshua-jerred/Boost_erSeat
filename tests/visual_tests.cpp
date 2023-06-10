@@ -3,6 +3,7 @@
 #include <BoosterSeat/random.hpp>
 #include <BoosterSeat/sleep.hpp>
 #include <BoosterSeat/time.hpp>
+#include <BoosterSeat/timer.hpp>
 #include <iostream>
 
 namespace bst = BoosterSeat::time;
@@ -59,5 +60,19 @@ int main() {
   // random hex string
   std::cout << "random hex string | " << BoosterSeat::randomHexString(10)
             << std::endl;
+
+  BoosterSeat::Timer timer(500);
+  std::cout << "timer started" << std::endl;
+  while (!timer.isDone()) {
+    std::cout << "timer not done" << std::endl;
+    BoosterSeat::threadSleep(100);
+  }
+  std::cout << "timer done" << std::endl;
+  timer.reset();
+  while (!timer.isDone()) {
+    std::cout << "timer not done" << std::endl;
+    BoosterSeat::threadSleep(100);
+  }
+
   return 0;
 }
