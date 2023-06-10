@@ -26,3 +26,8 @@ add_executable(filesystem_test
   filesystem_test.cpp
 )
 target_link_libraries(filesystem_test BoosterSeat gtest_main)
+
+add_executable(rolling_average_test
+  rolling_average_test.cpp
+)
+target_link_libraries(rolling_average_test BoosterSeat gtest_main)
