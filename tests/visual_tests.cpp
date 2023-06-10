@@ -1,5 +1,6 @@
 // just a simple visual test
 
+#include <BoosterSeat/random.hpp>
 #include <BoosterSeat/sleep.hpp>
 #include <BoosterSeat/time.hpp>
 #include <iostream>
@@ -53,5 +54,10 @@ int main() {
   std::cout << "elapsedAsciiClock | "
             << BoosterSeat::time::elapsedAsciiClock(time_point) << std::endl;
 
+  std::cout << std::endl;
+
+  // random hex string
+  std::cout << "random hex string | " << BoosterSeat::randomHexString(10)
+            << std::endl;
   return 0;
 }

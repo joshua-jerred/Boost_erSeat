@@ -12,6 +12,7 @@ set(SOURCE_FILES
   src/string_format.cpp
   src/time.cpp
   src/filesystem.cpp
+  src/random.cpp
 )
 
 add_library(BoosterSeat STATIC)
