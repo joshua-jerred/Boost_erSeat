@@ -12,7 +12,7 @@ void Timer::reset() {
   start_ = clck::Clock::now();
 }
 
-bool Timer::isDone() {
+bool Timer::isDone() const {
   return (clck::Clock::now() - start_) >=
          clck::units::Milliseconds(timeout_ms_);
 }

@@ -15,6 +15,8 @@ set(SOURCE_FILES
   src/random.cpp
   src/timer.cpp
   src/rolling_average.cpp
+  src/numbers.cpp
+  src/geo/point.cpp
 )
 
 add_library(BoosterSeat STATIC)

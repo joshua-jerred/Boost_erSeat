@@ -31,3 +31,8 @@ add_executable(rolling_average_test
   rolling_average_test.cpp
 )
 target_link_libraries(rolling_average_test BoosterSeat gtest_main)
+
+add_executable(geo_test
+  geo_test.cpp
+)
+target_link_libraries(geo_test BoosterSeat)

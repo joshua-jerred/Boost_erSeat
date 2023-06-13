@@ -11,7 +11,7 @@ public:
   ~Timer() = default;
 
   void reset();
-  bool isDone();
+  bool isDone() const;
   void setTimeout(int timeout_ms);
 
 private:

@@ -8,17 +8,10 @@ namespace BoosterSeat {
 /**
  * @brief Rounds a double to two decimal places.
  * @example 1.2345 -> 1.23
- * @param d  The double to round.
+ * @param double  The double to round.
  * @return double The rounded double.
  */
-inline double doubleToPrecisionTwo(double d) {
-  int i;
-  if (d >= 0)
-    i = static_cast<int>(d * 100 + 0.5);
-  else
-    i = static_cast<int>(d * 100 - 0.5);
-  return (i / 100.0);
-}
+double doubleToPrecisionTwo(double);
 
 /**
  * @todo needs to be tested.
@@ -31,8 +24,7 @@ inline double doubleToPrecisionTwo(double d) {
  * @return true - The two doubles are equal.
  * @return false - The two doubles are not equal.
  */
-inline bool isApproxEqual(const double a, const double b,
-                          const double epsilon) {
+inline bool isApproxEqual(double a, double b, double epsilon) {
   return std::abs(a - b) <= epsilon;
 }
 
