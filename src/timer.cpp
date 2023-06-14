@@ -8,6 +8,9 @@ Timer::Timer(int timeout_ms) : timeout_ms_(timeout_ms) {
   }
 }
 
+Timer::Timer() : timeout_ms_(0) {
+}
+
 void Timer::reset() {
   start_ = clck::Clock::now();
 }

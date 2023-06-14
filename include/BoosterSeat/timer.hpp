@@ -8,6 +8,7 @@ namespace BoosterSeat {
 class Timer {
 public:
   Timer(int timeout_ms);
+  Timer(); // default to 0
   ~Timer() = default;
 
   void reset();
