@@ -20,11 +20,6 @@ jobs:
       run: |
         cd build
         make BoosterSeat
-    - uses: actions/upload-artifact@v3
-      with:
-        name: build_dir
-        path: build/
-
 
   unit_tests:
     needs: build
@@ -33,14 +28,11 @@ jobs:
     - uses: actions/checkout@v3
     - name: Install GTest
       run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp lib/*.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
-    - uses: actions/download-artifact@v3
-      with:
-        name: build_dir
-    # - name: Configure CMake
-    #   run: |
-    #     mkdir build
-    #     cd build
-    #     cmake ..
+    - name: Configure CMake
+      run: |
+        mkdir build
+        cd build
+        cmake ..
     - name: Build Tests
       run: |
         cd build
