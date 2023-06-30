@@ -14,13 +14,12 @@ namespace geo {
 
 class Point {
 public:
+  Point();
   Point(double lat, double lon);
-  double lat() const;
-  double lon() const;
 
 private:
-  double lat_;
-  double lon_;
+  double lat;
+  double lon;
 };
 
 } // namespace geo

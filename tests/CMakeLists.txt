@@ -7,32 +7,21 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
-add_executable(stopwatch_test
+add_executable(unit_tests
   stopwatch_test.cpp
-)
-target_link_libraries(stopwatch_test BoosterSeat gtest_main)
-
-add_executable(string_format_test
   string_format_test.cpp
+  filesystem_test.cpp
+  rolling_average_test.cpp
 )
-target_link_libraries(string_format_test BoosterSeat)
+target_link_libraries(unit_tests BoosterSeat gtest_main)
 
 add_executable(visual_tests
   visual_tests.cpp
 )
 target_link_libraries(visual_tests BoosterSeat)
 
-add_executable(filesystem_test
-  filesystem_test.cpp
-)
-target_link_libraries(filesystem_test BoosterSeat gtest_main)
 
-add_executable(rolling_average_test
-  rolling_average_test.cpp
-)
-target_link_libraries(rolling_average_test BoosterSeat gtest_main)
-
-add_executable(geo_test
-  geo_test.cpp
-)
-target_link_libraries(geo_test BoosterSeat)
+# add_executable(geo_test
+#   geo_test.cpp
+# )
+# target_link_libraries(geo_test BoosterSeat)

@@ -2,6 +2,8 @@
 #define NUMBERS_HPP_
 
 #include <cmath>
+#include <iomanip>
+#include <sstream>
 
 namespace BoosterSeat {
 
@@ -43,6 +45,12 @@ inline bool isApproxEqual(double a, double b, double epsilon) {
 inline bool isApproxEqualPercent(const double a, const double b,
                                  const double percent) {
   return isApproxEqual(a, b, percent * std::max(a, b));
+}
+
+inline std::string rndTs(double d, int precision) {
+  std::stringstream ss;
+  ss << std::fixed << std::setprecision(precision) << d;
+  return ss.str();
 }
 
 } // namespace BoosterSeat

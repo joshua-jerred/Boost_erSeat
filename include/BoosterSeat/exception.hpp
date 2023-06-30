@@ -64,9 +64,19 @@ enum class ErrorNumber {
   TIME_INVALID_TIMEZONE = 9,
 
   /**
+   * @brief Latitude is out of range/invalid.
+   */
+  GEO_INVALID_LATITUDE = 10,
+
+  /**
+   * @brief Longitude is out of range/invalid.
+   */
+  GEO_INVALID_LONGITUDE = 11,
+
+  /**
    * @brief Throws if a feature is not yet implemented.
    */
-  NOT_YET_IMPLEMENTED = 10,
+  NOT_YET_IMPLEMENTED
 };
 
 class BoosterSeatException : public std::exception {
