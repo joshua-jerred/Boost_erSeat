@@ -21,8 +21,9 @@ std::string elapsedAsciiClock(const BoosterSeat::clck::TimePoint &time_point);
  * @param time - The time to get the string for (default: current time)
  * @return std::string - The time string
  */
-std::string timeString(TimeZone time_zone = TimeZone::LOCAL,
-                       char delimiter = ':', time_t time = std::time(nullptr));
+std::string
+timeString(TimeZone time_zone = TimeZone::LOCAL, char delimiter = ':',
+           BoosterSeat::clck::TimePoint time_point = BoosterSeat::clck::now());
 
 std::string dateString(TimeZone time_zone = TimeZone::LOCAL,
                        char delimiter = '-');
