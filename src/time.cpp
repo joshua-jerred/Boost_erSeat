@@ -48,11 +48,10 @@ std::string BoosterSeat::time::dateString(TimeZone time_zone, char delimiter) {
   return ss.str();
 }
 
-std::string BoosterSeat::time::dateAndTimeString(TimeZone time_zone,
-                                                 char date_delimiter,
-                                                 char between_delimiter,
-                                                 char time_delimiter) {
-  auto time = std::time(nullptr);
+std::string BoosterSeat::time::dateAndTimeString(
+    TimeZone time_zone, char date_delimiter, char between_delimiter,
+    char time_delimiter, BoosterSeat::clck::TimePoint time_point) {
+  auto time = BoosterSeat::clck::toTimeT(time_point);
   std::tm tm = getTm(time_zone, time);
 
   std::string format_string = dateFormatString(date_delimiter) +

@@ -32,10 +32,10 @@ std::string dateString(TimeZone time_zone = TimeZone::LOCAL,
  * @brief Get the date and time in the format: YYYY-MM-DD HH:MM:SS
  * @return std::string
  */
-std::string dateAndTimeString(TimeZone time_zone = TimeZone::LOCAL,
-                              char date_delimiter = '-',
-                              char between_delimiter = ' ',
-                              char time_delimiter = ':');
+std::string dateAndTimeString(
+    TimeZone time_zone = TimeZone::LOCAL, char date_delimiter = '-',
+    char between_delimiter = ' ', char time_delimiter = ':',
+    BoosterSeat::clck::TimePoint time_point = BoosterSeat::clck::now());
 
 } // namespace time
 } // namespace BoosterSeat
