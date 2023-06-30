@@ -30,8 +30,8 @@ std::string BoosterSeat::time::elapsedAsciiClock(
   return hours_str + ":" + minutes_str + ":" + seconds_str;
 }
 
-std::string BoosterSeat::time::timeString(TimeZone time_zone, char delimiter) {
-  time_t time = std::time(nullptr);
+std::string BoosterSeat::time::timeString(TimeZone time_zone, char delimiter,
+                                          time_t time) {
   std::tm tm = getTm(time_zone, time);
   std::stringstream ss;
   ss << std::put_time(&tm, timeFormatString(delimiter).c_str());

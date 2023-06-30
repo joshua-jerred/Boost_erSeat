@@ -13,8 +13,16 @@ enum class TimeZone { UTC, LOCAL };
 
 std::string elapsedAsciiClock(const BoosterSeat::clck::TimePoint &time_point);
 
+/**
+ * @brief Get the time in format: HH:MM:SS (24 hour clock) for a given time zone
+ *
+ * @param time_zone - The time zone to get the time in
+ * @param delimiter - The delimiter to use (default: ':')
+ * @param time - The time to get the string for (default: current time)
+ * @return std::string - The time string
+ */
 std::string timeString(TimeZone time_zone = TimeZone::LOCAL,
-                       char delimiter = ':');
+                       char delimiter = ':', time_t time = std::time(nullptr));
 
 std::string dateString(TimeZone time_zone = TimeZone::LOCAL,
                        char delimiter = '-');
