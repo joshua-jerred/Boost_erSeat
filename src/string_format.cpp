@@ -78,8 +78,9 @@ std::string BoosterSeat::string::f2s(const double d, const int precision) {
   return ss.str();
 }
 
-std::string BoosterSeat::intToHex(const int i, const int width,
-                                  const bool include_0x, const bool uppercase) {
+std::string BoosterSeat::string::intToHex(const int i, const int width,
+                                          const bool include_0x,
+                                          const bool uppercase) {
   std::stringstream ss;
   ss << std::hex << std::setfill('0');
   if (include_0x) {
