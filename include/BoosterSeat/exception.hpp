@@ -74,6 +74,11 @@ enum class ErrorNumber {
   GEO_INVALID_LONGITUDE = 11,
 
   /**
+   * @brief Invalid time.
+   */
+  TIME_INVALID_TIME = 12,
+
+  /**
    * @brief Throws if a feature is not yet implemented.
    */
   NOT_YET_IMPLEMENTED

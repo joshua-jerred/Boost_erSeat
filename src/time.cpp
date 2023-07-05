@@ -1,6 +1,8 @@
 #include <BoosterSeat/exception.hpp>
 #include <BoosterSeat/time.hpp>
 
+#include <algorithm>
+
 inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time);
 inline std::string timeFormatString(const char delimiter);
 inline std::string dateFormatString(const char delimiter);
@@ -61,6 +63,27 @@ std::string BoosterSeat::time::dateAndTimeString(
   std::stringstream ss;
   ss << std::put_time(&tm, format_string.c_str());
   return ss.str();
+}
+
+BoosterSeat::clck::TimePoint
+BoosterSeat::time::dateAndTimeToTimePoint(int year, int month, int day,
+                                          int hour, int minute, int second) {
+  std::tm tm;
+  tm.tm_year = std::clamp(year - 1900, 0, 9999);
+  tm.tm_mon = std::clamp(month - 1, 0, 11);
+  tm.tm_mday = std::clamp(day, 1, 31);
+  tm.tm_hour = std::clamp(hour, 0, 23);
+  tm.tm_min = std::clamp(minute, 0, 59);
+  tm.tm_sec = std::clamp(second, 0, 59);
+  tm.tm_isdst = -1; // no information about daylight saving time
+
+  std::time_t time = std::mktime(&tm);
+  if (time == -1) {
+    throw BoosterSeat::BoosterSeatException(
+        "Invalid time", BoosterSeat::ErrorNumber::TIME_INVALID_TIME);
+  }
+
+  return BoosterSeat::clck::fromTimeT(time);
 }
 
 inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time) {

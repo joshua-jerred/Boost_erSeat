@@ -37,7 +37,24 @@ std::string dateAndTimeString(
     char between_delimiter = ' ', char time_delimiter = ':',
     BoosterSeat::clck::TimePoint time_point = BoosterSeat::clck::now());
 
+/**
+ * @brief Convert a date and time to a BoosterSeat::clck::TimePoint
+ * @details All parameters are clamped to their respective ranges.
+ *
+ * @param year - The year (e.g. 2023, must be greater than 1970)
+ * @param month - The month (1 - 12)
+ * @param day - The day (1 - 31)
+ * @param hour - The hour (0 - 23)
+ * @param minute - The minute (0 - 59)
+ * @param second - The second (0 - 59)
+ * @return BoosterSeat::clck::TimePoint - The time point
+ */
+BoosterSeat::clck::TimePoint dateAndTimeToTimePoint(int year, int month,
+                                                    int day, int hour,
+                                                    int minute, int second);
+
 } // namespace time
+
 } // namespace BoosterSeat
 
 #endif // TIME_HPP_

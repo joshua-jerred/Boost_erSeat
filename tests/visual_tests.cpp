@@ -58,6 +58,14 @@ int main() {
 
   std::cout << std::endl;
 
+  // dateAndTimeToTimePoint
+  std::cout << "dateAndTimeToTimePoint | ";
+  auto tp = BoosterSeat::time::dateAndTimeToTimePoint(2021, 2, 3, 4, 5, 6);
+  std::cout << bst::dateAndTimeString(bst::TimeZone::LOCAL, '-', ' ', ':', tp)
+            << std::endl;
+
+  std::cout << std::endl;
+
   // random hex string
   std::cout << "random hex string | " << BoosterSeat::randomHexString(10)
             << std::endl;

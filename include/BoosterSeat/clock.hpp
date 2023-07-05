@@ -34,6 +34,10 @@ inline time_t toTimeT(const TimePoint &time_point) {
   return Clock::to_time_t(time_point);
 }
 
+inline TimePoint fromTimeT(time_t time) {
+  return Clock::from_time_t(time);
+}
+
 } // namespace clck
 } // namespace BoosterSeat
 
