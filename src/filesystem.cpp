@@ -95,7 +95,7 @@ inline double convertMbToUnit(const double size_mb,
                                    ErrNum::FS_INVALID_SIZE_UNIT);
   }
 }
-}; // namespace internal
+} // namespace internal
 
 namespace assertions {
 /**
