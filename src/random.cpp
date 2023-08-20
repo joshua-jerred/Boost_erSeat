@@ -1,4 +1,4 @@
-#include <BoosterSeat/random.hpp>
+#include <Bst/random.hpp>
 
 
 std::string BoosterSeat::randomHexString(unsigned int length) {

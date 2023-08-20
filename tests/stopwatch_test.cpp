@@ -1,7 +1,7 @@
 #include <iostream>
 
-#include <BoosterSeat/sleep.hpp>
-#include <BoosterSeat/stopwatch.hpp>
+#include <Bst/sleep.hpp>
+#include <Bst/stopwatch.hpp>
 
 #include "gtest/gtest.h"
 

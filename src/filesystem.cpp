@@ -1,5 +1,5 @@
-#include "BoosterSeat/filesystem.hpp"
-#include "BoosterSeat/exception.hpp"
+#include "Bst/filesystem.hpp"
+#include "Bst/exception.hpp"
 
 #include <cstdint>
 #include <filesystem>

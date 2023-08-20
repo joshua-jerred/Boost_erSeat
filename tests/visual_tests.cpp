@@ -1,10 +1,10 @@
 // just a simple visual test
 
-#include <BoosterSeat/random.hpp>
-#include <BoosterSeat/sleep.hpp>
-#include <BoosterSeat/string_formatting.hpp>
-#include <BoosterSeat/time.hpp>
-#include <BoosterSeat/timer.hpp>
+#include <Bst/random.hpp>
+#include <Bst/sleep.hpp>
+#include <Bst/string_formatting.hpp>
+#include <Bst/time.hpp>
+#include <Bst/timer.hpp>
 #include <iostream>
 
 namespace bst = BoosterSeat::time;

@@ -1,5 +1,5 @@
-#include <BoosterSeat/exception.hpp>
-#include <BoosterSeat/geo.hpp>
+#include <Bst/exception.hpp>
+#include <Bst/geo.hpp>
 
 namespace BoosterSeat {
 

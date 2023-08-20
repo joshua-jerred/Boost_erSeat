@@ -1,6 +1,6 @@
-#include <BoosterSeat/geo.hpp>
-#include <BoosterSeat/geo_strings.hpp>
-#include <BoosterSeat/numbers.hpp>
+#include <Bst/geo.hpp>
+#include <Bst/geo_strings.hpp>
+#include <Bst/numbers.hpp>
 
 namespace BoosterSeat {
 

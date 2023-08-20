@@ -1,3 +1,8 @@
+if(${ARM_NONE_EABI})
+
+
+else()
+
 include(FetchContent)
 FetchContent_Declare(
 	googletest
@@ -7,19 +12,26 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
 
-add_executable(unit_tests
+add_executable(host_tests
   stopwatch_test.cpp
   string_format_test.cpp
   filesystem_test.cpp
   rolling_average_test.cpp
 )
-target_link_libraries(unit_tests BoosterSeat gtest_main)
+target_link_libraries(host_tests BoosterSeat gtest_main)
 
 add_executable(visual_tests
   visual_tests.cpp
 )
 target_link_libraries(visual_tests BoosterSeat)
 
+add_executable(embd_host_tests
+  embd/test_gpio.cpp
+)
+target_link_libraries(embd_host_tests BoosterSeat gtest_main)
+target_compile_definitions(embd_host_tests PUBLIC BOOSTERSEAT_EMBEDDED)
+
+endif()
 
 # add_executable(geo_test
 #   geo_test.cpp

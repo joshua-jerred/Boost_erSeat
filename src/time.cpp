@@ -1,5 +1,5 @@
-#include <BoosterSeat/exception.hpp>
-#include <BoosterSeat/time.hpp>
+#include <Bst/exception.hpp>
+#include <Bst/time.hpp>
 
 #include <algorithm>
 

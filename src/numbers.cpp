@@ -1,4 +1,4 @@
-#include <BoosterSeat/numbers.hpp>
+#include <Bst/numbers.hpp>
 
 double BoosterSeat::doubleToPrecisionTwo(double d) {
   int i;

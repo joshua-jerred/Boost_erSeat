@@ -1,4 +1,4 @@
-#include <BoosterSeat/rolling_average.hpp>
+#include <Bst/rolling_average.hpp>
 
 using namespace BoosterSeat;
 

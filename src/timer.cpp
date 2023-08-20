@@ -1,4 +1,4 @@
-#include <BoosterSeat/timer.hpp>
+#include <Bst/timer.hpp>
 
 using namespace BoosterSeat;
 

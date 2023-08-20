@@ -1,5 +1,5 @@
-#include <BoosterSeat/exception.hpp>
-#include <BoosterSeat/string_formatting.hpp>
+#include <Bst/exception.hpp>
+#include <Bst/string_formatting.hpp>
 #include <iomanip>
 #include <sstream>
 

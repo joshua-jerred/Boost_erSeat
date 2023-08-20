@@ -1,6 +1,6 @@
 #include <iostream>
 
-#include <BoosterSeat/rolling_average.hpp>
+#include <Bst/rolling_average.hpp>
 
 #include "gtest/gtest.h"
 

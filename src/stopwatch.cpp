@@ -1,4 +1,4 @@
-#include "BoosterSeat/stopwatch.hpp"
+#include <Bst/stopwatch.hpp>
 
 using namespace BoosterSeat;
 
@@ -48,18 +48,18 @@ double Stopwatch::elapsed(Resolution resolution) const {
   }
 
   switch (resolution) {
-    case Resolution::SECONDS:
-      return std::chrono::duration_cast<clck::units::Seconds>(elapsed).count();
-      break;
-    case Resolution::MILLISECONDS:
-      return std::chrono::duration_cast<clck::units::Milliseconds>(elapsed)
-          .count();
-      break;
-    case Resolution::MICROSECONDS:
-      return std::chrono::duration_cast<clck::units::Microseconds>(elapsed)
-          .count();
-      break;
-    default:
-      throw BoosterSeatException("Invalid resolution.");
+  case Resolution::SECONDS:
+    return std::chrono::duration_cast<clck::units::Seconds>(elapsed).count();
+    break;
+  case Resolution::MILLISECONDS:
+    return std::chrono::duration_cast<clck::units::Milliseconds>(elapsed)
+        .count();
+    break;
+  case Resolution::MICROSECONDS:
+    return std::chrono::duration_cast<clck::units::Microseconds>(elapsed)
+        .count();
+    break;
+  default:
+    throw BoosterSeatException("Invalid resolution.");
   }
 }

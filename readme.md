@@ -18,9 +18,13 @@ take care of that for you.
 
 ***
 
+# New Thing: Embedded Functionality
+
+***
+
 # What's included
 
-### `<BoosterSeat/clock.hpp>`
+### `<Bst/clock.hpp>`
 
 - Just a wrapper on `<chrono>` with typedefs that I am always searching for.
   
@@ -45,7 +49,7 @@ inline int clck::millisecondsElapsed(const TimePoint &time_point);
 ```
 
 
-### `<BoosterSeat/numbers.hpp>`
+### `<Bst/numbers.hpp>`
 - dealing with numbers
 
 ```c++
@@ -63,7 +67,7 @@ inline bool isApproxEqualPercent(const double a, const double b,
 
 ```
 
-### `<BoosterSeat/rolling_average.hpp>`
+### `<Bst/rolling_average.hpp>`
 - for calculating a rolling average
 
 ```c++
@@ -82,7 +86,7 @@ void RollingAverage::intervalCall();
 double RollingAverage::getAverage() const;
 ```
 
-### `<BoosterSeat/timer.hpp>`
+### `<Bst/timer.hpp>`
 - for timing intervals
 
 ```c++
@@ -103,9 +107,9 @@ void Timer::setTimeout(int timeout_ms);
 
 ## And more random things
 
-### `<BoosterSeat/filesystem.hpp>`
+### `<Bst/filesystem.hpp>`
 - a simple and cautious wrapper around `<filesystem>`
-### `<BoosterSeat/random.hpp>`
+### `<Bst/random.hpp>`
 - random number/string generation
 
 ## And a few more

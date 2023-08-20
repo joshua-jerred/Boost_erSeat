@@ -1,6 +1,6 @@
 // just a simple visual test
 
-#include <BoosterSeat/string_formatting.hpp>
+#include <Bst/string_formatting.hpp>
 #include <string>
 #include <vector>
 

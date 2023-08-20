@@ -1,6 +1,6 @@
-#include <BoosterSeat/exception.hpp>
-#include <BoosterSeat/filesystem.hpp>
-#include <BoosterSeat/numbers.hpp>
+#include <Bst/exception.hpp>
+#include <Bst/filesystem.hpp>
+#include <Bst/numbers.hpp>
 
 #include "gtest/gtest.h"
 #include <filesystem>

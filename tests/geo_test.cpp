@@ -1,5 +1,5 @@
-#include <BoosterSeat/geo.hpp>
-#include <BoosterSeat/geo_strings.hpp>
+#include <Bst/geo.hpp>
+#include <Bst/geo_strings.hpp>
 
 using namespace BoosterSeat::geo;
 
