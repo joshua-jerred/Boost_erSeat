@@ -6,6 +6,7 @@ option(BOOSTERSEAT_EMBEDDED "" OFF)
 option(ARM_NONE_EABI "" OFF)
 option(BST_EMBD_STM32_USB "" OFF)
 option(BST_EMBD_STM32F411 "" OFF)
+option(BST_EMBD_STM32F429 "" OFF)
 # ------------------- Environmental Variables -------------------
 
 set(CMAKE_CXX_STANDARD 17)
@@ -30,6 +31,7 @@ set(HOST_SOURCES
 )
 set(EMBEDDED_SOURCES
   src/embedded/stm32/gpio.cpp
+  src/embedded/stm32/uart.cpp
 )
 
 
@@ -65,13 +67,15 @@ if(${BOOSTERSEAT_EMBEDDED})
   endif()
 
   if(${BST_EMBD_STM32F429})
-    message("BoosterSeat is being built for the STM32F411")
+    message("BoosterSeat is being built for the STM32F429")
     set(STM32_ENABLED TRUE)
     set(STM32_INCLUDE_LIB STM32F4XX_HAL_DRIVER CMSIS)
     set(STM32_COMPILE_DEFS "-DSTM32F429xx -DBST_EMBD_STM32F4xx")
   endif()
 
   if(${STM32_ENABLED})
+    add_subdirectory(lib/etl)
+
     if(${BST_EMBD_STM32_USB}) 
       set(STM32_INCLUDE_LIB ${STM32_INCLUDE_LIB} STM32_USB_DEVICE_LIBRARY)
     endif()
@@ -80,9 +84,11 @@ if(${BOOSTERSEAT_EMBEDDED})
     message("BoosterSeat STM32 compile definitions: ${STM32_COMPILE_DEFS}")
     target_compile_definitions(BoosterSeat INTERFACE 
       "${STM32_COMPILE_DEFS}"
+      BST_ETL_NO_STL
     )
     target_link_libraries(BoosterSeat INTERFACE 
       ${STM32_INCLUDE_LIB}
+      etl
     )
 
     add_subdirectory(lib/stm32)

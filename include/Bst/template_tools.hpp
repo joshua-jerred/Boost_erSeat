@@ -3,8 +3,7 @@
 
 #include <type_traits>
 
-namespace BoosterSeat {
-namespace template_tools {
+namespace bst {
 
 /**
  * @brief Converts an enum class to its underlying type.
@@ -20,7 +19,6 @@ constexpr auto to_underlying(E e) noexcept {
   return static_cast<std::underlying_type_t<E>>(e);
 }
 
-} // namespace template_tools
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif /* TEMPLATE_TOOLS_HPP_ */

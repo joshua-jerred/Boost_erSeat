@@ -16,21 +16,21 @@ namespace bst {
 
 class Gpio {
 public:
-  Gpio(Pin pin, PinMode mode, PinExtraArgs extra_args = PinExtraArgs());
-  ~Gpio();
+  Gpio(GPIO_TypeDef *port, uint16_t pin) : port_(port), pin_number_(pin) {
+  }
+  ~Gpio() = default;
 
-  void digitalWrite(bool output_high);
-  void toggle();
-
-  bool digitalRead();
+  void digitalWrite(bool output_high) {
+    HAL_GPIO_WritePin(port_, pin_number_,
+                      output_high ? GPIO_PIN_SET : GPIO_PIN_RESET);
+  }
+  void toggle() {
+    HAL_GPIO_TogglePin(port_, pin_number_);
+  }
 
 private:
-  Pin pin_;
-  PinMode mode_;
-  PinExtraArgs extra_args_;
-
-  uint32_t pin_number_ = 0;
   GPIO_TypeDef *port_ = nullptr;
+  uint16_t pin_number_ = 0;
 };
 
 } // namespace bst
