@@ -19,19 +19,28 @@
 
 namespace bst {
 
-constexpr uint32_t kUartRxBufferSize = 512;
 constexpr uint32_t kUartTimeout = 1000;
 
+template <uint16_t RxBufferSize = 512>
 class Uart {
 public:
   Uart(UART_HandleTypeDef *uart_handle, DMA_HandleTypeDef *rx_dma,
-       DMA_HandleTypeDef *tx_dma);
-  void init();
-  void send(const etl::span<const uint8_t> &data);
-  etl::array<uint8_t, kUartRxBufferSize> &receive();
+       DMA_HandleTypeDef *tx_dma)
+      : uart_handle_(uart_handle), rx_dma_(rx_dma), tx_dma_(tx_dma) {
+  }
+  void init() {
+    HAL_UART_Init(uart_handle_);
+    HAL_UART_Receive_DMA(uart_handle_, rx_buffer_.data(), RxBufferSize);
+  }
+  void send(const etl::span<const uint8_t> &data) {
+    HAL_UART_Transmit(uart_handle_, data.data(), data.size(), kUartTimeout);
+  }
+  etl::array<uint8_t, RxBufferSize> &receive() {
+    return rx_buffer_;
+  }
 
   uint32_t getNumBytesReceived() const {
-    return kUartRxBufferSize - __HAL_DMA_GET_COUNTER(rx_dma_);
+    return RxBufferSize - __HAL_DMA_GET_COUNTER(rx_dma_);
   }
 
   uint32_t isBufferFull() const {
@@ -52,7 +61,7 @@ public:
 
   void clearBuffer() {
     HAL_UART_AbortReceive(uart_handle_);
-    HAL_UART_Receive_DMA(uart_handle_, rx_buffer_.data(), kUartRxBufferSize);
+    HAL_UART_Receive_DMA(uart_handle_, rx_buffer_.data(), RxBufferSize);
   }
 
 private:
@@ -60,7 +69,7 @@ private:
   DMA_HandleTypeDef *rx_dma_;
   DMA_HandleTypeDef *tx_dma_;
 
-  etl::array<uint8_t, kUartRxBufferSize> rx_buffer_{};
+  etl::array<uint8_t, RxBufferSize> rx_buffer_{};
 };
 
 } // namespace bst

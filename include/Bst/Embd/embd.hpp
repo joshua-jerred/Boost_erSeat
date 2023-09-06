@@ -18,8 +18,9 @@
 #ifdef BST_EMBD_STM32F4xx
   #define EMBD_DEVICE_SET
   #define BST_EMBD_STM32
+  #define STM32_HAL_INCLUDE "stm32f4xx_hal.h"
   #ifndef ARM_NONE_EABI
-  #error "ARM_NONE_EABI not defined."
+    #error "ARM_NONE_EABI not defined."
   #endif
 #endif
 

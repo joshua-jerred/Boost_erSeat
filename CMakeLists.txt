@@ -32,6 +32,7 @@ set(HOST_SOURCES
 set(EMBEDDED_SOURCES
   src/embedded/stm32/gpio.cpp
   src/embedded/stm32/uart.cpp
+  src/embedded/stm32/stopwatch.cpp
 )
 
 
