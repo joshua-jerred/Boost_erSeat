@@ -34,4 +34,34 @@ double distance(const Point &a, const Point &b) {
   return d;
 }
 
+Path::Path() : points_() {
+}
+
+Path::Path(std::vector<Point> points) : points_(points) {
+}
+
+double Path::distance() const {
+  double distance = 0.0;
+  for (size_t i = 0; i < points_.size() - 1; i++) {
+    distance += bst::geo::distance(points_[i], points_[i + 1]);
+  }
+  return distance;
+}
+
+bool Path::getLastPoint(Point &point) const {
+  if (points_.size() > 0) {
+    point = points_.back();
+    return true;
+  }
+  return false;
+}
+
+bool Path::getFirstPoint(Point &point) const {
+  if (points_.size() > 0) {
+    point = points_.front();
+    return true;
+  }
+  return false;
+}
+
 } // namespace bst::geo

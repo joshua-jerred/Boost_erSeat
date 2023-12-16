@@ -9,9 +9,14 @@
 #ifndef BOOSTERSEAT_GEO_HPP_
 #define BOOSTERSEAT_GEO_HPP_
 
+#include <vector>
+
 namespace bst {
 namespace geo {
 
+/**
+ * @brief A geographical point.
+ */
 class Point {
 public:
   Point();
@@ -43,7 +48,44 @@ private:
   double lon_;
 };
 
-double distance(const Point &a, const Point &b);
+/**
+ * @brief Get the distance between two points in kilometers.
+ *
+ * @param point_a The first point.
+ * @param point_b The second point.
+ * @return double The distance between the two points in kilometers.
+ */
+double distance(const Point &point_a, const Point &point_b);
+
+/**
+ * @brief A path of geographical points.
+ */
+class Path {
+public:
+  Path();
+  Path(std::vector<Point> points);
+
+  void addPoint(Point point) {
+    points_.push_back(point);
+  }
+
+  int getNumPoints() const {
+    return points_.size();
+  }
+
+  double distance() const;
+
+  std::vector<Point> points() const {
+    return points_;
+  }
+
+  bool getLastPoint(Point &point) const;
+
+  bool getFirstPoint(Point &point) const;
+
+private:
+  std::vector<Point> points_;
+};
 
 } // namespace geo
 } // namespace bst
