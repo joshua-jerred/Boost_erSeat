@@ -4,15 +4,23 @@ DOXYFILE_ENCODING      = UTF-8
 # ---------------------------------------------------------------------------- #
 # Project
 
-PROJECT_NAME           = "Boost_erSeat"
-PROJECT_NUMBER         = 0.1
-PROJECT_BRIEF          = "A C++ library containing common data structures and algorithms that I use in my projects."
+PROJECT_NAME           = "BoosterSeat"
+PROJECT_NUMBER         = 1.1
+PROJECT_BRIEF          = ""
+PROJECT_LOGO           = "project/logo.svg"
+# TODO: Logo
+
 
 # ---------------------------------------------------------------------------- #
 # Input
 
 INPUT  = src
 INPUT += include
+INPUT += ./
+EXCLUDE_PATTERNS = */tests/*
+EXCLUDE_PATTERNS = */build/*
+# EXCLUDE_PATTERNS = */project/*
+IMAGE_PATH             = ./project/
 RECURSIVE              = YES
 INPUT_ENCODING         = UTF-8
 FILE_PATTERNS          = *.cpp \
@@ -20,6 +28,11 @@ FILE_PATTERNS          = *.cpp \
                          *.md \
                          *.dox \
                          *.puml \
+
+ALIASES += "license=@par License: "
+
+USE_MDFILE_AS_MAINPAGE = README.md
+# CITE_BIB_FILES = docs/references.bib
 
 # ---------------------------------------------------------------------------- #
 # Output
