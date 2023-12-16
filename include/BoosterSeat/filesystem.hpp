@@ -16,8 +16,7 @@ enum class Type { FILE, DIRECTORY };
  * a directory an exception will be thrown.
  *
  * @param file_path The path to the file.
- * @return true - The file exists.
- * @return false - The file does not exist in the path.
+ * @return true - The file exists, false otherwise.
  *
  * @exception BoosterSeatException - If the path is a directory.
  * error.
@@ -152,7 +151,7 @@ void moveFile(const std::string &source_path,
 
 /**
  * @brief Get the File Name from a path. Does not need to exist.
- * 
+ *
  * @param file_path - The path to the file.
  * @return std::string - The file name.
  */

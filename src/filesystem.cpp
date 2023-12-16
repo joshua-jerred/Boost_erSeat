@@ -1,3 +1,11 @@
+/**
+ * @file filesystem.cpp
+ * @author Joshua Jerred (https://joshuajer.red)
+ * @brief Boost_erSeat's filesystem module.
+ * @date 2023-12-16
+ * @copyright Copyright (c) 2023
+ */
+
 #include "BoosterSeat/filesystem.hpp"
 #include "BoosterSeat/exception.hpp"
 
