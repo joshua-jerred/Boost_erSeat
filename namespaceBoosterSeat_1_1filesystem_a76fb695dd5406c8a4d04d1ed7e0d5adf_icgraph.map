@@ -1,0 +1,4 @@
+<map id="BoosterSeat::filesystem::hasWritePermission" name="BoosterSeat::filesystem::hasWritePermission">
+<area shape="rect" id="node1" title="If a program has write permissions to a file or directory, it will return true. Otherwise,..." alt="" coords="108,5,285,47"/>
+<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#a47b74933b34015cac681fbf474eeae84" title=" " alt="" coords="5,13,60,39"/>
+</map>

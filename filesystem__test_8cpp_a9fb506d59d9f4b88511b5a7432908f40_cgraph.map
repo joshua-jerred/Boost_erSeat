@@ -1,0 +1,8 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,143,60,170"/>
+<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1filesystem.html#a9066e0d61a5cb8441c90a65ac1be5ea2" title="Create a Directory at the specified path." alt="" coords="127,5,304,47"/>
+<area shape="rect" id="node3" href="$namespaceBoosterSeat_1_1filesystem.html#a935d5e89f6f81fa98e883fee6593c851" title="Returns a boolean indicating whether or not the directory exists." alt="" coords="127,71,304,112"/>
+<area shape="rect" id="node4" href="$namespaceBoosterSeat_1_1filesystem.html#afcb362ca0d7dec678919af67d3c96b97" title="Returns a boolean indicating whether or not the file exists. If it&#39;s a directory an exception will be..." alt="" coords="127,136,304,177"/>
+<area shape="rect" id="node5" href="$classBoosterSeat_1_1BoosterSeatException.html#a968460b38d7c6c517cdc659ee0b5b288" title=" " alt="" coords="108,201,323,243"/>
+<area shape="rect" id="node6" href="$namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c" title=" " alt="" coords="156,267,275,294"/>
+</map>

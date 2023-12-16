@@ -1,0 +1,23 @@
+<map id="main" name="main">
+<area shape="rect" id="node1" title=" " alt="" coords="5,412,60,439"/>
+<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1time.html#a5fd70e926d174b7a55901f51e98f3a82" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="146,94,293,135"/>
+<area shape="rect" id="node7" href="$namespaceBoosterSeat_1_1time.html#a6acb73ab0c84e4784d78221210e55c1e" title="Convert a date and time to a BoosterSeat::clck::TimePoint." alt="" coords="125,227,314,269"/>
+<area shape="rect" id="node9" href="$namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f" title=" " alt="" coords="146,29,293,70"/>
+<area shape="rect" id="node10" href="$namespaceBoosterSeat_1_1time.html#a96da139824ad355ab258c4c0af6c9650" title=" " alt="" coords="146,463,293,505"/>
+<area shape="rect" id="node12" href="$namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d" title=" " alt="" coords="573,391,744,417"/>
+<area shape="rect" id="node13" href="$namespaceBoosterSeat_1_1layout.html#a6535477b7d2780e6177317d2f3b136af" title=" " alt="" coords="144,529,295,570"/>
+<area shape="rect" id="node15" href="$namespaceBoosterSeat_1_1layout.html#a9b40e3e52059446900312459be344c30" title=" " alt="" coords="144,594,295,635"/>
+<area shape="rect" id="node16" href="$classBoosterSeat_1_1Timer.html#ad3cc262ba2f09da2ff9fdaa94d359c32" title=" " alt="" coords="379,289,525,330"/>
+<area shape="rect" id="node17" href="$namespaceBoosterSeat.html#a001bed8a8aa3c69a1cf83408f61dc77e" title="Generates a random hex string of the given length." alt="" coords="108,725,331,752"/>
+<area shape="rect" id="node18" href="$classBoosterSeat_1_1Timer.html#a9020542d73357a4eef512eefaf57524b" title=" " alt="" coords="379,354,525,395"/>
+<area shape="rect" id="node19" href="$namespaceBoosterSeat_1_1layout.html#a33e10c3c7ce953945cd88d1f94504f1c" title=" " alt="" coords="144,659,295,701"/>
+<area shape="rect" id="node20" href="$namespaceBoosterSeat.html#ad5421cf4dc4a7413402767b8bc172a10" title="A blocking sleep function." alt="" coords="126,776,313,803"/>
+<area shape="rect" id="node21" href="$namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="146,159,293,201"/>
+<area shape="rect" id="node3" href="$time_8cpp.html#a39587916c21a4902744b75d2106681f0" title=" " alt="" coords="385,5,519,32"/>
+<area shape="rect" id="node4" href="$time_8cpp.html#a30782dcad2bc9846a7a9c2d56864d0c2" title=" " alt="" coords="420,56,484,83"/>
+<area shape="rect" id="node5" href="$time_8cpp.html#a4b8e93c1388150eb65a480d3edadf0f4" title=" " alt="" coords="384,107,520,133"/>
+<area shape="rect" id="node6" href="$namespaceBoosterSeat_1_1clck.html#a32556c6b55e2960703e0db64be6115bb" title=" " alt="" coords="381,158,523,199"/>
+<area shape="rect" id="node8" href="$namespaceBoosterSeat_1_1clck.html#a7f49628db7507499f40d439db919173f" title=" " alt="" coords="381,223,523,265"/>
+<area shape="rect" id="node11" href="$namespaceBoosterSeat_1_1clck.html#afafe6029a205acad80604de5eaac62d7" title=" " alt="" coords="381,471,523,513"/>
+<area shape="rect" id="node14" href="$string__format_8cpp.html#a0333d9039fce98a1b7866823894b6aaa" title=" " alt="" coords="403,601,501,628"/>
+</map>

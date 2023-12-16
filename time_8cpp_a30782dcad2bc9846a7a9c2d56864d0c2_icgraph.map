@@ -1,6 +1,7 @@
 <map id="getTm" name="getTm">
-<area shape="rect" id="node1" title=" " alt="" coords="200,78,264,105"/>
-<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1time.html#a5fd70e926d174b7a55901f51e98f3a82" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="5,5,152,47"/>
-<area shape="rect" id="node3" href="$namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f" title=" " alt="" coords="5,71,152,112"/>
-<area shape="rect" id="node4" href="$namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="5,136,152,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="303,78,367,105"/>
+<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1time.html#a5fd70e926d174b7a55901f51e98f3a82" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="108,5,255,47"/>
+<area shape="rect" id="node4" href="$namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f" title=" " alt="" coords="108,71,255,112"/>
+<area shape="rect" id="node5" href="$namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="108,136,255,177"/>
+<area shape="rect" id="node3" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,78,60,105"/>
 </map>

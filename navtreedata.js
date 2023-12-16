@@ -24,7 +24,21 @@
 */
 var NAVTREE =
 [
-  [ "Boost_erSeat", "index.html", [
+  [ "BoosterSeat", "index.html", [
+    [ "readme", "md_readme.html", [
+      [ "Using with CMake", "md_readme.html#autotoc_md0", null ],
+      [ "What's included", "md_readme.html#autotoc_md1", [
+        [ "And more random things", "md_readme.html#autotoc_md6", [
+          [ "<tt><BoosterSeat/clock.hpp></tt>", "md_readme.html#autotoc_md2", null ],
+          [ "<tt><BoosterSeat/numbers.hpp></tt>", "md_readme.html#autotoc_md3", null ],
+          [ "<tt><BoosterSeat/rolling_average.hpp></tt>", "md_readme.html#autotoc_md4", null ],
+          [ "<tt><BoosterSeat/timer.hpp></tt>", "md_readme.html#autotoc_md5", null ],
+          [ "<tt><BoosterSeat/filesystem.hpp></tt>", "md_readme.html#autotoc_md7", null ],
+          [ "<tt><BoosterSeat/random.hpp></tt>", "md_readme.html#autotoc_md8", null ]
+        ] ],
+        [ "And a few more", "md_readme.html#autotoc_md9", null ]
+      ] ]
+    ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
@@ -51,7 +65,8 @@ var NAVTREE =
       [ "File Members", "globals.html", [
         [ "All", "globals.html", null ],
         [ "Functions", "globals_func.html", null ],
-        [ "Typedefs", "globals_type.html", null ]
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Macros", "globals_defs.html", null ]
       ] ]
     ] ],
     [ "Examples", "examples.html", "examples" ]
@@ -61,7 +76,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "1_82345-example.html",
-"namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a"
+"namespaceBoosterSeat_1_1filesystem.html#afcb362ca0d7dec678919af67d3c96b97"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

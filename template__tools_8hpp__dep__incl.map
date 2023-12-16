@@ -1,12 +1,15 @@
 <map id="template_tools.hpp" name="template_tools.hpp">
-<area shape="rect" id="node1" title=" " alt="" coords="345,5,493,32"/>
-<area shape="rect" id="node2" href="$exception_8hpp.html" title=" " alt="" coords="361,80,476,107"/>
+<area shape="rect" id="node1" title=" " alt="" coords="411,5,559,32"/>
+<area shape="rect" id="node2" href="$exception_8hpp.html" title=" " alt="" coords="428,80,543,107"/>
 <area shape="rect" id="node3" href="$filesystem_8cpp.html" title="Boost_erSeat&#39;s filesystem module." alt="" coords="5,155,123,181"/>
 <area shape="rect" id="node4" href="$geo__point_8cpp.html" title=" " alt="" coords="147,155,261,181"/>
 <area shape="rect" id="node5" href="$string__format_8cpp.html" title=" " alt="" coords="285,155,422,181"/>
 <area shape="rect" id="node6" href="$time_8cpp.html" title=" " alt="" coords="446,155,525,181"/>
 <area shape="rect" id="node7" href="$stopwatch_8hpp.html" title=" " alt="" coords="549,155,667,181"/>
-<area shape="rect" id="node9" href="$timer_8hpp.html" title=" " alt="" coords="691,155,775,181"/>
-<area shape="rect" id="node8" href="$stopwatch_8cpp.html" title=" " alt="" coords="550,229,666,256"/>
-<area shape="rect" id="node10" href="$timer_8cpp.html" title=" " alt="" coords="692,229,775,256"/>
+<area shape="rect" id="node10" href="$timer_8hpp.html" title=" " alt="" coords="698,155,782,181"/>
+<area shape="rect" id="node13" href="$filesystem__test_8cpp.html" title=" " alt="" coords="807,155,956,181"/>
+<area shape="rect" id="node8" href="$stopwatch_8cpp.html" title=" " alt="" coords="390,229,506,256"/>
+<area shape="rect" id="node9" href="$stopwatch__test_8cpp.html" title=" " alt="" coords="530,229,678,256"/>
+<area shape="rect" id="node11" href="$timer_8cpp.html" title=" " alt="" coords="703,229,785,256"/>
+<area shape="rect" id="node12" href="$visual__tests_8cpp.html" title=" " alt="" coords="810,229,937,256"/>
 </map>

@@ -1,4 +1,5 @@
 <map id="bst::geo::distance" name="bst::geo::distance">
-<area shape="rect" id="node1" title="Get the distance between two points in kilometers." alt="" coords="227,5,364,32"/>
+<area shape="rect" id="node1" title="Get the distance between two points in kilometers." alt="" coords="227,31,364,57"/>
 <area shape="rect" id="node2" href="$classbst_1_1geo_1_1Path.html#ad2ba4954d64d1719549aa4d3f828ae9e" title=" " alt="" coords="5,5,179,32"/>
+<area shape="rect" id="node3" href="$geo__test_8cpp.html#a3d37b2947008b72dce1758fa4bd432df" title=" " alt="" coords="65,56,119,83"/>
 </map>

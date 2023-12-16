@@ -1,0 +1,10 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,122,60,149"/>
+<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1filesystem.html#a9066e0d61a5cb8441c90a65ac1be5ea2" title="Create a Directory at the specified path." alt="" coords="108,5,285,47"/>
+<area shape="rect" id="node3" href="$filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9" title=" " alt="" coords="123,71,271,98"/>
+<area shape="rect" id="node4" href="$namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c" title=" " alt="" coords="137,122,256,149"/>
+<area shape="rect" id="node5" href="$namespaceBoosterSeat_1_1filesystem.html#a5ee806cfef8e7b25301c392473e6ccbe" title="Get the size of a directory. Only includes regular files." alt="" coords="108,173,285,215"/>
+<area shape="rect" id="node6" href="$filesystem__test_8cpp.html#a108120f90f614aca837d69df1581ad2a" title=" " alt="" coords="145,239,248,266"/>
+<area shape="rect" id="node7" href="$namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542" title=" " alt="" coords="333,232,536,273"/>
+<area shape="rect" id="node8" href="$namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff" title="Just a simple function to compare two doubles by a given epsilon." alt="" coords="584,239,787,266"/>
+</map>

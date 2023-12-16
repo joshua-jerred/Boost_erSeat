@@ -1,0 +1,4 @@
+<map id="BoosterSeat::filesystem::doesDirectoryExist" name="BoosterSeat::filesystem::doesDirectoryExist">
+<area shape="rect" id="node1" title="Returns a boolean indicating whether or not the directory exists." alt="" coords="108,5,285,47"/>
+<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#a9fb506d59d9f4b88511b5a7432908f40" title=" " alt="" coords="5,13,60,39"/>
+</map>
