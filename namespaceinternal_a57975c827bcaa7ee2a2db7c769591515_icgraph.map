@@ -1,0 +1,4 @@
+<map id="internal::has_read_permissions" name="internal::has_read_permissions">
+<area shape="rect" id="node1" title="Returns true if the program has read permissions." alt="" coords="263,5,401,47"/>
+<area shape="rect" id="node2" href="$namespaceassertions.html#aa192a4212b1527bf72bb1633dd1ccb03" title="Only works on Linux at the moment, requires the &lt;unistd.h&gt; header." alt="" coords="5,13,215,39"/>
+</map>

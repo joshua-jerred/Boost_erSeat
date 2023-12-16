@@ -1,0 +1,6 @@
+<map id="geo.hpp" name="geo.hpp">
+<area shape="rect" id="node1" title="A collection of structures for representing geographic data." alt="" coords="119,5,194,32"/>
+<area shape="rect" id="node2" href="$geo__point_8cpp.html" title=" " alt="" coords="5,80,119,107"/>
+<area shape="rect" id="node3" href="$geo__strings_8cpp.html" title=" " alt="" coords="144,155,268,181"/>
+<area shape="rect" id="node4" href="$geo__strings_8hpp.html" title="For use with geo.hpp, gives ya strings." alt="" coords="194,80,319,107"/>
+</map>
