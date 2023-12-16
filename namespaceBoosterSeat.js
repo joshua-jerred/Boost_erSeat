@@ -36,7 +36,6 @@ var namespaceBoosterSeat =
     [ "BoosterSeatException", "classBoosterSeat_1_1BoosterSeatException.html", "classBoosterSeat_1_1BoosterSeatException" ],
     [ "RollingAverage", "classBoosterSeat_1_1RollingAverage.html", "classBoosterSeat_1_1RollingAverage" ],
     [ "Stopwatch", "classBoosterSeat_1_1Stopwatch.html", "classBoosterSeat_1_1Stopwatch" ],
-    [ "Timer", "classBoosterSeat_1_1Timer.html", "classBoosterSeat_1_1Timer" ],
     [ "ErrorNumber", "namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941c", [
       [ "UNSPECIFIED", "namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941ca1c04cc3823d476c3017238679a0fdf52", null ],
       [ "FS_PATH_DOES_NOT_EXIST", "namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941ca9b4bcf8f2c623ed5ea01d3c7955fc04a", null ],

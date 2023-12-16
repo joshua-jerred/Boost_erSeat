@@ -8,6 +8,6 @@ var searchData=
   ['isapproxequal_314',['isApproxEqual',['../namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff',1,'BoosterSeat']]],
   ['isapproxequalpercent_315',['isApproxEqualPercent',['../namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542',1,'BoosterSeat']]],
   ['isdirectory_316',['IsDirectory',['../namespaceassertions.html#ae836775a6257e8270026456d314b5f12',1,'assertions']]],
-  ['isdone_317',['isDone',['../classBoosterSeat_1_1Timer.html#ad3cc262ba2f09da2ff9fdaa94d359c32',1,'BoosterSeat::Timer']]],
+  ['isdone_317',['isDone',['../classbst_1_1Timer.html#ad3cc262ba2f09da2ff9fdaa94d359c32',1,'bst::Timer']]],
   ['isregularfile_318',['IsRegularFile',['../namespaceassertions.html#afc3f9b61119c84db617cc0cd88840883',1,'assertions']]]
 ];
