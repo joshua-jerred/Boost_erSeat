@@ -5,8 +5,8 @@ DOXYFILE_ENCODING      = UTF-8
 # Project
 
 PROJECT_NAME           = "BoosterSeat"
-PROJECT_NUMBER         = 1.1
-PROJECT_BRIEF          = ""
+PROJECT_NUMBER         = 0.1
+PROJECT_BRIEF          = "A C++ library that includes common utilities that are used in other projects."
 PROJECT_LOGO           = "project/logo.svg"
 # TODO: Logo
 
