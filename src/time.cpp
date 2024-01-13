@@ -184,4 +184,28 @@ unsigned int Time::getSecond() const {
   return tm.tm_sec;
 }
 
+bool Time::operator<(const Time &rhs) const {
+  return time_ < rhs.time_;
+}
+
+bool Time::operator>(const Time &rhs) const {
+  return time_ > rhs.time_;
+}
+
+bool Time::operator<=(const Time &rhs) const {
+  return time_ <= rhs.time_;
+}
+
+bool Time::operator>=(const Time &rhs) const {
+  return time_ >= rhs.time_;
+}
+
+bool Time::operator==(const Time &rhs) const {
+  return time_ == rhs.time_;
+}
+
+bool Time::operator!=(const Time &rhs) const {
+  return time_ != rhs.time_;
+}
+
 } // namespace bst

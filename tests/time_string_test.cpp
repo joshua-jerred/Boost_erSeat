@@ -49,3 +49,38 @@ TEST(bstTimeClass, setToNow) {
   EXPECT_EQ(time.getMinute(), tm.tm_min);
   EXPECT_EQ(time.getSecond(), tm.tm_sec);
 }
+
+TEST(bstTimeClass, greaterThanLessThanOperators) {
+  bst::Time time1;
+  bst::Time time2;
+
+  time1.fromString("2020-01-01 00:00:01");
+  time2.fromString("2020-01-01 00:00:02");
+
+  EXPECT_TRUE(time1 < time2);
+  EXPECT_TRUE(time2 > time1);
+  EXPECT_TRUE(time1 <= time2);
+  EXPECT_TRUE(time2 >= time1);
+  EXPECT_TRUE(time1 != time2);
+  EXPECT_FALSE(time1 == time2);
+
+  time1.fromString("2020-01-01 00:00:01");
+  time2.fromString("2020-01-01 00:00:01");
+
+  EXPECT_FALSE(time1 < time2);
+  EXPECT_FALSE(time2 > time1);
+  EXPECT_TRUE(time1 <= time2);
+  EXPECT_TRUE(time2 >= time1);
+  EXPECT_FALSE(time1 != time2);
+  EXPECT_TRUE(time1 == time2);
+
+  time1.fromString("2020-01-01 00:00:02");
+  time2.fromString("2020-01-01 00:00:01");
+
+  EXPECT_FALSE(time1 < time2);
+  EXPECT_FALSE(time2 > time1);
+  EXPECT_FALSE(time1 <= time2);
+  EXPECT_FALSE(time2 >= time1);
+  EXPECT_TRUE(time1 != time2);
+  EXPECT_FALSE(time1 == time2);
+}

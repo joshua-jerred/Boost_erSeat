@@ -135,6 +135,14 @@ public:
    */
   unsigned int getSecond() const;
 
+  // operators
+  bool operator==(const Time &rhs) const;
+  bool operator!=(const Time &rhs) const;
+  bool operator<(const Time &rhs) const;
+  bool operator<=(const Time &rhs) const;
+  bool operator>(const Time &rhs) const;
+  bool operator>=(const Time &rhs) const;
+
 private:
   time_t time_ = 0;
 };
