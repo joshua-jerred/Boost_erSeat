@@ -77,6 +77,14 @@ public:
   Time() = default;
   ~Time() = default;
 
+  // operators
+  bool operator==(const Time &rhs) const;
+  bool operator!=(const Time &rhs) const;
+  bool operator<(const Time &rhs) const;
+  bool operator<=(const Time &rhs) const;
+  bool operator>(const Time &rhs) const;
+  bool operator>=(const Time &rhs) const;
+
   /**
    * @brief Set the time to the current time
    */
@@ -135,13 +143,17 @@ public:
    */
   unsigned int getSecond() const;
 
-  // operators
-  bool operator==(const Time &rhs) const;
-  bool operator!=(const Time &rhs) const;
-  bool operator<(const Time &rhs) const;
-  bool operator<=(const Time &rhs) const;
-  bool operator>(const Time &rhs) const;
-  bool operator>=(const Time &rhs) const;
+  time_t getTimeType() const {
+    return time_;
+  }
+
+  /**
+   * @brief Returns the number of seconds from the current time to the stored
+   * time.
+   * @return int32_t Number of seconds from the current time. Negative if the
+   * stored time is in the past. Positive if the stored time is in the future.
+   */
+  int64_t secondsFromNow() const;
 
 private:
   time_t time_ = 0;

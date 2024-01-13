@@ -1,3 +1,4 @@
+#include <BoosterSeat/sleep.hpp>
 #include <BoosterSeat/time.hpp>
 
 #include "gtest/gtest.h"
@@ -83,4 +84,29 @@ TEST(bstTimeClass, greaterThanLessThanOperators) {
   EXPECT_FALSE(time2 >= time1);
   EXPECT_TRUE(time1 != time2);
   EXPECT_FALSE(time1 == time2);
+}
+
+TEST(bstTimeClass, secondsFromNow) {
+  bst::Time time;
+  int64_t seconds_delta;
+
+  // Test that times in the past have a negative delta
+  ASSERT_TRUE(time.fromString("2000-01-01 00:00:00"));
+  seconds_delta = time.secondsFromNow();
+  EXPECT_LT(seconds_delta, -756864000); // 23 years
+
+  // Test that times in the future have a positive delta
+  ASSERT_TRUE(time.fromString("2050-01-01 00:00:00"));
+  seconds_delta = time.secondsFromNow();
+  EXPECT_GT(seconds_delta, 473040000); // 20 years
+
+  // Test that the time 'now' has a delta of 0 seconds
+  time.setToNow();
+  seconds_delta = time.secondsFromNow();
+  EXPECT_EQ(seconds_delta, 0);
+
+  // Block for 1 second and test that the delta is -1
+  bst::sleep(1000);
+  seconds_delta = time.secondsFromNow();
+  EXPECT_EQ(seconds_delta, -1);
 }

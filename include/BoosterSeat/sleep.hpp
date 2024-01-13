@@ -16,4 +16,10 @@ inline void threadSleep(double milliseconds) {
 
 } // namespace BoosterSeat
 
+namespace bst {
+inline void sleep(int32_t milliseconds) {
+  std::this_thread::sleep_for(std::chrono::milliseconds(milliseconds));
+}
+} // namespace bst
+
 #endif
