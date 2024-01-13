@@ -13,6 +13,7 @@ add_executable(unit_tests
   filesystem_test.cpp
   rolling_average_test.cpp
   geo_test.cpp
+  time_string_test.cpp
 )
 target_link_libraries(unit_tests BoosterSeat gtest_main)
 
@@ -20,9 +21,3 @@ add_executable(visual_tests
   visual_tests.cpp
 )
 target_link_libraries(visual_tests BoosterSeat)
-
-
-# add_executable(geo_test
-#   geo_test.cpp
-# )
-# target_link_libraries(geo_test BoosterSeat)
