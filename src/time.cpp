@@ -2,6 +2,10 @@
 #include <BoosterSeat/time.hpp>
 
 #include <algorithm>
+#include <chrono>
+#include <time.h>
+
+#include <iostream> /// @todo remove
 
 inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time);
 inline std::string timeFormatString(const char delimiter);
@@ -123,3 +127,61 @@ inline std::string dateFormatString(const char delimiter) {
   }
   return format_string;
 }
+
+namespace bst {
+
+void Time::setToNow() {
+  time_ = std::time(nullptr);
+}
+
+std::string Time::toString() const {
+  std::stringstream ss;
+  ss << std::put_time(std::gmtime(&time_), "%Y-%m-%d %H:%M:%S");
+  return ss.str();
+}
+
+bool Time::fromString(const std::string &time_string) {
+  std::tm tm;
+  std::stringstream ss(time_string);
+  ss >> std::get_time(&tm, "%Y-%m-%d %H:%M:%S");
+  if (ss.fail()) {
+    return false;
+  }
+
+  // From <time.h>. This is not cross-platform!
+  time_ = timegm(&tm);
+
+  return true;
+}
+
+unsigned int Time::getYear() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_year + 1900;
+}
+
+unsigned int Time::getMonth() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_mon + 1;
+}
+
+unsigned int Time::getDay() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_mday;
+}
+
+unsigned int Time::getHour() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_hour;
+}
+
+unsigned int Time::getMinute() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_min;
+}
+
+unsigned int Time::getSecond() const {
+  std::tm tm = *std::gmtime(&time_);
+  return tm.tm_sec;
+}
+
+} // namespace bst
