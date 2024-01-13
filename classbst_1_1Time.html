@@ -119,8 +119,9 @@ Collaboration diagram for bst::Time:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:ab2b2a5d3df48fd2273315db35b45a410"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#ab2b2a5d3df48fd2273315db35b45a410">Time</a> ()=default</td></tr>
-<tr class="separator:ab2b2a5d3df48fd2273315db35b45a410"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a19d5ea6564c350bfc9e9cd1a4df35c79"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a19d5ea6564c350bfc9e9cd1a4df35c79">Time</a> (bool set_to_now=false)</td></tr>
+<tr class="memdesc:a19d5ea6564c350bfc9e9cd1a4df35c79"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classbst_1_1Time.html">Time</a> object. Defaults to the epoch.  <a href="classbst_1_1Time.html#a19d5ea6564c350bfc9e9cd1a4df35c79">More...</a><br /></td></tr>
+<tr class="separator:a19d5ea6564c350bfc9e9cd1a4df35c79"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a950c5b5ac23aeb2526061b1f3d3eb684"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a950c5b5ac23aeb2526061b1f3d3eb684">~Time</a> ()=default</td></tr>
 <tr class="separator:a950c5b5ac23aeb2526061b1f3d3eb684"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a84e38378f8d4c0fbafd4507b86278f36"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36">fromString</a> (const std::string &amp;time_string)</td></tr>
@@ -173,28 +174,37 @@ Private Attributes</h2></td></tr>
 <tr class="separator:a5f2cd2fcea09b594cf99e11623251872"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="ab2b2a5d3df48fd2273315db35b45a410"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ab2b2a5d3df48fd2273315db35b45a410">&#9670;&nbsp;</a></span>Time()</h2>
+<a id="a19d5ea6564c350bfc9e9cd1a4df35c79"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a19d5ea6564c350bfc9e9cd1a4df35c79">&#9670;&nbsp;</a></span>Time()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bst::Time::Time </td>
+          <td class="memname">BoosterSeat::time::Time::Time </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>set_to_now</em> = <code>false</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">default</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
+
+<p>Construct a new <a class="el" href="classbst_1_1Time.html">Time</a> object. Defaults to the epoch. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">set_to_now</td><td>- Set the time to the current time. Defaults to false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a14009763d369f7652a294e95893fac41">setToNow()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a19d5ea6564c350bfc9e9cd1a4df35c79_cgraph.svg" width="338" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
@@ -363,11 +373,11 @@ Private Attributes</h2></td></tr>
 
 <p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#acbb5e0da7add56ddef1f30ef592c3d5f">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Time.html#a19d5ea6564c350bfc9e9cd1a4df35c79">Time()</a>, and <a class="el" href="time__class__test_8cpp.html#acbb5e0da7add56ddef1f30ef592c3d5f">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a14009763d369f7652a294e95893fac41_icgraph.svg" width="268" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a14009763d369f7652a294e95893fac41_icgraph.svg" width="338" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -393,7 +403,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a03ce78844d18373d66b1d912a6932bef">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a6271fcf4d2067ce69e0f33843df71ec2">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
@@ -668,7 +678,7 @@ Here is the caller graph for this function:</div>
 
 <p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
 
-<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#ae2ebf83ba7105a43f95ffe3258f6b22c">TEST()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a6271fcf4d2067ce69e0f33843df71ec2">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
