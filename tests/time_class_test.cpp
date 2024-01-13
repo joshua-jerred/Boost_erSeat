@@ -7,6 +7,17 @@ using namespace bst;
 
 #include <iostream>
 
+TEST(bstTimeClass, constructors) {
+  // default constructor
+  bst::Time time1 = bst::Time();
+  EXPECT_EQ(time1.toString(), "1970-01-01 00:00:00");
+  EXPECT_LT(time1.secondsFromNow(), 50 * 365 * 24 * 60 * 60 * -1); // 50 years
+
+  // current time constructor
+  bst::Time time2 = bst::Time(true);
+  EXPECT_EQ(time2.secondsFromNow(), 0);
+}
+
 TEST(bstTimeClass, basic_string) {
   std::string time_string = "2020-01-01 00:00:01";
   bst::Time time;

@@ -130,6 +130,12 @@ inline std::string dateFormatString(const char delimiter) {
 
 namespace bst {
 
+Time::Time(bool set_to_now) {
+  if (set_to_now) {
+    setToNow();
+  }
+}
+
 void Time::setToNow() {
   time_ = std::time(nullptr);
 }

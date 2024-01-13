@@ -74,7 +74,11 @@ namespace bst {
  */
 class Time {
 public:
-  Time() = default;
+  /**
+   * @brief Construct a new Time object. Defaults to the epoch.
+   * @param set_to_now - Set the time to the current time. Defaults to false.
+   */
+  Time(bool set_to_now = false);
   ~Time() = default;
 
   // operators
