@@ -208,4 +208,8 @@ bool Time::operator!=(const Time &rhs) const {
   return time_ != rhs.time_;
 }
 
+int64_t Time::secondsFromNow() const {
+  return std::difftime(time_, std::time(nullptr));
+}
+
 } // namespace bst
