@@ -1,4 +1,5 @@
 <map id="BoosterSeat::time::dateAndTimeString" name="BoosterSeat::time::dateAndTimeString">
-<area shape="rect" id="node1" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="108,5,255,47"/>
-<area shape="rect" id="node2" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,13,60,39"/>
+<area shape="rect" id="node1" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="200,35,347,76"/>
+<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1time.html#a159e9ab40d63c2f6e7e7dfcabca75c26" title=" " alt="" coords="5,5,152,47"/>
+<area shape="rect" id="node3" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="51,71,106,98"/>
 </map>

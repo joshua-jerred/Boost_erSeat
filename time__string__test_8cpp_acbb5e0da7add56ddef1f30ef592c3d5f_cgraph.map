@@ -1,0 +1,11 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,183,60,209"/>
+<area shape="rect" id="node2" href="$classbst_1_1Time.html#a7a94cf6c09f077be0fa58d7c6209b280" title="Get the Day." alt="" coords="124,5,263,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Time.html#a4f1d099514987d99d6f82214e15e3937" title="Get the Hour." alt="" coords="122,56,265,83"/>
+<area shape="rect" id="node4" href="$classbst_1_1Time.html#aface45ecfaf6331f6ac2542c5ee35183" title="Get the Minute." alt="" coords="115,107,272,133"/>
+<area shape="rect" id="node5" href="$classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd" title="Get the Month (1 &#45; 12)" alt="" coords="117,157,270,184"/>
+<area shape="rect" id="node6" href="$classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b" title="Get the Second." alt="" coords="114,208,273,235"/>
+<area shape="rect" id="node7" href="$classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe" title="Get the Year." alt="" coords="124,259,263,285"/>
+<area shape="rect" id="node8" href="$namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d" title=" " alt="" coords="108,309,279,336"/>
+<area shape="rect" id="node9" href="$classbst_1_1Time.html#a14009763d369f7652a294e95893fac41" title="Set the time to the current time." alt="" coords="116,360,271,387"/>
+</map>

@@ -10,6 +10,7 @@ var annotated_dup =
         [ "Path", "classbst_1_1geo_1_1Path.html", "classbst_1_1geo_1_1Path" ],
         [ "Point", "classbst_1_1geo_1_1Point.html", "classbst_1_1geo_1_1Point" ]
       ] ],
+      [ "Time", "classbst_1_1Time.html", "classbst_1_1Time" ],
       [ "Timer", "classbst_1_1Timer.html", "classbst_1_1Timer" ]
     ] ]
 ];

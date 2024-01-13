@@ -31,6 +31,7 @@ var files_dup =
     [ "template_tools.hpp", "template__tools_8hpp.html", "template__tools_8hpp" ],
     [ "time.cpp", "time_8cpp.html", "time_8cpp" ],
     [ "time.hpp", "time_8hpp.html", "time_8hpp" ],
+    [ "time_string_test.cpp", "time__string__test_8cpp.html", "time__string__test_8cpp" ],
     [ "timer.cpp", "timer_8cpp.html", null ],
     [ "timer.hpp", "timer_8hpp.html", [
       [ "Timer", "classbst_1_1Timer.html", "classbst_1_1Timer" ]

@@ -40,6 +40,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
+    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -76,7 +77,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "1_82345-example.html",
-"namespaceBoosterSeat_1_1filesystem.html#afcb362ca0d7dec678919af67d3c96b97"
+"namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

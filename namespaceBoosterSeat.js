@@ -31,6 +31,7 @@ var namespaceBoosterSeat =
       [ "timeString", "namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a", null ],
       [ "dateString", "namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f", null ],
       [ "dateAndTimeString", "namespaceBoosterSeat_1_1time.html#a5fd70e926d174b7a55901f51e98f3a82", null ],
+      [ "dateAndTimeString", "namespaceBoosterSeat_1_1time.html#a159e9ab40d63c2f6e7e7dfcabca75c26", null ],
       [ "dateAndTimeToTimePoint", "namespaceBoosterSeat_1_1time.html#a6acb73ab0c84e4784d78221210e55c1e", null ]
     ] ],
     [ "BoosterSeatException", "classBoosterSeat_1_1BoosterSeatException.html", "classBoosterSeat_1_1BoosterSeatException" ],
