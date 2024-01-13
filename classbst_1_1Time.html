@@ -113,7 +113,7 @@ $(document).ready(function(){initNavTree('classbst_1_1Time.html',''); initResiza
 <div class="dynheader">
 Collaboration diagram for bst::Time:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time__coll__graph.svg" width="130" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time__coll__graph.svg" width="142" height="375"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
@@ -140,6 +140,8 @@ Public Member Functions</h2></td></tr>
 <tr class="memitem:a8a8016a11e9c89ed93ee5ec61066335b"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b">getSecond</a> () const</td></tr>
 <tr class="memdesc:a8a8016a11e9c89ed93ee5ec61066335b"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Second.  <a href="classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b">More...</a><br /></td></tr>
 <tr class="separator:a8a8016a11e9c89ed93ee5ec61066335b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a9ea60a3b85258caeb96e365c12d76adc"><td class="memItemLeft" align="right" valign="top">time_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a9ea60a3b85258caeb96e365c12d76adc">getTimeType</a> () const</td></tr>
+<tr class="separator:a9ea60a3b85258caeb96e365c12d76adc"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac3a53051be172208e0d5ec580147aabe"><td class="memItemLeft" align="right" valign="top">unsigned int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe">getYear</a> () const</td></tr>
 <tr class="memdesc:ac3a53051be172208e0d5ec580147aabe"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the Year.  <a href="classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe">More...</a><br /></td></tr>
 <tr class="separator:ac3a53051be172208e0d5ec580147aabe"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -155,6 +157,9 @@ Public Member Functions</h2></td></tr>
 <tr class="separator:afee398fcf4b4f6b62bad4415e90bf124"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:adc83cc6c1292ab4c05b0a26358005b42"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#adc83cc6c1292ab4c05b0a26358005b42">operator&gt;=</a> (const <a class="el" href="classbst_1_1Time.html">Time</a> &amp;rhs) const</td></tr>
 <tr class="separator:adc83cc6c1292ab4c05b0a26358005b42"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad1d139f4d0fa7176519799efd7443b93"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#ad1d139f4d0fa7176519799efd7443b93">secondsFromNow</a> () const</td></tr>
+<tr class="memdesc:ad1d139f4d0fa7176519799efd7443b93"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the number of seconds from the current time to the stored time.  <a href="classbst_1_1Time.html#ad1d139f4d0fa7176519799efd7443b93">More...</a><br /></td></tr>
+<tr class="separator:ad1d139f4d0fa7176519799efd7443b93"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a14009763d369f7652a294e95893fac41"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html#a14009763d369f7652a294e95893fac41">setToNow</a> ()</td></tr>
 <tr class="memdesc:a14009763d369f7652a294e95893fac41"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the time to the current time.  <a href="classbst_1_1Time.html#a14009763d369f7652a294e95893fac41">More...</a><br /></td></tr>
 <tr class="separator:a14009763d369f7652a294e95893fac41"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -219,283 +224,6 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a14009763d369f7652a294e95893fac41"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a14009763d369f7652a294e95893fac41">&#9670;&nbsp;</a></span>setToNow()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">void BoosterSeat::time::Time::setToNow </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Set the time to the current time. </p>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#acbb5e0da7add56ddef1f30ef592c3d5f">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a14009763d369f7652a294e95893fac41_icgraph.svg" width="268" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a115d699b18c4382efe5961294a9f3ee4"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a115d699b18c4382efe5961294a9f3ee4">&#9670;&nbsp;</a></span>toString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">std::string BoosterSeat::time::Time::toString </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the time/date as a string in the format: YYYY-MM-DD HH:MM:SS. </p>
-<dl class="section return"><dt>Returns</dt><dd>std::string - The time/date string </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a03ce78844d18373d66b1d912a6932bef">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a115d699b18c4382efe5961294a9f3ee4_icgraph.svg" width="256" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a84e38378f8d4c0fbafd4507b86278f36"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a84e38378f8d4c0fbafd4507b86278f36">&#9670;&nbsp;</a></span>fromString()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bool BoosterSeat::time::Time::fromString </td>
-          <td>(</td>
-          <td class="paramtype">const std::string &amp;&#160;</td>
-          <td class="paramname"><em>time_string</em></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-<dl class="section warning"><dt>Warning</dt><dd>This function is <em>not</em> cross platform. It will work on Linux.</dd></dl>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">time_string</td><td>- The time string to parse in the format: YYYY-MM-DD HH:MM:SS </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>true - The time string was parsed successfully </dd>
-<dd>
-false - The time string was not parsed successfully </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a03ce78844d18373d66b1d912a6932bef">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a84e38378f8d4c0fbafd4507b86278f36_icgraph.svg" width="274" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="ac3a53051be172208e0d5ec580147aabe"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac3a53051be172208e0d5ec580147aabe">&#9670;&nbsp;</a></span>getYear()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getYear </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Year. </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The year </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_ac3a53051be172208e0d5ec580147aabe_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a4af6ade85e96b3801585bc18b4cd12fd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4af6ade85e96b3801585bc18b4cd12fd">&#9670;&nbsp;</a></span>getMonth()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getMonth </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Month (1 - 12) </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The month </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a4af6ade85e96b3801585bc18b4cd12fd_icgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a7a94cf6c09f077be0fa58d7c6209b280"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7a94cf6c09f077be0fa58d7c6209b280">&#9670;&nbsp;</a></span>getDay()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getDay </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Day. </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The day </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a7a94cf6c09f077be0fa58d7c6209b280_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a4f1d099514987d99d6f82214e15e3937"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4f1d099514987d99d6f82214e15e3937">&#9670;&nbsp;</a></span>getHour()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getHour </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Hour. </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The hour </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a4f1d099514987d99d6f82214e15e3937_icgraph.svg" width="256" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="aface45ecfaf6331f6ac2542c5ee35183"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aface45ecfaf6331f6ac2542c5ee35183">&#9670;&nbsp;</a></span>getMinute()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getMinute </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Minute. </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The minute </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_aface45ecfaf6331f6ac2542c5ee35183_icgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
-<a id="a8a8016a11e9c89ed93ee5ec61066335b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8a8016a11e9c89ed93ee5ec61066335b">&#9670;&nbsp;</a></span>getSecond()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">unsigned int BoosterSeat::time::Time::getSecond </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td> const</td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p>Get the Second. </p>
-<dl class="section return"><dt>Returns</dt><dd>unsigned int - The second </dd></dl>
-
-<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
-
-<p class="reference">Referenced by <a class="el" href="time__string__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
-<div class="dynheader">
-Here is the caller graph for this function:</div>
-<div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a8a8016a11e9c89ed93ee5ec61066335b_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
-</div>
-</div>
-
-</div>
-</div>
 <a id="afec3c68c60ae2f60753c2f5d65839471"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#afec3c68c60ae2f60753c2f5d65839471">&#9670;&nbsp;</a></span>operator==()</h2>
 
@@ -616,6 +344,340 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
+<a id="a14009763d369f7652a294e95893fac41"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a14009763d369f7652a294e95893fac41">&#9670;&nbsp;</a></span>setToNow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void BoosterSeat::time::Time::setToNow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Set the time to the current time. </p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#acbb5e0da7add56ddef1f30ef592c3d5f">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a14009763d369f7652a294e95893fac41_icgraph.svg" width="268" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a115d699b18c4382efe5961294a9f3ee4"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a115d699b18c4382efe5961294a9f3ee4">&#9670;&nbsp;</a></span>toString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">std::string BoosterSeat::time::Time::toString </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the time/date as a string in the format: YYYY-MM-DD HH:MM:SS. </p>
+<dl class="section return"><dt>Returns</dt><dd>std::string - The time/date string </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a03ce78844d18373d66b1d912a6932bef">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a115d699b18c4382efe5961294a9f3ee4_icgraph.svg" width="256" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a84e38378f8d4c0fbafd4507b86278f36"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a84e38378f8d4c0fbafd4507b86278f36">&#9670;&nbsp;</a></span>fromString()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">bool BoosterSeat::time::Time::fromString </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>time_string</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+<dl class="section warning"><dt>Warning</dt><dd>This function is <em>not</em> cross platform. It will work on Linux.</dd></dl>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">time_string</td><td>- The time string to parse in the format: YYYY-MM-DD HH:MM:SS </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>true - The time string was parsed successfully </dd>
+<dd>
+false - The time string was not parsed successfully </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a03ce78844d18373d66b1d912a6932bef">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a84e38378f8d4c0fbafd4507b86278f36_icgraph.svg" width="274" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ac3a53051be172208e0d5ec580147aabe"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac3a53051be172208e0d5ec580147aabe">&#9670;&nbsp;</a></span>getYear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getYear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Year. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The year </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_ac3a53051be172208e0d5ec580147aabe_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4af6ade85e96b3801585bc18b4cd12fd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4af6ade85e96b3801585bc18b4cd12fd">&#9670;&nbsp;</a></span>getMonth()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getMonth </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Month (1 - 12) </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The month </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a4af6ade85e96b3801585bc18b4cd12fd_icgraph.svg" width="267" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a7a94cf6c09f077be0fa58d7c6209b280"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a7a94cf6c09f077be0fa58d7c6209b280">&#9670;&nbsp;</a></span>getDay()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getDay </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Day. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The day </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a7a94cf6c09f077be0fa58d7c6209b280_icgraph.svg" width="252" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a4f1d099514987d99d6f82214e15e3937"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f1d099514987d99d6f82214e15e3937">&#9670;&nbsp;</a></span>getHour()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getHour </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Hour. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The hour </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a4f1d099514987d99d6f82214e15e3937_icgraph.svg" width="256" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aface45ecfaf6331f6ac2542c5ee35183"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aface45ecfaf6331f6ac2542c5ee35183">&#9670;&nbsp;</a></span>getMinute()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getMinute </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Minute. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The minute </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_aface45ecfaf6331f6ac2542c5ee35183_icgraph.svg" width="271" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8a8016a11e9c89ed93ee5ec61066335b"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8a8016a11e9c89ed93ee5ec61066335b">&#9670;&nbsp;</a></span>getSecond()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">unsigned int BoosterSeat::time::Time::getSecond </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the Second. </p>
+<dl class="section return"><dt>Returns</dt><dd>unsigned int - The second </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#a688450cd0989c4b4562128ed6ce243c9">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_a8a8016a11e9c89ed93ee5ec61066335b_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a9ea60a3b85258caeb96e365c12d76adc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a9ea60a3b85258caeb96e365c12d76adc">&#9670;&nbsp;</a></span>getTimeType()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">time_t bst::Time::getTimeType </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+</div>
+</div>
+<a id="ad1d139f4d0fa7176519799efd7443b93"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad1d139f4d0fa7176519799efd7443b93">&#9670;&nbsp;</a></span>secondsFromNow()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t BoosterSeat::time::Time::secondsFromNow </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Returns the number of seconds from the current time to the stored time. </p>
+<dl class="section return"><dt>Returns</dt><dd>int32_t Number of seconds from the current time. Negative if the stored time is in the past. Positive if the stored time is in the future. </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872">time_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="time__class__test_8cpp.html#ae2ebf83ba7105a43f95ffe3258f6b22c">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Time_ad1d139f4d0fa7176519799efd7443b93_icgraph.svg" width="320" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
 <h2 class="groupheader">Member Data Documentation</h2>
 <a id="a5f2cd2fcea09b594cf99e11623251872"></a>
 <h2 class="memtitle"><span class="permalink"><a href="#a5f2cd2fcea09b594cf99e11623251872">&#9670;&nbsp;</a></span>time_</h2>
@@ -637,7 +699,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36">fromString()</a>, <a class="el" href="classbst_1_1Time.html#a7a94cf6c09f077be0fa58d7c6209b280">getDay()</a>, <a class="el" href="classbst_1_1Time.html#a4f1d099514987d99d6f82214e15e3937">getHour()</a>, <a class="el" href="classbst_1_1Time.html#aface45ecfaf6331f6ac2542c5ee35183">getMinute()</a>, <a class="el" href="classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd">getMonth()</a>, <a class="el" href="classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b">getSecond()</a>, <a class="el" href="classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe">getYear()</a>, <a class="el" href="classbst_1_1Time.html#acc628496b5f00c2713f5380a0b1737b0">operator!=()</a>, <a class="el" href="classbst_1_1Time.html#ac5ffd8485c97fc0490931f928165632c">operator&lt;()</a>, <a class="el" href="classbst_1_1Time.html#ae2fdb4b11c47964185214dd53372b69f">operator&lt;=()</a>, <a class="el" href="classbst_1_1Time.html#afec3c68c60ae2f60753c2f5d65839471">operator==()</a>, <a class="el" href="classbst_1_1Time.html#afee398fcf4b4f6b62bad4415e90bf124">operator&gt;()</a>, <a class="el" href="classbst_1_1Time.html#adc83cc6c1292ab4c05b0a26358005b42">operator&gt;=()</a>, <a class="el" href="classbst_1_1Time.html#a14009763d369f7652a294e95893fac41">setToNow()</a>, and <a class="el" href="classbst_1_1Time.html#a115d699b18c4382efe5961294a9f3ee4">toString()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36">fromString()</a>, <a class="el" href="classbst_1_1Time.html#a7a94cf6c09f077be0fa58d7c6209b280">getDay()</a>, <a class="el" href="classbst_1_1Time.html#a4f1d099514987d99d6f82214e15e3937">getHour()</a>, <a class="el" href="classbst_1_1Time.html#aface45ecfaf6331f6ac2542c5ee35183">getMinute()</a>, <a class="el" href="classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd">getMonth()</a>, <a class="el" href="classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b">getSecond()</a>, <a class="el" href="classbst_1_1Time.html#a9ea60a3b85258caeb96e365c12d76adc">getTimeType()</a>, <a class="el" href="classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe">getYear()</a>, <a class="el" href="classbst_1_1Time.html#acc628496b5f00c2713f5380a0b1737b0">operator!=()</a>, <a class="el" href="classbst_1_1Time.html#ac5ffd8485c97fc0490931f928165632c">operator&lt;()</a>, <a class="el" href="classbst_1_1Time.html#ae2fdb4b11c47964185214dd53372b69f">operator&lt;=()</a>, <a class="el" href="classbst_1_1Time.html#afec3c68c60ae2f60753c2f5d65839471">operator==()</a>, <a class="el" href="classbst_1_1Time.html#afee398fcf4b4f6b62bad4415e90bf124">operator&gt;()</a>, <a class="el" href="classbst_1_1Time.html#adc83cc6c1292ab4c05b0a26358005b42">operator&gt;=()</a>, <a class="el" href="classbst_1_1Time.html#ad1d139f4d0fa7176519799efd7443b93">secondsFromNow()</a>, <a class="el" href="classbst_1_1Time.html#a14009763d369f7652a294e95893fac41">setToNow()</a>, and <a class="el" href="classbst_1_1Time.html#a115d699b18c4382efe5961294a9f3ee4">toString()</a>.</p>
 
 </div>
 </div>

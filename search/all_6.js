@@ -20,7 +20,8 @@ var searchData=
   ['getmonth_93',['getMonth',['../classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd',1,'bst::Time']]],
   ['getnumpoints_94',['getNumPoints',['../classbst_1_1geo_1_1Path.html#ad7e3aa7c79535503c97d76a8501146fa',1,'bst::geo::Path']]],
   ['getsecond_95',['getSecond',['../classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b',1,'bst::Time']]],
-  ['gettm_96',['getTm',['../time_8cpp.html#a30782dcad2bc9846a7a9c2d56864d0c2',1,'time.cpp']]],
-  ['getyear_97',['getYear',['../classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe',1,'bst::Time']]],
-  ['gigabytes_98',['GIGABYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca671acf2cd2ea17f29adc494ff851013f',1,'BoosterSeat::filesystem::units']]]
+  ['gettimetype_96',['getTimeType',['../classbst_1_1Time.html#a9ea60a3b85258caeb96e365c12d76adc',1,'bst::Time']]],
+  ['gettm_97',['getTm',['../time_8cpp.html#a30782dcad2bc9846a7a9c2d56864d0c2',1,'time.cpp']]],
+  ['getyear_98',['getYear',['../classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe',1,'bst::Time']]],
+  ['gigabytes_99',['GIGABYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca671acf2cd2ea17f29adc494ff851013f',1,'BoosterSeat::filesystem::units']]]
 ];

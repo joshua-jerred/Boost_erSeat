@@ -27,6 +27,7 @@ var namespaceBoosterSeat =
         [ "UTC", "namespaceBoosterSeat_1_1time.html#afe738866c49c57fd3edc2145f153d059a9234324ddf6b4176b57d803a925b7961", null ],
         [ "LOCAL", "namespaceBoosterSeat_1_1time.html#afe738866c49c57fd3edc2145f153d059a54b4c4075463b2e02cd69f5cd139b5b2", null ]
       ] ],
+      [ "sleep", "namespaceBoosterSeat_1_1time.html#a68398b76b4bf04318c1e0978a251452f", null ],
       [ "elapsedAsciiClock", "namespaceBoosterSeat_1_1time.html#a96da139824ad355ab258c4c0af6c9650", null ],
       [ "timeString", "namespaceBoosterSeat_1_1time.html#a96007d776fbd61a86911e5a91ec46a0a", null ],
       [ "dateString", "namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f", null ],

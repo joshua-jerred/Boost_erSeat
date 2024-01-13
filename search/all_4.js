@@ -10,6 +10,6 @@ var searchData=
   ['errornumber_53',['ErrorNumber',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941c',1,'BoosterSeat']]],
   ['errornumberenum_54',['errorNumberEnum',['../classBoosterSeat_1_1BoosterSeatException.html#a968460b38d7c6c517cdc659ee0b5b288',1,'BoosterSeat::BoosterSeatException']]],
   ['exception_2ehpp_55',['exception.hpp',['../exception_8hpp.html',1,'']]],
-  ['exists_56',['Exists',['../namespaceassertions.html#a2f953f5375dfaa98583a4d43475caf25',1,'assertions']]],
-  ['exists_57',['exists',['../namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c',1,'internal']]]
+  ['exists_56',['exists',['../namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c',1,'internal']]],
+  ['exists_57',['Exists',['../namespaceassertions.html#a2f953f5375dfaa98583a4d43475caf25',1,'assertions']]]
 ];
