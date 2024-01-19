@@ -1,3 +1,4 @@
+if (MAIN_PROJECT)
 include(FetchContent)
 FetchContent_Declare(
 	googletest
@@ -6,6 +7,7 @@ FetchContent_Declare(
 	)
 FetchContent_MakeAvailable(googletest)
 include(GoogleTest)
+endif()
 
 add_executable(unit_tests
   stopwatch_test.cpp
