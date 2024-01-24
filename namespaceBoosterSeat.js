@@ -36,7 +36,6 @@ var namespaceBoosterSeat =
       [ "dateAndTimeToTimePoint", "namespaceBoosterSeat_1_1time.html#a6acb73ab0c84e4784d78221210e55c1e", null ]
     ] ],
     [ "BoosterSeatException", "classBoosterSeat_1_1BoosterSeatException.html", "classBoosterSeat_1_1BoosterSeatException" ],
-    [ "RollingAverage", "classBoosterSeat_1_1RollingAverage.html", "classBoosterSeat_1_1RollingAverage" ],
     [ "Stopwatch", "classBoosterSeat_1_1Stopwatch.html", "classBoosterSeat_1_1Stopwatch" ],
     [ "ErrorNumber", "namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941c", [
       [ "UNSPECIFIED", "namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941ca1c04cc3823d476c3017238679a0fdf52", null ],

@@ -1,8 +1,5 @@
 var NAVTREEINDEX1 =
 {
-"namespaceBoosterSeat_1_1clck.html#a7f49628db7507499f40d439db919173f":[3,0,1,0,8],
-"namespaceBoosterSeat_1_1clck.html#a88b28985cce1667988a66e876fc507e1":[3,0,1,0,6],
-"namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d":[3,0,1,0,4],
 "namespaceBoosterSeat_1_1clck.html#ac697273b3bd88fdcabcc7839912da23d":[3,0,1,0,3],
 "namespaceBoosterSeat_1_1clck.html#ac8690b82391dc0cf30fda7754a2ebc22":[3,0,1,0,1],
 "namespaceBoosterSeat_1_1clck.html#afafe6029a205acad80604de5eaac62d7":[3,0,1,0,5],

@@ -6,6 +6,7 @@ var namespacebst =
       [ "TWO_PI", "namespacebst_1_1math.html#af7c6ceadbc4103bd5d79f28b3ca81f30", null ],
       [ "D2R", "namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e", null ]
     ] ],
+    [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ],
     [ "Time", "classbst_1_1Time.html", "classbst_1_1Time" ],
     [ "Timer", "classbst_1_1Timer.html", "classbst_1_1Timer" ]
 ];

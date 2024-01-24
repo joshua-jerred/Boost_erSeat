@@ -17,7 +17,7 @@ var files_dup =
     [ "random.hpp", "random_8hpp.html", "random_8hpp" ],
     [ "rolling_average.cpp", "rolling__average_8cpp.html", null ],
     [ "rolling_average.hpp", "rolling__average_8hpp.html", [
-      [ "RollingAverage", "classBoosterSeat_1_1RollingAverage.html", "classBoosterSeat_1_1RollingAverage" ]
+      [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ]
     ] ],
     [ "rolling_average_test.cpp", "rolling__average__test_8cpp.html", "rolling__average__test_8cpp" ],
     [ "sleep.hpp", "sleep_8hpp.html", "sleep_8hpp" ],

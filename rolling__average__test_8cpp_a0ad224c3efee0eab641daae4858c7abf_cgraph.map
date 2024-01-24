@@ -1,6 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,78,60,105"/>
-<area shape="rect" id="node2" href="$classBoosterSeat_1_1RollingAverage.html#a33c74423b0c8de287e5b37be30d986d4" title="This method increases the &#39;count&#39; within the current interval." alt="" coords="108,5,315,47"/>
-<area shape="rect" id="node3" href="$classBoosterSeat_1_1RollingAverage.html#a5d187eab72c312ce4ab296e9c2c89bef" title="This method returns the rolling average." alt="" coords="108,71,315,112"/>
-<area shape="rect" id="node4" href="$classBoosterSeat_1_1RollingAverage.html#ad927809ecf661a73615742a9f9c465d7" title="This method should be called at the end of a set interval." alt="" coords="108,136,315,177"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,46,60,73"/>
+<area shape="rect" id="node2" href="$classbst_1_1RollingAverage.html#a067459862a6d24cc0be83d1087faf6e4" title=" " alt="" coords="108,5,256,47"/>
+<area shape="rect" id="node3" href="$classbst_1_1RollingAverage.html#a4e6671bdb7bbd8242a6059a15e805b49" title="This method returns the rolling average." alt="" coords="108,71,256,112"/>
 </map>

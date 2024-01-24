@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['rollingaverage_235',['RollingAverage',['../classBoosterSeat_1_1RollingAverage.html',1,'BoosterSeat']]]
+  ['rollingaverage_233',['RollingAverage',['../classbst_1_1RollingAverage.html',1,'bst']]]
 ];
