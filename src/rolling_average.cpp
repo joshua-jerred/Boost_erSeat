@@ -1,18 +1,13 @@
 #include <BoosterSeat/rolling_average.hpp>
 
-using namespace BoosterSeat;
+namespace bst {
 
 RollingAverage::RollingAverage(int window_size) : window_size_(window_size) {
 }
 
-void RollingAverage::count(double count) {
-  count_ += count;
-}
-
-void RollingAverage::intervalCall() {
-  queue_.push(count_);
-  sum_ += count_;
-  count_ = 0.0;
+void RollingAverage::addValue(double value) {
+  queue_.push(value);
+  sum_ += value;
 
   if (queue_.size() > window_size_) {
     sum_ -= queue_.front(); // remove the oldest transaction count from the sum
@@ -27,3 +22,5 @@ double RollingAverage::getAverage() const {
   }
   return sum_ / size;
 }
+
+} // namespace bst
