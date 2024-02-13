@@ -12,12 +12,12 @@
 #include <BoosterSeat/geo.hpp>
 #include <ostream>
 
-namespace BoosterSeat {
+namespace bst {
 namespace geo {
 
 // std::ostream &operator<<(std::ostream &os, const geo::Point &point);
 
 } // namespace geo
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif /* GEO_STRINGS_HPP_ */

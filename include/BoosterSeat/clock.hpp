@@ -3,7 +3,7 @@
 
 #include <chrono>
 
-namespace BoosterSeat {
+namespace bst {
 namespace clck {
 
 namespace units {
@@ -39,6 +39,6 @@ inline TimePoint fromTimeT(time_t time) {
 }
 
 } // namespace clck
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif

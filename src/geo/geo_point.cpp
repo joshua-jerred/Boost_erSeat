@@ -10,14 +10,13 @@ Point::Point() : lat_(0.0), lon_(0.0) {
 
 Point::Point(double lat, double lon) : lat_(lat), lon_(lon) {
   if (lat < -90.0 || lat > 90.0) {
-    throw BoosterSeat::BoosterSeatException(
-        "Latitude must be between -90.0 and 90.0",
-        BoosterSeat::ErrorNumber::GEO_INVALID_LATITUDE);
+    throw bst::BoosterSeatException("Latitude must be between -90.0 and 90.0",
+                                    bst::ErrorNumber::GEO_INVALID_LATITUDE);
   }
   if (lon < -180.0 || lon > 180.0) {
-    throw BoosterSeat::BoosterSeatException(
+    throw bst::BoosterSeatException(
         "Longitude must be between -180.0 and 180.0",
-        BoosterSeat::ErrorNumber::GEO_INVALID_LONGITUDE);
+        bst::ErrorNumber::GEO_INVALID_LONGITUDE);
   }
 }
 

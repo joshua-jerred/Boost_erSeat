@@ -1,13 +1,16 @@
-if (MAIN_PROJECT)
+# Visual tests
+add_executable(visual_tests
+  visual_tests.cpp
+)
+target_link_libraries(visual_tests BoosterSeat)
+
+# Unit tests
 include(FetchContent)
 FetchContent_Declare(
 	googletest
   GIT_REPOSITORY https://github.com/google/googletest.git
-  GIT_TAG release-1.12.1
-	)
+  GIT_TAG v1.14.0)
 FetchContent_MakeAvailable(googletest)
-include(GoogleTest)
-endif()
 
 add_executable(unit_tests
   stopwatch_test.cpp
@@ -16,10 +19,12 @@ add_executable(unit_tests
   rolling_average_test.cpp
   geo_test.cpp
   time_class_test.cpp
+  process_test.cpp
 )
-target_link_libraries(unit_tests BoosterSeat gtest_main)
+target_link_libraries(unit_tests 
+  BoosterSeat
+  GTest::gtest_main
+)
 
-add_executable(visual_tests
-  visual_tests.cpp
-)
-target_link_libraries(visual_tests BoosterSeat)
+include(GoogleTest)
+gtest_discover_tests(unit_tests)

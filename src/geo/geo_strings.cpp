@@ -2,7 +2,7 @@
 #include <BoosterSeat/geo_strings.hpp>
 #include <BoosterSeat/numbers.hpp>
 
-namespace BoosterSeat {
+namespace bst {
 
 inline constexpr int kPrecision = 6;
 
@@ -12,4 +12,4 @@ std::ostream &geo::operator<<(std::ostream &os, const geo::Point &point) {
   return os;
 }
 
-} // namespace BoosterSeat
+} // namespace bst

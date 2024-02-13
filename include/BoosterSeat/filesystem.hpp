@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace BoosterSeat {
+namespace bst {
 namespace filesystem {
 namespace units {
 enum class Size { BITS, BYTES, KILOBYTES, MEGABYTES, GIGABYTES, TERABYTES };
@@ -158,6 +158,6 @@ void moveFile(const std::string &source_path,
 std::string getFileName(const std::string &file_path);
 
 } // namespace filesystem
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif

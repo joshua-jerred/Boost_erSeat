@@ -3,7 +3,7 @@
 
 #include <string>
 
-namespace BoosterSeat {
+namespace bst {
 
 /**
  * @brief Checks if a string contains a substring
@@ -41,6 +41,6 @@ inline bool containsSuffix(const std::string &str, const std::string &suffix) {
   return str.rfind(suffix) == str.size() - suffix.size();
 }
 
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif /* STRING_UTILS_HPP_ */

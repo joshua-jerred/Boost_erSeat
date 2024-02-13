@@ -18,8 +18,8 @@
  */
 #define NO_PERM_CHECKS
 
-namespace bsfs = BoosterSeat::filesystem;
-using namespace BoosterSeat;
+namespace bsfs = bst::filesystem;
+using namespace bst;
 
 inline void createFileOfSizeMb(const std::string file_path,
                                const int file_size_mb) {

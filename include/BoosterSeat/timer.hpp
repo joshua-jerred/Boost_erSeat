@@ -44,7 +44,7 @@ public:
   void setDone();
 
 private:
-  BoosterSeat::clck::TimePoint start_ = BoosterSeat::clck::Clock::now();
+  bst::clck::TimePoint start_ = bst::clck::Clock::now();
   int timeout_ms_;
 };
 } // namespace bst

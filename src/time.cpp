@@ -7,13 +7,13 @@
 
 #include <iostream> /// @todo remove
 
-inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time);
+inline std::tm getTm(const bst::time::TimeZone time_zone, time_t time);
 inline std::string timeFormatString(const char delimiter);
 inline std::string dateFormatString(const char delimiter);
 
-std::string BoosterSeat::time::elapsedAsciiClock(
-    const BoosterSeat::clck::TimePoint &time_point) {
-  int seconds = BoosterSeat::clck::secondsElapsed(time_point);
+std::string
+bst::time::elapsedAsciiClock(const bst::clck::TimePoint &time_point) {
+  int seconds = bst::clck::secondsElapsed(time_point);
   int minutes = seconds / 60;
   int hours = minutes / 60;
   seconds %= 60;
@@ -36,17 +36,16 @@ std::string BoosterSeat::time::elapsedAsciiClock(
   return hours_str + ":" + minutes_str + ":" + seconds_str;
 }
 
-std::string
-BoosterSeat::time::timeString(TimeZone time_zone, char delimiter,
-                              BoosterSeat::clck::TimePoint time_point) {
-  std::time_t time = BoosterSeat::clck::toTimeT(time_point);
+std::string bst::time::timeString(TimeZone time_zone, char delimiter,
+                                  bst::clck::TimePoint time_point) {
+  std::time_t time = bst::clck::toTimeT(time_point);
   std::tm tm = getTm(time_zone, time);
   std::stringstream ss;
   ss << std::put_time(&tm, timeFormatString(delimiter).c_str());
   return ss.str();
 }
 
-std::string BoosterSeat::time::dateString(TimeZone time_zone, char delimiter) {
+std::string bst::time::dateString(TimeZone time_zone, char delimiter) {
   auto time = std::time(nullptr);
   std::tm tm = getTm(time_zone, time);
   std::stringstream ss;
@@ -54,10 +53,12 @@ std::string BoosterSeat::time::dateString(TimeZone time_zone, char delimiter) {
   return ss.str();
 }
 
-std::string BoosterSeat::time::dateAndTimeString(
-    TimeZone time_zone, char date_delimiter, char between_delimiter,
-    char time_delimiter, BoosterSeat::clck::TimePoint time_point) {
-  auto time = BoosterSeat::clck::toTimeT(time_point);
+std::string bst::time::dateAndTimeString(TimeZone time_zone,
+                                         char date_delimiter,
+                                         char between_delimiter,
+                                         char time_delimiter,
+                                         bst::clck::TimePoint time_point) {
+  auto time = bst::clck::toTimeT(time_point);
   std::tm tm = getTm(time_zone, time);
 
   std::string format_string = dateFormatString(date_delimiter) +
@@ -69,9 +70,9 @@ std::string BoosterSeat::time::dateAndTimeString(
   return ss.str();
 }
 
-BoosterSeat::clck::TimePoint
-BoosterSeat::time::dateAndTimeToTimePoint(int year, int month, int day,
-                                          int hour, int minute, int second) {
+bst::clck::TimePoint bst::time::dateAndTimeToTimePoint(int year, int month,
+                                                       int day, int hour,
+                                                       int minute, int second) {
   std::tm tm;
   tm.tm_year = std::clamp(year - 1900, 0, 9999);
   tm.tm_mon = std::clamp(month - 1, 0, 11);
@@ -83,25 +84,25 @@ BoosterSeat::time::dateAndTimeToTimePoint(int year, int month, int day,
 
   std::time_t time = std::mktime(&tm);
   if (time == -1) {
-    throw BoosterSeat::BoosterSeatException(
-        "Invalid time", BoosterSeat::ErrorNumber::TIME_INVALID_TIME);
+    throw bst::BoosterSeatException("Invalid time",
+                                    bst::ErrorNumber::TIME_INVALID_TIME);
   }
 
-  return BoosterSeat::clck::fromTimeT(time);
+  return bst::clck::fromTimeT(time);
 }
 
-inline std::tm getTm(const BoosterSeat::time::TimeZone time_zone, time_t time) {
+inline std::tm getTm(const bst::time::TimeZone time_zone, time_t time) {
   std::tm tm;
   switch (time_zone) {
-  case BoosterSeat::time::TimeZone::UTC:
+  case bst::time::TimeZone::UTC:
     tm = *std::gmtime(&time);
     break;
-  case BoosterSeat::time::TimeZone::LOCAL:
+  case bst::time::TimeZone::LOCAL:
     tm = *std::localtime(&time);
     break;
   default:
-    throw BoosterSeat::BoosterSeatException(
-        "Invalid time zone", BoosterSeat::ErrorNumber::TIME_INVALID_TIMEZONE);
+    throw bst::BoosterSeatException("Invalid time zone",
+                                    bst::ErrorNumber::TIME_INVALID_TIMEZONE);
   }
   return tm;
 }

@@ -1,4 +1,4 @@
-name: BoosterSeat Tests (C++ CI)
+name: BoosterSeat CI
 
 on:
   push:
@@ -7,7 +7,8 @@ on:
     branches: [ "main" ]
 
 jobs:
-  build:
+  unit_tests:
+    name: Build Library & Run Unit Tests
     runs-on: ubuntu-latest
     steps:
     - uses: actions/checkout@v3
@@ -20,24 +21,11 @@ jobs:
       run: |
         cd build
         make BoosterSeat
-
-  unit_tests:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-    - uses: actions/checkout@v3
-    - name: Install GTest
-      run: sudo apt-get install libgtest-dev && cd /usr/src/gtest && sudo cmake CMakeLists.txt && sudo make && sudo cp lib/*.a /usr/lib && sudo ln -s /usr/lib/libgtest.a /usr/local/lib/libgtest.a && sudo ln -s /usr/lib/libgtest_main.a /usr/local/lib/libgtest_main.a
-    - name: Configure CMake
-      run: |
-        mkdir build
-        cd build
-        cmake ..
     - name: Build Tests
       run: |
         cd build
         make unit_tests
     - name: Run Tests
       run: |
-        cd build/tests
-        ./unit_tests
+        cd build
+        ctest
