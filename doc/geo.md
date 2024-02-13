@@ -27,6 +27,12 @@ int main() {
 ```
 
 ## Geo Path
+
+It's a path.
+
+The `Path` class simply stores a sequence of `Point` objects and provides
+methods for working with them.
+
 ```cpp
 #include <BoosterSeat/geo.hpp>
 #include <iostream>
