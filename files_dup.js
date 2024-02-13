@@ -26,6 +26,9 @@ var files_dup =
       [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ]
     ] ],
     [ "rolling_average_test.cpp", "rolling__average__test_8cpp.html", "rolling__average__test_8cpp" ],
+    [ "science.cpp", "science_8cpp.html", null ],
+    [ "science.hpp", "science_8hpp.html", "science_8hpp" ],
+    [ "science_test.cpp", "science__test_8cpp.html", "science__test_8cpp" ],
     [ "sleep.hpp", "sleep_8hpp.html", "sleep_8hpp" ],
     [ "stopwatch.cpp", "stopwatch_8cpp.html", null ],
     [ "stopwatch.hpp", "stopwatch_8hpp.html", "stopwatch_8hpp" ],

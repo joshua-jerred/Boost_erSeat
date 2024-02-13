@@ -6,6 +6,7 @@ var annotated_dup =
         [ "Point", "classbst_1_1geo_1_1Point.html", "classbst_1_1geo_1_1Point" ]
       ] ],
       [ "BoosterSeatException", "classbst_1_1BoosterSeatException.html", "classbst_1_1BoosterSeatException" ],
+      [ "Pressure", "classbst_1_1Pressure.html", "classbst_1_1Pressure" ],
       [ "Process", "classbst_1_1Process.html", "classbst_1_1Process" ],
       [ "raii_char_str", "structbst_1_1raii__char__str.html", "structbst_1_1raii__char__str" ],
       [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ],

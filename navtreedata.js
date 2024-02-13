@@ -25,8 +25,8 @@
 var NAVTREE =
 [
   [ "BoosterSeat", "index.html", [
-    [ "Modules", "index.html#autotoc_md11", null ],
-    [ "Using with CMake", "index.html#autotoc_md12", null ],
+    [ "Modules", "index.html#autotoc_md16", null ],
+    [ "Using with CMake", "index.html#autotoc_md17", null ],
     [ "[BST module] Process", "md_doc_process.html", [
       [ "Example: Basic usage", "md_doc_process.html#autotoc_md1", null ],
       [ "Example: Write additional input to stdin", "md_doc_process.html#autotoc_md2", null ],
@@ -40,6 +40,13 @@ var NAVTREE =
         [ "Random hex string", "md_doc_random.html#autotoc_md9", null ]
       ] ],
       [ "Random Double", "md_doc_random.html#autotoc_md10", null ]
+    ] ],
+    [ "[BST module] Science", "md_doc_science.html", [
+      [ "Constants", "md_doc_science.html#autotoc_md12", null ],
+      [ "Pressure Conversions", "md_doc_science.html#autotoc_md13", [
+        [ "<tt>bst::Pressure</tt> class", "md_doc_science.html#autotoc_md14", null ],
+        [ "Example", "md_doc_science.html#autotoc_md15", null ]
+      ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -77,7 +84,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespacebst.html#a68398b76b4bf04318c1e0978a251452f"
+"md_doc_random.html#autotoc_md7"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

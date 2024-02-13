@@ -56,6 +56,7 @@ var namespacebst =
       [ "dateAndTimeToTimePoint", "namespacebst_1_1time.html#aca4cce38cce328fe585429b4d6008034", null ]
     ] ],
     [ "BoosterSeatException", "classbst_1_1BoosterSeatException.html", "classbst_1_1BoosterSeatException" ],
+    [ "Pressure", "classbst_1_1Pressure.html", "classbst_1_1Pressure" ],
     [ "Process", "classbst_1_1Process.html", "classbst_1_1Process" ],
     [ "raii_char_str", "structbst_1_1raii__char__str.html", "structbst_1_1raii__char__str" ],
     [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ],
@@ -97,5 +98,6 @@ var namespacebst =
     [ "containsSuffix", "namespacebst.html#ae663403a6b00abe91e6778da8f0cdf6e", null ],
     [ "kPrecision", "namespacebst.html#a1b16c253cfdfc8e1764da6a258b7d759", null ],
     [ "K_PIPE_READ", "namespacebst.html#a78ccb9ecbafa05781e3220560ec82315", null ],
-    [ "K_PIPE_WRITE", "namespacebst.html#ab679f1c68d609480fa512a3bc98ccac0", null ]
+    [ "K_PIPE_WRITE", "namespacebst.html#ab679f1c68d609480fa512a3bc98ccac0", null ],
+    [ "K_GRAVITY", "namespacebst.html#a704925437260faf46c6c1da76c30188f", null ]
 ];

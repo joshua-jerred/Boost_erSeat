@@ -2,6 +2,7 @@ var hierarchy =
 [
     [ "bst::geo::Path", "classbst_1_1geo_1_1Path.html", null ],
     [ "bst::geo::Point", "classbst_1_1geo_1_1Point.html", null ],
+    [ "bst::Pressure", "classbst_1_1Pressure.html", null ],
     [ "bst::Process", "classbst_1_1Process.html", null ],
     [ "bst::raii_char_str", "structbst_1_1raii__char__str.html", null ],
     [ "bst::RollingAverage", "classbst_1_1RollingAverage.html", null ],
