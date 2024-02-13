@@ -204,9 +204,12 @@ Functions</h2></td></tr>
 <tr class="separator:a08c1b260871c8845637293587ed620ba"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a58c60bf2f30f989d4fef310408442a05"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a58c60bf2f30f989d4fef310408442a05">isApproxEqualPercent</a> (const double a, const double b, const double percent)</td></tr>
 <tr class="separator:a58c60bf2f30f989d4fef310408442a05"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a07869bc3c381dbee6b4c113c79f71d07"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a07869bc3c381dbee6b4c113c79f71d07">randomHexString</a> (unsigned int length)</td></tr>
-<tr class="memdesc:a07869bc3c381dbee6b4c113c79f71d07"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random hex string of the given length.  <a href="namespacebst.html#a07869bc3c381dbee6b4c113c79f71d07">More...</a><br /></td></tr>
-<tr class="separator:a07869bc3c381dbee6b4c113c79f71d07"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af1364a98ac0b56a5ad1978243ac39807"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#af1364a98ac0b56a5ad1978243ac39807">randomDouble</a> (double min, double max)</td></tr>
+<tr class="memdesc:af1364a98ac0b56a5ad1978243ac39807"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random double within the given range.  <a href="namespacebst.html#af1364a98ac0b56a5ad1978243ac39807">More...</a><br /></td></tr>
+<tr class="separator:af1364a98ac0b56a5ad1978243ac39807"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8e431e619e293fdafdbe0a5fed29f9ad"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a8e431e619e293fdafdbe0a5fed29f9ad">randomHexString</a> (size_t length)</td></tr>
+<tr class="memdesc:a8e431e619e293fdafdbe0a5fed29f9ad"><td class="mdescLeft">&#160;</td><td class="mdescRight">Generates a random hex string of the given length.  <a href="namespacebst.html#a8e431e619e293fdafdbe0a5fed29f9ad">More...</a><br /></td></tr>
+<tr class="separator:a8e431e619e293fdafdbe0a5fed29f9ad"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a48790b6394622a82265ae2d95aabf58f"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a48790b6394622a82265ae2d95aabf58f">rndTs</a> (double d, int precision)</td></tr>
 <tr class="separator:a48790b6394622a82265ae2d95aabf58f"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:a68398b76b4bf04318c1e0978a251452f"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a68398b76b4bf04318c1e0978a251452f">sleep</a> (int32_t milliseconds)</td></tr>
@@ -504,8 +507,8 @@ Here is the caller graph for this function:</div>
 
 </div>
 </div>
-<a id="a07869bc3c381dbee6b4c113c79f71d07"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a07869bc3c381dbee6b4c113c79f71d07">&#9670;&nbsp;</a></span>randomHexString()</h2>
+<a id="a8e431e619e293fdafdbe0a5fed29f9ad"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8e431e619e293fdafdbe0a5fed29f9ad">&#9670;&nbsp;</a></span>randomHexString()</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -513,7 +516,7 @@ Here is the caller graph for this function:</div>
         <tr>
           <td class="memname">std::string bst::randomHexString </td>
           <td>(</td>
-          <td class="paramtype">unsigned int&#160;</td>
+          <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>length</em></td><td>)</td>
           <td></td>
         </tr>
@@ -529,11 +532,57 @@ Here is the caller graph for this function:</div>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>std::string - The generated string. </dd></dl>
 
-<p class="reference">Referenced by <a class="el" href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, and <a class="el" href="random__test_8cpp.html#afdd824a758d938269b2e797a0eb5128b">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_a07869bc3c381dbee6b4c113c79f71d07_icgraph.svg" width="278" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_a8e431e619e293fdafdbe0a5fed29f9ad_icgraph.svg" width="278" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="af1364a98ac0b56a5ad1978243ac39807"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af1364a98ac0b56a5ad1978243ac39807">&#9670;&nbsp;</a></span>randomDouble()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">double bst::randomDouble </td>
+          <td>(</td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>min</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">double&#160;</td>
+          <td class="paramname"><em>max</em>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Generates a random double within the given range. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">min</td><td>- The minimum value of the range. </td></tr>
+    <tr><td class="paramname">max</td><td>- The maximum value of the range. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double - The generated random double. </dd></dl>
+
+<p class="reference">Referenced by <a class="el" href="random__test_8cpp.html#a91b18c18d402c96473592596873c2031">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_af1364a98ac0b56a5ad1978243ac39807_icgraph.svg" width="260" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

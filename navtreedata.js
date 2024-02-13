@@ -25,14 +25,21 @@
 var NAVTREE =
 [
   [ "BoosterSeat", "index.html", [
-    [ "Modules", "index.html#autotoc_md6", null ],
-    [ "Using with CMake", "index.html#autotoc_md7", null ],
+    [ "Modules", "index.html#autotoc_md11", null ],
+    [ "Using with CMake", "index.html#autotoc_md12", null ],
     [ "[BST module] Process", "md_doc_process.html", [
-      [ "Example 1: Basic usage", "md_doc_process.html#autotoc_md1", null ],
+      [ "Example: Basic usage", "md_doc_process.html#autotoc_md1", null ],
       [ "Example: Write additional input to stdin", "md_doc_process.html#autotoc_md2", null ],
       [ "Example: Non-zero command exit codes", "md_doc_process.html#autotoc_md3", null ],
       [ "Example: Commands that do not exist", "md_doc_process.html#autotoc_md4", null ],
       [ "Example: Command timeout", "md_doc_process.html#autotoc_md5", null ]
+    ] ],
+    [ "[BST module] Random", "md_doc_random.html", [
+      [ "Functions", "md_doc_random.html#autotoc_md7", null ],
+      [ "Examples:", "md_doc_random.html#autotoc_md8", [
+        [ "Random hex string", "md_doc_random.html#autotoc_md9", null ]
+      ] ],
+      [ "Random Double", "md_doc_random.html#autotoc_md10", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Namespaces", "namespaces.html", [
@@ -70,7 +77,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46"
+"namespacebst.html#a68398b76b4bf04318c1e0978a251452f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

@@ -20,6 +20,7 @@ var files_dup =
     [ "process_test.cpp", "process__test_8cpp.html", "process__test_8cpp" ],
     [ "random.cpp", "random_8cpp.html", null ],
     [ "random.hpp", "random_8hpp.html", "random_8hpp" ],
+    [ "random_test.cpp", "random__test_8cpp.html", "random__test_8cpp" ],
     [ "rolling_average.cpp", "rolling__average_8cpp.html", null ],
     [ "rolling_average.hpp", "rolling__average_8hpp.html", [
       [ "RollingAverage", "classbst_1_1RollingAverage.html", "classbst_1_1RollingAverage" ]

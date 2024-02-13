@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="random_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="random_8hpp.html" target="_top" xlink:title="The BoosterSeat random module.">
 <polygon fill="none" stroke="black" points="0,-185 0,-204 137,-204 137,-185 0,-185"/>
 <text text-anchor="middle" x="68.5" y="-192" font-family="Helvetica,sans-Serif" font-size="10.00">BoosterSeat/random.hpp</text>
 </a>
