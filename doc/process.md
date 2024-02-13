@@ -6,7 +6,7 @@ This is a major refactor of the project [cpp-subprocess](https://github.com/tsaa
 
 Detailed class documentation can be found [here](@ref bst::Process).
 
-## Example 1: Basic usage
+## Example: Basic usage
 ```cpp
 #include <BoosterSeat/process.hpp>
 #include <iostream>

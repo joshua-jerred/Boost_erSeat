@@ -20,6 +20,7 @@ add_executable(unit_tests
   geo_test.cpp
   time_class_test.cpp
   process_test.cpp
+  random_test.cpp
 )
 target_link_libraries(unit_tests 
   BoosterSeat
