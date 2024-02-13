@@ -27,5 +27,5 @@ jobs:
         make unit_tests
     - name: Run Tests
       run: |
-        cd build/tests
-        ./unit_tests
+        cd build
+        ctest
