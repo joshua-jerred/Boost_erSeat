@@ -1,6 +1,6 @@
 #include <BoosterSeat/timer.hpp>
 
-using namespace bst;
+namespace bst {
 
 Timer::Timer(int timeout_ms) : timeout_ms_(timeout_ms) {
   if (timeout_ms < 0) {
@@ -30,3 +30,5 @@ void Timer::setTimeout(int timeout_ms) {
 void Timer::setDone() {
   start_ = bst::clck::Clock::now() - std::chrono::milliseconds(timeout_ms_);
 }
+
+} // namespace bst

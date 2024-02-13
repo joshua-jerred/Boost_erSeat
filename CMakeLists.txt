@@ -1,8 +1,8 @@
 cmake_minimum_required(VERSION 3.14)
 
-project(BoosterSeat VERSION 1.0)
+project(BoosterSeat VERSION 1.1)
 
-## Check if SignalEasel is being used directly or via add_subdirectory
+## Check if BoosterSeat is being used directly or via add_subdirectory
 set(BST_MAIN_PROJECT OFF)
 if (CMAKE_CURRENT_SOURCE_DIR STREQUAL CMAKE_SOURCE_DIR)
     set(BST_MAIN_PROJECT ON)
@@ -33,5 +33,7 @@ target_include_directories(BoosterSeat PUBLIC include)
 target_sources(BoosterSeat PRIVATE ${ALL_SOURCE_FILES})
 
 if (BST_MAIN_PROJECT)
+  include(CTest)
+  enable_testing()
   add_subdirectory(tests)
 endif()

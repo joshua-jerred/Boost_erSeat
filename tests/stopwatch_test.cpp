@@ -5,43 +5,42 @@
 
 #include "gtest/gtest.h"
 
-using namespace bst;
-
 void secondsEq(const double a, const double b, const double epsilon) {
   EXPECT_LE(std::abs(a - b), epsilon);
 }
 
 TEST(StopwatchTest, DefaultConstructor) {
-  Stopwatch stopwatch;
-  EXPECT_EQ(stopwatch.state(), Stopwatch::State::STOPPED);
+  bst::Stopwatch stopwatch;
+  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::STOPPED);
   EXPECT_EQ(stopwatch.elapsed(), 0.0);
 }
 
 TEST(StopwatchTest, StartAndStop) {
-  Stopwatch stopwatch;
+  bst::Stopwatch stopwatch;
   stopwatch.start();
-  EXPECT_EQ(stopwatch.state(), Stopwatch::State::RUNNING);
+  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::RUNNING);
   stopwatch.stop();
-  EXPECT_EQ(stopwatch.state(), Stopwatch::State::STOPPED);
+  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::STOPPED);
 }
 
 TEST(Stopwatch, Units) {
   constexpr double kEpsilon = 0.001;
 
-  Stopwatch stopwatch;
+  bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(10);
   stopwatch.stop();
-  secondsEq(stopwatch.elapsed(Resolution::SECONDS), 0.01, kEpsilon);
-  secondsEq(stopwatch.elapsed(Resolution::MILLISECONDS), 10.0, kEpsilon * 1000);
-  secondsEq(stopwatch.elapsed(Resolution::MICROSECONDS), 10000.0,
+  secondsEq(stopwatch.elapsed(bst::Resolution::SECONDS), 0.01, kEpsilon);
+  secondsEq(stopwatch.elapsed(bst::Resolution::MILLISECONDS), 10.0,
+            kEpsilon * 1000);
+  secondsEq(stopwatch.elapsed(bst::Resolution::MICROSECONDS), 10000.0,
             kEpsilon * 1000000);
 }
 
 TEST(StopwatchTest, KeepsRunningTotal) {
   constexpr double kEpsilon = 0.001;
 
-  Stopwatch stopwatch;
+  bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(10);
   stopwatch.stop();

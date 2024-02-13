@@ -1,6 +1,6 @@
 #include "BoosterSeat/stopwatch.hpp"
 
-using namespace bst;
+namespace bst {
 
 Stopwatch::Stopwatch() {
   state_ = State::STOPPED;
@@ -63,3 +63,5 @@ double Stopwatch::elapsed(Resolution resolution) const {
     throw BoosterSeatException("Invalid resolution.");
   }
 }
+
+} // namespace bst

@@ -31,7 +31,7 @@ typedef std::filesystem::recursive_directory_iterator RecursiveDirIter;
 /**
  * @brief Internal inline functions used only in this file.
  */
-namespace bst::internal {
+namespace bst::fs_int {
 inline bool exists(const Path &path) {
   return std::filesystem::exists(path);
 }
@@ -110,8 +110,8 @@ inline double convertMbToUnit(const double size_mb,
  * @param path - The path to check.
  * @exception BoosterSeatException - If the path does not exist.
  */
-inline void Exists(const Path &path) {
-  if (!internal::exists(path)) {
+inline void assertExists(const Path &path) {
+  if (!fs_int::exists(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_DOES_NOT_EXIST);
   }
@@ -122,8 +122,8 @@ inline void Exists(const Path &path) {
  * @param path - The path to check.
  * @exception BoosterSeatException - If the path does exist.
  */
-inline void DoesNotExist(const Path &path) {
-  if (internal::exists(path)) {
+inline void assertDoesNotExist(const Path &path) {
+  if (fs_int::exists(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_ALREADY_EXISTS);
   }
@@ -135,8 +135,8 @@ inline void DoesNotExist(const Path &path) {
  * @param path - The path to check.
  * @exception BoosterSeatException - If the path does not exist or is not a
  */
-inline void IsRegularFile(const Path &path) {
-  bst::internal::Exists(path);
+inline void assertIsRegularFile(const Path &path) {
+  bst::fs_int::assertExists(path);
   if (!std::filesystem::is_regular_file(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_NOT_REGULAR_FILE);
@@ -149,8 +149,8 @@ inline void IsRegularFile(const Path &path) {
  * @param path - The path to check.
  * @exception BoosterSeatException - If the path does not exist or is not a
  */
-inline void IsDirectory(const Path &path) {
-  bst::internal::Exists(path);
+inline void assertIsDirectory(const Path &path) {
+  bst::fs_int::assertExists(path);
   if (!std::filesystem::is_directory(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_NOT_DIRECTORY);
@@ -165,7 +165,7 @@ inline void IsDirectory(const Path &path) {
  * @param file - The fstream object to check.
  */
 template <typename T>
-inline void FileValid(const Path &path, T &file) {
+inline void assertFileValid(const Path &path, T &file) {
   // Template type validation.
   static_assert(std::is_same<T, std::ifstream>::value ||
                     std::is_same<T, std::ofstream>::value,
@@ -186,9 +186,9 @@ inline void FileValid(const Path &path, T &file) {
  * @exception BoosterSeatException - If the file does not have write
  * permissions.
  */
-inline void WritePermissions(const Path &path) {
+inline void assertWritePermissions(const Path &path) {
 
-  if (internal::has_write_permission(path)) {
+  if (fs_int::has_write_permission(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_NO_WRITE_PERMISSIONS);
   }
@@ -199,24 +199,24 @@ inline void WritePermissions(const Path &path) {
  * @param path
  * @exception BoosterSeatException - If the file does not have read permissions.
  */
-inline void ReadPermissions(const Path &path) {
-  if (internal::has_read_permissions(path)) {
+inline void assertReadPermissions(const Path &path) {
+  if (fs_int::has_read_permissions(path)) {
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_NO_READ_PERMISSIONS);
   }
 }
 
-} // namespace bst::internal
+} // namespace bst::fs_int
 
 // -- Public functions --------------------------------------------------------
 // All documentation is in the header file.
 
 bool fs::doesFileExist(const std::string &file_path) {
   Path path(file_path);
-  if (!internal::exists(path)) {
+  if (!fs_int::exists(path)) {
     return false;
   }
-  if (!internal::is_file(
+  if (!fs_int::is_file(
           path)) { // The object is not a file (probably a directory).
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_NOT_REGULAR_FILE);
@@ -226,62 +226,62 @@ bool fs::doesFileExist(const std::string &file_path) {
 
 void fs::createFile(const std::string &file_path) {
   Path path(file_path);
-  bst::internal::DoesNotExist(path);    // The file should not exist.
-  std::ofstream file(file_path);        // Create the file.
-  bst::internal::FileValid(path, file); // Check the file is valid.
+  bst::fs_int::assertDoesNotExist(path);    // The file should not exist.
+  std::ofstream file(file_path);            // Create the file.
+  bst::fs_int::assertFileValid(path, file); // Check the file is valid.
 }
 
 void fs::appendToFile(const std::string &file_path, const std::string &data,
                       const bool new_line_after) {
   Path path(file_path);
-  bst::internal::IsRegularFile(path);
+  bst::fs_int::assertIsRegularFile(path);
 
   std::ofstream file(file_path, std::ios::app); // Open the file in append mode.
 
-  bst::internal::FileValid(path, file);
+  bst::fs_int::assertFileValid(path, file);
   file << data;         // Write the data to the file.
   if (new_line_after) { // Add a new line if required.
     file << std::endl;
   }
-  bst::internal::FileValid(path, file);
+  bst::fs_int::assertFileValid(path, file);
 }
 
 void fs::overwriteFile(const std::string &file_path,
                        const std::string &content) {
   Path path(file_path);
-  bst::internal::IsRegularFile(path);
+  bst::fs_int::assertIsRegularFile(path);
 
   std::ofstream file(file_path, std::ios::trunc); // Open the file in truncate
                                                   // mode. (Overwrite)
 
-  bst::internal::FileValid(path, file);
+  bst::fs_int::assertFileValid(path, file);
   file << content; // Write the data to the file.
-  bst::internal::FileValid(path, file);
+  bst::fs_int::assertFileValid(path, file);
 }
 
 double fs::getFileSize(const std::string &file_path,
                        fs::units::Size size_unit) {
   Path path(file_path);
-  bst::internal::IsRegularFile(path);
+  bst::fs_int::assertIsRegularFile(path);
 
-  double size = internal::get_file_size_bytes(path);
+  double size = fs_int::get_file_size_bytes(path);
 
-  return internal::convertMbToUnit(size, size_unit);
+  return fs_int::convertMbToUnit(size, size_unit);
 }
 
 void fs::deleteFile(const std::string &file_path) {
   Path path(file_path);
-  bst::internal::IsRegularFile(path);
-  // bst::internal::WritePermissions(path); // Causing an exception
+  bst::fs_int::assertIsRegularFile(path);
+  // bst::internal::assertWritePermissions(path); // Causing an exception
   std::filesystem::remove(path);
 }
 
 bool fs::doesDirectoryExist(const std::string &directory_path) {
   Path path(directory_path);
-  if (!internal::exists(path)) {
+  if (!fs_int::exists(path)) {
     return false;
   }
-  if (!internal::is_directory(
+  if (!fs_int::is_directory(
           path)) { // The object is not a directory (probably a file).
     throw bs::BoosterSeatException(path.string(),
                                    ErrNum::FS_PATH_NOT_DIRECTORY);
@@ -291,35 +291,35 @@ bool fs::doesDirectoryExist(const std::string &directory_path) {
 
 void fs::createDirectory(const std::string &directory_path) {
   Path path(directory_path);
-  bst::internal::DoesNotExist(path); // The directory should not exist.
+  bst::fs_int::assertDoesNotExist(path); // The directory should not exist.
   std::filesystem::create_directory(path);
 }
 
 double fs::getDirectorySize(const std::string &directory_path,
                             fs::units::Size size_unit) {
   Path path(directory_path);
-  bst::internal::IsDirectory(path);
+  bst::fs_int::assertIsDirectory(path);
 
   double size = 0;
   for (const auto &entry :
        std::filesystem::recursive_directory_iterator(path)) {
     // Ignore everything that is not a regular file.
     if (entry.is_regular_file()) {
-      size += internal::get_file_size_bytes(entry.path());
+      size += fs_int::get_file_size_bytes(entry.path());
     }
   }
 
-  return internal::convertMbToUnit(size, size_unit);
+  return fs_int::convertMbToUnit(size, size_unit);
 }
 
 bool fs::hasWritePermission(const std::string &object_path) {
   Path path(object_path);
-  return internal::has_write_permission(path);
+  return fs_int::has_write_permission(path);
 }
 
 bool fs::hasReadPermission(const std::string &object_path) {
   Path path(object_path);
-  return internal::has_read_permissions(path);
+  return fs_int::has_read_permissions(path);
 }
 
 void fs::moveFile(const std::string &source_file_path,
@@ -331,8 +331,8 @@ void fs::moveFile(const std::string &source_file_path,
 
   Path source_path(source_file_path);
   Path dest_path(dest_file_path);
-  bst::internal::IsRegularFile(source_path);
-  bst::internal::DoesNotExist(dest_path);
+  bst::fs_int::assertIsRegularFile(source_path);
+  bst::fs_int::assertDoesNotExist(dest_path);
   std::filesystem::rename(source_path, dest_path);
 }
 
