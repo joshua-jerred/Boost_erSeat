@@ -1,7 +1,7 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,60,134"/>
-<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1filesystem.html#a9066e0d61a5cb8441c90a65ac1be5ea2" title="Create a Directory at the specified path." alt="" coords="108,5,285,47"/>
-<area shape="rect" id="node3" href="$namespaceBoosterSeat_1_1filesystem.html#afcb362ca0d7dec678919af67d3c96b97" title="Returns a boolean indicating whether or not the file exists. If it&#39;s a directory an exception will be..." alt="" coords="108,71,285,112"/>
-<area shape="rect" id="node4" href="$namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c" title=" " alt="" coords="137,137,256,163"/>
-<area shape="rect" id="node5" href="$namespaceBoosterSeat_1_1filesystem.html#a238717198495d7862701f9e0493ae490" title="Move a file from one location to another." alt="" coords="108,188,285,229"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,93,60,120"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc" title="Create a Directory at the specified path." alt="" coords="108,5,335,32"/>
+<area shape="rect" id="node3" href="$namespacebst_1_1filesystem.html#a298e57b8f775c5135a738deb18a3c681" title="Returns a boolean indicating whether or not the file exists. If it&#39;s a directory an exception will be..." alt="" coords="131,57,311,98"/>
+<area shape="rect" id="node4" href="$namespacebst_1_1fs__int.html#a73c724132cca72a972621d63cfae78e0" title=" " alt="" coords="155,123,288,149"/>
+<area shape="rect" id="node5" href="$namespacebst_1_1filesystem.html#a00eb7de75c46a77694f450a61724d24b" title="Move a file from one location to another." alt="" coords="128,173,315,200"/>
 </map>

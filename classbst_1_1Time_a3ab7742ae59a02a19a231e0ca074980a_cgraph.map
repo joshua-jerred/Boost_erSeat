@@ -1,0 +1,4 @@
+<map id="bst::Time::Time" name="bst::Time::Time">
+<area shape="rect" id="node1" title="Construct a new Time object. Defaults to the epoch." alt="" coords="5,5,129,32"/>
+<area shape="rect" id="node2" href="$classbst_1_1Time.html#a62346abfceb160c8a55f8c50f38e64f2" title="Set the time to the current time." alt="" coords="177,5,332,32"/>
+</map>

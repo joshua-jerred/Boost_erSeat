@@ -1,8 +1,8 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,64,60,91"/>
-<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9" title=" " alt="" coords="123,5,271,32"/>
-<area shape="rect" id="node3" href="$namespaceBoosterSeat_1_1filesystem.html#ad98f53bdaeb35dbf7d01ba81ff208e66" title="Get the size of a file." alt="" coords="108,57,285,98"/>
-<area shape="rect" id="node4" href="$filesystem__test_8cpp.html#a108120f90f614aca837d69df1581ad2a" title=" " alt="" coords="145,123,248,149"/>
-<area shape="rect" id="node5" href="$namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542" title=" " alt="" coords="333,115,536,157"/>
-<area shape="rect" id="node6" href="$namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff" title="Just a simple function to compare two doubles by a given epsilon." alt="" coords="584,123,787,149"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,56,60,83"/>
+<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9" title=" " alt="" coords="133,5,281,32"/>
+<area shape="rect" id="node3" href="$namespacebst_1_1filesystem.html#a7671a1242fede29665eaf2a54c044ae8" title="Get the size of a file." alt="" coords="108,56,305,83"/>
+<area shape="rect" id="node4" href="$filesystem__test_8cpp.html#a108120f90f614aca837d69df1581ad2a" title=" " alt="" coords="155,107,258,133"/>
+<area shape="rect" id="node5" href="$namespacebst.html#a58c60bf2f30f989d4fef310408442a05" title=" " alt="" coords="353,107,545,133"/>
+<area shape="rect" id="node6" href="$namespacebst.html#a08c1b260871c8845637293587ed620ba" title="Just a simple function to compare two doubles by a given epsilon." alt="" coords="593,107,736,133"/>
 </map>

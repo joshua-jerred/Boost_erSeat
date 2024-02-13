@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['timepoint_425',['TimePoint',['../namespaceBoosterSeat_1_1clck.html#a7c67add95ba70345c693b639869631bb',1,'BoosterSeat::clck']]]
+  ['timepoint_493',['TimePoint',['../namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b',1,'bst::clck']]]
 ];

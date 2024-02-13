@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['path_143',['Path',['../classbst_1_1geo_1_1Path.html',1,'bst::geo::Path'],['../classbst_1_1geo_1_1Path.html#a3bb6f7034ce68941175123612c69e8a6',1,'bst::geo::Path::Path()'],['../classbst_1_1geo_1_1Path.html#a8fd0dd340fc69b1c1dbf8bab4d8d94c0',1,'bst::geo::Path::Path(std::vector&lt; Point &gt; points)'],['../filesystem_8cpp.html#acad8a9c6304807b3754ccc1a7023c849',1,'Path():&#160;filesystem.cpp']]],
-  ['pi_144',['PI',['../namespacebst_1_1math.html#ac8270bc34f644327f70abf59d5700bc4',1,'bst::math']]],
-  ['point_145',['Point',['../classbst_1_1geo_1_1Point.html',1,'bst::geo::Point'],['../classbst_1_1geo_1_1Point.html#a3c49e9036956fbc493140f3a0cd434df',1,'bst::geo::Point::Point()'],['../classbst_1_1geo_1_1Point.html#a188ef4d4fe6a13d606282e2d96eb49e3',1,'bst::geo::Point::Point(double latitude, double longitude)']]],
-  ['points_146',['points',['../classbst_1_1geo_1_1Path.html#ac6d71abbdc20d4518120e72517a3c553',1,'bst::geo::Path']]],
-  ['points_5f_147',['points_',['../classbst_1_1geo_1_1Path.html#a2107400775c8bd2ac712b5750572bde6',1,'bst::geo::Path']]]
+  ['operator_20char_20_2a_153',['operator char *',['../structbst_1_1raii__char__str.html#ae090ff8be4d0d8fb79a22612057d8be7',1,'bst::raii_char_str']]],
+  ['operator_21_3d_154',['operator!=',['../classbst_1_1Time.html#a178ba7e4c711ef74c87b58fed7e4c25d',1,'bst::Time']]],
+  ['operator_3c_155',['operator&lt;',['../classbst_1_1Time.html#a4d4ae960955d749ebbe7baf3723e56d7',1,'bst::Time']]],
+  ['operator_3c_3d_156',['operator&lt;=',['../classbst_1_1Time.html#a5e167e0100c58a138df1dec5f4a3df33',1,'bst::Time']]],
+  ['operator_3d_3d_157',['operator==',['../classbst_1_1Time.html#abcde91b70fc18e49ab8e51c169d96245',1,'bst::Time']]],
+  ['operator_3e_158',['operator&gt;',['../classbst_1_1Time.html#a98b727d15103a03d5a8d54d7f4870152',1,'bst::Time']]],
+  ['operator_3e_3d_159',['operator&gt;=',['../classbst_1_1Time.html#af615674a1bc7d33188b00abe6a224421',1,'bst::Time']]],
+  ['out_5fpipe_5f_160',['out_pipe_',['../classbst_1_1Process.html#a7e706609393e5aaa442b758f86293065',1,'bst::Process']]],
+  ['out_5fstream_5f_161',['out_stream_',['../classbst_1_1Process.html#a3d730b8e3d5db92976a1dafb2bc0f4eb',1,'bst::Process']]],
+  ['overwritefile_162',['overwriteFile',['../namespacebst_1_1filesystem.html#a5238b859634edb269d572711945f9710',1,'bst::filesystem']]]
 ];

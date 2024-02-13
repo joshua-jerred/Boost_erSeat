@@ -1,9 +1,7 @@
 var searchData=
 [
-  ['lat_5f_115',['lat_',['../classbst_1_1geo_1_1Point.html#a3318fd8b5e2dce5437a5b610404ecce8',1,'bst::geo::Point']]],
-  ['latitude_116',['latitude',['../classbst_1_1geo_1_1Point.html#a27b0ae1fa1110114a5f76304d2c4dd10',1,'bst::geo::Point']]],
-  ['left_117',['LEFT',['../namespaceBoosterSeat_1_1layout.html#a73c951e9848a120283ee7a7c575c03b9a684d325a7303f52e64011467ff5c5758',1,'BoosterSeat::layout']]],
-  ['local_118',['LOCAL',['../namespaceBoosterSeat_1_1time.html#afe738866c49c57fd3edc2145f153d059a54b4c4075463b2e02cd69f5cd139b5b2',1,'BoosterSeat::time']]],
-  ['lon_5f_119',['lon_',['../classbst_1_1geo_1_1Point.html#a8e114b89da7ea3f1e8009505adf5f416',1,'bst::geo::Point']]],
-  ['longitude_120',['longitude',['../classbst_1_1geo_1_1Point.html#ac93e692df104242a88e5c8b0a3409bc9',1,'bst::geo::Point']]]
+  ['k_5fpipe_5fread_128',['K_PIPE_READ',['../namespacebst.html#a78ccb9ecbafa05781e3220560ec82315',1,'bst']]],
+  ['k_5fpipe_5fwrite_129',['K_PIPE_WRITE',['../namespacebst.html#ab679f1c68d609480fa512a3bc98ccac0',1,'bst']]],
+  ['kilobytes_130',['KILOBYTES',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a8bdac1c59b910777c2191ff22a7b87d8',1,'bst::filesystem::units']]],
+  ['kprecision_131',['kPrecision',['../namespacebst.html#a1b16c253cfdfc8e1764da6a258b7d759',1,'bst']]]
 ];

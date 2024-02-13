@@ -1,0 +1,7 @@
+<map id="bst::clck::toTimeT" name="bst::clck::toTimeT">
+<area shape="rect" id="node1" title=" " alt="" coords="528,31,667,57"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1time.html#a2f5614e38783fb2a27cbed3987e3fd4d" title="Get the date and time in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="267,5,480,32"/>
+<area shape="rect" id="node5" href="$namespacebst_1_1time.html#abeb64b609248997e84ed7a6bd781ad0f" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="295,56,451,83"/>
+<area shape="rect" id="node3" href="$namespacebst_1_1time.html#a787a2d545752d701707526e58807cc08" title=" " alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node4" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="85,56,139,83"/>
+</map>

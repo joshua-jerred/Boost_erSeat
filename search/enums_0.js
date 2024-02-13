@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['alignment_426',['Alignment',['../namespaceBoosterSeat_1_1layout.html#a73c951e9848a120283ee7a7c575c03b9',1,'BoosterSeat::layout']]]
+  ['alignment_494',['Alignment',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009',1,'bst::layout']]]
 ];

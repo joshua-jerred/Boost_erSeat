@@ -1,16 +1,16 @@
 var searchData=
 [
-  ['d2r_32',['D2R',['../namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e',1,'bst::math']]],
-  ['dateandtimestring_33',['dateAndTimeString',['../namespaceBoosterSeat_1_1time.html#a5fd70e926d174b7a55901f51e98f3a82',1,'BoosterSeat::time::dateAndTimeString(TimeZone time_zone=TimeZone::LOCAL, char date_delimiter=&apos;-&apos;, char between_delimiter=&apos; &apos;, char time_delimiter=&apos;:&apos;, BoosterSeat::clck::TimePoint time_point=BoosterSeat::clck::now())'],['../namespaceBoosterSeat_1_1time.html#a159e9ab40d63c2f6e7e7dfcabca75c26',1,'BoosterSeat::time::dateAndTimeString(const BoosterSeat::clck::TimePoint &amp;time_point)']]],
-  ['dateandtimetotimepoint_34',['dateAndTimeToTimePoint',['../namespaceBoosterSeat_1_1time.html#a6acb73ab0c84e4784d78221210e55c1e',1,'BoosterSeat::time']]],
-  ['dateformatstring_35',['dateFormatString',['../time_8cpp.html#a39587916c21a4902744b75d2106681f0',1,'time.cpp']]],
-  ['datestring_36',['dateString',['../namespaceBoosterSeat_1_1time.html#a8ed26107d4aadc73bed18c3ba149f37f',1,'BoosterSeat::time']]],
-  ['deletefile_37',['deleteFile',['../namespaceBoosterSeat_1_1filesystem.html#a8339808683e2452aa0417ef36859cb1b',1,'BoosterSeat::filesystem']]],
-  ['directory_38',['DIRECTORY',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af0b17a7a4ce15380c9dfd6b3df5e26aaa28766b4be065d0c806c2e9c9d914af48',1,'BoosterSeat::filesystem::units']]],
-  ['distance_39',['distance',['../classbst_1_1geo_1_1Path.html#ad2ba4954d64d1719549aa4d3f828ae9e',1,'bst::geo::Path::distance()'],['../namespacebst_1_1geo.html#a1397b9fa084d6f595d9d20a24a37b5be',1,'bst::geo::distance()']]],
-  ['doesdirectoryexist_40',['doesDirectoryExist',['../namespaceBoosterSeat_1_1filesystem.html#a935d5e89f6f81fa98e883fee6593c851',1,'BoosterSeat::filesystem']]],
-  ['doesfileexist_41',['doesFileExist',['../namespaceBoosterSeat_1_1filesystem.html#afcb362ca0d7dec678919af67d3c96b97',1,'BoosterSeat::filesystem']]],
-  ['doesnotexist_42',['DoesNotExist',['../namespaceassertions.html#a3996fb04f725f28b7c88895a80118336',1,'assertions']]],
-  ['doubletoprecisiontwo_43',['doubleToPrecisionTwo',['../namespaceBoosterSeat.html#a42a2c10c36009274f1195442626ac2fb',1,'BoosterSeat']]],
-  ['duration_44',['Duration',['../namespaceBoosterSeat_1_1clck.html#ac697273b3bd88fdcabcc7839912da23d',1,'BoosterSeat::clck']]]
+  ['center_30',['CENTER',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009ac397289ee45877be0cd49811fe245b4e',1,'bst::layout']]],
+  ['child_31',['child',['../classbst_1_1Process.html#a5f623c04b1e87f1c632da2d3c485470c',1,'bst::Process']]],
+  ['clock_32',['Clock',['../namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c',1,'bst::clck']]],
+  ['clock_2ehpp_33',['clock.hpp',['../clock_8hpp.html',1,'']]],
+  ['clock_5f_34',['clock_',['../classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b',1,'bst::Stopwatch']]],
+  ['closeinstream_35',['closeInStream',['../classbst_1_1Process.html#a7f302425489412fe6f7e809911fb3b8c',1,'bst::Process']]],
+  ['containsprefix_36',['containsPrefix',['../namespacebst.html#a92aa0f1f060065c745c1bee1190faa84',1,'bst']]],
+  ['containssubstring_37',['containsSubstring',['../namespacebst.html#a9a5147e48ad8855dea81772722df8efb',1,'bst']]],
+  ['containssuffix_38',['containsSuffix',['../namespacebst.html#ae663403a6b00abe91e6778da8f0cdf6e',1,'bst']]],
+  ['convertmbtounit_39',['convertMbToUnit',['../namespacebst_1_1fs__int.html#a5363880eb4f2361912b04d9c7a7f84e3',1,'bst::fs_int']]],
+  ['createdirectory_40',['createDirectory',['../namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc',1,'bst::filesystem']]],
+  ['createfile_41',['createFile',['../namespacebst_1_1filesystem.html#a38cec5f76c16accb8845de44e7cb519d',1,'bst::filesystem']]],
+  ['createfileofsizemb_42',['createFileOfSizeMb',['../filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9',1,'filesystem_test.cpp']]]
 ];

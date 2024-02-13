@@ -1,5 +1,0 @@
-<map id="assertions::Exists" name="assertions::Exists">
-<area shape="rect" id="node1" title="Checks if a path exists, otherwise it will throw an exception." alt="" coords="235,31,371,57"/>
-<area shape="rect" id="node2" href="$namespaceassertions.html#ae836775a6257e8270026456d314b5f12" title="Checks if the path exists and is a directory, otherwise it will throw an exception." alt="" coords="12,5,180,32"/>
-<area shape="rect" id="node3" href="$namespaceassertions.html#afc3f9b61119c84db617cc0cd88840883" title="Checks if the path exists and is a regular file, otherwise it will throw an exception." alt="" coords="5,56,187,83"/>
-</map>

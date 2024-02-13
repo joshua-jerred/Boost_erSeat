@@ -1,4 +1,0 @@
-<map id="internal::is_directory" name="internal::is_directory">
-<area shape="rect" id="node1" title="Returns true if the path is a directory." alt="" coords="221,5,377,32"/>
-<area shape="rect" id="node2" href="$namespaceassertions.html#ae836775a6257e8270026456d314b5f12" title="Checks if the path exists and is a directory, otherwise it will throw an exception." alt="" coords="5,5,173,32"/>
-</map>

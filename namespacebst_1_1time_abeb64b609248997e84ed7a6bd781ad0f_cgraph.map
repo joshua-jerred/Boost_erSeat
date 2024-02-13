@@ -1,0 +1,6 @@
+<map id="bst::time::timeString" name="bst::time::timeString">
+<area shape="rect" id="node1" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="5,56,161,83"/>
+<area shape="rect" id="node2" href="$time_8cpp.html#a27df73b2049d79fe180c001c41a6ef12" title=" " alt="" coords="247,5,311,32"/>
+<area shape="rect" id="node3" href="$time_8cpp.html#a4b8e93c1388150eb65a480d3edadf0f4" title=" " alt="" coords="211,56,347,83"/>
+<area shape="rect" id="node4" href="$namespacebst_1_1clck.html#af6c9726ef27bb1919283a12d40b4e657" title=" " alt="" coords="209,107,348,133"/>
+</map>

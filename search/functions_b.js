@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['now_353',['now',['../namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d',1,'BoosterSeat::clck']]]
+  ['now_400',['now',['../namespacebst_1_1clck.html#ad44954960a85385ac81684b67de215b6',1,'bst::clck']]]
 ];

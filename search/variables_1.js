@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['d2r_398',['D2R',['../namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e',1,'bst::math']]]
+  ['clock_5f_449',['clock_',['../classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b',1,'bst::Stopwatch']]]
 ];

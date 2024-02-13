@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['resolution_428',['Resolution',['../namespaceBoosterSeat.html#a8a4905645b743613df98d0d117173615',1,'BoosterSeat']]]
+  ['resolution_496',['Resolution',['../namespacebst.html#a47c9161317f6b8b92f25e127602b54b3',1,'bst']]]
 ];

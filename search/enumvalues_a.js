@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['seconds_458',['SECONDS',['../namespaceBoosterSeat.html#a8a4905645b743613df98d0d117173615aa9126caa6ef3db9cf3c35ac627ad22b5',1,'BoosterSeat']]],
-  ['stopped_459',['STOPPED',['../classBoosterSeat_1_1Stopwatch.html#ab87053e18e85fbf3084882b10f419a2da09d4d696b4e935115b9313e3c412509a',1,'BoosterSeat::Stopwatch']]]
+  ['right_526',['RIGHT',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009a21507b40c80068eda19865706fdc2403',1,'bst::layout']]],
+  ['running_527',['RUNNING',['../classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd',1,'bst::Stopwatch']]]
 ];

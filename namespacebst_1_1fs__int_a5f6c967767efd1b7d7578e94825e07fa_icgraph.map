@@ -1,0 +1,4 @@
+<map id="bst::fs_int::is_directory" name="bst::fs_int::is_directory">
+<area shape="rect" id="node1" title="Returns true if the path is a directory." alt="" coords="259,5,429,32"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1fs__int.html#a34dfcea60930f4903818bc3210cdd069" title="Checks if the path exists and is a directory, otherwise it will throw an exception." alt="" coords="5,5,211,32"/>
+</map>

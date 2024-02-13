@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,46,60,73"/>
-<area shape="rect" id="node2" href="$namespaceBoosterSeat_1_1filesystem.html#a27a3761eb5f58d9eb669fa5ae6664fd6" title="Append a string to a file." alt="" coords="127,5,304,47"/>
-<area shape="rect" id="node3" href="$classBoosterSeat_1_1BoosterSeatException.html#a968460b38d7c6c517cdc659ee0b5b288" title=" " alt="" coords="108,71,323,112"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,35,60,61"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0" title="Append a string to a file." alt="" coords="108,5,319,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1BoosterSeatException.html#a2bff84cea5b649dd380ca4cdc35b6bee" title=" " alt="" coords="117,57,310,98"/>
 </map>

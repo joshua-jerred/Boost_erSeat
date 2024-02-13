@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['kilobytes_449',['KILOBYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca8bdac1c59b910777c2191ff22a7b87d8',1,'BoosterSeat::filesystem::units']]]
+  ['kilobytes_517',['KILOBYTES',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a8bdac1c59b910777c2191ff22a7b87d8',1,'bst::filesystem::units']]]
 ];

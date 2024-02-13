@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['duration_418',['Duration',['../namespaceBoosterSeat_1_1clck.html#ac697273b3bd88fdcabcc7839912da23d',1,'BoosterSeat::clck']]]
+  ['duration_486',['Duration',['../namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e',1,'bst::clck']]]
 ];

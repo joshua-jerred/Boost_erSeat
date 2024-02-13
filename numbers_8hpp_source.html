@@ -111,33 +111,33 @@ $(document).ready(function(){initNavTree('numbers_8hpp_source.html',''); initRes
 <div class="line"><a name="l00005"></a><span class="lineno">    5</span>&#160;<span class="preprocessor">#include &lt;iomanip&gt;</span></div>
 <div class="line"><a name="l00006"></a><span class="lineno">    6</span>&#160;<span class="preprocessor">#include &lt;sstream&gt;</span></div>
 <div class="line"><a name="l00007"></a><span class="lineno">    7</span>&#160; </div>
-<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespaceBoosterSeat.html">BoosterSeat</a> {</div>
+<div class="line"><a name="l00008"></a><span class="lineno">    8</span>&#160;<span class="keyword">namespace </span><a class="code" href="namespacebst.html">bst</a> {</div>
 <div class="line"><a name="l00009"></a><span class="lineno">    9</span>&#160; </div>
-<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespaceBoosterSeat.html#a42a2c10c36009274f1195442626ac2fb">doubleToPrecisionTwo</a>(<span class="keywordtype">double</span>);</div>
-<div class="line"><a name="l00017"></a><span class="lineno">   17</span>&#160; </div>
-<div class="line"><a name="l00029"></a><span class="lineno"><a class="line" href="namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff">   29</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff">isApproxEqual</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> epsilon) {</div>
-<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;  <span class="keywordflow">return</span> std::abs(a - b) &lt;= epsilon;</div>
-<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160;}</div>
-<div class="line"><a name="l00032"></a><span class="lineno">   32</span>&#160; </div>
-<div class="line"><a name="l00045"></a><span class="lineno"><a class="line" href="namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542">   45</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542">isApproxEqualPercent</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> a, <span class="keyword">const</span> <span class="keywordtype">double</span> b,</div>
-<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">double</span> percent) {</div>
-<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff">isApproxEqual</a>(a, b, percent * std::max(a, b));</div>
-<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160;}</div>
-<div class="line"><a name="l00049"></a><span class="lineno">   49</span>&#160; </div>
-<div class="line"><a name="l00050"></a><span class="lineno"><a class="line" href="namespaceBoosterSeat.html#afcfa532dea3af37376d596f1543e3259">   50</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespaceBoosterSeat.html#afcfa532dea3af37376d596f1543e3259">rndTs</a>(<span class="keywordtype">double</span> d, <span class="keywordtype">int</span> precision) {</div>
-<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  std::stringstream ss;</div>
-<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  ss &lt;&lt; std::fixed &lt;&lt; std::setprecision(precision) &lt;&lt; d;</div>
-<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;  <span class="keywordflow">return</span> ss.str();</div>
-<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160;}</div>
-<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160; </div>
-<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160;} <span class="comment">// namespace BoosterSeat</span></div>
-<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160; </div>
-<div class="line"><a name="l00058"></a><span class="lineno">   58</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NUMBERS_HPP_ */</span><span class="preprocessor"></span></div>
-<div class="ttc" id="anamespaceBoosterSeat_html"><div class="ttname"><a href="namespaceBoosterSeat.html">BoosterSeat</a></div><div class="ttdef"><b>Definition:</b> geo_strings.cpp:5</div></div>
-<div class="ttc" id="anamespaceBoosterSeat_html_a0c83e795d22f33ed8f8c3ea05f2812ff"><div class="ttname"><a href="namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff">BoosterSeat::isApproxEqual</a></div><div class="ttdeci">bool isApproxEqual(double a, double b, double epsilon)</div><div class="ttdoc">Just a simple function to compare two doubles by a given epsilon.</div><div class="ttdef"><b>Definition:</b> numbers.hpp:29</div></div>
-<div class="ttc" id="anamespaceBoosterSeat_html_a22775a049c8c5a731f023489084f7542"><div class="ttname"><a href="namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542">BoosterSeat::isApproxEqualPercent</a></div><div class="ttdeci">bool isApproxEqualPercent(const double a, const double b, const double percent)</div><div class="ttdef"><b>Definition:</b> numbers.hpp:45</div></div>
-<div class="ttc" id="anamespaceBoosterSeat_html_a42a2c10c36009274f1195442626ac2fb"><div class="ttname"><a href="namespaceBoosterSeat.html#a42a2c10c36009274f1195442626ac2fb">BoosterSeat::doubleToPrecisionTwo</a></div><div class="ttdeci">double doubleToPrecisionTwo(double)</div><div class="ttdef"><b>Definition:</b> numbers.cpp:3</div></div>
-<div class="ttc" id="anamespaceBoosterSeat_html_afcfa532dea3af37376d596f1543e3259"><div class="ttname"><a href="namespaceBoosterSeat.html#afcfa532dea3af37376d596f1543e3259">BoosterSeat::rndTs</a></div><div class="ttdeci">std::string rndTs(double d, int precision)</div><div class="ttdef"><b>Definition:</b> numbers.hpp:50</div></div>
+<div class="line"><a name="l00015"></a><span class="lineno">   15</span>&#160;<span class="keywordtype">double</span> <a class="code" href="namespacebst.html#a38c78e81366d59661bd60b560e7a8c1e">doubleToPrecisionTwo</a>(<span class="keywordtype">double</span>);</div>
+<div class="line"><a name="l00016"></a><span class="lineno">   16</span>&#160; </div>
+<div class="line"><a name="l00028"></a><span class="lineno"><a class="line" href="namespacebst.html#a08c1b260871c8845637293587ed620ba">   28</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacebst.html#a08c1b260871c8845637293587ed620ba">isApproxEqual</a>(<span class="keywordtype">double</span> a, <span class="keywordtype">double</span> b, <span class="keywordtype">double</span> epsilon) {</div>
+<div class="line"><a name="l00029"></a><span class="lineno">   29</span>&#160;  <span class="keywordflow">return</span> std::abs(a - b) &lt;= epsilon;</div>
+<div class="line"><a name="l00030"></a><span class="lineno">   30</span>&#160;}</div>
+<div class="line"><a name="l00031"></a><span class="lineno">   31</span>&#160; </div>
+<div class="line"><a name="l00044"></a><span class="lineno"><a class="line" href="namespacebst.html#a58c60bf2f30f989d4fef310408442a05">   44</a></span>&#160;<span class="keyword">inline</span> <span class="keywordtype">bool</span> <a class="code" href="namespacebst.html#a58c60bf2f30f989d4fef310408442a05">isApproxEqualPercent</a>(<span class="keyword">const</span> <span class="keywordtype">double</span> a, <span class="keyword">const</span> <span class="keywordtype">double</span> b,</div>
+<div class="line"><a name="l00045"></a><span class="lineno">   45</span>&#160;                                 <span class="keyword">const</span> <span class="keywordtype">double</span> percent) {</div>
+<div class="line"><a name="l00046"></a><span class="lineno">   46</span>&#160;  <span class="keywordflow">return</span> <a class="code" href="namespacebst.html#a08c1b260871c8845637293587ed620ba">isApproxEqual</a>(a, b, percent * std::max(a, b));</div>
+<div class="line"><a name="l00047"></a><span class="lineno">   47</span>&#160;}</div>
+<div class="line"><a name="l00048"></a><span class="lineno">   48</span>&#160; </div>
+<div class="line"><a name="l00049"></a><span class="lineno"><a class="line" href="namespacebst.html#a48790b6394622a82265ae2d95aabf58f">   49</a></span>&#160;<span class="keyword">inline</span> std::string <a class="code" href="namespacebst.html#a48790b6394622a82265ae2d95aabf58f">rndTs</a>(<span class="keywordtype">double</span> d, <span class="keywordtype">int</span> precision) {</div>
+<div class="line"><a name="l00050"></a><span class="lineno">   50</span>&#160;  std::stringstream ss;</div>
+<div class="line"><a name="l00051"></a><span class="lineno">   51</span>&#160;  ss &lt;&lt; std::fixed &lt;&lt; std::setprecision(precision) &lt;&lt; d;</div>
+<div class="line"><a name="l00052"></a><span class="lineno">   52</span>&#160;  <span class="keywordflow">return</span> ss.str();</div>
+<div class="line"><a name="l00053"></a><span class="lineno">   53</span>&#160;}</div>
+<div class="line"><a name="l00054"></a><span class="lineno">   54</span>&#160; </div>
+<div class="line"><a name="l00055"></a><span class="lineno">   55</span>&#160;} <span class="comment">// namespace bst</span></div>
+<div class="line"><a name="l00056"></a><span class="lineno">   56</span>&#160; </div>
+<div class="line"><a name="l00057"></a><span class="lineno">   57</span>&#160;<span class="preprocessor">#endif </span><span class="comment">/* NUMBERS_HPP_ */</span><span class="preprocessor"></span></div>
+<div class="ttc" id="anamespacebst_html"><div class="ttname"><a href="namespacebst.html">bst</a></div><div class="ttdef"><b>Definition:</b> filesystem.cpp:34</div></div>
+<div class="ttc" id="anamespacebst_html_a08c1b260871c8845637293587ed620ba"><div class="ttname"><a href="namespacebst.html#a08c1b260871c8845637293587ed620ba">bst::isApproxEqual</a></div><div class="ttdeci">bool isApproxEqual(double a, double b, double epsilon)</div><div class="ttdoc">Just a simple function to compare two doubles by a given epsilon.</div><div class="ttdef"><b>Definition:</b> numbers.hpp:28</div></div>
+<div class="ttc" id="anamespacebst_html_a38c78e81366d59661bd60b560e7a8c1e"><div class="ttname"><a href="namespacebst.html#a38c78e81366d59661bd60b560e7a8c1e">bst::doubleToPrecisionTwo</a></div><div class="ttdeci">double doubleToPrecisionTwo(double)</div><div class="ttdoc">Rounds a double to two decimal places. For example: 1.2345 -&gt; 1.23.</div><div class="ttdef"><b>Definition:</b> numbers.cpp:3</div></div>
+<div class="ttc" id="anamespacebst_html_a48790b6394622a82265ae2d95aabf58f"><div class="ttname"><a href="namespacebst.html#a48790b6394622a82265ae2d95aabf58f">bst::rndTs</a></div><div class="ttdeci">std::string rndTs(double d, int precision)</div><div class="ttdef"><b>Definition:</b> numbers.hpp:49</div></div>
+<div class="ttc" id="anamespacebst_html_a58c60bf2f30f989d4fef310408442a05"><div class="ttname"><a href="namespacebst.html#a58c60bf2f30f989d4fef310408442a05">bst::isApproxEqualPercent</a></div><div class="ttdeci">bool isApproxEqualPercent(const double a, const double b, const double percent)</div><div class="ttdef"><b>Definition:</b> numbers.hpp:44</div></div>
 </div><!-- fragment --></div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

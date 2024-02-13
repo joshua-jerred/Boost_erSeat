@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['lat_5f_403',['lat_',['../classbst_1_1geo_1_1Point.html#a3318fd8b5e2dce5437a5b610404ecce8',1,'bst::geo::Point']]],
-  ['lon_5f_404',['lon_',['../classbst_1_1geo_1_1Point.html#a8e114b89da7ea3f1e8009505adf5f416',1,'bst::geo::Point']]]
+  ['have_5fexit_5fcode_5f_457',['have_exit_code_',['../classbst_1_1Process.html#ac987962bac1522d731c970cdbd0e47e0',1,'bst::Process']]]
 ];

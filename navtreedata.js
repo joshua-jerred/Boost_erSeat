@@ -25,22 +25,16 @@
 var NAVTREE =
 [
   [ "BoosterSeat", "index.html", [
-    [ "readme", "md_readme.html", [
-      [ "Using with CMake", "md_readme.html#autotoc_md0", null ],
-      [ "What's included", "md_readme.html#autotoc_md1", [
-        [ "And more random things", "md_readme.html#autotoc_md6", [
-          [ "<tt><BoosterSeat/clock.hpp></tt>", "md_readme.html#autotoc_md2", null ],
-          [ "<tt><BoosterSeat/numbers.hpp></tt>", "md_readme.html#autotoc_md3", null ],
-          [ "<tt><BoosterSeat/rolling_average.hpp></tt>", "md_readme.html#autotoc_md4", null ],
-          [ "<tt><BoosterSeat/timer.hpp></tt>", "md_readme.html#autotoc_md5", null ],
-          [ "<tt><BoosterSeat/filesystem.hpp></tt>", "md_readme.html#autotoc_md7", null ],
-          [ "<tt><BoosterSeat/random.hpp></tt>", "md_readme.html#autotoc_md8", null ]
-        ] ],
-        [ "And a few more", "md_readme.html#autotoc_md9", null ]
-      ] ]
+    [ "Modules", "index.html#autotoc_md6", null ],
+    [ "Using with CMake", "index.html#autotoc_md7", null ],
+    [ "[BST module] Process", "md_doc_process.html", [
+      [ "Example 1: Basic usage", "md_doc_process.html#autotoc_md1", null ],
+      [ "Example: Write additional input to stdin", "md_doc_process.html#autotoc_md2", null ],
+      [ "Example: Non-zero command exit codes", "md_doc_process.html#autotoc_md3", null ],
+      [ "Example: Commands that do not exist", "md_doc_process.html#autotoc_md4", null ],
+      [ "Example: Command timeout", "md_doc_process.html#autotoc_md5", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
-    [ "Modules", "modules.html", "modules" ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -69,15 +63,14 @@ var NAVTREE =
         [ "Typedefs", "globals_type.html", null ],
         [ "Macros", "globals_defs.html", null ]
       ] ]
-    ] ],
-    [ "Examples", "examples.html", "examples" ]
+    ] ]
   ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"1_82345-example.html",
-"namespaceBoosterSeat_1_1clck.html#ac697273b3bd88fdcabcc7839912da23d"
+"annotated.html",
+"namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

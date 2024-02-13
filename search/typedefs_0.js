@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clock_417',['Clock',['../namespaceBoosterSeat_1_1clck.html#ac8690b82391dc0cf30fda7754a2ebc22',1,'BoosterSeat::clck']]]
+  ['clock_485',['Clock',['../namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c',1,'bst::clck']]]
 ];

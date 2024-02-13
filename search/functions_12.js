@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['what_391',['what',['../classBoosterSeat_1_1BoosterSeatException.html#a918a5d5a6b86f44519ab225f877b9631',1,'BoosterSeat::BoosterSeatException']]],
-  ['writepermissions_392',['WritePermissions',['../namespaceassertions.html#a24f0bffc72e1d906c26ffcf00722cc5a',1,'assertions']]]
+  ['waittocomplete_440',['waitToComplete',['../classbst_1_1Process.html#a6b840ce798c1a766de0812a7761397dc',1,'bst::Process']]],
+  ['what_441',['what',['../classbst_1_1BoosterSeatException.html#ae953320ee769a87adea0bb7320334dcc',1,'bst::BoosterSeatException']]],
+  ['writetoinstream_442',['writeToInStream',['../classbst_1_1Process.html#a33f8804cf8a4b531cb2fc1942600cad9',1,'bst::Process']]]
 ];

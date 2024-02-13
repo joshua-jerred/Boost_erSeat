@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['directory_436',['DIRECTORY',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af0b17a7a4ce15380c9dfd6b3df5e26aaa28766b4be065d0c806c2e9c9d914af48',1,'BoosterSeat::filesystem::units']]]
+  ['directory_504',['DIRECTORY',['../namespacebst_1_1filesystem_1_1units.html#afc427caba404cd6e0b14f85db2ff4e65a28766b4be065d0c806c2e9c9d914af48',1,'bst::filesystem::units']]]
 ];

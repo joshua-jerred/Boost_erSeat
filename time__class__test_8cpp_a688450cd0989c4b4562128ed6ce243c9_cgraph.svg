@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36" target="_top" xlink:title=" ">
+<g id="a_node2"><a xlink:href="classbst_1_1Time.html#ab2d56ccb2ec81d5cde60288db40e22e0" target="_top" xlink:title=" ">
 <polygon fill="none" stroke="black" points="77,-228.5 77,-247.5 197,-247.5 197,-228.5 77,-228.5"/>
 <text text-anchor="middle" x="137" y="-235.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::fromString</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classbst_1_1Time.html#a7a94cf6c09f077be0fa58d7c6209b280" target="_top" xlink:title="Get the Day.">
+<g id="a_node3"><a xlink:href="classbst_1_1Time.html#aea8177d8ecbc30116116fa705b138c6f" target="_top" xlink:title="Get the Day.">
 <polygon fill="none" stroke="black" points="85,-190.5 85,-209.5 189,-209.5 189,-190.5 85,-190.5"/>
 <text text-anchor="middle" x="137" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getDay</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classbst_1_1Time.html#a4f1d099514987d99d6f82214e15e3937" target="_top" xlink:title="Get the Hour.">
+<g id="a_node4"><a xlink:href="classbst_1_1Time.html#ae70707141c51072e4a14b58e51462a74" target="_top" xlink:title="Get the Hour.">
 <polygon fill="none" stroke="black" points="83.5,-152.5 83.5,-171.5 190.5,-171.5 190.5,-152.5 83.5,-152.5"/>
 <text text-anchor="middle" x="137" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getHour</text>
 </a>
@@ -65,7 +65,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classbst_1_1Time.html#aface45ecfaf6331f6ac2542c5ee35183" target="_top" xlink:title="Get the Minute.">
+<g id="a_node5"><a xlink:href="classbst_1_1Time.html#a4d810326749dc5ec13a7860e2eca42fe" target="_top" xlink:title="Get the Minute.">
 <polygon fill="none" stroke="black" points="78,-114.5 78,-133.5 196,-133.5 196,-114.5 78,-114.5"/>
 <text text-anchor="middle" x="137" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getMinute</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node6 -->
 <g id="node6" class="node">
 <title>Node6</title>
-<g id="a_node6"><a xlink:href="classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd" target="_top" xlink:title="Get the Month (1 &#45; 12)">
+<g id="a_node6"><a xlink:href="classbst_1_1Time.html#a86b03d8ee697f84bf0eb8fad050741c2" target="_top" xlink:title="Get the Month (1 &#45; 12)">
 <polygon fill="none" stroke="black" points="79.5,-76.5 79.5,-95.5 194.5,-95.5 194.5,-76.5 79.5,-76.5"/>
 <text text-anchor="middle" x="137" y="-83.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getMonth</text>
 </a>
@@ -95,7 +95,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b" target="_top" xlink:title="Get the Second.">
+<g id="a_node7"><a xlink:href="classbst_1_1Time.html#adc6db8e32d273250bd9242653b9d7ee1" target="_top" xlink:title="Get the Second.">
 <polygon fill="none" stroke="black" points="77.5,-38.5 77.5,-57.5 196.5,-57.5 196.5,-38.5 77.5,-38.5"/>
 <text text-anchor="middle" x="137" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getSecond</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe" target="_top" xlink:title="Get the Year.">
+<g id="a_node8"><a xlink:href="classbst_1_1Time.html#adbc9fef605a398b8e4847241de5de82a" target="_top" xlink:title="Get the Year.">
 <polygon fill="none" stroke="black" points="85,-0.5 85,-19.5 189,-19.5 189,-0.5 85,-0.5"/>
 <text text-anchor="middle" x="137" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::getYear</text>
 </a>

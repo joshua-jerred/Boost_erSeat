@@ -1,0 +1,4 @@
+<map id="bst::fs_int::has_read_permissions" name="bst::fs_int::has_read_permissions">
+<area shape="rect" id="node1" title="Returns true if the program has read permissions." alt="" coords="300,5,453,47"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1fs__int.html#abb5b3e817bce09be9b72e8c2f476004a" title="Only works on Linux at the moment, requires the &lt;unistd.h&gt; header." alt="" coords="5,13,252,39"/>
+</map>

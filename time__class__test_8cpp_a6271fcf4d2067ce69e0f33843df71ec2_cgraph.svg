@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classbst_1_1Time.html#ad1d139f4d0fa7176519799efd7443b93" target="_top" xlink:title="Returns the number of seconds from the current time to the stored time.">
+<g id="a_node2"><a xlink:href="classbst_1_1Time.html#aecd7ee60846a1d042381430ac10ff235" target="_top" xlink:title="Returns the number of seconds from the current time to the stored time.">
 <polygon fill="none" stroke="black" points="77,-38.5 77,-57.5 232,-57.5 232,-38.5 77,-38.5"/>
 <text text-anchor="middle" x="154.5" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::secondsFromNow</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classbst_1_1Time.html#a115d699b18c4382efe5961294a9f3ee4" target="_top" xlink:title="Get the time/date as a string in the format: YYYY&#45;MM&#45;DD HH:MM:SS.">
+<g id="a_node3"><a xlink:href="classbst_1_1Time.html#af0b26ebbd4118ceba0bdd1788e461251" target="_top" xlink:title="Get the time/date as a string in the format: YYYY&#45;MM&#45;DD HH:MM:SS.">
 <polygon fill="none" stroke="black" points="101,-0.5 101,-19.5 208,-19.5 208,-0.5 101,-0.5"/>
 <text text-anchor="middle" x="154.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Time::toString</text>
 </a>

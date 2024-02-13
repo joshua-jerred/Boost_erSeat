@@ -1,4 +1,0 @@
-<map id="BoosterSeat::filesystem::getDirectorySize" name="BoosterSeat::filesystem::getDirectorySize">
-<area shape="rect" id="node1" title="Get the size of a directory. Only includes regular files." alt="" coords="108,5,285,47"/>
-<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#a5fd3419741f25b6788c15909ac808ba3" title=" " alt="" coords="5,13,60,39"/>
-</map>

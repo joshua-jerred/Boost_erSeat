@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['clock_5f_397',['clock_',['../classBoosterSeat_1_1Stopwatch.html#aa3fcfedb56cf90c45b04a8f3874dc8fa',1,'BoosterSeat::Stopwatch']]]
+  ['buf_448',['buf',['../structbst_1_1raii__char__str.html#a41dc4b9c4d5273cd4d3de50563ed4d0e',1,'bst::raii_char_str']]]
 ];

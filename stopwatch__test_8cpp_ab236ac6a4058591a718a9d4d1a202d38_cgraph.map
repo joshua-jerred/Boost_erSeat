@@ -1,8 +1,8 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,130,60,157"/>
-<area shape="rect" id="node2" href="$classBoosterSeat_1_1Stopwatch.html#a1730583411cfbdb101390934cede9354" title=" " alt="" coords="113,5,290,47"/>
-<area shape="rect" id="node3" href="$stopwatch__test_8cpp.html#aae1498b2864118a1812e7e6c84da89eb" title=" " alt="" coords="156,71,247,98"/>
-<area shape="rect" id="node4" href="$classBoosterSeat_1_1Stopwatch.html#a6d01ecc80c92f1d5210cd9c3eb72883d" title=" " alt="" coords="113,123,290,164"/>
-<area shape="rect" id="node5" href="$classBoosterSeat_1_1Stopwatch.html#aa0266311b7392b948061bb985b49cff4" title=" " alt="" coords="113,188,290,229"/>
-<area shape="rect" id="node6" href="$namespaceBoosterSeat.html#ad5421cf4dc4a7413402767b8bc172a10" title="A blocking sleep function." alt="" coords="108,254,295,281"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,107,60,133"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166" title=" " alt="" coords="108,5,285,32"/>
+<area shape="rect" id="node3" href="$stopwatch__test_8cpp.html#aae1498b2864118a1812e7e6c84da89eb" title=" " alt="" coords="151,56,242,83"/>
+<area shape="rect" id="node4" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="154,107,239,133"/>
+<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d" title=" " alt="" coords="119,157,275,184"/>
+<area shape="rect" id="node6" href="$classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" title=" " alt="" coords="119,208,274,235"/>
 </map>

@@ -99,11 +99,64 @@ $(document).ready(function(){initNavTree('index.html',''); initResizable(); });
 </iframe>
 </div>
 
-<div class="header">
+<div class="PageDoc"><div class="header">
   <div class="headertitle">
 <div class="title">BoosterSeat Documentation</div>  </div>
 </div><!--header-->
 <div class="contents">
+<div class="textblock"><p><a class="anchor" id="md_README"></a> it's just like boost, but has none of the features</p>
+<p>This is just my set of helpful C++ utilities that I use across many projects.</p>
+<hr  />
+<h1><a class="anchor" id="autotoc_md6"></a>
+Modules</h1>
+<ul>
+<li><a href="https://bst.joshuajer.red/md_doc_process.html"><code>&lt;BoosterSeat/process.hpp&gt;</code></a><ul>
+<li>a nice C++ wrapper to run linux commands</li>
+<li>detailed documentation can be found <a href="https://bst.joshuajer.red/md_doc_process.html">here</a></li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="clock_8hpp.html">BoosterSeat/clock.hpp</a>&gt;</code><ul>
+<li>Just a wrapper on <code>&lt;chrono&gt;</code> with typedefs that I am always searching for.</li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="numbers_8hpp.html">BoosterSeat/numbers.hpp</a>&gt;</code><ul>
+<li>dealing with numbers</li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="rolling__average_8hpp.html">BoosterSeat/rolling_average.hpp</a>&gt;</code><ul>
+<li>for calculating a rolling average</li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="timer_8hpp.html">BoosterSeat/timer.hpp</a>&gt;</code><ul>
+<li>for timing intervals</li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="filesystem_8hpp.html">BoosterSeat/filesystem.hpp</a>&gt;</code><ul>
+<li>a simple and cautious wrapper around <code>&lt;filesystem&gt;</code></li>
+</ul>
+</li>
+<li><code>&lt;<a class="el" href="random_8hpp.html">BoosterSeat/random.hpp</a>&gt;</code><ul>
+<li>random number/string generation</li>
+</ul>
+</li>
+</ul>
+<hr  />
+<h1><a class="anchor" id="autotoc_md7"></a>
+Using with CMake</h1>
+<p>Clone the repo into a project:</p>
+<div class="fragment"><div class="line">cd your_project/third_party_libs</div>
+<div class="line">git clone git@github.com:joshua-jerred/Boost_erSeat.git</div>
+</div><!-- fragment --><p>Add the following to <code>your_project/CMakeLists.txt</code>: </p><div class="fragment"><div class="line">add_subdirectory(third_party_libs/Boost_erSeat)</div>
+<div class="line">target_link_libraries(&lt;your_target&gt; BoosterSeat)</div>
+</div><!-- fragment --><p>Headers are taken care of for you, for example: </p><div class="fragment"><div class="line"><span class="preprocessor">#include &lt;<a class="code" href="sleep_8hpp.html">BoosterSeat/sleep.hpp</a>&gt;</span></div>
+<div class="line"> </div>
+<div class="line"><span class="keywordtype">int</span> <a class="code" href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a>() {</div>
+<div class="line">  <a class="code" href="namespacebst.html#a68398b76b4bf04318c1e0978a251452f">bst::sleep</a>(1000);</div>
+<div class="line">}</div>
+<div class="ttc" id="anamespacebst_html_a68398b76b4bf04318c1e0978a251452f"><div class="ttname"><a href="namespacebst.html#a68398b76b4bf04318c1e0978a251452f">bst::sleep</a></div><div class="ttdeci">void sleep(int32_t milliseconds)</div><div class="ttdef"><b>Definition:</b> sleep.hpp:7</div></div>
+<div class="ttc" id="asleep_8hpp_html"><div class="ttname"><a href="sleep_8hpp.html">sleep.hpp</a></div></div>
+<div class="ttc" id="avisual__tests_8cpp_html_ae66f6b31b5ad750f1fe042a706a4e3d4"><div class="ttname"><a href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main</a></div><div class="ttdeci">int main()</div><div class="ttdef"><b>Definition:</b> visual_tests.cpp:10</div></div>
+</div><!-- fragment --> </div></div><!-- PageDoc -->
 </div><!-- contents -->
 </div><!-- doc-content -->
 <!-- start footer part -->

@@ -1,7 +1,7 @@
 var numbers_8hpp =
 [
-    [ "doubleToPrecisionTwo", "numbers_8hpp.html#a42a2c10c36009274f1195442626ac2fb", null ],
-    [ "isApproxEqual", "numbers_8hpp.html#a0c83e795d22f33ed8f8c3ea05f2812ff", null ],
-    [ "isApproxEqualPercent", "numbers_8hpp.html#a22775a049c8c5a731f023489084f7542", null ],
-    [ "rndTs", "numbers_8hpp.html#afcfa532dea3af37376d596f1543e3259", null ]
+    [ "doubleToPrecisionTwo", "numbers_8hpp.html#a38c78e81366d59661bd60b560e7a8c1e", null ],
+    [ "isApproxEqual", "numbers_8hpp.html#a08c1b260871c8845637293587ed620ba", null ],
+    [ "isApproxEqualPercent", "numbers_8hpp.html#a58c60bf2f30f989d4fef310408442a05", null ],
+    [ "rndTs", "numbers_8hpp.html#a48790b6394622a82265ae2d95aabf58f", null ]
 ];

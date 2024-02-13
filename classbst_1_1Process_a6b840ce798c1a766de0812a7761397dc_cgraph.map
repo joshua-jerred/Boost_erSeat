@@ -1,0 +1,4 @@
+<map id="bst::Process::waitToComplete" name="bst::Process::waitToComplete">
+<area shape="rect" id="node1" title="Waits for the process to complete. If the process does not complete within the timeout,..." alt="" coords="5,5,219,32"/>
+<area shape="rect" id="node2" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="267,5,352,32"/>
+</map>

@@ -1,6 +1,6 @@
 var string__utils_8hpp =
 [
-    [ "containsSubstring", "string__utils_8hpp.html#aad58b7cc5d65ea344dd9ce8bd0d9cbae", null ],
-    [ "containsPrefix", "string__utils_8hpp.html#aaef092d5161035a089f27011cbed675c", null ],
-    [ "containsSuffix", "string__utils_8hpp.html#a8fe2469d0e75861bd19057b42793e32b", null ]
+    [ "containsSubstring", "string__utils_8hpp.html#a9a5147e48ad8855dea81772722df8efb", null ],
+    [ "containsPrefix", "string__utils_8hpp.html#a92aa0f1f060065c745c1bee1190faa84", null ],
+    [ "containsSuffix", "string__utils_8hpp.html#ae663403a6b00abe91e6778da8f0cdf6e", null ]
 ];

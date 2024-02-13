@@ -1,0 +1,6 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,42,60,69"/>
+<area shape="rect" id="node2" href="$classbst_1_1BoosterSeatException.html#a2bff84cea5b649dd380ca4cdc35b6bee" title=" " alt="" coords="118,5,311,47"/>
+<area shape="rect" id="node3" href="$classbst_1_1Process.html#a6b840ce798c1a766de0812a7761397dc" title="Waits for the process to complete. If the process does not complete within the timeout,..." alt="" coords="108,71,321,98"/>
+<area shape="rect" id="node4" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="369,71,455,98"/>
+</map>

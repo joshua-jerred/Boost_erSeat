@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['what_223',['what',['../classBoosterSeat_1_1BoosterSeatException.html#a918a5d5a6b86f44519ab225f877b9631',1,'BoosterSeat::BoosterSeatException']]],
-  ['window_5fsize_5f_224',['window_size_',['../classbst_1_1RollingAverage.html#a0c32d2a59edfc5c148f36b5fa9ebf3ad',1,'bst::RollingAverage']]],
-  ['writepermissions_225',['WritePermissions',['../namespaceassertions.html#a24f0bffc72e1d906c26ffcf00722cc5a',1,'assertions']]]
+  ['validatesize_253',['validateSize',['../filesystem__test_8cpp.html#a108120f90f614aca837d69df1581ad2a',1,'filesystem_test.cpp']]],
+  ['visual_5ftests_2ecpp_254',['visual_tests.cpp',['../visual__tests_8cpp.html',1,'']]]
 ];

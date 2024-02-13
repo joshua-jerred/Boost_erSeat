@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['time_5f_413',['time_',['../classbst_1_1Time.html#a5f2cd2fcea09b594cf99e11623251872',1,'bst::Time']]],
-  ['timeout_5fms_5f_414',['timeout_ms_',['../classbst_1_1Timer.html#a4e5c50837ae86737258ce2e70603bcea',1,'bst::Timer']]],
-  ['two_5fpi_415',['TWO_PI',['../namespacebst_1_1math.html#af7c6ceadbc4103bd5d79f28b3ca81f30',1,'bst::math']]]
+  ['out_5fpipe_5f_466',['out_pipe_',['../classbst_1_1Process.html#a7e706609393e5aaa442b758f86293065',1,'bst::Process']]],
+  ['out_5fstream_5f_467',['out_stream_',['../classbst_1_1Process.html#a3d730b8e3d5db92976a1dafb2bc0f4eb',1,'bst::Process']]]
 ];

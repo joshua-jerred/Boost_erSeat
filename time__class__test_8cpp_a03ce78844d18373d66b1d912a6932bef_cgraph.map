@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,60,57"/>
-<area shape="rect" id="node2" href="$classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36" title=" " alt="" coords="108,5,268,32"/>
-<area shape="rect" id="node3" href="$classbst_1_1Time.html#a115d699b18c4382efe5961294a9f3ee4" title="Get the time/date as a string in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="117,56,259,83"/>
+<area shape="rect" id="node2" href="$classbst_1_1Time.html#ab2d56ccb2ec81d5cde60288db40e22e0" title=" " alt="" coords="108,5,268,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Time.html#af0b26ebbd4118ceba0bdd1788e461251" title="Get the time/date as a string in the format: YYYY&#45;MM&#45;DD HH:MM:SS." alt="" coords="117,56,259,83"/>
 </map>

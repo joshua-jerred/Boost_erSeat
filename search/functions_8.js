@@ -1,12 +1,10 @@
 var searchData=
 [
-  ['i2s_339',['i2s',['../namespaceBoosterSeat_1_1string.html#ad406e226f90c5a9847fbd090f74399d9',1,'BoosterSeat::string']]],
-  ['inttohex_340',['intToHex',['../namespaceBoosterSeat_1_1string.html#ad21f9de48f0b3d96ff5881b262c39819',1,'BoosterSeat::string']]],
-  ['is_5fdirectory_341',['is_directory',['../namespaceinternal.html#ae5ecd7401ad2de42b6922f8303a628b8',1,'internal']]],
-  ['is_5ffile_342',['is_file',['../namespaceinternal.html#af8861a9589a7e724eb016a4534f98af5',1,'internal']]],
-  ['isapproxequal_343',['isApproxEqual',['../namespaceBoosterSeat.html#a0c83e795d22f33ed8f8c3ea05f2812ff',1,'BoosterSeat']]],
-  ['isapproxequalpercent_344',['isApproxEqualPercent',['../namespaceBoosterSeat.html#a22775a049c8c5a731f023489084f7542',1,'BoosterSeat']]],
-  ['isdirectory_345',['IsDirectory',['../namespaceassertions.html#ae836775a6257e8270026456d314b5f12',1,'assertions']]],
-  ['isdone_346',['isDone',['../classbst_1_1Timer.html#ad3cc262ba2f09da2ff9fdaa94d359c32',1,'bst::Timer']]],
-  ['isregularfile_347',['IsRegularFile',['../namespaceassertions.html#afc3f9b61119c84db617cc0cd88840883',1,'assertions']]]
+  ['i2s_388',['i2s',['../namespacebst_1_1string.html#ad54eac96c6bd3cef7e97bf83a71be486',1,'bst::string']]],
+  ['inttohex_389',['intToHex',['../namespacebst_1_1string.html#ace1e9a528cc251163ce5fd2143d32085',1,'bst::string']]],
+  ['is_5fdirectory_390',['is_directory',['../namespacebst_1_1fs__int.html#a5f6c967767efd1b7d7578e94825e07fa',1,'bst::fs_int']]],
+  ['is_5ffile_391',['is_file',['../namespacebst_1_1fs__int.html#a5865a8f6139d541963383bd4b194ff97',1,'bst::fs_int']]],
+  ['isapproxequal_392',['isApproxEqual',['../namespacebst.html#a08c1b260871c8845637293587ed620ba',1,'bst']]],
+  ['isapproxequalpercent_393',['isApproxEqualPercent',['../namespacebst.html#a58c60bf2f30f989d4fef310408442a05',1,'bst']]],
+  ['isdone_394',['isDone',['../classbst_1_1Timer.html#a74f8508e28ab052b25fdf3072e16bae7',1,'bst::Timer']]]
 ];

@@ -1,0 +1,4 @@
+<map id="bst::fs_int::assertDoesNotExist" name="bst::fs_int::assertDoesNotExist">
+<area shape="rect" id="node1" title="Checks if a path exists, otherwise it will throw an exception." alt="" coords="5,5,196,47"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1fs__int.html#a73c724132cca72a972621d63cfae78e0" title=" " alt="" coords="244,13,377,39"/>
+</map>

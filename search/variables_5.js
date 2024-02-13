@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['message_5f_405',['message_',['../classBoosterSeat_1_1BoosterSeatException.html#aedbf7ba5a3467ff46d5991ba505cfa3c',1,'BoosterSeat::BoosterSeatException']]]
+  ['in_5fpipe_5f_458',['in_pipe_',['../classbst_1_1Process.html#a661e0f1219642f9c4a33eda41d6dfafe',1,'bst::Process']]],
+  ['in_5fstream_5f_459',['in_stream_',['../classbst_1_1Process.html#aee3ec621b79626cea35adae531fe41ab',1,'bst::Process']]]
 ];

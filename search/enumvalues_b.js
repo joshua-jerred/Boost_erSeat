@@ -1,6 +1,5 @@
 var searchData=
 [
-  ['terabytes_460',['TERABYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca433d18bcc61eea0f35f06b18a4171e04',1,'BoosterSeat::filesystem::units']]],
-  ['time_5finvalid_5ftime_461',['TIME_INVALID_TIME',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941ca72514f58e9a70f9eeb4100e36393f4ec',1,'BoosterSeat']]],
-  ['time_5finvalid_5ftimezone_462',['TIME_INVALID_TIMEZONE',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941caebb597f230b2cd4e8f738dda8cd41b17',1,'BoosterSeat']]]
+  ['seconds_528',['SECONDS',['../namespacebst.html#a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5',1,'bst']]],
+  ['stopped_529',['STOPPED',['../classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a',1,'bst::Stopwatch']]]
 ];

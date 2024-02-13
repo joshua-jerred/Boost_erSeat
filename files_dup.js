@@ -13,6 +13,11 @@ var files_dup =
     [ "math.hpp", "math_8hpp.html", "math_8hpp" ],
     [ "numbers.cpp", "numbers_8cpp.html", null ],
     [ "numbers.hpp", "numbers_8hpp.html", "numbers_8hpp" ],
+    [ "process.cpp", "process_8cpp.html", "process_8cpp" ],
+    [ "process.hpp", "process_8hpp.html", [
+      [ "Process", "classbst_1_1Process.html", "classbst_1_1Process" ]
+    ] ],
+    [ "process_test.cpp", "process__test_8cpp.html", "process__test_8cpp" ],
     [ "random.cpp", "random_8cpp.html", null ],
     [ "random.hpp", "random_8hpp.html", "random_8hpp" ],
     [ "rolling_average.cpp", "rolling__average_8cpp.html", null ],

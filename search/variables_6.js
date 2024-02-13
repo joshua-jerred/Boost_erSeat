@@ -1,5 +1,6 @@
 var searchData=
 [
-  ['pi_406',['PI',['../namespacebst_1_1math.html#ac8270bc34f644327f70abf59d5700bc4',1,'bst::math']]],
-  ['points_5f_407',['points_',['../classbst_1_1geo_1_1Path.html#a2107400775c8bd2ac712b5750572bde6',1,'bst::geo::Path']]]
+  ['k_5fpipe_5fread_460',['K_PIPE_READ',['../namespacebst.html#a78ccb9ecbafa05781e3220560ec82315',1,'bst']]],
+  ['k_5fpipe_5fwrite_461',['K_PIPE_WRITE',['../namespacebst.html#ab679f1c68d609480fa512a3bc98ccac0',1,'bst']]],
+  ['kprecision_462',['kPrecision',['../namespacebst.html#a1b16c253cfdfc8e1764da6a258b7d759',1,'bst']]]
 ];

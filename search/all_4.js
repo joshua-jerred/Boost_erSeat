@@ -1,15 +1,15 @@
 var searchData=
 [
-  ['elapsed_45',['elapsed',['../classBoosterSeat_1_1Stopwatch.html#a1730583411cfbdb101390934cede9354',1,'BoosterSeat::Stopwatch']]],
-  ['elapsed_5f_46',['elapsed_',['../classBoosterSeat_1_1Stopwatch.html#a95116cb37ff60554b432547f63c1ee59',1,'BoosterSeat::Stopwatch']]],
-  ['elapsedasciiclock_47',['elapsedAsciiClock',['../namespaceBoosterSeat_1_1time.html#a96da139824ad355ab258c4c0af6c9650',1,'BoosterSeat::time']]],
-  ['errnum_48',['ErrNum',['../filesystem_8cpp.html#abf287e9a4c27d7e70a9487e1662775de',1,'filesystem.cpp']]],
-  ['error_5fnumber_5f_49',['error_number_',['../classBoosterSeat_1_1BoosterSeatException.html#ade41edde24ba29087ad0673c94a8df29',1,'BoosterSeat::BoosterSeatException']]],
-  ['error_5fnumber_5fenum_5f_50',['error_number_enum_',['../classBoosterSeat_1_1BoosterSeatException.html#ac9e99723b0041d6205d3f9496ef6ee43',1,'BoosterSeat::BoosterSeatException']]],
-  ['errornumber_51',['errorNumber',['../classBoosterSeat_1_1BoosterSeatException.html#ad8b9b2248d1af314d6ff3bcbff842093',1,'BoosterSeat::BoosterSeatException']]],
-  ['errornumber_52',['ErrorNumber',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941c',1,'BoosterSeat']]],
-  ['errornumberenum_53',['errorNumberEnum',['../classBoosterSeat_1_1BoosterSeatException.html#a968460b38d7c6c517cdc659ee0b5b288',1,'BoosterSeat::BoosterSeatException']]],
-  ['exception_2ehpp_54',['exception.hpp',['../exception_8hpp.html',1,'']]],
-  ['exists_55',['exists',['../namespaceinternal.html#aad7e8e828a3d9f285d2ff715d9f9264c',1,'internal']]],
-  ['exists_56',['Exists',['../namespaceassertions.html#a2f953f5375dfaa98583a4d43475caf25',1,'assertions']]]
+  ['d2r_43',['D2R',['../namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e',1,'bst::math']]],
+  ['dateandtimestring_44',['dateAndTimeString',['../namespacebst_1_1time.html#a2f5614e38783fb2a27cbed3987e3fd4d',1,'bst::time::dateAndTimeString(TimeZone time_zone=TimeZone::LOCAL, char date_delimiter=&apos;-&apos;, char between_delimiter=&apos; &apos;, char time_delimiter=&apos;:&apos;, bst::clck::TimePoint time_point=bst::clck::now())'],['../namespacebst_1_1time.html#a787a2d545752d701707526e58807cc08',1,'bst::time::dateAndTimeString(const bst::clck::TimePoint &amp;time_point)']]],
+  ['dateandtimetotimepoint_45',['dateAndTimeToTimePoint',['../namespacebst_1_1time.html#aca4cce38cce328fe585429b4d6008034',1,'bst::time']]],
+  ['dateformatstring_46',['dateFormatString',['../time_8cpp.html#a39587916c21a4902744b75d2106681f0',1,'time.cpp']]],
+  ['datestring_47',['dateString',['../namespacebst_1_1time.html#acb25143aaac68c8a587e11d4ecf7c93c',1,'bst::time']]],
+  ['deletefile_48',['deleteFile',['../namespacebst_1_1filesystem.html#a2f655ab64e72f56001c2dd4a120708ae',1,'bst::filesystem']]],
+  ['directory_49',['DIRECTORY',['../namespacebst_1_1filesystem_1_1units.html#afc427caba404cd6e0b14f85db2ff4e65a28766b4be065d0c806c2e9c9d914af48',1,'bst::filesystem::units']]],
+  ['distance_50',['distance',['../classbst_1_1geo_1_1Path.html#ad2ba4954d64d1719549aa4d3f828ae9e',1,'bst::geo::Path::distance()'],['../namespacebst_1_1geo.html#a1397b9fa084d6f595d9d20a24a37b5be',1,'bst::geo::distance()']]],
+  ['doesdirectoryexist_51',['doesDirectoryExist',['../namespacebst_1_1filesystem.html#a8d8d017256808fb9bc431abe51bfefe1',1,'bst::filesystem']]],
+  ['doesfileexist_52',['doesFileExist',['../namespacebst_1_1filesystem.html#a298e57b8f775c5135a738deb18a3c681',1,'bst::filesystem']]],
+  ['doubletoprecisiontwo_53',['doubleToPrecisionTwo',['../namespacebst.html#a38c78e81366d59661bd60b560e7a8c1e',1,'bst']]],
+  ['duration_54',['Duration',['../namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e',1,'bst::clck']]]
 ];

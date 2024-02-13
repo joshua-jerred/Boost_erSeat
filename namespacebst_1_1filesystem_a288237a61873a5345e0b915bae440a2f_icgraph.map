@@ -1,0 +1,4 @@
+<map id="bst::filesystem::getDirectorySize" name="bst::filesystem::getDirectorySize">
+<area shape="rect" id="node1" title="Get the size of a directory. Only includes regular files." alt="" coords="108,5,343,32"/>
+<area shape="rect" id="node2" href="$filesystem__test_8cpp.html#a5fd3419741f25b6788c15909ac808ba3" title=" " alt="" coords="5,5,60,32"/>
+</map>

@@ -1,10 +1,10 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,157,60,184"/>
-<area shape="rect" id="node2" href="$classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36" title=" " alt="" coords="108,5,268,32"/>
-<area shape="rect" id="node3" href="$classbst_1_1Time.html#a7a94cf6c09f077be0fa58d7c6209b280" title="Get the Day." alt="" coords="119,56,257,83"/>
-<area shape="rect" id="node4" href="$classbst_1_1Time.html#a4f1d099514987d99d6f82214e15e3937" title="Get the Hour." alt="" coords="117,107,259,133"/>
-<area shape="rect" id="node5" href="$classbst_1_1Time.html#aface45ecfaf6331f6ac2542c5ee35183" title="Get the Minute." alt="" coords="109,157,267,184"/>
-<area shape="rect" id="node6" href="$classbst_1_1Time.html#a4af6ade85e96b3801585bc18b4cd12fd" title="Get the Month (1 &#45; 12)" alt="" coords="111,208,265,235"/>
-<area shape="rect" id="node7" href="$classbst_1_1Time.html#a8a8016a11e9c89ed93ee5ec61066335b" title="Get the Second." alt="" coords="109,259,267,285"/>
-<area shape="rect" id="node8" href="$classbst_1_1Time.html#ac3a53051be172208e0d5ec580147aabe" title="Get the Year." alt="" coords="119,309,257,336"/>
+<area shape="rect" id="node2" href="$classbst_1_1Time.html#ab2d56ccb2ec81d5cde60288db40e22e0" title=" " alt="" coords="108,5,268,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Time.html#aea8177d8ecbc30116116fa705b138c6f" title="Get the Day." alt="" coords="119,56,257,83"/>
+<area shape="rect" id="node4" href="$classbst_1_1Time.html#ae70707141c51072e4a14b58e51462a74" title="Get the Hour." alt="" coords="117,107,259,133"/>
+<area shape="rect" id="node5" href="$classbst_1_1Time.html#a4d810326749dc5ec13a7860e2eca42fe" title="Get the Minute." alt="" coords="109,157,267,184"/>
+<area shape="rect" id="node6" href="$classbst_1_1Time.html#a86b03d8ee697f84bf0eb8fad050741c2" title="Get the Month (1 &#45; 12)" alt="" coords="111,208,265,235"/>
+<area shape="rect" id="node7" href="$classbst_1_1Time.html#adc6db8e32d273250bd9242653b9d7ee1" title="Get the Second." alt="" coords="109,259,267,285"/>
+<area shape="rect" id="node8" href="$classbst_1_1Time.html#adbc9fef605a398b8e4847241de5de82a" title="Get the Year." alt="" coords="119,309,257,336"/>
 </map>

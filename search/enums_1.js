@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['errornumber_427',['ErrorNumber',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941c',1,'BoosterSeat']]]
+  ['errornumber_495',['ErrorNumber',['../namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46',1,'bst']]]
 ];

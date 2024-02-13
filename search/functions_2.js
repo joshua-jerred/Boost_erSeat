@@ -1,10 +1,12 @@
 var searchData=
 [
-  ['containsprefix_290',['containsPrefix',['../namespaceBoosterSeat.html#aaef092d5161035a089f27011cbed675c',1,'BoosterSeat']]],
-  ['containssubstring_291',['containsSubstring',['../namespaceBoosterSeat.html#aad58b7cc5d65ea344dd9ce8bd0d9cbae',1,'BoosterSeat']]],
-  ['containssuffix_292',['containsSuffix',['../namespaceBoosterSeat.html#a8fe2469d0e75861bd19057b42793e32b',1,'BoosterSeat']]],
-  ['convertmbtounit_293',['convertMbToUnit',['../namespaceinternal.html#ad644ef1dd8578b7b3e9930b86272fbde',1,'internal']]],
-  ['createdirectory_294',['createDirectory',['../namespaceBoosterSeat_1_1filesystem.html#a9066e0d61a5cb8441c90a65ac1be5ea2',1,'BoosterSeat::filesystem']]],
-  ['createfile_295',['createFile',['../namespaceBoosterSeat_1_1filesystem.html#a998d104b3a57bd778553b44636bc067a',1,'BoosterSeat::filesystem']]],
-  ['createfileofsizemb_296',['createFileOfSizeMb',['../filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9',1,'filesystem_test.cpp']]]
+  ['child_336',['child',['../classbst_1_1Process.html#a5f623c04b1e87f1c632da2d3c485470c',1,'bst::Process']]],
+  ['closeinstream_337',['closeInStream',['../classbst_1_1Process.html#a7f302425489412fe6f7e809911fb3b8c',1,'bst::Process']]],
+  ['containsprefix_338',['containsPrefix',['../namespacebst.html#a92aa0f1f060065c745c1bee1190faa84',1,'bst']]],
+  ['containssubstring_339',['containsSubstring',['../namespacebst.html#a9a5147e48ad8855dea81772722df8efb',1,'bst']]],
+  ['containssuffix_340',['containsSuffix',['../namespacebst.html#ae663403a6b00abe91e6778da8f0cdf6e',1,'bst']]],
+  ['convertmbtounit_341',['convertMbToUnit',['../namespacebst_1_1fs__int.html#a5363880eb4f2361912b04d9c7a7f84e3',1,'bst::fs_int']]],
+  ['createdirectory_342',['createDirectory',['../namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc',1,'bst::filesystem']]],
+  ['createfile_343',['createFile',['../namespacebst_1_1filesystem.html#a38cec5f76c16accb8845de44e7cb519d',1,'bst::filesystem']]],
+  ['createfileofsizemb_344',['createFileOfSizeMb',['../filesystem__test_8cpp.html#abe9eff64c3a9df645dcab53fe11b54d9',1,'filesystem_test.cpp']]]
 ];

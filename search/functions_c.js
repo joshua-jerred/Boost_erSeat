@@ -1,10 +1,11 @@
 var searchData=
 [
-  ['operator_21_3d_354',['operator!=',['../classbst_1_1Time.html#acc628496b5f00c2713f5380a0b1737b0',1,'bst::Time']]],
-  ['operator_3c_355',['operator&lt;',['../classbst_1_1Time.html#ac5ffd8485c97fc0490931f928165632c',1,'bst::Time']]],
-  ['operator_3c_3d_356',['operator&lt;=',['../classbst_1_1Time.html#ae2fdb4b11c47964185214dd53372b69f',1,'bst::Time']]],
-  ['operator_3d_3d_357',['operator==',['../classbst_1_1Time.html#afec3c68c60ae2f60753c2f5d65839471',1,'bst::Time']]],
-  ['operator_3e_358',['operator&gt;',['../classbst_1_1Time.html#afee398fcf4b4f6b62bad4415e90bf124',1,'bst::Time']]],
-  ['operator_3e_3d_359',['operator&gt;=',['../classbst_1_1Time.html#adc83cc6c1292ab4c05b0a26358005b42',1,'bst::Time']]],
-  ['overwritefile_360',['overwriteFile',['../namespaceBoosterSeat_1_1filesystem.html#a1dda6efdd3750029e2a4df2528e34a3b',1,'BoosterSeat::filesystem']]]
+  ['operator_20char_20_2a_401',['operator char *',['../structbst_1_1raii__char__str.html#ae090ff8be4d0d8fb79a22612057d8be7',1,'bst::raii_char_str']]],
+  ['operator_21_3d_402',['operator!=',['../classbst_1_1Time.html#a178ba7e4c711ef74c87b58fed7e4c25d',1,'bst::Time']]],
+  ['operator_3c_403',['operator&lt;',['../classbst_1_1Time.html#a4d4ae960955d749ebbe7baf3723e56d7',1,'bst::Time']]],
+  ['operator_3c_3d_404',['operator&lt;=',['../classbst_1_1Time.html#a5e167e0100c58a138df1dec5f4a3df33',1,'bst::Time']]],
+  ['operator_3d_3d_405',['operator==',['../classbst_1_1Time.html#abcde91b70fc18e49ab8e51c169d96245',1,'bst::Time']]],
+  ['operator_3e_406',['operator&gt;',['../classbst_1_1Time.html#a98b727d15103a03d5a8d54d7f4870152',1,'bst::Time']]],
+  ['operator_3e_3d_407',['operator&gt;=',['../classbst_1_1Time.html#af615674a1bc7d33188b00abe6a224421',1,'bst::Time']]],
+  ['overwritefile_408',['overwriteFile',['../namespacebst_1_1filesystem.html#a5238b859634edb269d572711945f9710',1,'bst::filesystem']]]
 ];

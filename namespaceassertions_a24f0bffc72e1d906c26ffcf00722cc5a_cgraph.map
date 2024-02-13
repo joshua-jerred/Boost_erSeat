@@ -1,4 +1,0 @@
-<map id="assertions::WritePermissions" name="assertions::WritePermissions">
-<area shape="rect" id="node1" title="Checks a program has write permissions to the file or directory at the path, if not,..." alt="" coords="5,13,216,39"/>
-<area shape="rect" id="node2" href="$namespaceinternal.html#a52e88ea2719e12bb94eda9a64a64bacd" title="Returns true if the path if the program has write permissions." alt="" coords="264,5,407,47"/>
-</map>

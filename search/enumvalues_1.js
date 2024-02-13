@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['center_435',['CENTER',['../namespaceBoosterSeat_1_1layout.html#a73c951e9848a120283ee7a7c575c03b9ac397289ee45877be0cd49811fe245b4e',1,'BoosterSeat::layout']]]
+  ['center_503',['CENTER',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009ac397289ee45877be0cd49811fe245b4e',1,'bst::layout']]]
 ];

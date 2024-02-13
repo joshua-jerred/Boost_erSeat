@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['stopwatch_234',['Stopwatch',['../classBoosterSeat_1_1Stopwatch.html',1,'BoosterSeat']]]
+  ['stopwatch_270',['Stopwatch',['../classbst_1_1Stopwatch.html',1,'bst']]]
 ];

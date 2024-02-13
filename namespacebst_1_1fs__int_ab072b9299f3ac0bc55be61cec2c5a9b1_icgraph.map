@@ -1,0 +1,4 @@
+<map id="bst::fs_int::has_write_permission" name="bst::fs_int::has_write_permission">
+<area shape="rect" id="node1" title="Returns true if the path if the program has write permissions." alt="" coords="223,5,380,47"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1fs__int.html#a71fc2552c37e044669726976a3a99135" title="Checks a program has write permissions to the file or directory at the path, if not,..." alt="" coords="5,5,175,47"/>
+</map>

@@ -1,8 +1,13 @@
 var searchData=
 [
-  ['no_5fperm_5fchecks_131',['NO_PERM_CHECKS',['../filesystem__test_8cpp.html#ae15256a773e9aa1145d6fa6f8e54a834',1,'filesystem_test.cpp']]],
-  ['not_5fyet_5fimplemented_132',['NOT_YET_IMPLEMENTED',['../namespaceBoosterSeat.html#a7599a3d5bab6dbf9f0b222243515941ca2b9e0164c20d01aa76539e8c37af9d37',1,'BoosterSeat']]],
-  ['now_133',['now',['../namespaceBoosterSeat_1_1clck.html#aa0c92d4819b1f0bdb0bf9d392967182d',1,'BoosterSeat::clck']]],
-  ['numbers_2ecpp_134',['numbers.cpp',['../numbers_8cpp.html',1,'']]],
-  ['numbers_2ehpp_135',['numbers.hpp',['../numbers_8hpp.html',1,'']]]
+  ['main_138',['main',['../visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4',1,'visual_tests.cpp']]],
+  ['math_2ehpp_139',['math.hpp',['../math_8hpp.html',1,'']]],
+  ['megabytes_140',['MEGABYTES',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a63f5e2c1fcc77ace72cc84acabd7450c',1,'bst::filesystem::units']]],
+  ['message_5f_141',['message_',['../classbst_1_1BoosterSeatException.html#a7ecb13bc2b8cf0435ea893ade481cb8d',1,'bst::BoosterSeatException']]],
+  ['microseconds_142',['MICROSECONDS',['../namespacebst.html#a47c9161317f6b8b92f25e127602b54b3a98a5b3971201a65b35d420793d7148ea',1,'bst']]],
+  ['microseconds_143',['Microseconds',['../namespacebst_1_1clck_1_1units.html#ac82582d15e73e69b1e7af0bc086eaaa1',1,'bst::clck::units']]],
+  ['milliseconds_144',['MILLISECONDS',['../namespacebst.html#a47c9161317f6b8b92f25e127602b54b3ab4fd5e5c06e72437a57379576df36936',1,'bst']]],
+  ['milliseconds_145',['Milliseconds',['../namespacebst_1_1clck_1_1units.html#aa2172414c1bc3533534d1e45ecac3935',1,'bst::clck::units']]],
+  ['millisecondselapsed_146',['millisecondsElapsed',['../namespacebst_1_1clck.html#adac67fedcb6e7b40053af8ee76600a21',1,'bst::clck']]],
+  ['movefile_147',['moveFile',['../namespacebst_1_1filesystem.html#a00eb7de75c46a77694f450a61724d24b',1,'bst::filesystem']]]
 ];

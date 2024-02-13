@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['validatesize_221',['validateSize',['../filesystem__test_8cpp.html#a108120f90f614aca837d69df1581ad2a',1,'filesystem_test.cpp']]],
-  ['visual_5ftests_2ecpp_222',['visual_tests.cpp',['../visual__tests_8cpp.html',1,'']]]
+  ['unspecified_251',['UNSPECIFIED',['../namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46a1c04cc3823d476c3017238679a0fdf52',1,'bst']]],
+  ['utc_252',['UTC',['../namespacebst_1_1time.html#ad2f080a02581da2afedf7173aed1b267a9234324ddf6b4176b57d803a925b7961',1,'bst::time']]]
 ];

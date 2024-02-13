@@ -1,7 +1,7 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,81,60,108"/>
-<area shape="rect" id="node2" href="$classbst_1_1Time.html#a84e38378f8d4c0fbafd4507b86278f36" title=" " alt="" coords="131,5,291,32"/>
-<area shape="rect" id="node3" href="$classbst_1_1Time.html#ad1d139f4d0fa7176519799efd7443b93" title="Returns the number of seconds from the current time to the stored time." alt="" coords="108,56,315,83"/>
-<area shape="rect" id="node4" href="$classbst_1_1Time.html#a14009763d369f7652a294e95893fac41" title="Set the time to the current time." alt="" coords="134,107,289,133"/>
-<area shape="rect" id="node5" href="$namespaceBoosterSeat_1_1time.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="138,158,285,199"/>
+<area shape="rect" id="node2" href="$classbst_1_1Time.html#ab2d56ccb2ec81d5cde60288db40e22e0" title=" " alt="" coords="131,5,291,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Time.html#aecd7ee60846a1d042381430ac10ff235" title="Returns the number of seconds from the current time to the stored time." alt="" coords="108,56,315,83"/>
+<area shape="rect" id="node4" href="$classbst_1_1Time.html#a62346abfceb160c8a55f8c50f38e64f2" title="Set the time to the current time." alt="" coords="134,107,289,133"/>
+<area shape="rect" id="node5" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="169,157,254,184"/>
 </map>

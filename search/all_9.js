@@ -1,5 +1,12 @@
 var searchData=
 [
-  ['kilobytes_113',['KILOBYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca8bdac1c59b910777c2191ff22a7b87d8',1,'BoosterSeat::filesystem::units']]],
-  ['kprecision_114',['kPrecision',['../namespaceBoosterSeat.html#aa6454ab00fb90f94e90d890859cc86a9',1,'BoosterSeat']]]
+  ['i2s_119',['i2s',['../namespacebst_1_1string.html#ad54eac96c6bd3cef7e97bf83a71be486',1,'bst::string']]],
+  ['in_5fpipe_5f_120',['in_pipe_',['../classbst_1_1Process.html#a661e0f1219642f9c4a33eda41d6dfafe',1,'bst::Process']]],
+  ['in_5fstream_5f_121',['in_stream_',['../classbst_1_1Process.html#aee3ec621b79626cea35adae531fe41ab',1,'bst::Process']]],
+  ['inttohex_122',['intToHex',['../namespacebst_1_1string.html#ace1e9a528cc251163ce5fd2143d32085',1,'bst::string']]],
+  ['is_5fdirectory_123',['is_directory',['../namespacebst_1_1fs__int.html#a5f6c967767efd1b7d7578e94825e07fa',1,'bst::fs_int']]],
+  ['is_5ffile_124',['is_file',['../namespacebst_1_1fs__int.html#a5865a8f6139d541963383bd4b194ff97',1,'bst::fs_int']]],
+  ['isapproxequal_125',['isApproxEqual',['../namespacebst.html#a08c1b260871c8845637293587ed620ba',1,'bst']]],
+  ['isapproxequalpercent_126',['isApproxEqualPercent',['../namespacebst.html#a58c60bf2f30f989d4fef310408442a05',1,'bst']]],
+  ['isdone_127',['isDone',['../classbst_1_1Timer.html#a74f8508e28ab052b25fdf3072e16bae7',1,'bst::Timer']]]
 ];

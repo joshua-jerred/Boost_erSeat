@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['bits_433',['BITS',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca6886e0d29007ca152880b30d73ca2adc',1,'BoosterSeat::filesystem::units']]],
-  ['bytes_434',['BYTES',['../namespaceBoosterSeat_1_1filesystem_1_1units.html#af112d7e1c82465adfd076037586990eca9f1908a641ea399fd2e76f0905c88fcf',1,'BoosterSeat::filesystem::units']]]
+  ['bits_501',['BITS',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a6886e0d29007ca152880b30d73ca2adc',1,'bst::filesystem::units']]],
+  ['bytes_502',['BYTES',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a9f1908a641ea399fd2e76f0905c88fcf',1,'bst::filesystem::units']]]
 ];
