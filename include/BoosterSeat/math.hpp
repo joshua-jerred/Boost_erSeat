@@ -20,6 +20,9 @@ inline constexpr double TWO_PI = 2.0 * PI;
 /// @brief Factor to convert degrees to radians.
 inline constexpr double D2R = PI / 180.0;
 
+/// @brief Factor to convert radians to degrees.
+inline constexpr double R2D = 180.0 / PI;
+
 } // namespace bst::math
 
 #endif /* BOOSTER_SEAT_MATH_HPP_ */

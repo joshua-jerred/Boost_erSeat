@@ -14,6 +14,8 @@
 namespace bst {
 namespace geo {
 
+inline constexpr double EARTH_RADIUS_KM = 6378.1370;
+
 /**
  * @brief A geographical point.
  */
@@ -35,6 +37,8 @@ public:
   double longitude() const {
     return lon_;
   }
+
+  Point shootVector(double bearing, double distance_m) const;
 
 private:
   /**

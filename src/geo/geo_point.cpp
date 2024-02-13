@@ -20,6 +20,25 @@ Point::Point(double lat, double lon) : lat_(lat), lon_(lon) {
   }
 }
 
+Point Point::shootVector(double bearing, double distance_km) const {
+  double in_lat_rad = lat_ * bst::math::D2R;
+  double in_lon_rad = lon_ * bst::math::D2R;
+  double bearing_rad = bearing * bst::math::D2R;
+
+  double out_lat_rad =
+      std::asin(std::sin(in_lat_rad) * std::cos(distance_km / EARTH_RADIUS_KM) +
+                std::cos(in_lat_rad) * std::sin(distance_km / EARTH_RADIUS_KM) *
+                    std::cos(bearing_rad));
+  double out_lon_rad =
+      in_lon_rad + std::atan2(std::sin(bearing_rad) *
+                                  std::sin(distance_km / EARTH_RADIUS_KM) *
+                                  std::cos(in_lat_rad),
+                              std::cos(distance_km / EARTH_RADIUS_KM) -
+                                  std::sin(in_lat_rad) * std::sin(out_lat_rad));
+
+  return Point(out_lat_rad * bst::math::R2D, out_lon_rad * bst::math::R2D);
+}
+
 double distance(const Point &a, const Point &b) {
   double decimal_long = (b.longitude() - a.longitude()) * bst::math::D2R;
   double decimal_lat = (b.latitude() - a.latitude()) * bst::math::D2R;
