@@ -5,11 +5,10 @@
 #include <iomanip>
 #include <sstream>
 
-namespace BoosterSeat {
+namespace bst {
 
 /**
- * @brief Rounds a double to two decimal places.
- * @example 1.2345 -> 1.23
+ * @brief Rounds a double to two decimal places. For example: 1.2345 -> 1.23
  * @param double  The double to round.
  * @return double The rounded double.
  */
@@ -53,6 +52,6 @@ inline std::string rndTs(double d, int precision) {
   return ss.str();
 }
 
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif /* NUMBERS_HPP_ */

@@ -4,7 +4,7 @@
 #include <string>
 #include <vector>
 
-namespace BoosterSeat {
+namespace bst {
 namespace layout {
 
 enum class Alignment { LEFT, RIGHT, CENTER };
@@ -47,6 +47,6 @@ std::string intToHex(const int i, const int width = 2,
                      const bool include_0x = true, const bool uppercase = true);
 } // namespace string
 
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif

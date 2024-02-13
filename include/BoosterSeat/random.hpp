@@ -3,7 +3,7 @@
 
 #include <random>
 
-namespace BoosterSeat {
+namespace bst {
 
 /**
  * @brief Generates a random hex string of the given length.
@@ -12,6 +12,6 @@ namespace BoosterSeat {
  */
 std::string randomHexString(unsigned int length);
 
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif // RANDOM_HPP_

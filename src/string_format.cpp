@@ -4,23 +4,23 @@
 #include <sstream>
 
 inline void align_cases(std::stringstream &ss,
-                        const BoosterSeat::layout::Alignment align) {
+                        const bst::layout::Alignment align) {
   switch (align) {
-  case BoosterSeat::layout::Alignment::LEFT:
+  case bst::layout::Alignment::LEFT:
     ss << std::left;
     break;
-  case BoosterSeat::layout::Alignment::RIGHT:
+  case bst::layout::Alignment::RIGHT:
     ss << std::right;
     break;
-  case BoosterSeat::layout::Alignment::CENTER:
+  case bst::layout::Alignment::CENTER:
     ss << std::internal;
     break;
   }
 }
 
-std::string BoosterSeat::layout::simpleColumns(
-    const std::vector<std::vector<std::string>> &rows, const Alignment align,
-    const int column_width) {
+std::string
+bst::layout::simpleColumns(const std::vector<std::vector<std::string>> &rows,
+                           const Alignment align, const int column_width) {
 #ifndef BOOSTERSEAT_NO_EXCEPTION
   if (column_width < 0) {
     throw BoosterSeatException("column_width must be greater than 0");
@@ -41,9 +41,9 @@ std::string BoosterSeat::layout::simpleColumns(
   return ss.str();
 }
 
-std::string
-BoosterSeat::layout::fixedWidthRow(const std::vector<std::string> &row,
-                                   const Alignment align, const int row_width) {
+std::string bst::layout::fixedWidthRow(const std::vector<std::string> &row,
+                                       const Alignment align,
+                                       const int row_width) {
 #ifndef BOOSTERSEAT_NO_EXCEPTION
   if (row_width < 0) {
     throw BoosterSeatException("row_width must be greater than 0");
@@ -62,9 +62,9 @@ BoosterSeat::layout::fixedWidthRow(const std::vector<std::string> &row,
   return ss.str();
 }
 
-std::string BoosterSeat::layout::fixedWidthString(const std::string &s,
-                                                  const Alignment align,
-                                                  const int width) {
+std::string bst::layout::fixedWidthString(const std::string &s,
+                                          const Alignment align,
+                                          const int width) {
   std::stringstream ss;
   ss << std::setw(width);
   align_cases(ss, align);
@@ -72,15 +72,14 @@ std::string BoosterSeat::layout::fixedWidthString(const std::string &s,
   return ss.str();
 }
 
-std::string BoosterSeat::string::f2s(const double d, const int precision) {
+std::string bst::string::f2s(const double d, const int precision) {
   std::stringstream ss;
   ss << std::fixed << std::setprecision(precision) << d;
   return ss.str();
 }
 
-std::string BoosterSeat::string::intToHex(const int i, const int width,
-                                          const bool include_0x,
-                                          const bool uppercase) {
+std::string bst::string::intToHex(const int i, const int width,
+                                  const bool include_0x, const bool uppercase) {
   std::stringstream ss;
   ss << std::hex << std::setfill('0');
   if (include_0x) {

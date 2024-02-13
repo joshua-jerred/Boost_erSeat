@@ -5,7 +5,7 @@
 
 #include "gtest/gtest.h"
 
-using namespace BoosterSeat;
+using namespace bst;
 
 void secondsEq(const double a, const double b, const double epsilon) {
   EXPECT_LE(std::abs(a - b), epsilon);
@@ -30,7 +30,7 @@ TEST(Stopwatch, Units) {
 
   Stopwatch stopwatch;
   stopwatch.start();
-  threadSleep(10);
+  bst::sleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(Resolution::SECONDS), 0.01, kEpsilon);
   secondsEq(stopwatch.elapsed(Resolution::MILLISECONDS), 10.0, kEpsilon * 1000);
@@ -43,21 +43,21 @@ TEST(StopwatchTest, KeepsRunningTotal) {
 
   Stopwatch stopwatch;
   stopwatch.start();
-  threadSleep(10);
+  bst::sleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 0.01, kEpsilon);
 
-  threadSleep(20);
+  bst::sleep(20);
 
   stopwatch.start();
-  threadSleep(10);
+  bst::sleep(10);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 0.02, kEpsilon);
 
-  threadSleep(20);
+  bst::sleep(20);
 
   stopwatch.start();
-  threadSleep(980);
+  bst::sleep(980);
   stopwatch.stop();
   secondsEq(stopwatch.elapsed(), 1.0, kEpsilon);
 }

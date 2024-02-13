@@ -23,6 +23,7 @@ set(ALL_SOURCE_FILES
   src/timer.cpp
   src/rolling_average.cpp
   src/numbers.cpp
+  src/process.cpp
   src/geo/geo_point.cpp
   #src/geo/geo_strings.cpp
 )

@@ -4,12 +4,12 @@
 #include "clock.hpp"
 #include "exception.hpp"
 
-namespace BoosterSeat {
+namespace bst {
 
 enum class Resolution { SECONDS, MILLISECONDS, MICROSECONDS };
 
 class Stopwatch {
- public:
+public:
   Stopwatch();
   ~Stopwatch() = default;
 
@@ -23,13 +23,13 @@ class Stopwatch {
 
   double elapsed(Resolution resolution = Resolution::SECONDS) const;
 
- private:
+private:
   clck::Clock clock_ = clck::Clock();
   clck::TimePoint start_ = clck::TimePoint::min();
   clck::TimePoint stop_time_ = clck::TimePoint::min();
   clck::Duration elapsed_ = clck::Duration::zero();
   State state_ = State::STOPPED;
 };
-}  // namespace BoosterSeat
+} // namespace bst
 
-#endif  // BOOST_ERSEAT_HPP_
+#endif // BOOST_ERSEAT_HPP_

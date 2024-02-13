@@ -6,12 +6,12 @@
 #include <sstream>
 #include <string>
 
-namespace BoosterSeat {
+namespace bst {
 namespace time {
 
 enum class TimeZone { UTC, LOCAL };
 
-std::string elapsedAsciiClock(const BoosterSeat::clck::TimePoint &time_point);
+std::string elapsedAsciiClock(const bst::clck::TimePoint &time_point);
 
 /**
  * @brief Get the time in format: HH:MM:SS (24 hour clock) for a given time zone
@@ -21,9 +21,9 @@ std::string elapsedAsciiClock(const BoosterSeat::clck::TimePoint &time_point);
  * @param time - The time to get the string for (default: current time)
  * @return std::string - The time string
  */
-std::string
-timeString(TimeZone time_zone = TimeZone::LOCAL, char delimiter = ':',
-           BoosterSeat::clck::TimePoint time_point = BoosterSeat::clck::now());
+std::string timeString(TimeZone time_zone = TimeZone::LOCAL,
+                       char delimiter = ':',
+                       bst::clck::TimePoint time_point = bst::clck::now());
 
 std::string dateString(TimeZone time_zone = TimeZone::LOCAL,
                        char delimiter = '-');
@@ -32,18 +32,18 @@ std::string dateString(TimeZone time_zone = TimeZone::LOCAL,
  * @brief Get the date and time in the format: YYYY-MM-DD HH:MM:SS
  * @return std::string
  */
-std::string dateAndTimeString(
-    TimeZone time_zone = TimeZone::LOCAL, char date_delimiter = '-',
-    char between_delimiter = ' ', char time_delimiter = ':',
-    BoosterSeat::clck::TimePoint time_point = BoosterSeat::clck::now());
+std::string
+dateAndTimeString(TimeZone time_zone = TimeZone::LOCAL,
+                  char date_delimiter = '-', char between_delimiter = ' ',
+                  char time_delimiter = ':',
+                  bst::clck::TimePoint time_point = bst::clck::now());
 
-inline std::string
-dateAndTimeString(const BoosterSeat::clck::TimePoint &time_point) {
+inline std::string dateAndTimeString(const bst::clck::TimePoint &time_point) {
   return dateAndTimeString(TimeZone::LOCAL, '-', ' ', ':', time_point);
 }
 
 /**
- * @brief Convert a date and time to a BoosterSeat::clck::TimePoint
+ * @brief Convert a date and time to a bst::clck::TimePoint
  * @details All parameters are clamped to their respective ranges.
  *
  * @param year - The year (e.g. 2023, must be greater than 1970)
@@ -52,21 +52,19 @@ dateAndTimeString(const BoosterSeat::clck::TimePoint &time_point) {
  * @param hour - The hour (0 - 23)
  * @param minute - The minute (0 - 59)
  * @param second - The second (0 - 59)
- * @return BoosterSeat::clck::TimePoint - The time point
+ * @return bst::clck::TimePoint - The time point
  */
-BoosterSeat::clck::TimePoint dateAndTimeToTimePoint(int year, int month,
-                                                    int day, int hour,
-                                                    int minute, int second);
+bst::clck::TimePoint dateAndTimeToTimePoint(int year, int month, int day,
+                                            int hour, int minute, int second);
 
 } // namespace time
 
-} // namespace BoosterSeat
+} // namespace bst
 
 namespace bst {
 
 /**
  * @brief The generic time class for BoosterSeat. Uses UTC time.
- * @defgroup bst_time Time
  *
  * @warning This class has many issues related to time zones and DST. It's
  * current purpose is just for simple time saving/loading in the giraffe

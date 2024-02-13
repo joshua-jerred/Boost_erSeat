@@ -5,7 +5,7 @@
 #include <stdexcept>
 #include <string>
 
-namespace BoosterSeat {
+namespace bst {
 
 enum class ErrorNumber {
   /**
@@ -79,6 +79,18 @@ enum class ErrorNumber {
   TIME_INVALID_TIME = 12,
 
   /**
+   * @brief Part of bst::Process, thrown if the process is not yet complete yet
+   * a method is called that requires the process to be complete. Call
+   * waitToComplete first.
+   */
+  PROCESS_NOT_COMPLETE = 13,
+
+  /**
+   * @brief Part of bst::Process, thrown if the process times out.
+   */
+  PROCESS_TIMEOUT = 14,
+
+  /**
    * @brief Throws if a feature is not yet implemented.
    */
   NOT_YET_IMPLEMENTED
@@ -90,7 +102,7 @@ public:
                        ErrorNumber error_number = ErrorNumber::UNSPECIFIED)
       : error_number_enum_(error_number),
         error_number_(template_tools::to_underlying(error_number)),
-        message_("BS Errno: " + std::to_string(error_number_) + " |" +
+        message_("BST Errno: " + std::to_string(error_number_) + " | " +
                  message) {
   }
   ~BoosterSeatException() = default;
@@ -113,6 +125,6 @@ private:
   std::string message_;
 };
 
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif // BOOST_ERSEAT_HPP_

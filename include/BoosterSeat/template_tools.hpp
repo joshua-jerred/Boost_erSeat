@@ -3,7 +3,7 @@
 
 #include <type_traits>
 
-namespace BoosterSeat {
+namespace bst {
 namespace template_tools {
 
 /**
@@ -21,6 +21,6 @@ constexpr auto to_underlying(E e) noexcept {
 }
 
 } // namespace template_tools
-} // namespace BoosterSeat
+} // namespace bst
 
 #endif /* TEMPLATE_TOOLS_HPP_ */
