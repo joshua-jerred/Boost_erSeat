@@ -36,3 +36,29 @@ TEST(Geo, PathDistance) {
   EXPECT_NEAR(ret_point.latitude(), points.front().latitude(), 0.0001);
   EXPECT_NEAR(ret_point.longitude(), points.front().longitude(), 0.0001);
 }
+
+TEST(Geo, ShootVector) {
+  // nearby points
+  Point point_1{38.889200, -77.050114};
+  Point expected_point{38.889475, -77.035253};
+
+  const double BEARING_1 = 88.63;
+  const double DISTANCE_1 = 1.28964;
+
+  Point point_2 = point_1.shootVector(BEARING_1, DISTANCE_1);
+
+  EXPECT_NEAR(distance(point_1, point_2), DISTANCE_1, 0.1);
+  EXPECT_NEAR(point_2.latitude(), expected_point.latitude(), 0.0001);
+  EXPECT_NEAR(point_2.longitude(), expected_point.longitude(), 0.0001);
+
+  // far away points
+  const Point point3{38.889475, -77.035253};
+  const Point expected_point2{40.689253, -74.044492};
+  const double BEARING_2 = 50.98;
+  const double DISTANCE_2 = 324.82824;
+
+  Point point4 = point3.shootVector(BEARING_2, DISTANCE_2);
+
+  EXPECT_NEAR(distance(point3, point4), DISTANCE_2, 0.6);
+  EXPECT_NEAR(point4.latitude(), expected_point2.latitude(), 0.001);
+}
