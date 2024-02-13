@@ -25,27 +25,31 @@
 var NAVTREE =
 [
   [ "BoosterSeat", "index.html", [
-    [ "Modules", "index.html#autotoc_md16", null ],
-    [ "Using with CMake", "index.html#autotoc_md17", null ],
+    [ "Modules", "index.html#autotoc_md19", null ],
+    [ "Using with CMake", "index.html#autotoc_md20", null ],
+    [ "[BST module] Geo", "md_doc_geo.html", [
+      [ "Geo Point", "md_doc_geo.html#autotoc_md1", null ],
+      [ "Geo Path", "md_doc_geo.html#autotoc_md2", null ]
+    ] ],
     [ "[BST module] Process", "md_doc_process.html", [
-      [ "Example: Basic usage", "md_doc_process.html#autotoc_md1", null ],
-      [ "Example: Write additional input to stdin", "md_doc_process.html#autotoc_md2", null ],
-      [ "Example: Non-zero command exit codes", "md_doc_process.html#autotoc_md3", null ],
-      [ "Example: Commands that do not exist", "md_doc_process.html#autotoc_md4", null ],
-      [ "Example: Command timeout", "md_doc_process.html#autotoc_md5", null ]
+      [ "Example: Basic usage", "md_doc_process.html#autotoc_md4", null ],
+      [ "Example: Write additional input to stdin", "md_doc_process.html#autotoc_md5", null ],
+      [ "Example: Non-zero command exit codes", "md_doc_process.html#autotoc_md6", null ],
+      [ "Example: Commands that do not exist", "md_doc_process.html#autotoc_md7", null ],
+      [ "Example: Command timeout", "md_doc_process.html#autotoc_md8", null ]
     ] ],
     [ "[BST module] Random", "md_doc_random.html", [
-      [ "Functions", "md_doc_random.html#autotoc_md7", null ],
-      [ "Examples:", "md_doc_random.html#autotoc_md8", [
-        [ "Random hex string", "md_doc_random.html#autotoc_md9", null ]
+      [ "Functions", "md_doc_random.html#autotoc_md10", null ],
+      [ "Examples:", "md_doc_random.html#autotoc_md11", [
+        [ "Random hex string", "md_doc_random.html#autotoc_md12", null ]
       ] ],
-      [ "Random Double", "md_doc_random.html#autotoc_md10", null ]
+      [ "Random Double", "md_doc_random.html#autotoc_md13", null ]
     ] ],
     [ "[BST module] Science", "md_doc_science.html", [
-      [ "Constants", "md_doc_science.html#autotoc_md12", null ],
-      [ "Pressure Conversions", "md_doc_science.html#autotoc_md13", [
-        [ "<tt>bst::Pressure</tt> class", "md_doc_science.html#autotoc_md14", null ],
-        [ "Example", "md_doc_science.html#autotoc_md15", null ]
+      [ "Constants", "md_doc_science.html#autotoc_md15", null ],
+      [ "Pressure Conversions", "md_doc_science.html#autotoc_md16", [
+        [ "<tt>bst::Pressure</tt> class", "md_doc_science.html#autotoc_md17", null ],
+        [ "Example", "md_doc_science.html#autotoc_md18", null ]
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
@@ -84,7 +88,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"md_doc_random.html#autotoc_md7"
+"md_doc_process.html#autotoc_md4",
+"timer_8hpp.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
