@@ -1,6 +1,7 @@
 #ifndef BST_ROLLING_AVERAGE_HPP_
 #define BST_ROLLING_AVERAGE_HPP_
 
+#include <cstddef>
 #include <queue>
 
 namespace bst {
@@ -15,13 +16,19 @@ public:
    * @brief Construct a RollingAverage object
    * @param window_size - The size of the rolling window
    */
-  RollingAverage(int window_size);
+  RollingAverage(size_t window_size);
 
   /**
    * @brief Default destructor
    */
   ~RollingAverage() = default;
 
+  /**
+   * @brief Add a value to the rolling average. If the queue size exceeds the
+   * window size, the oldest value will be removed from the queue and the sum
+   * will be decremented by that value.
+   * @param value - The value to add to the rolling average
+   */
   void addValue(double value);
 
   /**
@@ -30,9 +37,16 @@ public:
    */
   double getAverage() const;
 
+  /**
+   * @brief Set the window size. If the new window size is smaller than the
+   * current queue size, the queue will be truncated.
+   * @param new_window_size - The new window size
+   */
+  void setWindowSize(size_t new_window_size);
+
 private:
   std::queue<double> queue_ = {};
-  unsigned int window_size_;
+  size_t window_size_;
   double sum_ = 0;
 };
 
