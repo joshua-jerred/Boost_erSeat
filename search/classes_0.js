@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['boosterseatexception_291',['BoosterSeatException',['../classbst_1_1BoosterSeatException.html',1,'bst']]]
+  ['boosterseatexception_292',['BoosterSeatException',['../classbst_1_1BoosterSeatException.html',1,'bst']]]
 ];

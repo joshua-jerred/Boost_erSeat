@@ -1,6 +1,6 @@
 <map id="bst::RollingAverage" name="bst::RollingAverage">
-<area shape="rect" id="node1" title="Moving average calculator." alt="" coords="86,145,242,267"/>
+<area shape="rect" id="node1" title="Moving average calculator." alt="" coords="49,145,205,281"/>
 <area shape="rect" id="node2" title=" " alt="" coords="5,5,72,83"/>
-<area shape="rect" id="node3" title=" " alt="" coords="96,5,232,83"/>
-<area shape="rect" id="node4" title=" " alt="" coords="257,5,295,83"/>
+<area shape="rect" id="node3" title=" " alt="" coords="97,5,157,83"/>
+<area shape="rect" id="node4" title=" " alt="" coords="189,5,325,83"/>
 </map>

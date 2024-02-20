@@ -17,7 +17,7 @@ var searchData=
   ['rolling_5faverage_2ecpp_207',['rolling_average.cpp',['../rolling__average_8cpp.html',1,'']]],
   ['rolling_5faverage_2ehpp_208',['rolling_average.hpp',['../rolling__average_8hpp.html',1,'']]],
   ['rolling_5faverage_5ftest_2ecpp_209',['rolling_average_test.cpp',['../rolling__average__test_8cpp.html',1,'']]],
-  ['rollingaverage_210',['RollingAverage',['../classbst_1_1RollingAverage.html',1,'bst::RollingAverage'],['../classbst_1_1RollingAverage.html#aca1c42028146637f7c35cba522d759dc',1,'bst::RollingAverage::RollingAverage()']]],
+  ['rollingaverage_210',['RollingAverage',['../classbst_1_1RollingAverage.html',1,'bst::RollingAverage'],['../classbst_1_1RollingAverage.html#a78204a0addde92e7b9a1ea6c73768199',1,'bst::RollingAverage::RollingAverage()']]],
   ['run_211',['run',['../classbst_1_1Process.html#a5cf4591c23546c1139bd02ce3192c90b',1,'bst::Process']]],
   ['running_212',['RUNNING',['../classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd',1,'bst::Stopwatch']]]
 ];
