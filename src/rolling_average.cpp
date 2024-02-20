@@ -2,7 +2,7 @@
 
 namespace bst {
 
-RollingAverage::RollingAverage(int window_size) : window_size_(window_size) {
+RollingAverage::RollingAverage(size_t window_size) : window_size_(window_size) {
 }
 
 void RollingAverage::addValue(double value) {
@@ -21,6 +21,14 @@ double RollingAverage::getAverage() const {
     return 0.0;
   }
   return sum_ / size;
+}
+
+void RollingAverage::setWindowSize(size_t new_window_size) {
+  window_size_ = new_window_size;
+  while (queue_.size() > window_size_) {
+    sum_ -= queue_.front();
+    queue_.pop();
+  }
 }
 
 } // namespace bst
