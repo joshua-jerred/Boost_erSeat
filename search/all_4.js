@@ -1,6 +1,6 @@
 var searchData=
 [
-  ['d2r_47',['D2R',['../namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e',1,'bst::math']]],
+  ['d2r_47',['D2R',['../namespacebst_1_1math.html#a8e1cc02139dda65626a4afa03cc17f1e',1,'bst::math::D2R()'],['../namespacebst.html#a085907d8da9b6f00f3f7ae6c6dbbda68',1,'bst::D2R()']]],
   ['dateandtimestring_48',['dateAndTimeString',['../namespacebst_1_1time.html#a2f5614e38783fb2a27cbed3987e3fd4d',1,'bst::time::dateAndTimeString(TimeZone time_zone=TimeZone::LOCAL, char date_delimiter=&apos;-&apos;, char between_delimiter=&apos; &apos;, char time_delimiter=&apos;:&apos;, bst::clck::TimePoint time_point=bst::clck::now())'],['../namespacebst_1_1time.html#a787a2d545752d701707526e58807cc08',1,'bst::time::dateAndTimeString(const bst::clck::TimePoint &amp;time_point)']]],
   ['dateandtimetotimepoint_49',['dateAndTimeToTimePoint',['../namespacebst_1_1time.html#aca4cce38cce328fe585429b4d6008034',1,'bst::time']]],
   ['dateformatstring_50',['dateFormatString',['../time_8cpp.html#a39587916c21a4902744b75d2106681f0',1,'time.cpp']]],

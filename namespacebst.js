@@ -100,5 +100,11 @@ var namespacebst =
     [ "kPrecision", "namespacebst.html#a1b16c253cfdfc8e1764da6a258b7d759", null ],
     [ "K_PIPE_READ", "namespacebst.html#a78ccb9ecbafa05781e3220560ec82315", null ],
     [ "K_PIPE_WRITE", "namespacebst.html#ab679f1c68d609480fa512a3bc98ccac0", null ],
+    [ "PI", "namespacebst.html#a7bf961de5a29f64ac82ba5c9a22e6c56", null ],
+    [ "HALF_PI", "namespacebst.html#a2a28a8babfb86bb84da8b38a7a196f0c", null ],
+    [ "THREE_PI_HALVES", "namespacebst.html#a5b5902e844925c34697a211bfad84a90", null ],
+    [ "TWO_PI", "namespacebst.html#a8bd3eb77e3e4687ba44a37ffa0396a77", null ],
+    [ "D2R", "namespacebst.html#a085907d8da9b6f00f3f7ae6c6dbbda68", null ],
+    [ "R2D", "namespacebst.html#a1b6f0e2bf56dafdd3a72f77783897c85", null ],
     [ "K_GRAVITY", "namespacebst.html#a704925437260faf46c6c1da76c30188f", null ]
 ];
