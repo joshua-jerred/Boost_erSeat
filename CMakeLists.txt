@@ -21,7 +21,6 @@ set(ALL_SOURCE_FILES
   src/filesystem.cpp
   src/random.cpp
   src/timer.cpp
-  src/rolling_average.cpp
   src/numbers.cpp
   src/process.cpp
   src/science.cpp
