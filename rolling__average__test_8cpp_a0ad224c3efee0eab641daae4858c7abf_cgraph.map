@@ -1,5 +1,5 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,46,60,73"/>
-<area shape="rect" id="node2" href="$classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96" title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ..." alt="" coords="108,5,256,47"/>
-<area shape="rect" id="node3" href="$classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c" title="This method returns the rolling average." alt="" coords="108,71,256,112"/>
+<area shape="rect" id="node2" href="$classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269" title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ..." alt="" coords="108,5,256,47"/>
+<area shape="rect" id="node3" href="$classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7" title="This method returns the rolling average." alt="" coords="108,71,256,112"/>
 </map>

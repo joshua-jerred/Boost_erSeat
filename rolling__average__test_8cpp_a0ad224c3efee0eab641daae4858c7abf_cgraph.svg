@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96" target="_top" xlink:title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ...">
+<g id="a_node2"><a xlink:href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269" target="_top" xlink:title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ...">
 <polygon fill="none" stroke="black" points="77,-49.5 77,-79.5 188,-79.5 188,-49.5 77,-49.5"/>
 <text text-anchor="start" x="85" y="-67.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::RollingAverage</text>
 <text text-anchor="middle" x="132.5" y="-56.5" font-family="Helvetica,sans-Serif" font-size="10.00">::addValue</text>
@@ -36,7 +36,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c" target="_top" xlink:title="This method returns the rolling average.">
+<g id="a_node3"><a xlink:href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7" target="_top" xlink:title="This method returns the rolling average.">
 <polygon fill="none" stroke="black" points="77,-0.5 77,-30.5 188,-30.5 188,-0.5 77,-0.5"/>
 <text text-anchor="start" x="85" y="-18.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::RollingAverage</text>
 <text text-anchor="middle" x="132.5" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">::getAverage</text>

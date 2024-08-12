@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BoosterSeat: bst::RollingAverage Class Reference</title>
+<title>BoosterSeat: bst::RollingAverage&lt; T &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -105,7 +105,7 @@ $(document).ready(function(){initNavTree('classbst_1_1RollingAverage.html',''); 
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbst_1_1RollingAverage-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bst::RollingAverage Class Reference</div>  </div>
+<div class="title">bst::RollingAverage&lt; T &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
@@ -114,57 +114,82 @@ $(document).ready(function(){initNavTree('classbst_1_1RollingAverage.html',''); 
 
 <p><code>#include &lt;<a class="el" href="rolling__average_8hpp_source.html">rolling_average.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for bst::RollingAverage:</div>
+Collaboration diagram for bst::RollingAverage&lt; T &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage__coll__graph.svg" width="331" height="287"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage__coll__graph.svg" width="331" height="346"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a78204a0addde92e7b9a1ea6c73768199"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a78204a0addde92e7b9a1ea6c73768199">RollingAverage</a> (size_t window_size)</td></tr>
-<tr class="memdesc:a78204a0addde92e7b9a1ea6c73768199"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classbst_1_1RollingAverage.html" title="Moving average calculator.">RollingAverage</a> object.  <a href="classbst_1_1RollingAverage.html#a78204a0addde92e7b9a1ea6c73768199">More...</a><br /></td></tr>
-<tr class="separator:a78204a0addde92e7b9a1ea6c73768199"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affcef7fe90bcc1d0f7b02acfeb146534"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#affcef7fe90bcc1d0f7b02acfeb146534">~RollingAverage</a> ()=default</td></tr>
-<tr class="memdesc:affcef7fe90bcc1d0f7b02acfeb146534"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="classbst_1_1RollingAverage.html#affcef7fe90bcc1d0f7b02acfeb146534">More...</a><br /></td></tr>
-<tr class="separator:affcef7fe90bcc1d0f7b02acfeb146534"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aa479c56161d87d7ca83f6e2e382c5a96"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96">addValue</a> (double value)</td></tr>
-<tr class="memdesc:aa479c56161d87d7ca83f6e2e382c5a96"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will be removed from the queue and the sum will be decremented by that value.  <a href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96">More...</a><br /></td></tr>
-<tr class="separator:aa479c56161d87d7ca83f6e2e382c5a96"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a7416d8c15fd65aed9118c882517c387c"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c">getAverage</a> () const</td></tr>
-<tr class="memdesc:a7416d8c15fd65aed9118c882517c387c"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the rolling average.  <a href="classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c">More...</a><br /></td></tr>
-<tr class="separator:a7416d8c15fd65aed9118c882517c387c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a06d8f41a3ea425fe4b1a7520eb210689"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a06d8f41a3ea425fe4b1a7520eb210689">setWindowSize</a> (size_t new_window_size)</td></tr>
-<tr class="memdesc:a06d8f41a3ea425fe4b1a7520eb210689"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the window size. If the new window size is smaller than the current queue size, the queue will be truncated.  <a href="classbst_1_1RollingAverage.html#a06d8f41a3ea425fe4b1a7520eb210689">More...</a><br /></td></tr>
-<tr class="separator:a06d8f41a3ea425fe4b1a7520eb210689"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a37fae4c89375df40ae3450e7641ecedc"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a37fae4c89375df40ae3450e7641ecedc">RollingAverage</a> (size_t window_size)</td></tr>
+<tr class="memdesc:a37fae4c89375df40ae3450e7641ecedc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a <a class="el" href="classbst_1_1RollingAverage.html" title="Moving average calculator.">RollingAverage</a> object.  <a href="classbst_1_1RollingAverage.html#a37fae4c89375df40ae3450e7641ecedc">More...</a><br /></td></tr>
+<tr class="separator:a37fae4c89375df40ae3450e7641ecedc"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afb97d72106cb1fc7551d017a56eaf2ee"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#afb97d72106cb1fc7551d017a56eaf2ee">~RollingAverage</a> ()=default</td></tr>
+<tr class="memdesc:afb97d72106cb1fc7551d017a56eaf2ee"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="classbst_1_1RollingAverage.html#afb97d72106cb1fc7551d017a56eaf2ee">More...</a><br /></td></tr>
+<tr class="separator:afb97d72106cb1fc7551d017a56eaf2ee"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab9d239ff79126c372f6076d57ed13269"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">addValue</a> (T value)</td></tr>
+<tr class="memdesc:ab9d239ff79126c372f6076d57ed13269"><td class="mdescLeft">&#160;</td><td class="mdescRight">Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will be removed from the queue and the sum will be decremented by that value.  <a href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">More...</a><br /></td></tr>
+<tr class="separator:ab9d239ff79126c372f6076d57ed13269"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8ed53ab948934e888c8c11601c0f086d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a8ed53ab948934e888c8c11601c0f086d">clear</a> ()</td></tr>
+<tr class="memdesc:a8ed53ab948934e888c8c11601c0f086d"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove all elements from the queue and reset the sum to zero.  <a href="classbst_1_1RollingAverage.html#a8ed53ab948934e888c8c11601c0f086d">More...</a><br /></td></tr>
+<tr class="separator:a8ed53ab948934e888c8c11601c0f086d"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ad234690540b37134786d95f21ae3fbd7"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7">getAverage</a> () const</td></tr>
+<tr class="memdesc:ad234690540b37134786d95f21ae3fbd7"><td class="mdescLeft">&#160;</td><td class="mdescRight">This method returns the rolling average.  <a href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7">More...</a><br /></td></tr>
+<tr class="separator:ad234690540b37134786d95f21ae3fbd7"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:affaa751907718912298c212366db74b2"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#affaa751907718912298c212366db74b2">getNumElements</a> () const</td></tr>
+<tr class="memdesc:affaa751907718912298c212366db74b2"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the number of elements in the queue. This number may be less than the window size.  <a href="classbst_1_1RollingAverage.html#affaa751907718912298c212366db74b2">More...</a><br /></td></tr>
+<tr class="separator:affaa751907718912298c212366db74b2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab127ea9181d8c04755055aa2ca846340"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ab127ea9181d8c04755055aa2ca846340">getWindowSize</a> () const</td></tr>
+<tr class="memdesc:ab127ea9181d8c04755055aa2ca846340"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the window size.  <a href="classbst_1_1RollingAverage.html#ab127ea9181d8c04755055aa2ca846340">More...</a><br /></td></tr>
+<tr class="separator:ab127ea9181d8c04755055aa2ca846340"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4f8ebb6654f0ce41d16c0b962dad56b1"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1">removeOldest</a> ()</td></tr>
+<tr class="memdesc:a4f8ebb6654f0ce41d16c0b962dad56b1"><td class="mdescLeft">&#160;</td><td class="mdescRight">Remove the oldest element from the queue and update the sum. Safe to call if the queue is empty.  <a href="classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1">More...</a><br /></td></tr>
+<tr class="separator:a4f8ebb6654f0ce41d16c0b962dad56b1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac5e4732a81e482aa097406e77ecea810"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ac5e4732a81e482aa097406e77ecea810">setWindowSize</a> (size_t new_window_size)</td></tr>
+<tr class="memdesc:ac5e4732a81e482aa097406e77ecea810"><td class="mdescLeft">&#160;</td><td class="mdescRight">Set the window size. If the new window size is smaller than the current queue size, the queue will be truncated.  <a href="classbst_1_1RollingAverage.html#ac5e4732a81e482aa097406e77ecea810">More...</a><br /></td></tr>
+<tr class="separator:ac5e4732a81e482aa097406e77ecea810"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:ae6b4e02324f747f4798677036fbeda4a"><td class="memItemLeft" align="right" valign="top">std::queue&lt; double &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ae6b4e02324f747f4798677036fbeda4a">queue_</a> = {}</td></tr>
-<tr class="separator:ae6b4e02324f747f4798677036fbeda4a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9d4457fabd5e01505e0a0c369283a1c2"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#a9d4457fabd5e01505e0a0c369283a1c2">sum_</a> = 0</td></tr>
-<tr class="separator:a9d4457fabd5e01505e0a0c369283a1c2"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:adbeed54c0eb697565f4f120c430c48d0"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#adbeed54c0eb697565f4f120c430c48d0">window_size_</a></td></tr>
-<tr class="separator:adbeed54c0eb697565f4f120c430c48d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac79f7d2671f76b67f410b531ba79add2"><td class="memItemLeft" align="right" valign="top">std::queue&lt; T &gt;&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">queue_</a> = {}</td></tr>
+<tr class="separator:ac79f7d2671f76b67f410b531ba79add2"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab367bd023a0c264f3784039647037313"><td class="memItemLeft" align="right" valign="top">T&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">sum_</a> = 0</td></tr>
+<tr class="separator:ab367bd023a0c264f3784039647037313"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa0e9ae71188af28330f32b561e507418"><td class="memItemLeft" align="right" valign="top">size_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html#aa0e9ae71188af28330f32b561e507418">window_size_</a></td></tr>
+<tr class="separator:aa0e9ae71188af28330f32b561e507418"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Moving average calculator. </p>
+<div class="textblock"><h3>template&lt;typename T = double&gt;<br />
+class bst::RollingAverage&lt; T &gt;</h3>
+
+<p>Moving average calculator. </p>
 <p>This class calculates the moving average over a rolling window. </p>
 </div><h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a78204a0addde92e7b9a1ea6c73768199"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a78204a0addde92e7b9a1ea6c73768199">&#9670;&nbsp;</a></span>RollingAverage()</h2>
+<a id="a37fae4c89375df40ae3450e7641ecedc"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37fae4c89375df40ae3450e7641ecedc">&#9670;&nbsp;</a></span>RollingAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bst::RollingAverage::RollingAverage </td>
+          <td class="memname"><a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::<a class="el" href="classbst_1_1RollingAverage.html">RollingAverage</a> </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>window_size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Construct a <a class="el" href="classbst_1_1RollingAverage.html" title="Moving average calculator.">RollingAverage</a> object. </p>
@@ -177,17 +202,19 @@ Private Attributes</h2></td></tr>
 
 </div>
 </div>
-<a id="affcef7fe90bcc1d0f7b02acfeb146534"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affcef7fe90bcc1d0f7b02acfeb146534">&#9670;&nbsp;</a></span>~RollingAverage()</h2>
+<a id="afb97d72106cb1fc7551d017a56eaf2ee"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#afb97d72106cb1fc7551d017a56eaf2ee">&#9670;&nbsp;</a></span>~RollingAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bst::RollingAverage::~RollingAverage </td>
+          <td class="memname"><a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::~<a class="el" href="classbst_1_1RollingAverage.html">RollingAverage</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -205,20 +232,30 @@ Private Attributes</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aa479c56161d87d7ca83f6e2e382c5a96"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aa479c56161d87d7ca83f6e2e382c5a96">&#9670;&nbsp;</a></span>addValue()</h2>
+<a id="ab9d239ff79126c372f6076d57ed13269"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab9d239ff79126c372f6076d57ed13269">&#9670;&nbsp;</a></span>addValue()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bst::RollingAverage::addValue </td>
+          <td class="memname">void <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::addValue </td>
           <td>(</td>
-          <td class="paramtype">double&#160;</td>
+          <td class="paramtype">T&#160;</td>
           <td class="paramname"><em>value</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will be removed from the queue and the sum will be decremented by that value. </p>
@@ -229,62 +266,82 @@ Private Attributes</h2></td></tr>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ae6b4e02324f747f4798677036fbeda4a">queue_</a>, <a class="el" href="classbst_1_1RollingAverage.html#a9d4457fabd5e01505e0a0c369283a1c2">sum_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#adbeed54c0eb697565f4f120c430c48d0">window_size_</a>.</p>
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>, <a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">bst::RollingAverage&lt; T &gt;::sum_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#aa0e9ae71188af28330f32b561e507418">bst::RollingAverage&lt; T &gt;::window_size_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rolling__average__test_8cpp.html#a0ad224c3efee0eab641daae4858c7abf">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_aa479c56161d87d7ca83f6e2e382c5a96_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_ab9d239ff79126c372f6076d57ed13269_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a7416d8c15fd65aed9118c882517c387c"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a7416d8c15fd65aed9118c882517c387c">&#9670;&nbsp;</a></span>getAverage()</h2>
+<a id="ad234690540b37134786d95f21ae3fbd7"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ad234690540b37134786d95f21ae3fbd7">&#9670;&nbsp;</a></span>getAverage()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double bst::RollingAverage::getAverage </td>
+          <td class="memname">T <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::getAverage </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>This method returns the rolling average. </p>
-<dl class="section return"><dt>Returns</dt><dd>double - the rolling average </dd></dl>
+<dl class="section return"><dt>Returns</dt><dd>T - the rolling average </dd></dl>
 
-<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ae6b4e02324f747f4798677036fbeda4a">queue_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#a9d4457fabd5e01505e0a0c369283a1c2">sum_</a>.</p>
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">bst::RollingAverage&lt; T &gt;::sum_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="rolling__average__test_8cpp.html#a0ad224c3efee0eab641daae4858c7abf">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_a7416d8c15fd65aed9118c882517c387c_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_ad234690540b37134786d95f21ae3fbd7_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a06d8f41a3ea425fe4b1a7520eb210689"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a06d8f41a3ea425fe4b1a7520eb210689">&#9670;&nbsp;</a></span>setWindowSize()</h2>
+<a id="ac5e4732a81e482aa097406e77ecea810"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac5e4732a81e482aa097406e77ecea810">&#9670;&nbsp;</a></span>setWindowSize()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bst::RollingAverage::setWindowSize </td>
+          <td class="memname">void <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::setWindowSize </td>
           <td>(</td>
           <td class="paramtype">size_t&#160;</td>
           <td class="paramname"><em>new_window_size</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
 <p>Set the window size. If the new window size is smaller than the current queue size, the queue will be truncated. </p>
@@ -295,22 +352,174 @@ Here is the caller graph for this function:</div>
   </dd>
 </dl>
 
-<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ae6b4e02324f747f4798677036fbeda4a">queue_</a>, <a class="el" href="classbst_1_1RollingAverage.html#a9d4457fabd5e01505e0a0c369283a1c2">sum_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#adbeed54c0eb697565f4f120c430c48d0">window_size_</a>.</p>
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>, <a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">bst::RollingAverage&lt; T &gt;::sum_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#aa0e9ae71188af28330f32b561e507418">bst::RollingAverage&lt; T &gt;::window_size_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rolling__average__test_8cpp.html#ade9503ddf682055f836a5999a3ef28c3">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_ac5e4732a81e482aa097406e77ecea810_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8ed53ab948934e888c8c11601c0f086d"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8ed53ab948934e888c8c11601c0f086d">&#9670;&nbsp;</a></span>clear()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::clear </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove all elements from the queue and reset the sum to zero. </p>
+
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">bst::RollingAverage&lt; T &gt;::sum_</a>.</p>
+
+</div>
+</div>
+<a id="affaa751907718912298c212366db74b2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#affaa751907718912298c212366db74b2">&#9670;&nbsp;</a></span>getNumElements()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::getNumElements </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the number of elements in the queue. This number may be less than the window size. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t - The number of elements in the queue </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rolling__average__test_8cpp.html#a04646a253d7c5c22ea426a2c7770c181">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_affaa751907718912298c212366db74b2_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="ab127ea9181d8c04755055aa2ca846340"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab127ea9181d8c04755055aa2ca846340">&#9670;&nbsp;</a></span>getWindowSize()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">size_t <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::getWindowSize </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the window size. </p>
+<dl class="section return"><dt>Returns</dt><dd>size_t - The window size </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#aa0e9ae71188af28330f32b561e507418">bst::RollingAverage&lt; T &gt;::window_size_</a>.</p>
+
+</div>
+</div>
+<a id="a4f8ebb6654f0ce41d16c0b962dad56b1"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a4f8ebb6654f0ce41d16c0b962dad56b1">&#9670;&nbsp;</a></span>removeOldest()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::removeOldest </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Remove the oldest element from the queue and update the sum. Safe to call if the queue is empty. </p>
+
+<p class="reference">References <a class="el" href="classbst_1_1RollingAverage.html#ac79f7d2671f76b67f410b531ba79add2">bst::RollingAverage&lt; T &gt;::queue_</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ab367bd023a0c264f3784039647037313">bst::RollingAverage&lt; T &gt;::sum_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="rolling__average__test_8cpp.html#a04646a253d7c5c22ea426a2c7770c181">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1RollingAverage_a4f8ebb6654f0ce41d16c0b962dad56b1_icgraph.svg" width="262" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="ae6b4e02324f747f4798677036fbeda4a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae6b4e02324f747f4798677036fbeda4a">&#9670;&nbsp;</a></span>queue_</h2>
+<a id="ac79f7d2671f76b67f410b531ba79add2"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac79f7d2671f76b67f410b531ba79add2">&#9670;&nbsp;</a></span>queue_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">std::queue&lt;double&gt; bst::RollingAverage::queue_ = {}</td>
+          <td class="memname">std::queue&lt;T&gt; <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::queue_ = {}</td>
         </tr>
       </table>
   </td>
@@ -320,21 +529,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96">addValue()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c">getAverage()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#a06d8f41a3ea425fe4b1a7520eb210689">setWindowSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">bst::RollingAverage&lt; T &gt;::addValue()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a8ed53ab948934e888c8c11601c0f086d">bst::RollingAverage&lt; T &gt;::clear()</a>, <a class="el" href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7">bst::RollingAverage&lt; T &gt;::getAverage()</a>, <a class="el" href="classbst_1_1RollingAverage.html#affaa751907718912298c212366db74b2">bst::RollingAverage&lt; T &gt;::getNumElements()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1">bst::RollingAverage&lt; T &gt;::removeOldest()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ac5e4732a81e482aa097406e77ecea810">bst::RollingAverage&lt; T &gt;::setWindowSize()</a>.</p>
 
 </div>
 </div>
-<a id="adbeed54c0eb697565f4f120c430c48d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#adbeed54c0eb697565f4f120c430c48d0">&#9670;&nbsp;</a></span>window_size_</h2>
+<a id="aa0e9ae71188af28330f32b561e507418"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aa0e9ae71188af28330f32b561e507418">&#9670;&nbsp;</a></span>window_size_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">size_t bst::RollingAverage::window_size_</td>
+          <td class="memname">size_t <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::window_size_</td>
         </tr>
       </table>
   </td>
@@ -344,21 +555,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96">addValue()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#a06d8f41a3ea425fe4b1a7520eb210689">setWindowSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">bst::RollingAverage&lt; T &gt;::addValue()</a>, <a class="el" href="classbst_1_1RollingAverage.html#ab127ea9181d8c04755055aa2ca846340">bst::RollingAverage&lt; T &gt;::getWindowSize()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ac5e4732a81e482aa097406e77ecea810">bst::RollingAverage&lt; T &gt;::setWindowSize()</a>.</p>
 
 </div>
 </div>
-<a id="a9d4457fabd5e01505e0a0c369283a1c2"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9d4457fabd5e01505e0a0c369283a1c2">&#9670;&nbsp;</a></span>sum_</h2>
+<a id="ab367bd023a0c264f3784039647037313"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ab367bd023a0c264f3784039647037313">&#9670;&nbsp;</a></span>sum_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;typename T  = double&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double bst::RollingAverage::sum_ = 0</td>
+          <td class="memname">T <a class="el" href="classbst_1_1RollingAverage.html">bst::RollingAverage</a>&lt; T &gt;::sum_ = 0</td>
         </tr>
       </table>
   </td>
@@ -368,7 +581,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96">addValue()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a7416d8c15fd65aed9118c882517c387c">getAverage()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#a06d8f41a3ea425fe4b1a7520eb210689">setWindowSize()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">bst::RollingAverage&lt; T &gt;::addValue()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a8ed53ab948934e888c8c11601c0f086d">bst::RollingAverage&lt; T &gt;::clear()</a>, <a class="el" href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7">bst::RollingAverage&lt; T &gt;::getAverage()</a>, <a class="el" href="classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1">bst::RollingAverage&lt; T &gt;::removeOldest()</a>, and <a class="el" href="classbst_1_1RollingAverage.html#ac5e4732a81e482aa097406e77ecea810">bst::RollingAverage&lt; T &gt;::setWindowSize()</a>.</p>
 
 </div>
 </div>

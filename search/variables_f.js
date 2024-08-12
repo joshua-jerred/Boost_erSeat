@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['window_5fsize_5f_542',['window_size_',['../classbst_1_1RollingAverage.html#adbeed54c0eb697565f4f120c430c48d0',1,'bst::RollingAverage']]]
+  ['window_5fsize_5f_548',['window_size_',['../classbst_1_1RollingAverage.html#aa0e9ae71188af28330f32b561e507418',1,'bst::RollingAverage']]]
 ];

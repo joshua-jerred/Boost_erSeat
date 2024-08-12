@@ -1,7 +1,7 @@
 var searchData=
 [
   ['addpoint_4',['addPoint',['../classbst_1_1geo_1_1Path.html#a02dedf8208be3ad5995f481a04909aab',1,'bst::geo::Path']]],
-  ['addvalue_5',['addValue',['../classbst_1_1RollingAverage.html#aa479c56161d87d7ca83f6e2e382c5a96',1,'bst::RollingAverage']]],
+  ['addvalue_5',['addValue',['../classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269',1,'bst::RollingAverage']]],
   ['align_5fcases_6',['align_cases',['../string__format_8cpp.html#ad73a2a8db8b4b4631b7cb865d7099058',1,'string_format.cpp']]],
   ['alignment_7',['Alignment',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009',1,'bst::layout']]],
   ['appendtofile_8',['appendToFile',['../namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0',1,'bst::filesystem']]],

@@ -1,0 +1,7 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,60,138"/>
+<area shape="rect" id="node2" href="$classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269" title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ..." alt="" coords="108,5,256,47"/>
+<area shape="rect" id="node3" href="$classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7" title="This method returns the rolling average." alt="" coords="108,71,256,112"/>
+<area shape="rect" id="node4" href="$classbst_1_1RollingAverage.html#affaa751907718912298c212366db74b2" title="Get the number of elements in the queue. This number may be less than the window size." alt="" coords="108,136,256,177"/>
+<area shape="rect" id="node5" href="$classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1" title="Remove the oldest element from the queue and update the sum. Safe to call if the queue is empty." alt="" coords="108,201,256,243"/>
+</map>
