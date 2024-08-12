@@ -24,3 +24,25 @@ TEST(RollingAverageTest, General) {
   avg.addValue(1);
   EXPECT_NEAR(avg.getAverage(), 0.25, 0.0001);
 }
+
+TEST(RollingAverageTest, ChangeWindowSize) {
+  bst::RollingAverage avg(4);
+  avg.addValue(10);
+  avg.addValue(1);
+  avg.addValue(2);
+  avg.addValue(3);
+  avg.setWindowSize(3);
+  EXPECT_NEAR(avg.getAverage(), 2, 0.0001);
+}
+
+TEST(RollingAverageTest, RemoveOldest) {
+  bst::RollingAverage avg(4);
+  avg.addValue(10);
+  avg.addValue(1);
+  avg.addValue(2);
+  avg.addValue(3);
+  avg.removeOldest();
+
+  EXPECT_EQ(avg.getNumElements(), 3);
+  EXPECT_NEAR(avg.getAverage(), 2, 0.0001);
+}
