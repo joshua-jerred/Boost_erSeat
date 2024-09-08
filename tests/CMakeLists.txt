@@ -13,15 +13,16 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_executable(unit_tests
-  stopwatch_test.cpp
-  string_format_test.cpp
   filesystem_test.cpp
-  rolling_average_test.cpp
+  filters_test.cpp
   geo_test.cpp
-  time_class_test.cpp
   process_test.cpp
   random_test.cpp
+  rolling_average_test.cpp
   science_test.cpp
+  stopwatch_test.cpp
+  string_format_test.cpp
+  time_class_test.cpp
 )
 target_link_libraries(unit_tests 
   BoosterSeat
