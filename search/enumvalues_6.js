@@ -1,5 +1,4 @@
 var searchData=
 [
-  ['left_582',['LEFT',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009a684d325a7303f52e64011467ff5c5758',1,'bst::layout']]],
-  ['local_583',['LOCAL',['../namespacebst_1_1time.html#ad2f080a02581da2afedf7173aed1b267a54b4c4075463b2e02cd69f5cd139b5b2',1,'bst::time']]]
+  ['kilobytes_610',['KILOBYTES',['../namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a8bdac1c59b910777c2191ff22a7b87d8',1,'bst::filesystem::units']]]
 ];

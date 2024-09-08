@@ -5,6 +5,10 @@ var files_dup =
     [ "filesystem.cpp", "filesystem_8cpp.html", "filesystem_8cpp" ],
     [ "filesystem.hpp", "filesystem_8hpp.html", "filesystem_8hpp" ],
     [ "filesystem_test.cpp", "filesystem__test_8cpp.html", "filesystem__test_8cpp" ],
+    [ "filters.hpp", "filters_8hpp.html", [
+      [ "ConsecutiveValuesFilter", "classbst_1_1ConsecutiveValuesFilter.html", "classbst_1_1ConsecutiveValuesFilter" ]
+    ] ],
+    [ "filters_test.cpp", "filters__test_8cpp.html", "filters__test_8cpp" ],
     [ "geo.hpp", "geo_8hpp.html", "geo_8hpp" ],
     [ "geo_point.cpp", "geo__point_8cpp.html", "geo__point_8cpp" ],
     [ "geo_strings.cpp", "geo__strings_8cpp.html", "geo__strings_8cpp" ],

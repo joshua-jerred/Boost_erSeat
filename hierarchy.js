@@ -1,5 +1,6 @@
 var hierarchy =
 [
+    [ "bst::ConsecutiveValuesFilter< T >", "classbst_1_1ConsecutiveValuesFilter.html", null ],
     [ "bst::geo::Path", "classbst_1_1geo_1_1Path.html", null ],
     [ "bst::geo::Point", "classbst_1_1geo_1_1Point.html", null ],
     [ "bst::Pressure", "classbst_1_1Pressure.html", null ],

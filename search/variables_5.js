@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['in_5fpipe_5f_518',['in_pipe_',['../classbst_1_1Process.html#a661e0f1219642f9c4a33eda41d6dfafe',1,'bst::Process']]],
-  ['in_5fstream_5f_519',['in_stream_',['../classbst_1_1Process.html#aee3ec621b79626cea35adae531fe41ab',1,'bst::Process']]]
+  ['half_5fpi_540',['HALF_PI',['../namespacebst.html#a2a28a8babfb86bb84da8b38a7a196f0c',1,'bst']]],
+  ['have_5fexit_5fcode_5f_541',['have_exit_code_',['../classbst_1_1Process.html#ac987962bac1522d731c970cdbd0e47e0',1,'bst::Process']]]
 ];

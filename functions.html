@@ -107,7 +107,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="classbst_1_1geo_1_1Path.html#a02dedf8208be3ad5995f481a04909aab">bst::geo::Path</a>
 </li>
 <li>addValue()
-: <a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">bst::RollingAverage&lt; T &gt;</a>
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#a91d0cd6deeb40fbbc507d25182cf9513">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+, <a class="el" href="classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269">bst::RollingAverage&lt; T &gt;</a>
 </li>
 <li>assertComplete()
 : <a class="el" href="classbst_1_1Process.html#a893603be229d39c51c34f2350294b5e8">bst::Process</a>
@@ -140,6 +141,15 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>closeInStream()
 : <a class="el" href="classbst_1_1Process.html#a7f302425489412fe6f7e809911fb3b8c">bst::Process</a>
+</li>
+<li>ConsecutiveValuesFilter()
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#ab0b32625e4499efb7d3569601943d7d7">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+</li>
+<li>current_count_
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#ad74fc03a14bfdff0ae28254cb4327bdc">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+</li>
+<li>current_value_
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#a3d89ee8d5aa32fda5f648acc679feeca">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
 </li>
 </ul>
 
@@ -183,6 +193,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 
 
 <h3><a id="index_f"></a>- f -</h3><ul>
+<li>filter_threshold_
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#a28ae3fcbff31e61953c276273c78756a">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+</li>
 <li>fromString()
 : <a class="el" href="classbst_1_1Time.html#ab2d56ccb2ec81d5cde60288db40e22e0">bst::Time</a>
 </li>
@@ -192,6 +205,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index_g"></a>- g -</h3><ul>
 <li>getAverage()
 : <a class="el" href="classbst_1_1RollingAverage.html#ad234690540b37134786d95f21ae3fbd7">bst::RollingAverage&lt; T &gt;</a>
+</li>
+<li>getCurrentValue()
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#ad14f75550fb22aaa8fef544e8ff50ac4">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
 </li>
 <li>getDay()
 : <a class="el" href="classbst_1_1Time.html#aea8177d8ecbc30116116fa705b138c6f">bst::Time</a>
@@ -290,6 +306,13 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </ul>
 
 
+<h3><a id="index_n"></a>- n -</h3><ul>
+<li>new_value_
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#ab5d720b738c6fce7b1e430a23445bbd7">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+</li>
+</ul>
+
+
 <h3><a id="index_o"></a>- o -</h3><ul>
 <li>operator char *()
 : <a class="el" href="structbst_1_1raii__char__str.html#ae090ff8be4d0d8fb79a22612057d8be7">bst::raii_char_str</a>
@@ -379,7 +402,8 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 : <a class="el" href="classbst_1_1RollingAverage.html#a4f8ebb6654f0ce41d16c0b962dad56b1">bst::RollingAverage&lt; T &gt;</a>
 </li>
 <li>reset()
-: <a class="el" href="classbst_1_1Stopwatch.html#a8026be6632b4c97ae802366f00c74f46">bst::Stopwatch</a>
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#aaba4b43807269888ff6587f635b37fef">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
+, <a class="el" href="classbst_1_1Stopwatch.html#a8026be6632b4c97ae802366f00c74f46">bst::Stopwatch</a>
 , <a class="el" href="classbst_1_1Timer.html#a0243fe3bc2c926e919d7b09706aa28c5">bst::Timer</a>
 </li>
 <li>RollingAverage()
@@ -397,6 +421,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 </li>
 <li>setDone()
 : <a class="el" href="classbst_1_1Timer.html#a2e0a9c87f0ed3a6e89166d2ab4318038">bst::Timer</a>
+</li>
+<li>setFilterThreshold()
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#ac33f6b0514877e4f6a14df72b8e6c52f">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
 </li>
 <li>setFromAtmospheres()
 : <a class="el" href="classbst_1_1Pressure.html#ac452d7cec5b15a3c00ea1b1aa15c8747">bst::Pressure</a>
@@ -500,6 +527,9 @@ $(document).ready(function(){initNavTree('functions.html',''); initResizable(); 
 <h3><a id="index__7E"></a>- ~ -</h3><ul>
 <li>~BoosterSeatException()
 : <a class="el" href="classbst_1_1BoosterSeatException.html#af325565e103d2bd3fd6aaefc4dbc4122">bst::BoosterSeatException</a>
+</li>
+<li>~ConsecutiveValuesFilter()
+: <a class="el" href="classbst_1_1ConsecutiveValuesFilter.html#a866102e30a5a5670e46825c6fb107252">bst::ConsecutiveValuesFilter&lt; T &gt;</a>
 </li>
 <li>~Process()
 : <a class="el" href="classbst_1_1Process.html#a264d7156b34fb5f8843d56fa241c60a4">bst::Process</a>

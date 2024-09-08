@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['message_5f_526',['message_',['../classbst_1_1BoosterSeatException.html#a7ecb13bc2b8cf0435ea893ade481cb8d',1,'bst::BoosterSeatException']]]
+  ['lat_5f_548',['lat_',['../classbst_1_1geo_1_1Point.html#a3318fd8b5e2dce5437a5b610404ecce8',1,'bst::geo::Point']]],
+  ['lon_5f_549',['lon_',['../classbst_1_1geo_1_1Point.html#a8e114b89da7ea3f1e8009505adf5f416',1,'bst::geo::Point']]]
 ];

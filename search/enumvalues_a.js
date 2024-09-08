@@ -1,5 +1,5 @@
 var searchData=
 [
-  ['right_590',['RIGHT',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009a21507b40c80068eda19865706fdc2403',1,'bst::layout']]],
-  ['running_591',['RUNNING',['../classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd',1,'bst::Stopwatch']]]
+  ['process_5fnot_5fcomplete_617',['PROCESS_NOT_COMPLETE',['../namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46a2bc9418093026b17598f4f9cbb3031eb',1,'bst']]],
+  ['process_5ftimeout_618',['PROCESS_TIMEOUT',['../namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46a0cd8a67b55471cdad463a28b09f54db8',1,'bst']]]
 ];

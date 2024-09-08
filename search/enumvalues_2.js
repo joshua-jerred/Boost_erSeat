@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['directory_568',['DIRECTORY',['../namespacebst_1_1filesystem_1_1units.html#afc427caba404cd6e0b14f85db2ff4e65a28766b4be065d0c806c2e9c9d914af48',1,'bst::filesystem::units']]]
+  ['c_595',['C',['../filters__test_8cpp.html#a88e55202bfacbd446cff5c9a35a61076a0d61f8370cad1d412f80b84d143e1257',1,'filters_test.cpp']]],
+  ['center_596',['CENTER',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009ac397289ee45877be0cd49811fe245b4e',1,'bst::layout']]]
 ];

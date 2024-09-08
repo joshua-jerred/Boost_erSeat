@@ -57,6 +57,7 @@ var namespacebst =
       [ "dateAndTimeToTimePoint", "namespacebst_1_1time.html#aca4cce38cce328fe585429b4d6008034", null ]
     ] ],
     [ "BoosterSeatException", "classbst_1_1BoosterSeatException.html", "classbst_1_1BoosterSeatException" ],
+    [ "ConsecutiveValuesFilter", "classbst_1_1ConsecutiveValuesFilter.html", "classbst_1_1ConsecutiveValuesFilter" ],
     [ "Pressure", "classbst_1_1Pressure.html", "classbst_1_1Pressure" ],
     [ "Process", "classbst_1_1Process.html", "classbst_1_1Process" ],
     [ "raii_char_str", "structbst_1_1raii__char__str.html", "structbst_1_1raii__char__str" ],
