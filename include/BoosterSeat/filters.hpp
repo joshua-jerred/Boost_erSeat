@@ -22,7 +22,8 @@ public:
   /// @param filter_threshold The number of consecutive values that must be seen
   /// before the filter will pass the value.
   ConsecutiveValuesFilter(T initial_value, size_t filter_threshold = 0)
-      : filter_threshold_{filter_threshold} {
+      : filter_threshold_{filter_threshold}, current_value_{initial_value},
+        new_value_{initial_value} {
   }
 
   /// @brief Destructor for the ConsecutiveValuesFilter.
