@@ -19,7 +19,7 @@ TEST(StopwatchTest, StartAndStop) {
   EXPECT_FALSE(stopwatch.isRunning());
 }
 
-TEST(Stopwatch, Units) {
+TEST(StopwatchTest, Units) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(10);
@@ -77,4 +77,26 @@ TEST(StopwatchTest, ResetKeepsRunning) {
   EXPECT_GT(stopwatch.elapsedMicroseconds(), 0);
   stopwatch.reset(false);
   EXPECT_TRUE(stopwatch.isRunning());
+}
+
+TEST(StopwatchTest, IStopwatch) {
+  bst::Stopwatch sw;
+  bst::IStopwatch &iStopWatch = sw;
+
+  iStopWatch.start();
+  bst::sleep(10);
+  iStopWatch.stop();
+  EXPECT_NEAR(iStopWatch.elapsedMilliseconds(), 10, 1);
+}
+
+TEST(StopwatchTest, SoftwareStopwatch) {
+  bst::SoftwareStopwatch sw;
+  bst::IStopwatch &iStopWatch = sw;
+
+  iStopWatch.start();
+
+  sw.tick(10);
+
+  iStopWatch.stop();
+  EXPECT_NEAR(iStopWatch.elapsedMilliseconds(), 10, 1);
 }
