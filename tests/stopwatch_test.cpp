@@ -5,36 +5,29 @@
 
 #include "gtest/gtest.h"
 
-void secondsEq(const double a, const double b, const double epsilon) {
-  EXPECT_LE(std::abs(a - b), epsilon);
-}
-
 TEST(StopwatchTest, DefaultConstructor) {
   bst::Stopwatch stopwatch;
-  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::STOPPED);
-  EXPECT_EQ(stopwatch.elapsed(), 0.0);
+  EXPECT_FALSE(stopwatch.isRunning());
+  EXPECT_EQ(stopwatch.elapsedMicroseconds(), 0);
 }
 
 TEST(StopwatchTest, StartAndStop) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
-  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::RUNNING);
+  EXPECT_TRUE(stopwatch.isRunning());
   stopwatch.stop();
-  EXPECT_EQ(stopwatch.state(), bst::Stopwatch::State::STOPPED);
+  EXPECT_FALSE(stopwatch.isRunning());
 }
 
-TEST(Stopwatch, Units) {
-  constexpr double kEpsilon = 0.001;
-
+TEST(StopwatchTest, Units) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(10);
   stopwatch.stop();
-  secondsEq(stopwatch.elapsed(bst::Resolution::SECONDS), 0.01, kEpsilon);
-  secondsEq(stopwatch.elapsed(bst::Resolution::MILLISECONDS), 10.0,
-            kEpsilon * 1000);
-  secondsEq(stopwatch.elapsed(bst::Resolution::MICROSECONDS), 10000.0,
-            kEpsilon * 1000000);
+
+  EXPECT_NEAR(stopwatch.elapsedMicrosecondsF(), 10000, 500);
+  EXPECT_NEAR(stopwatch.elapsedMillisecondsF(), 10, 0.5);
+  EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0, 0.05);
 }
 
 TEST(StopwatchTest, KeepsRunningTotal) {
@@ -44,19 +37,66 @@ TEST(StopwatchTest, KeepsRunningTotal) {
   stopwatch.start();
   bst::sleep(10);
   stopwatch.stop();
-  secondsEq(stopwatch.elapsed(), 0.01, kEpsilon);
+  EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0.01, kEpsilon);
 
   bst::sleep(20);
 
   stopwatch.start();
   bst::sleep(10);
   stopwatch.stop();
-  secondsEq(stopwatch.elapsed(), 0.02, kEpsilon);
+  EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0.02, kEpsilon);
 
   bst::sleep(20);
 
   stopwatch.start();
-  bst::sleep(980);
+  bst::sleep(80);
   stopwatch.stop();
-  secondsEq(stopwatch.elapsed(), 1.0, kEpsilon);
+  EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0.1, kEpsilon);
+}
+
+TEST(StopwatchTest, ResetStopsByDefault) {
+  bst::Stopwatch stopwatch;
+  stopwatch.start();
+  bst::sleep(5);
+
+  // verify that calling ::reset() stops the stopwatch by default.
+  EXPECT_TRUE(stopwatch.isRunning());
+  EXPECT_GT(stopwatch.elapsedMicroseconds(), 0);
+  stopwatch.reset();
+  EXPECT_FALSE(stopwatch.isRunning());
+  EXPECT_EQ(stopwatch.elapsedMicroseconds(), 0);
+}
+
+TEST(StopwatchTest, ResetKeepsRunning) {
+  bst::Stopwatch stopwatch;
+  stopwatch.start();
+  bst::sleep(5);
+
+  // verify that calling ::reset(false) keeps the stopwatch running.
+  EXPECT_TRUE(stopwatch.isRunning());
+  EXPECT_GT(stopwatch.elapsedMicroseconds(), 0);
+  stopwatch.reset(false);
+  EXPECT_TRUE(stopwatch.isRunning());
+}
+
+TEST(StopwatchTest, IStopwatch) {
+  bst::Stopwatch sw;
+  bst::IStopwatch &iStopWatch = sw;
+
+  iStopWatch.start();
+  bst::sleep(10);
+  iStopWatch.stop();
+  EXPECT_NEAR(iStopWatch.elapsedMilliseconds(), 10, 1);
+}
+
+TEST(StopwatchTest, SoftwareStopwatch) {
+  bst::SoftwareStopwatch sw;
+  bst::IStopwatch &iStopWatch = sw;
+
+  iStopWatch.start();
+
+  sw.tick(10);
+
+  iStopWatch.stop();
+  EXPECT_NEAR(iStopWatch.elapsedMilliseconds(), 10, 1);
 }

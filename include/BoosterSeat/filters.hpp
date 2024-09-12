@@ -42,14 +42,15 @@ public:
 
   /// @brief The input stream for this filter.
   /// @param value The input
-  void addValue(T value) {
+  /// @return \c true if the filtered value has changed, \c false otherwise.
+  bool addValue(T value) {
     // If the value is the same as the current value, decrement the count until
     // it's back to zero.
     if (value == current_value_) {
       if (current_count_ != 0) {
         current_count_--;
       }
-      return;
+      return false;
     }
 
     // If the value is the same as the currently being counted value, increment
@@ -68,7 +69,10 @@ public:
     if (current_count_ >= filter_threshold_) {
       current_value_ = new_value_;
       current_count_ = 0;
+      return true;
     }
+
+    return false;
   }
 
   /// @brief Returns the current value.

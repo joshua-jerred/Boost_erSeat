@@ -15,7 +15,6 @@ set(CMAKE_CXX_STANDARD_REQUIRED True)
 set(CMAKE_CXX_FLAGS "-Wall -Wextra -Wpedantic -Wno-unused-parameter")
 
 set(ALL_SOURCE_FILES
-  src/stopwatch.cpp
   src/string_format.cpp
   src/time.cpp
   src/filesystem.cpp
