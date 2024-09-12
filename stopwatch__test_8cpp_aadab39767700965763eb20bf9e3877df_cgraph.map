@@ -1,5 +1,6 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,31,60,57"/>
-<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166" title=" " alt="" coords="108,5,285,32"/>
-<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a565246db0210026b2c05cf6245883c65" title=" " alt="" coords="117,56,276,83"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a119bd7643caf0d23e038336687faa8a9" title="Get the elapsed time in microseconds." alt="" coords="108,5,375,32"/>
+<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812" title="Returns the current state of the stopwatch." alt="" coords="146,56,337,83"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" title="Handles the timekeeping." alt="" coords="423,5,621,32"/>
 </map>

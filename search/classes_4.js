@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['stopwatch_319',['Stopwatch',['../classbst_1_1Stopwatch.html',1,'bst']]]
+  ['raii_5fchar_5fstr_330',['raii_char_str',['../structbst_1_1raii__char__str.html',1,'bst']]],
+  ['rollingaverage_331',['RollingAverage',['../classbst_1_1RollingAverage.html',1,'bst']]]
 ];

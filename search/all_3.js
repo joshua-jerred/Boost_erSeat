@@ -6,7 +6,7 @@ var searchData=
   ['clear_39',['clear',['../classbst_1_1RollingAverage.html#a8ed53ab948934e888c8c11601c0f086d',1,'bst::RollingAverage']]],
   ['clock_40',['Clock',['../namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c',1,'bst::clck']]],
   ['clock_2ehpp_41',['clock.hpp',['../clock_8hpp.html',1,'']]],
-  ['clock_5f_42',['clock_',['../classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b',1,'bst::Stopwatch']]],
+  ['clock_5f_42',['clock_',['../classbst_1_1Stopwatch.html#aed73b720808a8d6632ec500d633aa90a',1,'bst::Stopwatch']]],
   ['closeinstream_43',['closeInStream',['../classbst_1_1Process.html#a7f302425489412fe6f7e809911fb3b8c',1,'bst::Process']]],
   ['consecutivevaluesfilter_44',['ConsecutiveValuesFilter',['../classbst_1_1ConsecutiveValuesFilter.html',1,'bst::ConsecutiveValuesFilter&lt; T &gt;'],['../classbst_1_1ConsecutiveValuesFilter.html#ab0b32625e4499efb7d3569601943d7d7',1,'bst::ConsecutiveValuesFilter::ConsecutiveValuesFilter()']]],
   ['containsprefix_45',['containsPrefix',['../namespacebst.html#a92aa0f1f060065c745c1bee1190faa84',1,'bst']]],

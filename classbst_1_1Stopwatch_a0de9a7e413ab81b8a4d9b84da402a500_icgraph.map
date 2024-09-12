@@ -1,0 +1,7 @@
+<map id="bst::Stopwatch::stop" name="bst::Stopwatch::stop">
+<area shape="rect" id="node1" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="321,56,476,83"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#aeb6e75e372019bd8efd5aa2dc0ba5d72" title="alias for stop() as it does what you want it to do." alt="" coords="108,5,273,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85" title="Resets the elapsed time. The stopwatch will keep running by default." alt="" coords="111,56,270,83"/>
+<area shape="rect" id="node5" href="$stopwatch__test_8cpp.html#a418b5dce05baceae9562e6b91de651b4" title=" " alt="" coords="163,107,218,133"/>
+<area shape="rect" id="node4" href="$stopwatch__test_8cpp.html#a0e52c268c6f41c238624573ccac9d677" title=" " alt="" coords="5,56,60,83"/>
+</map>

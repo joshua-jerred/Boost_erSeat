@@ -1,0 +1,4 @@
+<map id="bst::Stopwatch::pause" name="bst::Stopwatch::pause">
+<area shape="rect" id="node1" title="alias for stop() as it does what you want it to do." alt="" coords="5,5,171,32"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="219,5,373,32"/>
+</map>

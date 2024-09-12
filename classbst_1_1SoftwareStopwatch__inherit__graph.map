@@ -1,0 +1,4 @@
+<map id="bst::SoftwareStopwatch" name="bst::SoftwareStopwatch">
+<area shape="rect" id="node1" title="A manually controlled stopwatch that does not use the system clock." alt="" coords="5,307,200,589"/>
+<area shape="rect" id="node2" href="$classbst_1_1IStopwatch.html" title=" " alt="" coords="5,5,200,259"/>
+</map>

@@ -140,6 +140,8 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1ConsecutiveValuesFilter.html">ConsecutiveValuesFilter</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple counting filter that allows for some noise.  <a href="classbst_1_1ConsecutiveValuesFilter.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1IStopwatch.html">IStopwatch</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Pressure.html">Pressure</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Process.html">Process</a></td></tr>
@@ -150,7 +152,11 @@ Classes</h2></td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1RollingAverage.html">RollingAverage</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">Moving average calculator.  <a href="classbst_1_1RollingAverage.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1SoftwareStopwatch.html">SoftwareStopwatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A manually controlled stopwatch that does not use the system clock.  <a href="classbst_1_1SoftwareStopwatch.html#details">More...</a><br /></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html">Stopwatch</a></td></tr>
+<tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality.  <a href="classbst_1_1Stopwatch.html#details">More...</a><br /></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Time.html">Time</a></td></tr>
 <tr class="memdesc:"><td class="mdescLeft">&#160;</td><td class="mdescRight">The generic time class for BoosterSeat. Uses UTC time.  <a href="classbst_1_1Time.html#details">More...</a><br /></td></tr>
@@ -184,11 +190,6 @@ Enumerations</h2></td></tr>
 <br />
  }</td></tr>
 <tr class="separator:ab08c99ae5b9eaa705ca52826a37daf46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a47c9161317f6b8b92f25e127602b54b3"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3">Resolution</a> { <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5">SECONDS</a>
-, <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3ab4fd5e5c06e72437a57379576df36936">MILLISECONDS</a>
-, <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3a98a5b3971201a65b35d420793d7148ea">MICROSECONDS</a>
- }</td></tr>
-<tr class="separator:a47c9161317f6b8b92f25e127602b54b3"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="func-members"></a>
 Functions</h2></td></tr>
@@ -304,33 +305,6 @@ Variables</h2></td></tr>
 </td></tr>
 <tr><td class="fieldname"><a id="ab08c99ae5b9eaa705ca52826a37daf46a2b9e0164c20d01aa76539e8c37af9d37"></a>NOT_YET_IMPLEMENTED&#160;</td><td class="fielddoc"><p>Throws if a feature is not yet implemented. </p>
 </td></tr>
-</table>
-
-</div>
-</div>
-<a id="a47c9161317f6b8b92f25e127602b54b3"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a47c9161317f6b8b92f25e127602b54b3">&#9670;&nbsp;</a></span>Resolution</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">enum <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3">bst::Resolution</a></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">strong</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-<table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5"></a>SECONDS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a47c9161317f6b8b92f25e127602b54b3ab4fd5e5c06e72437a57379576df36936"></a>MILLISECONDS&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="a47c9161317f6b8b92f25e127602b54b3a98a5b3971201a65b35d420793d7148ea"></a>MICROSECONDS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
@@ -638,7 +612,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="stopwatch__test_8cpp.html#ab236ac6a4058591a718a9d4d1a202d38">TEST()</a>, and <a class="el" href="classbst_1_1Process.html#a6b840ce798c1a766de0812a7761397dc">bst::Process::waitToComplete()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4">main()</a>, <a class="el" href="stopwatch__test_8cpp.html#acc5f4c7b290e89e8f70919b212a111aa">TEST()</a>, and <a class="el" href="classbst_1_1Process.html#a6b840ce798c1a766de0812a7761397dc">bst::Process::waitToComplete()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">

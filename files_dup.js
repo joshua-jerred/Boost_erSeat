@@ -33,8 +33,11 @@ var files_dup =
     [ "science.hpp", "science_8hpp.html", "science_8hpp" ],
     [ "science_test.cpp", "science__test_8cpp.html", "science__test_8cpp" ],
     [ "sleep.hpp", "sleep_8hpp.html", "sleep_8hpp" ],
-    [ "stopwatch.cpp", "stopwatch_8cpp.html", null ],
-    [ "stopwatch.hpp", "stopwatch_8hpp.html", "stopwatch_8hpp" ],
+    [ "stopwatch.hpp", "stopwatch_8hpp.html", [
+      [ "IStopwatch", "classbst_1_1IStopwatch.html", "classbst_1_1IStopwatch" ],
+      [ "SoftwareStopwatch", "classbst_1_1SoftwareStopwatch.html", "classbst_1_1SoftwareStopwatch" ],
+      [ "Stopwatch", "classbst_1_1Stopwatch.html", "classbst_1_1Stopwatch" ]
+    ] ],
     [ "stopwatch_test.cpp", "stopwatch__test_8cpp.html", "stopwatch__test_8cpp" ],
     [ "string_format.cpp", "string__format_8cpp.html", "string__format_8cpp" ],
     [ "string_format_test.cpp", "string__format__test_8cpp.html", "string__format__test_8cpp" ],

@@ -1,0 +1,10 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,132,60,159"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a0d3ce421ae3b8d3f23e26bc2d3ac9938" title="Get the elapsed time in microseconds in a floating point format." alt="" coords="108,5,383,32"/>
+<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#af21aba08db89168041f3738164bee3eb" title="Get the elapsed time in milliseconds in a floating point format." alt="" coords="112,56,379,83"/>
+<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a" title="Get the elapsed time in seconds in a floating point format." alt="" coords="126,107,365,133"/>
+<area shape="rect" id="node6" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="203,157,288,184"/>
+<area shape="rect" id="node7" href="$classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch." alt="" coords="167,208,323,235"/>
+<area shape="rect" id="node8" href="$classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="168,259,323,285"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" title="Handles the timekeeping." alt="" coords="431,56,629,83"/>
+</map>

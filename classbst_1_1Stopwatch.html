@@ -6,7 +6,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=9"/>
 <meta name="generator" content="Doxygen 1.9.1"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>BoosterSeat: bst::Stopwatch Class Reference</title>
+<title>BoosterSeat: bst::Stopwatch&lt; StopwatchClock &gt; Class Template Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -103,70 +103,138 @@ $(document).ready(function(){initNavTree('classbst_1_1Stopwatch.html',''); initR
   <div class="summary">
 <a href="#pub-types">Public Types</a> &#124;
 <a href="#pub-methods">Public Member Functions</a> &#124;
+<a href="#pro-types">Protected Types</a> &#124;
+<a href="#pro-methods">Protected Member Functions</a> &#124;
 <a href="#pri-attribs">Private Attributes</a> &#124;
 <a href="classbst_1_1Stopwatch-members.html">List of all members</a>  </div>
   <div class="headertitle">
-<div class="title">bst::Stopwatch Class Reference</div>  </div>
+<div class="title">bst::Stopwatch&lt; StopwatchClock &gt; Class Template Reference</div>  </div>
 </div><!--header-->
 <div class="contents">
 
+<p>A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality.  
+ <a href="classbst_1_1Stopwatch.html#details">More...</a></p>
+
 <p><code>#include &lt;<a class="el" href="stopwatch_8hpp_source.html">stopwatch.hpp</a>&gt;</code></p>
 <div class="dynheader">
-Collaboration diagram for bst::Stopwatch:</div>
+Inheritance diagram for bst::Stopwatch&lt; StopwatchClock &gt;:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch__coll__graph.svg" width="538" height="331"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch__inherit__graph.svg" width="212" height="668"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Collaboration diagram for bst::Stopwatch&lt; StopwatchClock &gt;:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch__coll__graph.svg" width="768" height="779"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-types"></a>
 Public Types</h2></td></tr>
-<tr class="memitem:ac87dadfd9bc93a3b936e3c2f06a99034"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">State</a> { <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd">RUNNING</a>
-, <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">STOPPED</a>
+<tr class="memitem:ae20e7f3d4679be5ef228ac179f9591f6"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6">Scale</a> { <a class="el" href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6aa9126caa6ef3db9cf3c35ac627ad22b5">SECONDS</a>
+, <a class="el" href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6ab4fd5e5c06e72437a57379576df36936">MILLISECONDS</a>
+, <a class="el" href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6a98a5b3971201a65b35d420793d7148ea">MICROSECONDS</a>
  }</td></tr>
-<tr class="separator:ac87dadfd9bc93a3b936e3c2f06a99034"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memdesc:ae20e7f3d4679be5ef228ac179f9591f6"><td class="mdescLeft">&#160;</td><td class="mdescRight">The resolution/scale of the time returned by elapsed()  <a href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6">More...</a><br /></td></tr>
+<tr class="separator:ae20e7f3d4679be5ef228ac179f9591f6"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
-<tr class="memitem:a1e6e95f3d3b161c6ba4c01e61f33c939"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a1e6e95f3d3b161c6ba4c01e61f33c939">Stopwatch</a> ()</td></tr>
-<tr class="separator:a1e6e95f3d3b161c6ba4c01e61f33c939"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a9827376459d5410f12b1402fcd43b025"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a9827376459d5410f12b1402fcd43b025">~Stopwatch</a> ()=default</td></tr>
-<tr class="separator:a9827376459d5410f12b1402fcd43b025"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a185e114c7ad9629eb189aadb73637166"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166">elapsed</a> (<a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3">Resolution</a> resolution=<a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5">Resolution::SECONDS</a>) const</td></tr>
-<tr class="separator:a185e114c7ad9629eb189aadb73637166"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a8026be6632b4c97ae802366f00c74f46"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a8026be6632b4c97ae802366f00c74f46">reset</a> ()</td></tr>
-<tr class="separator:a8026be6632b4c97ae802366f00c74f46"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aafdf385bd07a3fe0f5c0ee702e31015d"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d">start</a> ()</td></tr>
-<tr class="separator:aafdf385bd07a3fe0f5c0ee702e31015d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a565246db0210026b2c05cf6245883c65"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a565246db0210026b2c05cf6245883c65">state</a> () const</td></tr>
-<tr class="separator:a565246db0210026b2c05cf6245883c65"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ae40266a735342601dcdf4633ee534d55"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop</a> ()</td></tr>
-<tr class="separator:ae40266a735342601dcdf4633ee534d55"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a968be2eb5177d5887d3f780dd148d23f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a968be2eb5177d5887d3f780dd148d23f">Stopwatch</a> ()=default</td></tr>
+<tr class="memdesc:a968be2eb5177d5887d3f780dd148d23f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Construct a new <a class="el" href="classbst_1_1Stopwatch.html" title="A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality.">Stopwatch</a> object. The stopwatch is stopped.  <a href="classbst_1_1Stopwatch.html#a968be2eb5177d5887d3f780dd148d23f">More...</a><br /></td></tr>
+<tr class="separator:a968be2eb5177d5887d3f780dd148d23f"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ac7f1439ce67e0a9c67ec1679d4a7c4c8"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#ac7f1439ce67e0a9c67ec1679d4a7c4c8">~Stopwatch</a> ()=default</td></tr>
+<tr class="memdesc:ac7f1439ce67e0a9c67ec1679d4a7c4c8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Default destructor.  <a href="classbst_1_1Stopwatch.html#ac7f1439ce67e0a9c67ec1679d4a7c4c8">More...</a><br /></td></tr>
+<tr class="separator:ac7f1439ce67e0a9c67ec1679d4a7c4c8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a119bd7643caf0d23e038336687faa8a9"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a119bd7643caf0d23e038336687faa8a9">elapsedMicroseconds</a> () const</td></tr>
+<tr class="memdesc:a119bd7643caf0d23e038336687faa8a9"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in microseconds.  <a href="classbst_1_1Stopwatch.html#a119bd7643caf0d23e038336687faa8a9">More...</a><br /></td></tr>
+<tr class="separator:a119bd7643caf0d23e038336687faa8a9"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0d3ce421ae3b8d3f23e26bc2d3ac9938"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a0d3ce421ae3b8d3f23e26bc2d3ac9938">elapsedMicrosecondsF</a> () const</td></tr>
+<tr class="memdesc:a0d3ce421ae3b8d3f23e26bc2d3ac9938"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in microseconds in a floating point format.  <a href="classbst_1_1Stopwatch.html#a0d3ce421ae3b8d3f23e26bc2d3ac9938">More...</a><br /></td></tr>
+<tr class="separator:a0d3ce421ae3b8d3f23e26bc2d3ac9938"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aab3c8ba85ff041d11097d9b060ec6924"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#aab3c8ba85ff041d11097d9b060ec6924">elapsedMilliseconds</a> () const</td></tr>
+<tr class="memdesc:aab3c8ba85ff041d11097d9b060ec6924"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in milliseconds.  <a href="classbst_1_1Stopwatch.html#aab3c8ba85ff041d11097d9b060ec6924">More...</a><br /></td></tr>
+<tr class="separator:aab3c8ba85ff041d11097d9b060ec6924"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af21aba08db89168041f3738164bee3eb"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#af21aba08db89168041f3738164bee3eb">elapsedMillisecondsF</a> () const</td></tr>
+<tr class="memdesc:af21aba08db89168041f3738164bee3eb"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in milliseconds in a floating point format.  <a href="classbst_1_1Stopwatch.html#af21aba08db89168041f3738164bee3eb">More...</a><br /></td></tr>
+<tr class="separator:af21aba08db89168041f3738164bee3eb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a641b90fe59213be0c0d3a4d1e0a1c425"><td class="memItemLeft" align="right" valign="top">int64_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a641b90fe59213be0c0d3a4d1e0a1c425">elapsedSeconds</a> () const</td></tr>
+<tr class="memdesc:a641b90fe59213be0c0d3a4d1e0a1c425"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in seconds.  <a href="classbst_1_1Stopwatch.html#a641b90fe59213be0c0d3a4d1e0a1c425">More...</a><br /></td></tr>
+<tr class="separator:a641b90fe59213be0c0d3a4d1e0a1c425"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8d76c90635cbe41f103b56d48199a01a"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a">elapsedSecondsF</a> () const</td></tr>
+<tr class="memdesc:a8d76c90635cbe41f103b56d48199a01a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the elapsed time in seconds in a floating point format.  <a href="classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a">More...</a><br /></td></tr>
+<tr class="separator:a8d76c90635cbe41f103b56d48199a01a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a8df5ded101878021a576591fcbb6f812"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812">isRunning</a> () const</td></tr>
+<tr class="memdesc:a8df5ded101878021a576591fcbb6f812"><td class="mdescLeft">&#160;</td><td class="mdescRight">Returns the current state of the stopwatch.  <a href="classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812">More...</a><br /></td></tr>
+<tr class="separator:a8df5ded101878021a576591fcbb6f812"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aeb6e75e372019bd8efd5aa2dc0ba5d72"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#aeb6e75e372019bd8efd5aa2dc0ba5d72">pause</a> ()</td></tr>
+<tr class="memdesc:aeb6e75e372019bd8efd5aa2dc0ba5d72"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time.">stop()</a> as it does what you want it to do.  <a href="classbst_1_1Stopwatch.html#aeb6e75e372019bd8efd5aa2dc0ba5d72">More...</a><br /></td></tr>
+<tr class="separator:aeb6e75e372019bd8efd5aa2dc0ba5d72"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3c7e3b115ecb2fa2aba4e2edd7402f85"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85">reset</a> (bool <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">stop</a>=true)</td></tr>
+<tr class="memdesc:a3c7e3b115ecb2fa2aba4e2edd7402f85"><td class="mdescLeft">&#160;</td><td class="mdescRight">Resets the elapsed time. The stopwatch will keep running by default.  <a href="classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85">More...</a><br /></td></tr>
+<tr class="separator:a3c7e3b115ecb2fa2aba4e2edd7402f85"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a61904bf108d342c0b8732b318ae225fb"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a61904bf108d342c0b8732b318ae225fb">resume</a> ()</td></tr>
+<tr class="memdesc:a61904bf108d342c0b8732b318ae225fb"><td class="mdescLeft">&#160;</td><td class="mdescRight">alias for <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch.">start()</a> as it does what you want it to do.  <a href="classbst_1_1Stopwatch.html#a61904bf108d342c0b8732b318ae225fb">More...</a><br /></td></tr>
+<tr class="separator:a61904bf108d342c0b8732b318ae225fb"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a523ad0af768f4fe93b5c8fcce739a484"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">start</a> ()</td></tr>
+<tr class="memdesc:a523ad0af768f4fe93b5c8fcce739a484"><td class="mdescLeft">&#160;</td><td class="mdescRight">Start the stopwatch.  <a href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">More...</a><br /></td></tr>
+<tr class="separator:a523ad0af768f4fe93b5c8fcce739a484"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0de9a7e413ab81b8a4d9b84da402a500"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">stop</a> ()</td></tr>
+<tr class="memdesc:a0de9a7e413ab81b8a4d9b84da402a500"><td class="mdescLeft">&#160;</td><td class="mdescRight">Stops/Pauses the stopwatch. Does <em>not</em> reset the elapsed time.  <a href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">More...</a><br /></td></tr>
+<tr class="separator:a0de9a7e413ab81b8a4d9b84da402a500"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-types"></a>
+Protected Types</h2></td></tr>
+<tr class="memitem:a37f26f1abf07e91d5db085ad66e6396e"><td class="memItemLeft" align="right" valign="top">enum class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396e">State</a> { <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd">RUNNING</a>
+, <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">STOPPED</a>
+ }</td></tr>
+<tr class="memdesc:a37f26f1abf07e91d5db085ad66e6396e"><td class="mdescLeft">&#160;</td><td class="mdescRight">The state of the stopwatch.  <a href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396e">More...</a><br /></td></tr>
+<tr class="separator:a37f26f1abf07e91d5db085ad66e6396e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pro-methods"></a>
+Protected Member Functions</h2></td></tr>
+<tr class="memitem:a305ec6f22247bac1ef0f135abf98ad13"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">bst::clck::Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">getElapsed</a> () const</td></tr>
+<tr class="memdesc:a305ec6f22247bac1ef0f135abf98ad13"><td class="mdescLeft">&#160;</td><td class="mdescRight">Handles the timekeeping.  <a href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">More...</a><br /></td></tr>
+<tr class="separator:a305ec6f22247bac1ef0f135abf98ad13"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="pri-attribs"></a>
 Private Attributes</h2></td></tr>
-<tr class="memitem:a8354b39ad025cbc0b3e4b396d224981b"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b">clock_</a> = <a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a>()</td></tr>
-<tr class="separator:a8354b39ad025cbc0b3e4b396d224981b"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a4b3fe0d96f1b3ede6dde426f92f651ea"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">clck::Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a4b3fe0d96f1b3ede6dde426f92f651ea">elapsed_</a> = clck::Duration::zero()</td></tr>
-<tr class="separator:a4b3fe0d96f1b3ede6dde426f92f651ea"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abb18f2bdf49ff962471eeefa69ce800e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#abb18f2bdf49ff962471eeefa69ce800e">start_</a> = clck::TimePoint::min()</td></tr>
-<tr class="separator:abb18f2bdf49ff962471eeefa69ce800e"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abdf7e89aae6d29c7fd905d7c24d6ddb8"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a> = <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">State::STOPPED</a></td></tr>
-<tr class="separator:abdf7e89aae6d29c7fd905d7c24d6ddb8"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a073a6d7f217d16019c5615ef8d451b4e"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a073a6d7f217d16019c5615ef8d451b4e">stop_time_</a> = clck::TimePoint::min()</td></tr>
-<tr class="separator:a073a6d7f217d16019c5615ef8d451b4e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aed73b720808a8d6632ec500d633aa90a"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#aed73b720808a8d6632ec500d633aa90a">clock_</a></td></tr>
+<tr class="separator:aed73b720808a8d6632ec500d633aa90a"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a3f2e5672e89353e17d3626c58a73c7c3"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">clck::Duration</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a3f2e5672e89353e17d3626c58a73c7c3">elapsed_</a> = clck::Duration::zero()</td></tr>
+<tr class="separator:a3f2e5672e89353e17d3626c58a73c7c3"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af947dd5f3d18bb648fdda3d266c825cd"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#af947dd5f3d18bb648fdda3d266c825cd">start_</a> = clck::TimePoint::min()</td></tr>
+<tr class="separator:af947dd5f3d18bb648fdda3d266c825cd"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:adbb6d70eb7a726c7bd731a75697d3025"><td class="memItemLeft" align="right" valign="top"><a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396e">State</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">state_</a> = <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">State::STOPPED</a></td></tr>
+<tr class="separator:adbb6d70eb7a726c7bd731a75697d3025"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a671bc2626eef7b6236c93dc2b09d4ccb"><td class="memItemLeft" align="right" valign="top"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a>&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="classbst_1_1Stopwatch.html#a671bc2626eef7b6236c93dc2b09d4ccb">stop_time_</a> = clck::TimePoint::min()</td></tr>
+<tr class="separator:a671bc2626eef7b6236c93dc2b09d4ccb"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
-<h2 class="groupheader">Member Enumeration Documentation</h2>
-<a id="ac87dadfd9bc93a3b936e3c2f06a99034"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ac87dadfd9bc93a3b936e3c2f06a99034">&#9670;&nbsp;</a></span>State</h2>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><h3>template&lt;class StopwatchClock = clck::Clock&gt;<br />
+class bst::Stopwatch&lt; StopwatchClock &gt;</h3>
+
+<p>A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality. </p>
+<dl class="tparams"><dt>Template Parameters</dt><dd>
+  <table class="tparams">
+    <tr><td class="paramname">StopwatchClock</td><td>- The clock to use for timing. Defaults to the high_resolution_clock. </td></tr>
+  </table>
+  </dd>
+</dl>
+</div><h2 class="groupheader">Member Enumeration Documentation</h2>
+<a id="ae20e7f3d4679be5ef228ac179f9591f6"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ae20e7f3d4679be5ef228ac179f9591f6">&#9670;&nbsp;</a></span>Scale</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">enum <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">bst::Stopwatch::State</a></td>
+          <td class="memname">enum <a class="el" href="classbst_1_1Stopwatch.html#ae20e7f3d4679be5ef228ac179f9591f6">bst::Stopwatch::Scale</a></td>
         </tr>
       </table>
   </td>
@@ -175,35 +243,18 @@ Private Attributes</h2></td></tr>
   </tr>
 </table>
 </div><div class="memdoc">
+
+<p>The resolution/scale of the time returned by elapsed() </p>
 <table class="fieldtable">
-<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd"></a>RUNNING&#160;</td><td class="fielddoc"></td></tr>
-<tr><td class="fieldname"><a id="ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a"></a>STOPPED&#160;</td><td class="fielddoc"></td></tr>
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="ae20e7f3d4679be5ef228ac179f9591f6aa9126caa6ef3db9cf3c35ac627ad22b5"></a>SECONDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae20e7f3d4679be5ef228ac179f9591f6ab4fd5e5c06e72437a57379576df36936"></a>MILLISECONDS&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="ae20e7f3d4679be5ef228ac179f9591f6a98a5b3971201a65b35d420793d7148ea"></a>MICROSECONDS&#160;</td><td class="fielddoc"></td></tr>
 </table>
 
 </div>
 </div>
-<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
-<a id="a1e6e95f3d3b161c6ba4c01e61f33c939"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a1e6e95f3d3b161c6ba4c01e61f33c939">&#9670;&nbsp;</a></span>Stopwatch()</h2>
-
-<div class="memitem">
-<div class="memproto">
-      <table class="memname">
-        <tr>
-          <td class="memname">bst::Stopwatch::Stopwatch </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-</div><div class="memdoc">
-
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">STOPPED</a>.</p>
-
-</div>
-</div>
-<a id="a9827376459d5410f12b1402fcd43b025"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a9827376459d5410f12b1402fcd43b025">&#9670;&nbsp;</a></span>~Stopwatch()</h2>
+<a id="a37f26f1abf07e91d5db085ad66e6396e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a37f26f1abf07e91d5db085ad66e6396e">&#9670;&nbsp;</a></span>State</h2>
 
 <div class="memitem">
 <div class="memproto">
@@ -212,7 +263,38 @@ Private Attributes</h2></td></tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bst::Stopwatch::~Stopwatch </td>
+          <td class="memname">enum <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396e">bst::IStopwatch::State</a></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">strong</span><span class="mlabel">protected</span><span class="mlabel">inherited</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>The state of the stopwatch. </p>
+<table class="fieldtable">
+<tr><th colspan="2">Enumerator</th></tr><tr><td class="fieldname"><a id="a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd"></a>RUNNING&#160;</td><td class="fielddoc"></td></tr>
+<tr><td class="fieldname"><a id="a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a"></a>STOPPED&#160;</td><td class="fielddoc"></td></tr>
+</table>
+
+</div>
+</div>
+<h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
+<a id="a968be2eb5177d5887d3f780dd148d23f"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a968be2eb5177d5887d3f780dd148d23f">&#9670;&nbsp;</a></span>Stopwatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::<a class="el" href="classbst_1_1Stopwatch.html">Stopwatch</a> </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
@@ -225,149 +307,621 @@ Private Attributes</h2></td></tr>
 </table>
 </div><div class="memdoc">
 
+<p>Construct a new <a class="el" href="classbst_1_1Stopwatch.html" title="A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality.">Stopwatch</a> object. The stopwatch is stopped. </p>
+
+</div>
+</div>
+<a id="ac7f1439ce67e0a9c67ec1679d4a7c4c8"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#ac7f1439ce67e0a9c67ec1679d4a7c4c8">&#9670;&nbsp;</a></span>~Stopwatch()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::~<a class="el" href="classbst_1_1Stopwatch.html">Stopwatch</a> </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">default</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Default destructor. </p>
+
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="aafdf385bd07a3fe0f5c0ee702e31015d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#aafdf385bd07a3fe0f5c0ee702e31015d">&#9670;&nbsp;</a></span>start()</h2>
+<a id="a523ad0af768f4fe93b5c8fcce739a484"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a523ad0af768f4fe93b5c8fcce739a484">&#9670;&nbsp;</a></span>start()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bst::Stopwatch::start </td>
+          <td class="memname">void <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::start </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b">clock_</a>, <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd">RUNNING</a>, <a class="el" href="classbst_1_1Stopwatch.html#abb18f2bdf49ff962471eeefa69ce800e">start_</a>, <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">STOPPED</a>.</p>
+<p>Start the stopwatch. </p>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classbst_1_1BoosterSeatException.html">BoosterSeatException</a></td><td>if the stopwatch is already running. </td></tr>
+  </table>
+  </dd>
+</dl>
 
-<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#a418b5dce05baceae9562e6b91de651b4">TEST()</a>.</p>
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#aed9b2130bbba8d3bbeab4238f1f8792e">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#aed73b720808a8d6632ec500d633aa90a">bst::Stopwatch&lt; StopwatchClock &gt;::clock_</a>, <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd">bst::IStopwatch::RUNNING</a>, <a class="el" href="classbst_1_1Stopwatch.html#af947dd5f3d18bb648fdda3d266c825cd">bst::Stopwatch&lt; StopwatchClock &gt;::start_</a>, <a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">bst::Stopwatch&lt; StopwatchClock &gt;::state_</a>, and <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">bst::IStopwatch::STOPPED</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a61904bf108d342c0b8732b318ae225fb">bst::Stopwatch&lt; StopwatchClock &gt;::resume()</a>, and <a class="el" href="stopwatch__test_8cpp.html#a418b5dce05baceae9562e6b91de651b4">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_aafdf385bd07a3fe0f5c0ee702e31015d_icgraph.svg" width="270" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a523ad0af768f4fe93b5c8fcce739a484_icgraph.svg" width="390" height="88"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="ae40266a735342601dcdf4633ee534d55"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ae40266a735342601dcdf4633ee534d55">&#9670;&nbsp;</a></span>stop()</h2>
+<a id="a0de9a7e413ab81b8a4d9b84da402a500"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0de9a7e413ab81b8a4d9b84da402a500">&#9670;&nbsp;</a></span>stop()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bst::Stopwatch::stop </td>
+          <td class="memname">void <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::stop </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b">clock_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a4b3fe0d96f1b3ede6dde426f92f651ea">elapsed_</a>, <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd">RUNNING</a>, <a class="el" href="classbst_1_1Stopwatch.html#abb18f2bdf49ff962471eeefa69ce800e">start_</a>, <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a073a6d7f217d16019c5615ef8d451b4e">stop_time_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">STOPPED</a>.</p>
+<p>Stops/Pauses the stopwatch. Does <em>not</em> reset the elapsed time. </p>
 
-<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#a418b5dce05baceae9562e6b91de651b4">TEST()</a>.</p>
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a6fe93a3703e6310c625da41c1bdc70ac">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#aed73b720808a8d6632ec500d633aa90a">bst::Stopwatch&lt; StopwatchClock &gt;::clock_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a3f2e5672e89353e17d3626c58a73c7c3">bst::Stopwatch&lt; StopwatchClock &gt;::elapsed_</a>, <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd">bst::IStopwatch::RUNNING</a>, <a class="el" href="classbst_1_1Stopwatch.html#af947dd5f3d18bb648fdda3d266c825cd">bst::Stopwatch&lt; StopwatchClock &gt;::start_</a>, <a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">bst::Stopwatch&lt; StopwatchClock &gt;::state_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a671bc2626eef7b6236c93dc2b09d4ccb">bst::Stopwatch&lt; StopwatchClock &gt;::stop_time_</a>, and <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">bst::IStopwatch::STOPPED</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#aeb6e75e372019bd8efd5aa2dc0ba5d72">bst::Stopwatch&lt; StopwatchClock &gt;::pause()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85">bst::Stopwatch&lt; StopwatchClock &gt;::reset()</a>, and <a class="el" href="stopwatch__test_8cpp.html#a418b5dce05baceae9562e6b91de651b4">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_ae40266a735342601dcdf4633ee534d55_icgraph.svg" width="268" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a0de9a7e413ab81b8a4d9b84da402a500_icgraph.svg" width="482" height="139"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a8026be6632b4c97ae802366f00c74f46"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8026be6632b4c97ae802366f00c74f46">&#9670;&nbsp;</a></span>reset()</h2>
+<a id="a3c7e3b115ecb2fa2aba4e2edd7402f85"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3c7e3b115ecb2fa2aba4e2edd7402f85">&#9670;&nbsp;</a></span>reset()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">void bst::Stopwatch::reset </td>
+          <td class="memname">void <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::reset </td>
           <td>(</td>
-          <td class="paramname"></td><td>)</td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>stop</em> = <code>true</code></td><td>)</td>
           <td></td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a4b3fe0d96f1b3ede6dde426f92f651ea">elapsed_</a>, <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">STOPPED</a>.</p>
+<p>Resets the elapsed time. The stopwatch will keep running by default. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">stop</td><td>If true, the stopwatch will be stopped. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#ad5e079ed9d7e3b13a192067fbd781a57">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a3f2e5672e89353e17d3626c58a73c7c3">bst::Stopwatch&lt; StopwatchClock &gt;::elapsed_</a>, <a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">bst::Stopwatch&lt; StopwatchClock &gt;::state_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>, and <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">bst::IStopwatch::STOPPED</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#a0e52c268c6f41c238624573ccac9d677">TEST()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a3c7e3b115ecb2fa2aba4e2edd7402f85_cgraph.svg" width="372" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a3c7e3b115ecb2fa2aba4e2edd7402f85_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
 
 </div>
 </div>
-<a id="a565246db0210026b2c05cf6245883c65"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a565246db0210026b2c05cf6245883c65">&#9670;&nbsp;</a></span>state()</h2>
+<a id="a8df5ded101878021a576591fcbb6f812"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8df5ded101878021a576591fcbb6f812">&#9670;&nbsp;</a></span>isRunning()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">Stopwatch::State</a> bst::Stopwatch::state </td>
+          <td class="memname">bool <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::isRunning </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>.</p>
+<p>Returns the current state of the stopwatch. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#ab0f25ac7501d610918934df7d412bf53">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd">bst::IStopwatch::RUNNING</a>, and <a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">bst::Stopwatch&lt; StopwatchClock &gt;::state_</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#aadab39767700965763eb20bf9e3877df">TEST()</a>.</p>
 <div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a565246db0210026b2c05cf6245883c65_icgraph.svg" width="272" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a8df5ded101878021a576591fcbb6f812_icgraph.svg" width="304" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
-<a id="a185e114c7ad9629eb189aadb73637166"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a185e114c7ad9629eb189aadb73637166">&#9670;&nbsp;</a></span>elapsed()</h2>
+<a id="a119bd7643caf0d23e038336687faa8a9"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a119bd7643caf0d23e038336687faa8a9">&#9670;&nbsp;</a></span>elapsedMicroseconds()</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">double bst::Stopwatch::elapsed </td>
+          <td class="memname">int64_t <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedMicroseconds </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3">Resolution</a>&#160;</td>
-          <td class="paramname"><em>resolution</em> = <code><a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5">Resolution::SECONDS</a></code></td><td>)</td>
+          <td class="paramname"></td><td>)</td>
           <td> const</td>
         </tr>
       </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
 </div><div class="memdoc">
 
-<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a8354b39ad025cbc0b3e4b396d224981b">clock_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a4b3fe0d96f1b3ede6dde426f92f651ea">elapsed_</a>, <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3a98a5b3971201a65b35d420793d7148ea">bst::MICROSECONDS</a>, <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3ab4fd5e5c06e72437a57379576df36936">bst::MILLISECONDS</a>, <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a43491564ebcfd38568918efbd6e840fd">RUNNING</a>, <a class="el" href="namespacebst.html#a47c9161317f6b8b92f25e127602b54b3aa9126caa6ef3db9cf3c35ac627ad22b5">bst::SECONDS</a>, <a class="el" href="classbst_1_1Stopwatch.html#abb18f2bdf49ff962471eeefa69ce800e">start_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#abdf7e89aae6d29c7fd905d7c24d6ddb8">state_</a>.</p>
+<p>Get the elapsed time in microseconds. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a294ac2c67df8f11ec51d50248fad94fc">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
 
 <p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#aadab39767700965763eb20bf9e3877df">TEST()</a>.</p>
 <div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a119bd7643caf0d23e038336687faa8a9_cgraph.svg" width="524" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
-<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a185e114c7ad9629eb189aadb73637166_icgraph.svg" width="291" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a119bd7643caf0d23e038336687faa8a9_icgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0d3ce421ae3b8d3f23e26bc2d3ac9938"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0d3ce421ae3b8d3f23e26bc2d3ac9938">&#9670;&nbsp;</a></span>elapsedMicrosecondsF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedMicrosecondsF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the elapsed time in microseconds in a floating point format. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a863649bb1e9e349cb5f043d52db2af13">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#acc5f4c7b290e89e8f70919b212a111aa">TEST()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a0d3ce421ae3b8d3f23e26bc2d3ac9938_cgraph.svg" width="532" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a0d3ce421ae3b8d3f23e26bc2d3ac9938_icgraph.svg" width="388" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aab3c8ba85ff041d11097d9b060ec6924"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aab3c8ba85ff041d11097d9b060ec6924">&#9670;&nbsp;</a></span>elapsedMilliseconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedMilliseconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the elapsed time in milliseconds. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a86be340844ddbd51ce3c87f76b4ed9fc">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_aab3c8ba85ff041d11097d9b060ec6924_cgraph.svg" width="516" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="af21aba08db89168041f3738164bee3eb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af21aba08db89168041f3738164bee3eb">&#9670;&nbsp;</a></span>elapsedMillisecondsF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedMillisecondsF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the elapsed time in milliseconds in a floating point format. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a5288da779b4a26ed8cf9988ee137a84b">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#acc5f4c7b290e89e8f70919b212a111aa">TEST()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_af21aba08db89168041f3738164bee3eb_cgraph.svg" width="524" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_af21aba08db89168041f3738164bee3eb_icgraph.svg" width="380" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a641b90fe59213be0c0d3a4d1e0a1c425"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a641b90fe59213be0c0d3a4d1e0a1c425">&#9670;&nbsp;</a></span>elapsedSeconds()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">int64_t <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedSeconds </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the elapsed time in seconds. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a244b4c1619d849d5d61e6dd5d6869ee7">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a641b90fe59213be0c0d3a4d1e0a1c425_cgraph.svg" width="488" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a8d76c90635cbe41f103b56d48199a01a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a8d76c90635cbe41f103b56d48199a01a">&#9670;&nbsp;</a></span>elapsedSecondsF()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">double <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsedSecondsF </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Get the elapsed time in seconds in a floating point format. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a36b633af0cd405470a6ffc06b8875754">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="stopwatch__test_8cpp.html#acc5f4c7b290e89e8f70919b212a111aa">TEST()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a8d76c90635cbe41f103b56d48199a01a_cgraph.svg" width="496" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a8d76c90635cbe41f103b56d48199a01a_icgraph.svg" width="352" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="aeb6e75e372019bd8efd5aa2dc0ba5d72"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aeb6e75e372019bd8efd5aa2dc0ba5d72">&#9670;&nbsp;</a></span>pause()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::pause </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alias for <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time.">stop()</a> as it does what you want it to do. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a86c28434202240d12eefa6776388b994">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_aeb6e75e372019bd8efd5aa2dc0ba5d72_cgraph.svg" width="379" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a61904bf108d342c0b8732b318ae225fb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a61904bf108d342c0b8732b318ae225fb">&#9670;&nbsp;</a></span>resume()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname">void <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::resume </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">virtual</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>alias for <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch.">start()</a> as it does what you want it to do. </p>
+
+<p>Implements <a class="el" href="classbst_1_1IStopwatch.html#a76825d6c8c6edd7d8f3cb88e9a07758d">bst::IStopwatch</a>.</p>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">bst::Stopwatch&lt; StopwatchClock &gt;::start()</a>.</p>
+<div class="dynheader">
+Here is the call graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a61904bf108d342c0b8732b318ae225fb_cgraph.svg" width="390" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a305ec6f22247bac1ef0f135abf98ad13"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a305ec6f22247bac1ef0f135abf98ad13">&#9670;&nbsp;</a></span>getElapsed()</h2>
+
+<div class="memitem">
+<div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
+<table class="mlabels">
+  <tr>
+  <td class="mlabels-left">
+      <table class="memname">
+        <tr>
+          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">bst::clck::Duration</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::getElapsed </td>
+          <td>(</td>
+          <td class="paramname"></td><td>)</td>
+          <td> const</td>
+        </tr>
+      </table>
+  </td>
+  <td class="mlabels-right">
+<span class="mlabels"><span class="mlabel">inline</span><span class="mlabel">protected</span></span>  </td>
+  </tr>
+</table>
+</div><div class="memdoc">
+
+<p>Handles the timekeeping. </p>
+<dl class="section return"><dt>Returns</dt><dd><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">clck::Duration</a> - The elapsed time </dd></dl>
+
+<p class="reference">References <a class="el" href="classbst_1_1Stopwatch.html#aed73b720808a8d6632ec500d633aa90a">bst::Stopwatch&lt; StopwatchClock &gt;::clock_</a>, <a class="el" href="classbst_1_1Stopwatch.html#a3f2e5672e89353e17d3626c58a73c7c3">bst::Stopwatch&lt; StopwatchClock &gt;::elapsed_</a>, <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea43491564ebcfd38568918efbd6e840fd">bst::IStopwatch::RUNNING</a>, <a class="el" href="classbst_1_1Stopwatch.html#af947dd5f3d18bb648fdda3d266c825cd">bst::Stopwatch&lt; StopwatchClock &gt;::start_</a>, and <a class="el" href="classbst_1_1Stopwatch.html#adbb6d70eb7a726c7bd731a75697d3025">bst::Stopwatch&lt; StopwatchClock &gt;::state_</a>.</p>
+
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a119bd7643caf0d23e038336687faa8a9">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedMicroseconds()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a0d3ce421ae3b8d3f23e26bc2d3ac9938">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedMicrosecondsF()</a>, <a class="el" href="classbst_1_1Stopwatch.html#aab3c8ba85ff041d11097d9b060ec6924">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedMilliseconds()</a>, <a class="el" href="classbst_1_1Stopwatch.html#af21aba08db89168041f3738164bee3eb">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedMillisecondsF()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a641b90fe59213be0c0d3a4d1e0a1c425">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedSeconds()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a">bst::Stopwatch&lt; StopwatchClock &gt;::elapsedSecondsF()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="classbst_1_1Stopwatch_a305ec6f22247bac1ef0f135abf98ad13_icgraph.svg" width="635" height="291"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
 </div>
 </div>
 <h2 class="groupheader">Member Data Documentation</h2>
-<a id="a8354b39ad025cbc0b3e4b396d224981b"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a8354b39ad025cbc0b3e4b396d224981b">&#9670;&nbsp;</a></span>clock_</h2>
+<a id="aed73b720808a8d6632ec500d633aa90a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#aed73b720808a8d6632ec500d633aa90a">&#9670;&nbsp;</a></span>clock_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a> bst::Stopwatch::clock_ = <a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a>()</td>
+          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a937e318b3d32bc62735e3c5f6b3d809c">clck::Clock</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::clock_</td>
         </tr>
       </table>
   </td>
@@ -377,21 +931,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166">elapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d">start()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">bst::Stopwatch&lt; StopwatchClock &gt;::start()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
 
 </div>
 </div>
-<a id="abb18f2bdf49ff962471eeefa69ce800e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abb18f2bdf49ff962471eeefa69ce800e">&#9670;&nbsp;</a></span>start_</h2>
+<a id="af947dd5f3d18bb648fdda3d266c825cd"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af947dd5f3d18bb648fdda3d266c825cd">&#9670;&nbsp;</a></span>start_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a> bst::Stopwatch::start_ = clck::TimePoint::min()</td>
+          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::start_ = clck::TimePoint::min()</td>
         </tr>
       </table>
   </td>
@@ -401,21 +957,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166">elapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d">start()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">bst::Stopwatch&lt; StopwatchClock &gt;::start()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
 
 </div>
 </div>
-<a id="a073a6d7f217d16019c5615ef8d451b4e"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a073a6d7f217d16019c5615ef8d451b4e">&#9670;&nbsp;</a></span>stop_time_</h2>
+<a id="a671bc2626eef7b6236c93dc2b09d4ccb"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a671bc2626eef7b6236c93dc2b09d4ccb">&#9670;&nbsp;</a></span>stop_time_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a> bst::Stopwatch::stop_time_ = clck::TimePoint::min()</td>
+          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#a54c519558b4a694dc947d68b7d00d73b">clck::TimePoint</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::stop_time_ = clck::TimePoint::min()</td>
         </tr>
       </table>
   </td>
@@ -425,21 +983,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
 
 </div>
 </div>
-<a id="a4b3fe0d96f1b3ede6dde426f92f651ea"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a4b3fe0d96f1b3ede6dde426f92f651ea">&#9670;&nbsp;</a></span>elapsed_</h2>
+<a id="a3f2e5672e89353e17d3626c58a73c7c3"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a3f2e5672e89353e17d3626c58a73c7c3">&#9670;&nbsp;</a></span>elapsed_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">clck::Duration</a> bst::Stopwatch::elapsed_ = clck::Duration::zero()</td>
+          <td class="memname"><a class="el" href="namespacebst_1_1clck.html#af472955a96b90ce9d5b689e393a6b86e">clck::Duration</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::elapsed_ = clck::Duration::zero()</td>
         </tr>
       </table>
   </td>
@@ -449,21 +1009,23 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166">elapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a8026be6632b4c97ae802366f00c74f46">reset()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85">bst::Stopwatch&lt; StopwatchClock &gt;::reset()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
 
 </div>
 </div>
-<a id="abdf7e89aae6d29c7fd905d7c24d6ddb8"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#abdf7e89aae6d29c7fd905d7c24d6ddb8">&#9670;&nbsp;</a></span>state_</h2>
+<a id="adbb6d70eb7a726c7bd731a75697d3025"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#adbb6d70eb7a726c7bd731a75697d3025">&#9670;&nbsp;</a></span>state_</h2>
 
 <div class="memitem">
 <div class="memproto">
+<div class="memtemplate">
+template&lt;class StopwatchClock  = clck::Clock&gt; </div>
 <table class="mlabels">
   <tr>
   <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname"><a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034">State</a> bst::Stopwatch::state_ = <a class="el" href="classbst_1_1Stopwatch.html#ac87dadfd9bc93a3b936e3c2f06a99034a09d4d696b4e935115b9313e3c412509a">State::STOPPED</a></td>
+          <td class="memname"><a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396e">State</a> <a class="el" href="classbst_1_1Stopwatch.html">bst::Stopwatch</a>&lt; StopwatchClock &gt;::state_ = <a class="el" href="classbst_1_1IStopwatch.html#a37f26f1abf07e91d5db085ad66e6396ea09d4d696b4e935115b9313e3c412509a">State::STOPPED</a></td>
         </tr>
       </table>
   </td>
@@ -473,7 +1035,7 @@ Here is the caller graph for this function:</div>
 </table>
 </div><div class="memdoc">
 
-<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a1e6e95f3d3b161c6ba4c01e61f33c939">Stopwatch()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166">elapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a8026be6632b4c97ae802366f00c74f46">reset()</a>, <a class="el" href="classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d">start()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a565246db0210026b2c05cf6245883c65">state()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55">stop()</a>.</p>
+<p class="reference">Referenced by <a class="el" href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13">bst::Stopwatch&lt; StopwatchClock &gt;::getElapsed()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812">bst::Stopwatch&lt; StopwatchClock &gt;::isRunning()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85">bst::Stopwatch&lt; StopwatchClock &gt;::reset()</a>, <a class="el" href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484">bst::Stopwatch&lt; StopwatchClock &gt;::start()</a>, and <a class="el" href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500">bst::Stopwatch&lt; StopwatchClock &gt;::stop()</a>.</p>
 
 </div>
 </div>

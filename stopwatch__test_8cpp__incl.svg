@@ -50,7 +50,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="stopwatch_8hpp.html" target="_top" xlink:title=" ">
+<g id="a_node5"><a xlink:href="stopwatch_8hpp.html" target="_top" xlink:title="BoosterSeat Stopwatch class declaration.">
 <polygon fill="none" stroke="black" points="222,-179.5 222,-198.5 372,-198.5 372,-179.5 222,-179.5"/>
 <text text-anchor="middle" x="297" y="-186.5" font-family="Helvetica,sans-Serif" font-size="10.00">BoosterSeat/stopwatch.hpp</text>
 </a>

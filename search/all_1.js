@@ -2,7 +2,7 @@ var searchData=
 [
   ['a_4',['A',['../filters__test_8cpp.html#a88e55202bfacbd446cff5c9a35a61076a7fc56270e7a70fa81a5935b72eacbe29',1,'filters_test.cpp']]],
   ['addpoint_5',['addPoint',['../classbst_1_1geo_1_1Path.html#a02dedf8208be3ad5995f481a04909aab',1,'bst::geo::Path']]],
-  ['addvalue_6',['addValue',['../classbst_1_1ConsecutiveValuesFilter.html#a91d0cd6deeb40fbbc507d25182cf9513',1,'bst::ConsecutiveValuesFilter::addValue()'],['../classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269',1,'bst::RollingAverage::addValue()']]],
+  ['addvalue_6',['addValue',['../classbst_1_1ConsecutiveValuesFilter.html#a096587bcd557e85586f124fd5ba99e23',1,'bst::ConsecutiveValuesFilter::addValue()'],['../classbst_1_1RollingAverage.html#ab9d239ff79126c372f6076d57ed13269',1,'bst::RollingAverage::addValue()']]],
   ['align_5fcases_7',['align_cases',['../string__format_8cpp.html#ad73a2a8db8b4b4631b7cb865d7099058',1,'string_format.cpp']]],
   ['alignment_8',['Alignment',['../namespacebst_1_1layout.html#a72cb9de7b9cbac0a282f289ea0ebd009',1,'bst::layout']]],
   ['appendtofile_9',['appendToFile',['../namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0',1,'bst::filesystem']]],

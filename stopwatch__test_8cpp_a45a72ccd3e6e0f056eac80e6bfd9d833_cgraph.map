@@ -1,8 +1,8 @@
 <map id="TEST" name="TEST">
-<area shape="rect" id="node1" title=" " alt="" coords="5,107,60,133"/>
-<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a185e114c7ad9629eb189aadb73637166" title=" " alt="" coords="108,5,285,32"/>
-<area shape="rect" id="node3" href="$stopwatch__test_8cpp.html#aae1498b2864118a1812e7e6c84da89eb" title=" " alt="" coords="151,56,242,83"/>
-<area shape="rect" id="node4" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="154,107,239,133"/>
-<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d" title=" " alt="" coords="119,157,275,184"/>
-<area shape="rect" id="node6" href="$classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" title=" " alt="" coords="119,208,274,235"/>
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a" title="Get the elapsed time in seconds in a floating point format." alt="" coords="108,5,347,32"/>
+<area shape="rect" id="node4" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="185,56,270,83"/>
+<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch." alt="" coords="149,107,305,133"/>
+<area shape="rect" id="node6" href="$classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="150,157,305,184"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" title="Handles the timekeeping." alt="" coords="395,5,593,32"/>
 </map>

@@ -1,0 +1,4 @@
+<map id="bst::Stopwatch::elapsedSecondsF" name="bst::Stopwatch::elapsedSecondsF">
+<area shape="rect" id="node1" title="Get the elapsed time in seconds in a floating point format." alt="" coords="5,5,244,32"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" title="Handles the timekeeping." alt="" coords="292,5,491,32"/>
+</map>
