@@ -40,9 +40,6 @@ protected:
 
 /// @brief A simple stopwatch class. Basic start (resume), stop (pause), and
 /// reset functionality.
-/// @tparam StopwatchClock - The clock to use for timing. Defaults to the
-/// high_resolution_clock.
-template <class StopwatchClock = clck::Clock>
 class Stopwatch : public IStopwatch {
 public:
   /// @brief Construct a new Stopwatch object. The stopwatch is stopped.
