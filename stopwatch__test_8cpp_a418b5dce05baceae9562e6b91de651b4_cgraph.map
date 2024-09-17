@@ -1,6 +1,6 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,56,60,83"/>
-<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812" title="Returns the current state of the stopwatch." alt="" coords="108,5,299,32"/>
-<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch." alt="" coords="125,56,281,83"/>
-<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="126,107,281,133"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a54c64be09dc1315db7491f84358f51f9" title="Returns the current state of the stopwatch." alt="" coords="108,5,299,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d" title="Start the stopwatch." alt="" coords="125,56,281,83"/>
+<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="126,107,281,133"/>
 </map>

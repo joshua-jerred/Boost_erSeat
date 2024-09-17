@@ -5,7 +5,7 @@ var hierarchy =
     [ "bst::geo::Point", "classbst_1_1geo_1_1Point.html", null ],
     [ "bst::IStopwatch", "classbst_1_1IStopwatch.html", [
       [ "bst::SoftwareStopwatch", "classbst_1_1SoftwareStopwatch.html", null ],
-      [ "bst::Stopwatch< StopwatchClock >", "classbst_1_1Stopwatch.html", null ]
+      [ "bst::Stopwatch", "classbst_1_1Stopwatch.html", null ]
     ] ],
     [ "bst::Pressure", "classbst_1_1Pressure.html", null ],
     [ "bst::Process", "classbst_1_1Process.html", null ],

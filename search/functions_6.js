@@ -5,7 +5,7 @@ var searchData=
   ['getcurrentvalue_444',['getCurrentValue',['../classbst_1_1ConsecutiveValuesFilter.html#ad14f75550fb22aaa8fef544e8ff50ac4',1,'bst::ConsecutiveValuesFilter']]],
   ['getday_445',['getDay',['../classbst_1_1Time.html#aea8177d8ecbc30116116fa705b138c6f',1,'bst::Time']]],
   ['getdirectorysize_446',['getDirectorySize',['../namespacebst_1_1filesystem.html#a288237a61873a5345e0b915bae440a2f',1,'bst::filesystem']]],
-  ['getelapsed_447',['getElapsed',['../classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13',1,'bst::Stopwatch::getElapsed()'],['../classbst_1_1SoftwareStopwatch.html#a657b68c3a9c94462ff4dd8d1b2ea8bb2',1,'bst::SoftwareStopwatch::getElapsed()']]],
+  ['getelapsed_447',['getElapsed',['../classbst_1_1Stopwatch.html#afc1faa465b55ec52f7297cf2163aa4f2',1,'bst::Stopwatch::getElapsed()'],['../classbst_1_1SoftwareStopwatch.html#a657b68c3a9c94462ff4dd8d1b2ea8bb2',1,'bst::SoftwareStopwatch::getElapsed()']]],
   ['getexitcode_448',['getExitCode',['../classbst_1_1Process.html#a2faf5c1ab432a8db219607d2bb6eff4e',1,'bst::Process']]],
   ['getfilename_449',['getFileName',['../namespacebst_1_1filesystem.html#a2a288b537145dee8127847fb21054d11',1,'bst::filesystem']]],
   ['getfilesize_450',['getFileSize',['../namespacebst_1_1filesystem.html#a7671a1242fede29665eaf2a54c044ae8',1,'bst::filesystem']]],

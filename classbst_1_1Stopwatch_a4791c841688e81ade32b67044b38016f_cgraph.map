@@ -1,0 +1,4 @@
+<map id="bst::Stopwatch::reset" name="bst::Stopwatch::reset">
+<area shape="rect" id="node1" title="Resets the elapsed time. The stopwatch will keep running by default." alt="" coords="5,5,164,32"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="212,5,367,32"/>
+</map>

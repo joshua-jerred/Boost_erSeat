@@ -10,6 +10,6 @@ var searchData=
   ['isapproxequal_152',['isApproxEqual',['../namespacebst.html#a08c1b260871c8845637293587ed620ba',1,'bst']]],
   ['isapproxequalpercent_153',['isApproxEqualPercent',['../namespacebst.html#a58c60bf2f30f989d4fef310408442a05',1,'bst']]],
   ['isdone_154',['isDone',['../classbst_1_1Timer.html#a74f8508e28ab052b25fdf3072e16bae7',1,'bst::Timer']]],
-  ['isrunning_155',['isRunning',['../classbst_1_1IStopwatch.html#ab0f25ac7501d610918934df7d412bf53',1,'bst::IStopwatch::isRunning()'],['../classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812',1,'bst::Stopwatch::isRunning()'],['../classbst_1_1SoftwareStopwatch.html#a54894036e28ba633104db3d01abe2dcd',1,'bst::SoftwareStopwatch::isRunning()']]],
+  ['isrunning_155',['isRunning',['../classbst_1_1IStopwatch.html#ab0f25ac7501d610918934df7d412bf53',1,'bst::IStopwatch::isRunning()'],['../classbst_1_1Stopwatch.html#a54c64be09dc1315db7491f84358f51f9',1,'bst::Stopwatch::isRunning()'],['../classbst_1_1SoftwareStopwatch.html#a54894036e28ba633104db3d01abe2dcd',1,'bst::SoftwareStopwatch::isRunning()']]],
   ['istopwatch_156',['IStopwatch',['../classbst_1_1IStopwatch.html',1,'bst']]]
 ];

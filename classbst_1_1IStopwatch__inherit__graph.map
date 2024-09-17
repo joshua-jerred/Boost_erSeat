@@ -1,5 +1,5 @@
 <map id="bst::IStopwatch" name="bst::IStopwatch">
-<area shape="rect" id="node1" title=" " alt="" coords="116,5,311,259"/>
-<area shape="rect" id="node2" href="$classbst_1_1SoftwareStopwatch.html" title="A manually controlled stopwatch that does not use the system clock." alt="" coords="5,343,200,626"/>
-<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html" title="A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality." alt="" coords="225,307,426,663"/>
+<area shape="rect" id="node1" title=" " alt="" coords="115,5,309,259"/>
+<area shape="rect" id="node2" href="$classbst_1_1SoftwareStopwatch.html" title="A manually controlled stopwatch that does not use the system clock." alt="" coords="5,336,200,619"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html" title="A simple stopwatch class. Basic start (resume), stop (pause), and reset functionality." alt="" coords="224,307,419,648"/>
 </map>

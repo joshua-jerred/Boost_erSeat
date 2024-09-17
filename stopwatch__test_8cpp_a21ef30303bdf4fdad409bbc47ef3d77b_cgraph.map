@@ -1,10 +1,10 @@
 <map id="TEST" name="TEST">
 <area shape="rect" id="node1" title=" " alt="" coords="5,107,60,133"/>
-<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a119bd7643caf0d23e038336687faa8a9" title="Get the elapsed time in microseconds." alt="" coords="108,5,375,32"/>
-<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#a8df5ded101878021a576591fcbb6f812" title="Returns the current state of the stopwatch." alt="" coords="146,56,337,83"/>
-<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#a3c7e3b115ecb2fa2aba4e2edd7402f85" title="Resets the elapsed time. The stopwatch will keep running by default." alt="" coords="162,107,321,133"/>
+<area shape="rect" id="node2" href="$classbst_1_1Stopwatch.html#a0285c49d8e6b1dea16f091ae74d94a65" title="Get the elapsed time in microseconds." alt="" coords="108,5,375,32"/>
+<area shape="rect" id="node4" href="$classbst_1_1Stopwatch.html#a54c64be09dc1315db7491f84358f51f9" title="Returns the current state of the stopwatch." alt="" coords="146,56,337,83"/>
+<area shape="rect" id="node5" href="$classbst_1_1Stopwatch.html#a4791c841688e81ade32b67044b38016f" title="Resets the elapsed time. The stopwatch will keep running by default." alt="" coords="162,107,321,133"/>
 <area shape="rect" id="node7" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="199,157,284,184"/>
-<area shape="rect" id="node8" href="$classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" title="Start the stopwatch." alt="" coords="163,208,319,235"/>
-<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" title="Handles the timekeeping." alt="" coords="423,5,621,32"/>
-<area shape="rect" id="node6" href="$classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="445,107,599,133"/>
+<area shape="rect" id="node8" href="$classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d" title="Start the stopwatch." alt="" coords="163,208,319,235"/>
+<area shape="rect" id="node3" href="$classbst_1_1Stopwatch.html#afc1faa465b55ec52f7297cf2163aa4f2" title="Handles the timekeeping." alt="" coords="423,5,621,32"/>
+<area shape="rect" id="node6" href="$classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" title="Stops/Pauses the stopwatch. Does not reset the elapsed time." alt="" coords="445,107,599,133"/>
 </map>

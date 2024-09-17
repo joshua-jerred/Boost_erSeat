@@ -20,7 +20,7 @@
 <!-- Node2 -->
 <g id="node2" class="node">
 <title>Node2</title>
-<g id="a_node2"><a xlink:href="classbst_1_1Stopwatch.html#a0d3ce421ae3b8d3f23e26bc2d3ac9938" target="_top" xlink:title="Get the elapsed time in microseconds in a floating point format.">
+<g id="a_node2"><a xlink:href="classbst_1_1Stopwatch.html#aeda61723333ee15005f6b631fe20106e" target="_top" xlink:title="Get the elapsed time in microseconds in a floating point format.">
 <polygon fill="none" stroke="black" points="77,-190.5 77,-209.5 283,-209.5 283,-190.5 77,-190.5"/>
 <text text-anchor="middle" x="180" y="-197.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::elapsedMicrosecondsF</text>
 </a>
@@ -35,7 +35,7 @@
 <!-- Node4 -->
 <g id="node4" class="node">
 <title>Node4</title>
-<g id="a_node4"><a xlink:href="classbst_1_1Stopwatch.html#af21aba08db89168041f3738164bee3eb" target="_top" xlink:title="Get the elapsed time in milliseconds in a floating point format.">
+<g id="a_node4"><a xlink:href="classbst_1_1Stopwatch.html#a5952e7f881d3a051ec64edd4bc8cfd0a" target="_top" xlink:title="Get the elapsed time in milliseconds in a floating point format.">
 <polygon fill="none" stroke="black" points="80,-152.5 80,-171.5 280,-171.5 280,-152.5 80,-152.5"/>
 <text text-anchor="middle" x="180" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::elapsedMillisecondsF</text>
 </a>
@@ -50,7 +50,7 @@
 <!-- Node5 -->
 <g id="node5" class="node">
 <title>Node5</title>
-<g id="a_node5"><a xlink:href="classbst_1_1Stopwatch.html#a8d76c90635cbe41f103b56d48199a01a" target="_top" xlink:title="Get the elapsed time in seconds in a floating point format.">
+<g id="a_node5"><a xlink:href="classbst_1_1Stopwatch.html#a051a05564c88ca4c0988af317c6b5511" target="_top" xlink:title="Get the elapsed time in seconds in a floating point format.">
 <polygon fill="none" stroke="black" points="90.5,-114.5 90.5,-133.5 269.5,-133.5 269.5,-114.5 90.5,-114.5"/>
 <text text-anchor="middle" x="180" y="-121.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::elapsedSecondsF</text>
 </a>
@@ -80,7 +80,7 @@
 <!-- Node7 -->
 <g id="node7" class="node">
 <title>Node7</title>
-<g id="a_node7"><a xlink:href="classbst_1_1Stopwatch.html#a523ad0af768f4fe93b5c8fcce739a484" target="_top" xlink:title="Start the stopwatch.">
+<g id="a_node7"><a xlink:href="classbst_1_1Stopwatch.html#aafdf385bd07a3fe0f5c0ee702e31015d" target="_top" xlink:title="Start the stopwatch.">
 <polygon fill="none" stroke="black" points="121.5,-38.5 121.5,-57.5 238.5,-57.5 238.5,-38.5 121.5,-38.5"/>
 <text text-anchor="middle" x="180" y="-45.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::start</text>
 </a>
@@ -95,7 +95,7 @@
 <!-- Node8 -->
 <g id="node8" class="node">
 <title>Node8</title>
-<g id="a_node8"><a xlink:href="classbst_1_1Stopwatch.html#a0de9a7e413ab81b8a4d9b84da402a500" target="_top" xlink:title="Stops/Pauses the stopwatch. Does not reset the elapsed time.">
+<g id="a_node8"><a xlink:href="classbst_1_1Stopwatch.html#ae40266a735342601dcdf4633ee534d55" target="_top" xlink:title="Stops/Pauses the stopwatch. Does not reset the elapsed time.">
 <polygon fill="none" stroke="black" points="122,-0.5 122,-19.5 238,-19.5 238,-0.5 122,-0.5"/>
 <text text-anchor="middle" x="180" y="-7.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::stop</text>
 </a>
@@ -110,7 +110,7 @@
 <!-- Node3 -->
 <g id="node3" class="node">
 <title>Node3</title>
-<g id="a_node3"><a xlink:href="classbst_1_1Stopwatch.html#a305ec6f22247bac1ef0f135abf98ad13" target="_top" xlink:title="Handles the timekeeping.">
+<g id="a_node3"><a xlink:href="classbst_1_1Stopwatch.html#afc1faa465b55ec52f7297cf2163aa4f2" target="_top" xlink:title="Handles the timekeeping.">
 <polygon fill="none" stroke="black" points="319,-152.5 319,-171.5 468,-171.5 468,-152.5 319,-152.5"/>
 <text text-anchor="middle" x="393.5" y="-159.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Stopwatch::getElapsed</text>
 </a>
