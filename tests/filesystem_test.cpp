@@ -331,3 +331,51 @@ TEST(FileSystemTests, getFileName) {
 
   EXPECT_EQ(bsfs::getFileName(full_path), file_name);
 }
+
+TEST(FileSystemTests, copyFile) {
+  const std::string source_file = "test_copy_file_original.txt";
+  const std::string destination_file = "test_copy_file_copy.txt";
+
+  // Setup the test by removing the files and creating the source file.
+  if (std::filesystem::exists(source_file)) {
+    std::filesystem::remove(source_file);
+  }
+  if (std::filesystem::exists(destination_file)) {
+    std::filesystem::remove(destination_file);
+  }
+  bsfs::createFile(source_file);
+  EXPECT_TRUE(bsfs::doesFileExist(source_file));
+  EXPECT_FALSE(bsfs::doesFileExist(destination_file));
+
+  // Test that a file that does not exist is created.
+  bsfs::copyFile(source_file, destination_file, false);
+  EXPECT_TRUE(bsfs::doesFileExist(source_file));
+  EXPECT_TRUE(bsfs::doesFileExist(destination_file));
+  EXPECT_EQ(bsfs::getFileSizeBytes(source_file), 0);
+  EXPECT_EQ(bsfs::getFileSizeBytes(destination_file), 0);
+
+  /// @todo Missing test coverage: Next append the source file with content so
+  /// it's size is different from the destination file. Then perform the tests
+  /// below and compare the file sizes.
+  bsfs::appendToFile(source_file, "7 Bytes", false);
+  EXPECT_EQ(bsfs::getFileSizeBytes(source_file), 7);
+  EXPECT_EQ(bsfs::getFileSizeBytes(destination_file), 0);
+
+  // Attempt to copy the file again without overwrite enabled. This should
+  // raise an exception.
+  try {
+    bsfs::copyFile(source_file, destination_file, false);
+
+    FAIL() << "Expected createFile to throw an exception.";
+  } catch (const BoosterSeatException &e) {
+    EXPECT_EQ(e.errorNumberEnum(), ErrorNumber::FS_PATH_ALREADY_EXISTS);
+  }
+
+  EXPECT_EQ(bsfs::getFileSizeBytes(source_file), 7);
+  EXPECT_EQ(bsfs::getFileSizeBytes(destination_file), 0);
+
+  // Attempt to copy the file again with overwrite enabled.
+  bsfs::copyFile(source_file, destination_file, true);
+  EXPECT_EQ(bsfs::getFileSizeBytes(source_file), 7);
+  EXPECT_EQ(bsfs::getFileSizeBytes(destination_file), 7);
+}
