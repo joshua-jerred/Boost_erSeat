@@ -17,6 +17,7 @@ var filesystem_8hpp =
     [ "appendToFile", "filesystem_8hpp.html#a7a52bd743906ffbd45267ebd89e5b1c0", null ],
     [ "overwriteFile", "filesystem_8hpp.html#a5238b859634edb269d572711945f9710", null ],
     [ "getFileSize", "filesystem_8hpp.html#a7671a1242fede29665eaf2a54c044ae8", null ],
+    [ "getFileSizeBytes", "filesystem_8hpp.html#a2d8ac4d8fe29951a2a8a35f897bff942", null ],
     [ "deleteFile", "filesystem_8hpp.html#a2f655ab64e72f56001c2dd4a120708ae", null ],
     [ "doesDirectoryExist", "filesystem_8hpp.html#a8d8d017256808fb9bc431abe51bfefe1", null ],
     [ "createDirectory", "filesystem_8hpp.html#aa9f495d7173c9f68e2711a43aae92edc", null ],
@@ -24,5 +25,6 @@ var filesystem_8hpp =
     [ "hasWritePermission", "filesystem_8hpp.html#ae87ac95642bf94567a104560923845d1", null ],
     [ "hasReadPermission", "filesystem_8hpp.html#ac001dc9943e8f27a6995b70d37cc422d", null ],
     [ "moveFile", "filesystem_8hpp.html#a00eb7de75c46a77694f450a61724d24b", null ],
+    [ "copyFile", "filesystem_8hpp.html#a0ded4acdc653116fba935a7a3a33802a", null ],
     [ "getFileName", "filesystem_8hpp.html#a2a288b537145dee8127847fb21054d11", null ]
 ];

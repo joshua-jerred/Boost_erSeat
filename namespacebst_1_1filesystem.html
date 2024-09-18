@@ -118,6 +118,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7a52bd743906ffbd45267ebd89e5b1c0"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0">appendToFile</a> (const std::string &amp;file_path, const std::string &amp;content, const bool new_line_after=true)</td></tr>
 <tr class="memdesc:a7a52bd743906ffbd45267ebd89e5b1c0"><td class="mdescLeft">&#160;</td><td class="mdescRight">Append a string to a file.  <a href="namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0">More...</a><br /></td></tr>
 <tr class="separator:a7a52bd743906ffbd45267ebd89e5b1c0"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0ded4acdc653116fba935a7a3a33802a"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#a0ded4acdc653116fba935a7a3a33802a">copyFile</a> (const std::string &amp;source_path, const std::string &amp;destination_path, bool overwrite=false)</td></tr>
+<tr class="memdesc:a0ded4acdc653116fba935a7a3a33802a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Move a file from one location to another.  <a href="namespacebst_1_1filesystem.html#a0ded4acdc653116fba935a7a3a33802a">More...</a><br /></td></tr>
+<tr class="separator:a0ded4acdc653116fba935a7a3a33802a"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:aa9f495d7173c9f68e2711a43aae92edc"><td class="memItemLeft" align="right" valign="top">void&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc">createDirectory</a> (const std::string &amp;directory_path)</td></tr>
 <tr class="memdesc:aa9f495d7173c9f68e2711a43aae92edc"><td class="mdescLeft">&#160;</td><td class="mdescRight">Create a Directory at the specified path.  <a href="namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc">More...</a><br /></td></tr>
 <tr class="separator:aa9f495d7173c9f68e2711a43aae92edc"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -142,6 +145,9 @@ Functions</h2></td></tr>
 <tr class="memitem:a7671a1242fede29665eaf2a54c044ae8"><td class="memItemLeft" align="right" valign="top">double&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#a7671a1242fede29665eaf2a54c044ae8">getFileSize</a> (const std::string &amp;file_path, <a class="el" href="namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162">units::Size</a> size_unit=<a class="el" href="namespacebst_1_1filesystem_1_1units.html#a03425ca383e68d2f04c316c8795c2162a9f1908a641ea399fd2e76f0905c88fcf">units::Size::BYTES</a>)</td></tr>
 <tr class="memdesc:a7671a1242fede29665eaf2a54c044ae8"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a file.  <a href="namespacebst_1_1filesystem.html#a7671a1242fede29665eaf2a54c044ae8">More...</a><br /></td></tr>
 <tr class="separator:a7671a1242fede29665eaf2a54c044ae8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a2d8ac4d8fe29951a2a8a35f897bff942"><td class="memItemLeft" align="right" valign="top">uintmax_t&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#a2d8ac4d8fe29951a2a8a35f897bff942">getFileSizeBytes</a> (const std::string &amp;file_path)</td></tr>
+<tr class="memdesc:a2d8ac4d8fe29951a2a8a35f897bff942"><td class="mdescLeft">&#160;</td><td class="mdescRight">Get the size of a file.  <a href="namespacebst_1_1filesystem.html#a2d8ac4d8fe29951a2a8a35f897bff942">More...</a><br /></td></tr>
+<tr class="separator:a2d8ac4d8fe29951a2a8a35f897bff942"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:ac001dc9943e8f27a6995b70d37cc422d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="namespacebst_1_1filesystem.html#ac001dc9943e8f27a6995b70d37cc422d">hasReadPermission</a> (const std::string &amp;path)</td></tr>
 <tr class="memdesc:ac001dc9943e8f27a6995b70d37cc422d"><td class="mdescLeft">&#160;</td><td class="mdescRight">If a program has read permissions to a file or directory, it will return true. Otherwise, it will return false.  <a href="namespacebst_1_1filesystem.html#ac001dc9943e8f27a6995b70d37cc422d">More...</a><br /></td></tr>
 <tr class="separator:ac001dc9943e8f27a6995b70d37cc422d"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -393,6 +399,48 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_1_1filesystem_a7671a1242fede29665eaf2a54c044ae8_icgraph.svg" width="311" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a2d8ac4d8fe29951a2a8a35f897bff942"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a2d8ac4d8fe29951a2a8a35f897bff942">&#9670;&nbsp;</a></span>getFileSizeBytes()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">uintmax_t bst::filesystem::getFileSizeBytes </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>file_path</em></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Get the size of a file. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">file_path</td><td>- The path to the file </td></tr>
+    <tr><td class="paramname">unit</td><td>- The unit to return the size in. (default: bytes) </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="section return"><dt>Returns</dt><dd>double - The size of the file in the specified unit.</dd></dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classbst_1_1BoosterSeatException.html">BoosterSeatException</a></td><td>- If the path is not a regular file, the size cannot be determined, or the file does not exist. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="filesystem__test_8cpp.html#af9bca95c3a1982a035461eebf06b21ed">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_1_1filesystem_a2d8ac4d8fe29951a2a8a35f897bff942_icgraph.svg" width="284" height="52"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 
@@ -696,6 +744,65 @@ Here is the caller graph for this function:</div>
 Here is the caller graph for this function:</div>
 <div class="dyncontent">
 <div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_1_1filesystem_a00eb7de75c46a77694f450a61724d24b_icgraph.svg" width="300" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
+</div>
+</div>
+
+</div>
+</div>
+<a id="a0ded4acdc653116fba935a7a3a33802a"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a0ded4acdc653116fba935a7a3a33802a">&#9670;&nbsp;</a></span>copyFile()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">void bst::filesystem::copyFile </td>
+          <td>(</td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>source_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">const std::string &amp;&#160;</td>
+          <td class="paramname"><em>destination_path</em>, </td>
+        </tr>
+        <tr>
+          <td class="paramkey"></td>
+          <td></td>
+          <td class="paramtype">bool&#160;</td>
+          <td class="paramname"><em>overwrite</em> = <code>false</code>&#160;</td>
+        </tr>
+        <tr>
+          <td></td>
+          <td>)</td>
+          <td></td><td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Move a file from one location to another. </p>
+<dl class="params"><dt>Parameters</dt><dd>
+  <table class="params">
+    <tr><td class="paramname">source_path</td><td>- The path to the file to move. </td></tr>
+    <tr><td class="paramname">destination_path</td><td>- The path to move the file to. </td></tr>
+    <tr><td class="paramname">overwrite</td><td>- If <code>true</code>, the destination file will be overwritten if it exists. </td></tr>
+  </table>
+  </dd>
+</dl>
+<dl class="exception"><dt>Exceptions</dt><dd>
+  <table class="exception">
+    <tr><td class="paramname"><a class="el" href="classbst_1_1BoosterSeatException.html">BoosterSeatException</a></td><td>- If the source file does not exist. </td></tr>
+    <tr><td class="paramname"><a class="el" href="classbst_1_1BoosterSeatException.html">BoosterSeatException</a></td><td>- If the destination file already exists and overwrite is false. </td></tr>
+  </table>
+  </dd>
+</dl>
+
+<p class="reference">Referenced by <a class="el" href="filesystem__test_8cpp.html#af9bca95c3a1982a035461eebf06b21ed">TEST()</a>.</p>
+<div class="dynheader">
+Here is the caller graph for this function:</div>
+<div class="dyncontent">
+<div class="center"><iframe scrolling="no" frameborder="0" src="namespacebst_1_1filesystem_a0ded4acdc653116fba935a7a3a33802a_icgraph.svg" width="294" height="38"><p><b>This browser is not able to show SVG: try Firefox, Chrome, Safari, or Opera instead.</b></p></iframe>
 </div>
 </div>
 

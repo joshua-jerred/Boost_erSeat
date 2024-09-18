@@ -1,0 +1,10 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,165,60,192"/>
+<area shape="rect" id="node2" href="$namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0" title="Append a string to a file." alt="" coords="108,5,319,32"/>
+<area shape="rect" id="node3" href="$namespacebst_1_1filesystem.html#a0ded4acdc653116fba935a7a3a33802a" title="Move a file from one location to another." alt="" coords="123,56,303,83"/>
+<area shape="rect" id="node4" href="$namespacebst_1_1filesystem.html#a38cec5f76c16accb8845de44e7cb519d" title="Create a File." alt="" coords="118,107,309,133"/>
+<area shape="rect" id="node5" href="$namespacebst_1_1filesystem.html#a298e57b8f775c5135a738deb18a3c681" title="Returns a boolean indicating whether or not the file exists. If it&#39;s a directory an exception will be..." alt="" coords="123,158,303,199"/>
+<area shape="rect" id="node6" href="$classbst_1_1BoosterSeatException.html#a2bff84cea5b649dd380ca4cdc35b6bee" title=" " alt="" coords="117,223,310,265"/>
+<area shape="rect" id="node7" href="$namespacebst_1_1fs__int.html#a73c724132cca72a972621d63cfae78e0" title=" " alt="" coords="147,289,280,316"/>
+<area shape="rect" id="node8" href="$namespacebst_1_1filesystem.html#a2d8ac4d8fe29951a2a8a35f897bff942" title="Get the size of a file." alt="" coords="128,341,299,382"/>
+</map>

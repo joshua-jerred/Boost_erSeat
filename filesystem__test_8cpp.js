@@ -15,5 +15,6 @@ var filesystem__test_8cpp =
     [ "TEST", "filesystem__test_8cpp.html#acb3fce2e7109e8f9ddea41821cfe38ff", null ],
     [ "TEST", "filesystem__test_8cpp.html#abc0b1d0c63263f136f1010be1751e8b3", null ],
     [ "TEST", "filesystem__test_8cpp.html#add71f3bd1affcbf52463160dd7336a3f", null ],
-    [ "TEST", "filesystem__test_8cpp.html#a05f6e7e7ee7619c26dafbcedc25b9d73", null ]
+    [ "TEST", "filesystem__test_8cpp.html#a05f6e7e7ee7619c26dafbcedc25b9d73", null ],
+    [ "TEST", "filesystem__test_8cpp.html#af9bca95c3a1982a035461eebf06b21ed", null ]
 ];

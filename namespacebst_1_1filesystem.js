@@ -19,6 +19,7 @@ var namespacebst_1_1filesystem =
     [ "appendToFile", "namespacebst_1_1filesystem.html#a7a52bd743906ffbd45267ebd89e5b1c0", null ],
     [ "overwriteFile", "namespacebst_1_1filesystem.html#a5238b859634edb269d572711945f9710", null ],
     [ "getFileSize", "namespacebst_1_1filesystem.html#a7671a1242fede29665eaf2a54c044ae8", null ],
+    [ "getFileSizeBytes", "namespacebst_1_1filesystem.html#a2d8ac4d8fe29951a2a8a35f897bff942", null ],
     [ "deleteFile", "namespacebst_1_1filesystem.html#a2f655ab64e72f56001c2dd4a120708ae", null ],
     [ "doesDirectoryExist", "namespacebst_1_1filesystem.html#a8d8d017256808fb9bc431abe51bfefe1", null ],
     [ "createDirectory", "namespacebst_1_1filesystem.html#aa9f495d7173c9f68e2711a43aae92edc", null ],
@@ -26,5 +27,6 @@ var namespacebst_1_1filesystem =
     [ "hasWritePermission", "namespacebst_1_1filesystem.html#ae87ac95642bf94567a104560923845d1", null ],
     [ "hasReadPermission", "namespacebst_1_1filesystem.html#ac001dc9943e8f27a6995b70d37cc422d", null ],
     [ "moveFile", "namespacebst_1_1filesystem.html#a00eb7de75c46a77694f450a61724d24b", null ],
+    [ "copyFile", "namespacebst_1_1filesystem.html#a0ded4acdc653116fba935a7a3a33802a", null ],
     [ "getFileName", "namespacebst_1_1filesystem.html#a2a288b537145dee8127847fb21054d11", null ]
 ];
