@@ -269,6 +269,13 @@ double fs::getFileSize(const std::string &file_path,
   return fs_int::convertMbToUnit(size, size_unit);
 }
 
+uintmax_t fs::getFileSizeBytes(const std::string &file_path) {
+  Path path(file_path);
+  bst::fs_int::assertIsRegularFile(path);
+
+  return fs_int::get_file_size_bytes(path);
+}
+
 void fs::deleteFile(const std::string &file_path) {
   Path path(file_path);
   bst::fs_int::assertIsRegularFile(path);
@@ -334,6 +341,23 @@ void fs::moveFile(const std::string &source_file_path,
   bst::fs_int::assertIsRegularFile(source_path);
   bst::fs_int::assertDoesNotExist(dest_path);
   std::filesystem::rename(source_path, dest_path);
+}
+
+void fs::copyFile(const std::string &source_file_path,
+                  const std::string &dest_file_path, bool overwrite) {
+  Path source_path(source_file_path);
+  Path dest_path(dest_file_path);
+
+  bst::fs_int::assertIsRegularFile(source_path);
+  if (!overwrite) {
+    bst::fs_int::assertDoesNotExist(dest_path);
+  }
+
+  std::filesystem::copy_options copy_options =
+      overwrite ? std::filesystem::copy_options::overwrite_existing
+                : std::filesystem::copy_options::none;
+
+  std::filesystem::copy_file(source_path, dest_path, copy_options);
 }
 
 std::string fs::getFileName(const std::string &file_path) {

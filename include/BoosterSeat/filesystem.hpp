@@ -71,6 +71,18 @@ double getFileSize(const std::string &file_path,
                    units::Size size_unit = units::Size::BYTES);
 
 /**
+ * @brief Get the size of a file.
+ *
+ * @param file_path - The path to the file
+ * @param unit - The unit to return the size in. (default: bytes)
+ * @return double - The size of the file in the specified unit.
+ *
+ * @exception BoosterSeatException - If the path is not a regular file,
+ * the size cannot be determined, or the file does not exist.
+ */
+uintmax_t getFileSizeBytes(const std::string &file_path);
+
+/**
  * @brief Delete a file.
  * @param file_path - The path to the file.
  * @exception BoosterSeatException - If the file does not exist, the program
@@ -147,6 +159,19 @@ bool hasReadPermission(const std::string &path);
  * @param destination_path - The path to move the file to.
  */
 void moveFile(const std::string &source_path,
+              const std::string &destination_path, bool overwrite = false);
+
+/**
+ * @brief Move a file from one location to another.
+ * @param source_path - The path to the file to move.
+ * @param destination_path - The path to move the file to.
+ * @param overwrite - If \c true, the destination file will be overwritten if it
+ * exists.
+ * @exception BoosterSeatException - If the source file does not exist.
+ * @exception BoosterSeatException - If the destination file already exists and
+ * overwrite is false.
+ */
+void copyFile(const std::string &source_path,
               const std::string &destination_path, bool overwrite = false);
 
 /**
