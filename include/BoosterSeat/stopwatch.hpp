@@ -81,6 +81,7 @@ public:
   /// @param stop If true, the stopwatch will be stopped.
   void reset(bool stop = true) {
     elapsed_ = clck::Duration::zero();
+    start_ = clock_.now();
 
     if (stop) {
       state_ = State::STOPPED;
