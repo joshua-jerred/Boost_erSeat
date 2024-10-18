@@ -7,7 +7,7 @@ using namespace bst;
 
 #include <iostream>
 
-TEST(bstTimeClass, constructors) {
+TEST(bst_time, constructors) {
   // default constructor
   bst::Time time1 = bst::Time();
   EXPECT_EQ(time1.toString(), "1970-01-01 00:00:00");
@@ -18,7 +18,7 @@ TEST(bstTimeClass, constructors) {
   EXPECT_EQ(time2.secondsFromNow(), 0);
 }
 
-TEST(bstTimeClass, basic_string) {
+TEST(bst_time, basic_string) {
   std::string time_string = "2020-01-01 00:00:01";
   bst::Time time;
 
@@ -33,7 +33,7 @@ TEST(bstTimeClass, basic_string) {
   EXPECT_EQ(time_dst.toString(), time_string_dst);
 }
 
-TEST(bstTimeClass, getters) {
+TEST(bst_time, getters) {
   std::string time_string = "2020-02-10 01:10:01";
   bst::Time time;
 
@@ -47,7 +47,7 @@ TEST(bstTimeClass, getters) {
   EXPECT_EQ(time.getSecond(), 1);
 }
 
-TEST(bstTimeClass, setToNow) {
+TEST(bst_time, setToNow) {
   bst::Time time;
   time.setToNow();
 
@@ -62,7 +62,7 @@ TEST(bstTimeClass, setToNow) {
   EXPECT_EQ(time.getSecond(), tm.tm_sec);
 }
 
-TEST(bstTimeClass, greaterThanLessThanOperators) {
+TEST(bst_time, greaterThanLessThanOperators) {
   bst::Time time1;
   bst::Time time2;
 
@@ -97,7 +97,7 @@ TEST(bstTimeClass, greaterThanLessThanOperators) {
   EXPECT_FALSE(time1 == time2);
 }
 
-TEST(bstTimeClass, secondsFromNow) {
+TEST(bst_time, secondsFromNow) {
   bst::Time time;
   int64_t seconds_delta;
 

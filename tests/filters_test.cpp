@@ -11,7 +11,7 @@
 
 enum class TestEnum : uint8_t { A, B, C };
 
-TEST(ConsecutiveValuesFilterTest, basic_filtering) {
+TEST(bst_filters, ConsecutiveValuesFilter_basic_filtering) {
   size_t filter_threshold = 10;
   bst::ConsecutiveValuesFilter<TestEnum> filter{TestEnum::A, filter_threshold};
 
@@ -26,7 +26,7 @@ TEST(ConsecutiveValuesFilterTest, basic_filtering) {
   EXPECT_EQ(filter.getCurrentValue(), TestEnum::B);
 }
 
-TEST(ConsecutiveValuesFilterTest, advanced_filtering) {
+TEST(bst_filters, ConsecutiveValuesFilter_advanced_filtering) {
   size_t filter_threshold = 10;
   bst::ConsecutiveValuesFilter<TestEnum> filter{TestEnum::A, filter_threshold};
 

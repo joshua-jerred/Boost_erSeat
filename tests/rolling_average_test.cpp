@@ -4,7 +4,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(RollingAverageTest, General) {
+TEST(bst_rolling_average, General) {
   bst::RollingAverage avg(4);
   avg.addValue(1);
   EXPECT_EQ(avg.getAverage(), 1);
@@ -25,7 +25,7 @@ TEST(RollingAverageTest, General) {
   EXPECT_NEAR(avg.getAverage(), 0.25, 0.0001);
 }
 
-TEST(RollingAverageTest, ChangeWindowSize) {
+TEST(bst_rolling_average, ChangeWindowSize) {
   bst::RollingAverage avg(4);
   avg.addValue(10);
   avg.addValue(1);
@@ -35,7 +35,7 @@ TEST(RollingAverageTest, ChangeWindowSize) {
   EXPECT_NEAR(avg.getAverage(), 2, 0.0001);
 }
 
-TEST(RollingAverageTest, RemoveOldest) {
+TEST(bst_rolling_average, RemoveOldest) {
   bst::RollingAverage avg(4);
   avg.addValue(10);
   avg.addValue(1);
