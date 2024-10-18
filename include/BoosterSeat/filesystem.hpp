@@ -1,6 +1,7 @@
 #ifndef FILESYSTEM_HPP_
 #define FILESYSTEM_HPP_
 
+#include <stdint.h>
 #include <string>
 
 namespace bst {
