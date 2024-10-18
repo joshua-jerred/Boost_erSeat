@@ -7,9 +7,9 @@
 <area shape="rect" id="node12" href="$namespacebst_1_1clck.html#ad44954960a85385ac81684b67de215b6" title=" " alt="" coords="605,339,716,365"/>
 <area shape="rect" id="node13" href="$namespacebst_1_1layout.html#af6e9ecdffe95b2f2dc8d345815f11fb0" title=" " alt="" coords="117,465,313,492"/>
 <area shape="rect" id="node15" href="$namespacebst_1_1layout.html#ad47d39eda077c92a5e55b41e00044aa2" title=" " alt="" coords="111,516,318,543"/>
-<area shape="rect" id="node16" href="$classbst_1_1Timer.html#a74f8508e28ab052b25fdf3072e16bae7" title="Check if the timer has expired." alt="" coords="393,263,534,289"/>
+<area shape="rect" id="node16" href="$classbst_1_1Timer.html#a337d20ac27f96978aa4aae772f5d3a85" title="Check if the timer has expired." alt="" coords="393,263,534,289"/>
 <area shape="rect" id="node17" href="$namespacebst.html#a8e431e619e293fdafdbe0a5fed29f9ad" title="Generates a random hex string of the given length." alt="" coords="133,617,297,644"/>
-<area shape="rect" id="node18" href="$classbst_1_1Timer.html#a0243fe3bc2c926e919d7b09706aa28c5" title="Reset the timer to the current time." alt="" coords="399,313,528,340"/>
+<area shape="rect" id="node18" href="$classbst_1_1Timer.html#aa9aad519d22e30f35d879d0f92deb8f7" title="Reset the timer to the current time." alt="" coords="399,313,528,340"/>
 <area shape="rect" id="node19" href="$namespacebst_1_1layout.html#a942788f8e16fa4f5bb3d362831899c34" title=" " alt="" coords="115,567,315,593"/>
 <area shape="rect" id="node20" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="172,668,257,695"/>
 <area shape="rect" id="node21" href="$namespacebst_1_1time.html#abeb64b609248997e84ed7a6bd781ad0f" title="Get the time in format: HH:MM:SS (24 hour clock) for a given time zone." alt="" coords="137,145,293,172"/>

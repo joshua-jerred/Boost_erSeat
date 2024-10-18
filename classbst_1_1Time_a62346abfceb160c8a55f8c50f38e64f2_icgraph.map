@@ -1,5 +1,5 @@
 <map id="bst::Time::setToNow" name="bst::Time::setToNow">
 <area shape="rect" id="node1" title="Set the time to the current time." alt="" coords="177,31,332,57"/>
 <area shape="rect" id="node2" href="$classbst_1_1Time.html#a3ab7742ae59a02a19a231e0ca074980a" title="Construct a new Time object. Defaults to the epoch." alt="" coords="5,5,129,32"/>
-<area shape="rect" id="node3" href="$time__class__test_8cpp.html#acbb5e0da7add56ddef1f30ef592c3d5f" title=" " alt="" coords="40,56,95,83"/>
+<area shape="rect" id="node3" href="$time__class__test_8cpp.html#aea98697cafdc08f56f225ac6730b0154" title=" " alt="" coords="40,56,95,83"/>
 </map>

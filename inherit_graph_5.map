@@ -1,3 +1,5 @@
 <map id="Graphical Class Hierarchy" name="Graphical Class Hierarchy">
-<area shape="rect" id="node1" href="$classbst_1_1Pressure.html" title=" " alt="" coords="5,5,112,32"/>
+<area shape="rect" id="node1" href="$classbst_1_1ITimer.html" title="Interface for a timer class." alt="" coords="5,31,97,57"/>
+<area shape="rect" id="node2" href="$classbst_1_1SoftwareTimer.html" title="A software timer class for manual control." alt="" coords="145,5,291,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Timer.html" title="A simple timer class for timing events." alt="" coords="174,56,262,83"/>
 </map>

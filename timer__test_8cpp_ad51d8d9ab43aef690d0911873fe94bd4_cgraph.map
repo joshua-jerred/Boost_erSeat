@@ -1,0 +1,7 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,111,60,138"/>
+<area shape="rect" id="node2" href="$classbst_1_1SoftwareTimer.html#a8113471aab02791ce07fd1000124ed02" title="Check if the timer is done." alt="" coords="108,5,253,47"/>
+<area shape="rect" id="node3" href="$classbst_1_1SoftwareTimer.html#a0eb421a4694e8e5f67e0ff881e4e06af" title="Reset the timer &#45; Sets the timer to not done." alt="" coords="108,71,253,112"/>
+<area shape="rect" id="node4" href="$classbst_1_1SoftwareTimer.html#a0b15d320e8be2d3ad813c48cebc550ab" title="Set the timer to done." alt="" coords="108,136,253,177"/>
+<area shape="rect" id="node5" href="$classbst_1_1SoftwareTimer.html#aa4c4a56579a47281f1dec07fd0edb975" title="Set the timer to not done." alt="" coords="108,201,253,243"/>
+</map>

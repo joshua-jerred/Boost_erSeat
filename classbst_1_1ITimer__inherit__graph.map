@@ -1,0 +1,5 @@
+<map id="bst::ITimer" name="bst::ITimer">
+<area shape="rect" id="node1" title="Interface for a timer class." alt="" coords="96,5,217,141"/>
+<area shape="rect" id="node2" href="$classbst_1_1SoftwareTimer.html" title="A software timer class for manual control." alt="" coords="5,197,151,347"/>
+<area shape="rect" id="node3" href="$classbst_1_1Timer.html" title="A simple timer class for timing events." alt="" coords="175,189,296,355"/>
+</map>

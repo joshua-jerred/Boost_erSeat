@@ -1,0 +1,8 @@
+<map id="TEST" name="TEST">
+<area shape="rect" id="node1" title=" " alt="" coords="5,81,60,108"/>
+<area shape="rect" id="node2" href="$classbst_1_1Timer.html#a337d20ac27f96978aa4aae772f5d3a85" title="Check if the timer has expired." alt="" coords="123,5,264,32"/>
+<area shape="rect" id="node4" href="$classbst_1_1Timer.html#aa9aad519d22e30f35d879d0f92deb8f7" title="Reset the timer to the current time." alt="" coords="129,56,258,83"/>
+<area shape="rect" id="node5" href="$classbst_1_1Timer.html#a969c59b9179611500b9e48be71fd5b31" title="Set the timeout of the timer." alt="" coords="108,107,279,133"/>
+<area shape="rect" id="node6" href="$namespacebst.html#a68398b76b4bf04318c1e0978a251452f" title=" " alt="" coords="151,157,236,184"/>
+<area shape="rect" id="node3" href="$namespacebst_1_1clck.html#ad44954960a85385ac81684b67de215b6" title=" " alt="" coords="327,31,437,57"/>
+</map>

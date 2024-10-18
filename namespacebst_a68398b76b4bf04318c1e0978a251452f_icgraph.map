@@ -1,7 +1,7 @@
 <map id="bst::sleep" name="bst::sleep">
 <area shape="rect" id="node1" title=" " alt="" coords="369,56,455,83"/>
 <area shape="rect" id="node2" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="187,5,242,32"/>
-<area shape="rect" id="node3" href="$stopwatch__test_8cpp.html#acc5f4c7b290e89e8f70919b212a111aa" title=" " alt="" coords="187,56,242,83"/>
+<area shape="rect" id="node3" href="$stopwatch__test_8cpp.html#a9be7c13549ce809b4413aa8092bc79d6" title=" " alt="" coords="187,56,242,83"/>
 <area shape="rect" id="node4" href="$classbst_1_1Process.html#a6b840ce798c1a766de0812a7761397dc" title="Waits for the process to complete. If the process does not complete within the timeout,..." alt="" coords="108,107,321,133"/>
-<area shape="rect" id="node5" href="$process__test_8cpp.html#a61b55543ecc5f3328ca069b47f29ae4c" title=" " alt="" coords="5,107,60,133"/>
+<area shape="rect" id="node5" href="$process__test_8cpp.html#a2a3fb820745965d747a37acb3d034893" title=" " alt="" coords="5,107,60,133"/>
 </map>

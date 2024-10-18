@@ -126,7 +126,7 @@
 <!-- Node16 -->
 <g id="node16" class="node">
 <title>Node16</title>
-<g id="a_node16"><a xlink:href="classbst_1_1Timer.html#a74f8508e28ab052b25fdf3072e16bae7" target="_top" xlink:title="Check if the timer has expired.">
+<g id="a_node16"><a xlink:href="classbst_1_1Timer.html#a337d20ac27f96978aa4aae772f5d3a85" target="_top" xlink:title="Check if the timer has expired.">
 <polygon fill="none" stroke="black" points="290.5,-304.5 290.5,-323.5 396.5,-323.5 396.5,-304.5 290.5,-304.5"/>
 <text text-anchor="middle" x="343.5" y="-311.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Timer::isDone</text>
 </a>
@@ -156,7 +156,7 @@
 <!-- Node18 -->
 <g id="node18" class="node">
 <title>Node18</title>
-<g id="a_node18"><a xlink:href="classbst_1_1Timer.html#a0243fe3bc2c926e919d7b09706aa28c5" target="_top" xlink:title="Reset the timer to the current time.">
+<g id="a_node18"><a xlink:href="classbst_1_1Timer.html#aa9aad519d22e30f35d879d0f92deb8f7" target="_top" xlink:title="Reset the timer to the current time.">
 <polygon fill="none" stroke="black" points="295,-266.5 295,-285.5 392,-285.5 392,-266.5 295,-266.5"/>
 <text text-anchor="middle" x="343.5" y="-273.5" font-family="Helvetica,sans-Serif" font-size="10.00">bst::Timer::reset</text>
 </a>

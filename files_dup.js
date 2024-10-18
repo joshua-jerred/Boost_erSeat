@@ -49,7 +49,10 @@ var files_dup =
     [ "time_class_test.cpp", "time__class__test_8cpp.html", "time__class__test_8cpp" ],
     [ "timer.cpp", "timer_8cpp.html", null ],
     [ "timer.hpp", "timer_8hpp.html", [
+      [ "ITimer", "classbst_1_1ITimer.html", "classbst_1_1ITimer" ],
+      [ "SoftwareTimer", "classbst_1_1SoftwareTimer.html", "classbst_1_1SoftwareTimer" ],
       [ "Timer", "classbst_1_1Timer.html", "classbst_1_1Timer" ]
     ] ],
+    [ "timer_test.cpp", "timer__test_8cpp.html", "timer__test_8cpp" ],
     [ "visual_tests.cpp", "visual__tests_8cpp.html", "visual__tests_8cpp" ]
 ];

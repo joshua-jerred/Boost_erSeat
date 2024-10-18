@@ -1,4 +1,4 @@
 <map id="bst::RollingAverage::addValue" name="bst::RollingAverage::addValue">
 <area shape="rect" id="node1" title="Add a value to the rolling average. If the queue size exceeds the window size, the oldest value will ..." alt="" coords="108,5,256,47"/>
-<area shape="rect" id="node2" href="$rolling__average__test_8cpp.html#a0ad224c3efee0eab641daae4858c7abf" title=" " alt="" coords="5,13,60,39"/>
+<area shape="rect" id="node2" href="$rolling__average__test_8cpp.html#a7a92d788fa88e54e421d505c1d18afe7" title=" " alt="" coords="5,13,60,39"/>
 </map>
