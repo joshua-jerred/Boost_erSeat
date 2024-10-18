@@ -2,7 +2,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(RandomTest, randomHexString) {
+TEST(bst_random, randomHexString) {
   constexpr uint32_t K_NUM_TESTS = 1000;
   for (uint32_t i = 0; i < K_NUM_TESTS; i++) {
     std::string str = bst::randomHexString(16);
@@ -13,7 +13,7 @@ TEST(RandomTest, randomHexString) {
   }
 }
 
-TEST(RandomTest, randomDouble) {
+TEST(bst_random, randomDouble) {
   constexpr uint32_t K_NUM_TESTS = 1000;
   for (uint32_t i = 0; i < K_NUM_TESTS; i++) {
     double val = bst::randomDouble(0, 1);

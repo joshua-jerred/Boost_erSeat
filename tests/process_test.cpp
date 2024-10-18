@@ -15,7 +15,7 @@ inline std::string getOutput(bst::Process &p) {
   return oss.str();
 }
 
-TEST(ProcessTest, basic_output) {
+TEST(bst_process, basic_output) {
   bst::Process p("ls", {});
   p.waitToComplete();
 
@@ -24,7 +24,7 @@ TEST(ProcessTest, basic_output) {
   ASSERT_EQ(p.getStderr().size(), 0) << getOutput(p);
 }
 
-TEST(ProcessTest, basic_exit_code) {
+TEST(bst_process, basic_exit_code) {
   bst::Process p("bash", {"-c", "exit 23"});
   p.waitToComplete();
 
@@ -33,7 +33,7 @@ TEST(ProcessTest, basic_exit_code) {
   ASSERT_EQ(p.getStderr().size(), 0) << getOutput(p);
 }
 
-TEST(ProcessTest, basic_error) {
+TEST(bst_process, basic_error) {
   bst::Process p("ls", {"/nonexistent"});
   p.waitToComplete();
 
@@ -42,7 +42,7 @@ TEST(ProcessTest, basic_error) {
   ASSERT_GT(p.getStderr().size(), 0) << getOutput(p);
 }
 
-TEST(ProcessTest, basic_input) {
+TEST(bst_process, basic_input) {
   bst::Process p("cat", {});
   p.writeToInStream("hello\n");
   p.closeInStream();
@@ -53,7 +53,7 @@ TEST(ProcessTest, basic_input) {
   ASSERT_EQ(p.getStderr().size(), 0) << getOutput(p);
 }
 
-TEST(ProcessTest, command_timeout) {
+TEST(bst_process, command_timeout) {
   bst::Process p("sleep", {"2"});
 
   try {

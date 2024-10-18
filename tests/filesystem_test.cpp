@@ -30,7 +30,7 @@ inline void createFileOfSizeMb(const std::string file_path,
   }
 }
 
-TEST(FileSystemTests, doesFileExist) {
+TEST(bst_filesystem, doesFileExist) {
   // Test that a file that does not exist returns false.
   EXPECT_FALSE(bsfs::doesFileExist("nonexistent_file.txt"));
 
@@ -54,7 +54,7 @@ TEST(FileSystemTests, doesFileExist) {
   }
 }
 
-TEST(FileSystemTests, createFile) {
+TEST(bst_filesystem, createFile) {
   // Setup the test by removing test_file.txt if it exists.
   const std::string file_name = "test_file.txt";
   if (std::filesystem::exists(file_name)) {
@@ -74,7 +74,7 @@ TEST(FileSystemTests, createFile) {
   }
 }
 
-TEST(FileSystemTests, appendToFile) {
+TEST(bst_filesystem, appendToFile) {
   // Setup the test by creating a file with some text.
   const std::string file_name = "test_file.txt";
   const std::string text = "This is some text.";
@@ -117,7 +117,7 @@ TEST(FileSystemTests, appendToFile) {
   }
 }
 
-TEST(FileSystemTests, overwriteFile) {
+TEST(bst_filesystem, overwriteFile) {
   // Setup the test by creating a file with some text.
   const std::string file_name = "test_file.txt";
   const std::string text = "This is some text.";
@@ -152,7 +152,7 @@ inline void validateSize(const double size, const double expected_size) {
       << "Size: " << size << " Expected size: " << expected_size;
 }
 
-TEST(FileSystemTests, getFileSize) {
+TEST(bst_filesystem, getFileSize) {
   //// Setup
   // Create a file of known size.
   constexpr int file_size_mb = 4;
@@ -183,7 +183,7 @@ TEST(FileSystemTests, getFileSize) {
                expected_terabytes);
 }
 
-TEST(FileSystemTests, deleteFile) {
+TEST(bst_filesystem, deleteFile) {
   // Setup the test by creating a file.
   const std::string file_name = "test_file.txt";
   std::ofstream file(file_name);
@@ -205,7 +205,7 @@ TEST(FileSystemTests, deleteFile) {
   }
 }
 
-TEST(FileSystemTests, doesDirectoryExist_createDirectory) {
+TEST(bst_filesystem, doesDirectoryExist_createDirectory) {
   // Setup the test by creating a directory.
   const std::string directory_name = "test_directory";
 
@@ -238,7 +238,7 @@ TEST(FileSystemTests, doesDirectoryExist_createDirectory) {
   }
 }
 
-TEST(FileSystemTests, directorySize) {
+TEST(bst_filesystem, directorySize) {
   // Setup the test by creating a directory.
   const std::string directory_name = "test_directory_size";
   const std::string subdir = directory_name + "/subdir";
@@ -266,7 +266,7 @@ TEST(FileSystemTests, directorySize) {
   validateSize(bsfs::getDirectorySize(directory_name), expected_bytes_subdir);
 }
 
-TEST(FileSystemTests, hasWritePermission) {
+TEST(bst_filesystem, hasWritePermission) {
   // Setup the test by creating a file.
   const std::string file_name = "test_file.txt";
   std::ofstream file(file_name);
@@ -277,7 +277,7 @@ TEST(FileSystemTests, hasWritePermission) {
   EXPECT_TRUE(bsfs::hasWritePermission(file_name));
 }
 
-TEST(FileSystemTests, hasReadPermission) {
+TEST(bst_filesystem, hasReadPermission) {
   // Setup the test by creating a file.
   const std::string file_name = "test_file.txt";
   std::ofstream file(file_name);
@@ -289,7 +289,7 @@ TEST(FileSystemTests, hasReadPermission) {
 }
 
 #ifdef NO_PERM_CHECKS
-TEST(FileSystemTests, NO_PERM_hasWritePermission) {
+TEST(bst_filesystem, NO_PERM_hasWritePermission) {
   // Files already created see `// #define NO_PERM_CHECKS` above.
   EXPECT_FALSE(bsfs::hasWritePermission("perm_test_dir")); // Directory
   EXPECT_FALSE(
@@ -297,7 +297,7 @@ TEST(FileSystemTests, NO_PERM_hasWritePermission) {
 }
 #endif
 
-TEST(FileSystemTests, moveFileTest) {
+TEST(bst_filesystem, moveFileTest) {
   const std::string file_name = "move_test_file.txt";
   const std::string directory_name = "move_test_directory";
 
@@ -324,7 +324,7 @@ TEST(FileSystemTests, moveFileTest) {
   EXPECT_TRUE(bsfs::doesFileExist(new_file_name));
 }
 
-TEST(FileSystemTests, getFileName) {
+TEST(bst_filesystem, getFileName) {
   std::string file_name = "test.file";
   std::string dir = "nested/test/dir/";
   std::string full_path = dir + file_name;
@@ -332,7 +332,7 @@ TEST(FileSystemTests, getFileName) {
   EXPECT_EQ(bsfs::getFileName(full_path), file_name);
 }
 
-TEST(FileSystemTests, copyFile) {
+TEST(bst_filesystem, copyFile) {
   const std::string source_file = "test_copy_file_original.txt";
   const std::string destination_file = "test_copy_file_copy.txt";
 

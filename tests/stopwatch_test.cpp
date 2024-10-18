@@ -5,13 +5,13 @@
 
 #include "gtest/gtest.h"
 
-TEST(StopwatchTest, DefaultConstructor) {
+TEST(bst_stopwatch, DefaultConstructor) {
   bst::Stopwatch stopwatch;
   EXPECT_FALSE(stopwatch.isRunning());
   EXPECT_EQ(stopwatch.elapsedMicroseconds(), 0);
 }
 
-TEST(StopwatchTest, StartAndStop) {
+TEST(bst_stopwatch, StartAndStop) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   EXPECT_TRUE(stopwatch.isRunning());
@@ -19,7 +19,7 @@ TEST(StopwatchTest, StartAndStop) {
   EXPECT_FALSE(stopwatch.isRunning());
 }
 
-TEST(StopwatchTest, Units) {
+TEST(bst_stopwatch, Units) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(10);
@@ -30,7 +30,7 @@ TEST(StopwatchTest, Units) {
   EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0, 0.05);
 }
 
-TEST(StopwatchTest, KeepsRunningTotal) {
+TEST(bst_stopwatch, KeepsRunningTotal) {
   constexpr double kEpsilon = 0.001;
 
   bst::Stopwatch stopwatch;
@@ -54,7 +54,7 @@ TEST(StopwatchTest, KeepsRunningTotal) {
   EXPECT_NEAR(stopwatch.elapsedSecondsF(), 0.1, kEpsilon);
 }
 
-TEST(StopwatchTest, ResetStopsByDefault) {
+TEST(bst_stopwatch, ResetStopsByDefault) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(5);
@@ -67,7 +67,7 @@ TEST(StopwatchTest, ResetStopsByDefault) {
   EXPECT_EQ(stopwatch.elapsedMicroseconds(), 0);
 }
 
-TEST(StopwatchTest, ResetKeepsRunning) {
+TEST(bst_stopwatch, ResetKeepsRunning) {
   bst::Stopwatch stopwatch;
   stopwatch.start();
   bst::sleep(5);
@@ -79,7 +79,7 @@ TEST(StopwatchTest, ResetKeepsRunning) {
   EXPECT_TRUE(stopwatch.isRunning());
 }
 
-TEST(StopwatchTest, IStopwatch) {
+TEST(bst_stopwatch, IStopwatch) {
   bst::Stopwatch sw;
   bst::IStopwatch &iStopWatch = sw;
 
@@ -89,7 +89,7 @@ TEST(StopwatchTest, IStopwatch) {
   EXPECT_NEAR(iStopWatch.elapsedMilliseconds(), 10, 1);
 }
 
-TEST(StopwatchTest, SoftwareStopwatch) {
+TEST(bst_stopwatch, SoftwareStopwatch) {
   bst::SoftwareStopwatch sw;
   bst::IStopwatch &iStopWatch = sw;
 
