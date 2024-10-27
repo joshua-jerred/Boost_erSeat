@@ -53,6 +53,7 @@ var NAVTREE =
       ] ]
     ] ],
     [ "Todo List", "todo.html", null ],
+    [ "Deprecated List", "deprecated.html", null ],
     [ "Namespaces", "namespaces.html", [
       [ "Namespace List", "namespaces.html", "namespaces_dup" ],
       [ "Namespace Members", "namespacemembers.html", [
@@ -89,8 +90,8 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"filesystem_8cpp.html#ab072b9299f3ac0bc55be61cec2c5a9b1",
-"namespaces.html"
+"filesystem_8cpp.html#a8b64ea4dbdd9db510f0f70372678d375",
+"namespacemembers_type.html"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

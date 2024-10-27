@@ -87,6 +87,7 @@ var namespacebst =
       [ "PROCESS_TIMEOUT", "namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46a0cd8a67b55471cdad463a28b09f54db8", null ],
       [ "NOT_YET_IMPLEMENTED", "namespacebst.html#ab08c99ae5b9eaa705ca52826a37daf46a2b9e0164c20d01aa76539e8c37af9d37", null ]
     ] ],
+    [ "getUnixTime", "namespacebst.html#a7435f6cb4263e155d8f3faf0d9e5b5d6", null ],
     [ "doubleToPrecisionTwo", "namespacebst.html#a38c78e81366d59661bd60b560e7a8c1e", null ],
     [ "isApproxEqual", "namespacebst.html#a08c1b260871c8845637293587ed620ba", null ],
     [ "isApproxEqualPercent", "namespacebst.html#a58c60bf2f30f989d4fef310408442a05", null ],

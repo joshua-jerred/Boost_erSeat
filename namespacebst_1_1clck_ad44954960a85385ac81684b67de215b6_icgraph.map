@@ -1,12 +1,13 @@
 <map id="bst::clck::now" name="bst::clck::now">
-<area shape="rect" id="node1" title=" " alt="" coords="628,157,739,184"/>
-<area shape="rect" id="node2" href="$classbst_1_1Timer.html#a337d20ac27f96978aa4aae772f5d3a85" title="Check if the timer has expired." alt="" coords="401,56,542,83"/>
-<area shape="rect" id="node3" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,107,60,133"/>
-<area shape="rect" id="node5" href="$namespacebst_1_1clck.html#adac67fedcb6e7b40053af8ee76600a21" title=" " alt="" coords="363,107,580,133"/>
-<area shape="rect" id="node6" href="$classbst_1_1Timer.html#aa9aad519d22e30f35d879d0f92deb8f7" title="Reset the timer to the current time." alt="" coords="407,157,536,184"/>
-<area shape="rect" id="node7" href="$namespacebst_1_1clck.html#a02d33e7c359f0ee2a30e6dfb7e9a1d92" title=" " alt="" coords="377,5,565,32"/>
-<area shape="rect" id="node9" href="$classbst_1_1Timer.html#a3f992c1e8c7a1bcf2bed13d5dcd866a3" title="Set the timer to be done. Changes the start time." alt="" coords="396,259,547,285"/>
-<area shape="rect" id="node10" href="$time__class__test_8cpp.html#aea98697cafdc08f56f225ac6730b0154" title=" " alt="" coords="444,309,499,336"/>
-<area shape="rect" id="node4" href="$timer__test_8cpp.html#aed41ad09585ee8b32eae99a34dd230f0" title=" " alt="" coords="184,107,239,133"/>
-<area shape="rect" id="node8" href="$namespacebst_1_1time.html#a9a4c8a6a0d59b9303d2ce006cf580c21" title=" " alt="" coords="108,5,315,32"/>
+<area shape="rect" id="node1" title=" " alt="" coords="628,183,739,209"/>
+<area shape="rect" id="node2" href="$namespacebst.html#a7435f6cb4263e155d8f3faf0d9e5b5d6" title="Get the current Unix time." alt="" coords="404,5,539,32"/>
+<area shape="rect" id="node3" href="$classbst_1_1Timer.html#a337d20ac27f96978aa4aae772f5d3a85" title="Check if the timer has expired." alt="" coords="401,107,542,133"/>
+<area shape="rect" id="node4" href="$visual__tests_8cpp.html#ae66f6b31b5ad750f1fe042a706a4e3d4" title=" " alt="" coords="5,157,60,184"/>
+<area shape="rect" id="node6" href="$namespacebst_1_1clck.html#adac67fedcb6e7b40053af8ee76600a21" title=" " alt="" coords="363,157,580,184"/>
+<area shape="rect" id="node7" href="$classbst_1_1Timer.html#aa9aad519d22e30f35d879d0f92deb8f7" title="Reset the timer to the current time." alt="" coords="407,208,536,235"/>
+<area shape="rect" id="node8" href="$namespacebst_1_1clck.html#a02d33e7c359f0ee2a30e6dfb7e9a1d92" title=" " alt="" coords="377,56,565,83"/>
+<area shape="rect" id="node10" href="$classbst_1_1Timer.html#a3f992c1e8c7a1bcf2bed13d5dcd866a3" title="Set the timer to be done. Changes the start time." alt="" coords="396,309,547,336"/>
+<area shape="rect" id="node11" href="$time__class__test_8cpp.html#aea98697cafdc08f56f225ac6730b0154" title=" " alt="" coords="444,360,499,387"/>
+<area shape="rect" id="node5" href="$timer__test_8cpp.html#aed41ad09585ee8b32eae99a34dd230f0" title=" " alt="" coords="184,157,239,184"/>
+<area shape="rect" id="node9" href="$namespacebst_1_1time.html#a9a4c8a6a0d59b9303d2ce006cf580c21" title=" " alt="" coords="108,56,315,83"/>
 </map>

@@ -10,5 +10,6 @@ var time_8hpp =
     [ "dateString", "time_8hpp.html#acb25143aaac68c8a587e11d4ecf7c93c", null ],
     [ "dateAndTimeString", "time_8hpp.html#a2f5614e38783fb2a27cbed3987e3fd4d", null ],
     [ "dateAndTimeString", "time_8hpp.html#a787a2d545752d701707526e58807cc08", null ],
-    [ "dateAndTimeToTimePoint", "time_8hpp.html#aca4cce38cce328fe585429b4d6008034", null ]
+    [ "dateAndTimeToTimePoint", "time_8hpp.html#aca4cce38cce328fe585429b4d6008034", null ],
+    [ "getUnixTime", "time_8hpp.html#a7435f6cb4263e155d8f3faf0d9e5b5d6", null ]
 ];

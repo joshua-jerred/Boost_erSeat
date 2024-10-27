@@ -10,7 +10,7 @@ var indexSectionsWithContent =
   7: "aest",
   8: "abcdfgklmnprstu",
   9: "n",
-  10: "[t"
+  10: "[dt"
 };
 
 var indexSectionNames =
