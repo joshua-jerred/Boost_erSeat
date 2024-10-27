@@ -131,6 +131,13 @@ inline std::string dateFormatString(const char delimiter) {
 
 namespace bst {
 
+uint32_t getUnixTime() {
+  const auto clock = std::chrono::system_clock::now();
+  return std::chrono::duration_cast<std::chrono::seconds>(
+             clock.time_since_epoch())
+      .count();
+}
+
 Time::Time(bool set_to_now) {
   if (set_to_now) {
     setToNow();

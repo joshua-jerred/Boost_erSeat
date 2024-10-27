@@ -7,6 +7,8 @@
 #include <string>
 
 namespace bst {
+
+/// @deprecated The time namespace will be removed in the future.
 namespace time {
 
 enum class TimeZone { UTC, LOCAL };
@@ -62,6 +64,10 @@ bst::clck::TimePoint dateAndTimeToTimePoint(int year, int month, int day,
 } // namespace bst
 
 namespace bst {
+
+/// @brief Get the current Unix time
+/// @return The current Unix time in seconds (seconds since epoch)
+uint32_t getUnixTime();
 
 /**
  * @brief The generic time class for BoosterSeat. Uses UTC time.
