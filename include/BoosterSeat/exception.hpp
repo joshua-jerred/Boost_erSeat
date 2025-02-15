@@ -90,6 +90,9 @@ enum class ErrorNumber {
    */
   PROCESS_TIMEOUT = 14,
 
+  /// @brief Generic error for the profiler, see message for details.
+  PROFILER_EVENT = 15,
+
   /**
    * @brief Throws if a feature is not yet implemented.
    */

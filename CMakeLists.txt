@@ -23,6 +23,7 @@ set(ALL_SOURCE_FILES
   src/numbers.cpp
   src/process.cpp
   src/science.cpp
+  src/profiler.cpp
   src/geo/geo_point.cpp
   #src/geo/geo_strings.cpp
 )
