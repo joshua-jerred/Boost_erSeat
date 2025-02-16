@@ -26,7 +26,7 @@ Event::~Event() {
 void Event::start() {
   if (event_started_) {
     throw BstException("event already started: " + event_name_,
-                       ErrorNumber::PROFILER_EVENT);
+                       ErrorNumber::PROFILER);
   }
 
   event_started_ = true;
@@ -36,7 +36,7 @@ void Event::start() {
 void Event::stop() {
   if (event_stopped_) {
     throw BstException("event already stopped: " + event_name_,
-                       ErrorNumber::PROFILER_EVENT);
+                       ErrorNumber::PROFILER);
   }
 
   assertEventStarted(); // We can't stop if we never started
@@ -76,14 +76,14 @@ Event::Results Event::getResults() const {
 void Event::assertEventStarted() const {
   if (!event_started_) {
     throw BstException("event not started: " + event_name_,
-                       ErrorNumber::PROFILER_EVENT);
+                       ErrorNumber::PROFILER);
   }
 }
 
 void Event::assertEventStopped() const {
   if (!event_stopped_) {
     throw BstException("event not stopped: " + event_name_,
-                       ErrorNumber::PROFILER_EVENT);
+                       ErrorNumber::PROFILER);
   }
 }
 

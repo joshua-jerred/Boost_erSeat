@@ -107,7 +107,7 @@ public:
     bool was_initialized = initialized_.exchange(true);
     if (was_initialized) {
       throw BstException("EventServicer already initialized",
-                         ErrorNumber::PROFILER_EVENT);
+                         ErrorNumber::PROFILER);
     }
 
     instance_ = this;
@@ -149,7 +149,7 @@ private:
   static void assertInitialized() {
     if (!initialized_) {
       throw BstException("EventServicer not initialized",
-                         ErrorNumber::PROFILER_EVENT);
+                         ErrorNumber::PROFILER);
     }
   }
 
@@ -166,14 +166,14 @@ private:
   /// @brief The time source for the events
   ITimeSource &time_source_;
 
-  /// @brief A map of event reports, keyed by the name of the event
+  /// @brief The reports of the events, ordered by first stopped to last.
   std::vector<Event::Results> event_reports_;
 };
 
 struct ReportOptions {
   /// @brief [default=true] - Scale the time from nanoseconds to the most
   /// readable format. If false, the time will be in only nanoseconds.
-  bool scale_time{true};
+  bool scale_time_to_ms{true};
 
   /// @brief [default=true] - Reindex the time to start at 0. If false and using
   /// system time, the results will not be human readable.
@@ -185,19 +185,43 @@ struct ReportOptions {
 
 class ReportGenerator {
 public:
+  ReportGenerator(const EventServicer &servicer,
+                  ReportOptions options = ReportOptions{})
+      : servicer_{servicer}, options_{options} {
+  }
+
   /// @brief Generate a CSV report of the events
   /// @param servicer - The EventServicer to get the event reports from
   /// @param os - The output stream to write the CSV report to
   /// @param include_header [default=true] - Include the header in the CSV
   /// report.
-  /// @param scale_time [default=true] - Scale the time to the 'most readable'
-  /// format
-  static void eventCsv(EventServicer &servicer, std::ostream &os,
-                       ReportOptions options = ReportOptions{});
+  /// @param scale_time_to_ms [default=true] - Scale the time to the 'most
+  /// readable' format
+  void generateCsvReport(std::ostream &os);
 
 private:
   /// @brief Scale the time to the 'most readable' format
-  static std::string scaleTime(uint32_t time_ns);
+  std::string scaleTime(uint64_t time_ns);
+
+  std::string percentageOfTotal(uint64_t time_ns);
+
+  /// @brief Parse the results and generate the necessary data structures for
+  /// generating the report.
+  /// @param servicer - The EventServicer to get the event reports from
+  void processResults();
+
+  /// @brief The minimum start time of the events. Set by processResults()
+  uint64_t minimum_start_time_{0};
+  /// @brief The maximum stop time of the events. Set by processResults()
+  uint64_t maximum_stop_time_{0};
+  /// @brief The total duration of all the events. Set by processResults()
+  uint64_t total_duration_{0};
+
+  /// @brief The EventServicer to get the event reports from
+  const EventServicer &servicer_;
+
+  /// @brief The options for the report
+  const ReportOptions options_;
 };
 
 } // namespace Profiler

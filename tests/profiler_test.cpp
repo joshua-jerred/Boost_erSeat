@@ -76,16 +76,22 @@ TEST(bst_profiler, UseCaseTest) {
   bst::HighResolutionTimeSource time_source;
   bst::Profiler::EventServicer servicer{time_source};
 
-  bst::Profiler::Event event{"outer_event"};
   {
-    bst::Profiler::Event event{"event_1"};
-    bst::sleep(10);
-    bst::Profiler::Event event2{"event_2"};
-    bst::sleep(10);
+    bst::Profiler::Event event{"outer_event"};
+    {
+      bst::Profiler::Event event1{"event_1"};
+      bst::sleep(1);
+      event1.stop(); // end early
+
+      bst::Profiler::Event event2{"event_2"};
+      bst::sleep(1);
+    }
   }
 
+  bst::Profiler::ReportGenerator generator(servicer);
+
   std::ostringstream oss;
-  bst::Profiler::ReportGenerator::eventCsv(servicer, oss);
+  generator.generateCsvReport(oss);
   std::cout << oss.str();
   // servicer.printResultsToStream(std::cout);
 }
