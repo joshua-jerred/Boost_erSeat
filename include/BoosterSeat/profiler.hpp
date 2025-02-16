@@ -35,38 +35,34 @@ class Event;
 /// time source for the events.
 class EventServicer;
 
+/// @brief A class to process the results of the events received by the event
+/// servicer.
+class ReportGenerator;
+
 class Event {
 public:
   /// @brief Construct a new Event object and starts the event
   /// @param event_name - The name of the even, used for output.
   /// @param auto_start - Automatically start the event. Defaults to true.
-  Event(const std::string &event_name, bool auto_start = true)
-      : event_name_{event_name} {
-    if (auto_start) {
-      start();
-    }
-  }
+  Event(const std::string &event_name, bool auto_start = true);
 
   /// @brief Destructor: stops the event if it hasn't been stopped manually
   /// (irregular use case) by the user.
-  ~Event() {
-    if (!event_stopped_) {
-      stop();
-    }
-  }
+  ~Event();
 
-  /// @brief The results of the event
+  /// @brief The results of the event that are reported to the EventServicer
   struct Results {
+    /// @brief The name of the event
     std::string event_name;
+    /// @brief The start time of the event
     uint32_t start_time;
+    /// @brief The stop time of the event
     uint32_t stop_time;
   };
 
   /// @brief (Called Automatically) Record the start time of the event
   /// @details With the default arguments, this method is called automatically
   /// upon construction.
-  /// @exception bst::BoosterSeatException - If the event has already been
-  /// started.
   void start();
 
   /// @brief (Called Automatically) Record the stop time of the event
@@ -76,11 +72,11 @@ public:
 
   std::string getEventName() const;
 
-  uint32_t getStartTimeUs() const;
+  uint32_t getStartTimeNs() const;
 
-  uint32_t getStopTimeUs() const;
+  uint32_t getStopTimeNs() const;
 
-  uint32_t getDurationUs() const;
+  uint32_t getDurationNs() const;
 
   /// @brief Get the results data structure for the event
   Results getResults() const;
@@ -90,10 +86,10 @@ private:
   const std::string event_name_;
 
   /// @brief The start time of the event, set by start()
-  uint32_t start_time_us_{0};
+  uint32_t start_time_ns_{0};
 
   /// @brief The end time of the event, set by stop()
-  uint32_t stop_time_us_{0};
+  uint32_t stop_time_ns_{0};
 
   /// @brief Flag to ensure the event is only started once
   bool event_started_{false};
@@ -127,23 +123,6 @@ public:
   /// @return A vector of event reports
   const std::vector<Event::Results> getEventReports() const {
     return event_reports_;
-  }
-
-  /// @brief Simple factory method to create a new event that automatically
-  /// starts
-  /// @param event_name - The name of the event
-  /// @return Event - The new event
-  static Event NewEvent(const std::string &event_name) {
-    return Event(event_name);
-  }
-
-  /// @brief Print the results to a stream, in non-hierarchical format (results
-  /// array).
-  void printResultsToStream(std::ostream &os) const {
-    for (const auto &report : event_reports_) {
-      os << report.event_name << ": " << report.start_time << "ns - "
-         << report.stop_time << "ns" << std::endl;
-    }
   }
 
 private:
@@ -191,40 +170,35 @@ private:
   std::vector<Event::Results> event_reports_;
 };
 
-// class Profiler {
-// public:
-//   /// @brief The result of a profiler run
-//   // struct Result {
-//   //   /// @brief Sanity check to ensure the profiler is used correctly
-//   //   bool complete{false};
+struct ReportOptions {
+  /// @brief [default=true] - Scale the time from nanoseconds to the most
+  /// readable format. If false, the time will be in only nanoseconds.
+  bool scale_time{true};
 
-//   //   /// @brief The number of microseconds from construction to
-//   destruction
-//   //   uint32_t microseconds{0};
-//   // };
+  /// @brief [default=true] - Reindex the time to start at 0. If false and using
+  /// system time, the results will not be human readable.
+  bool reindex_time{true};
 
-//   Profiler(const std::string &name) : name_{name} {
-//     std::lock_guard<std::mutex> lock(results_mutex_);
-//   }
+  // CSV Options
+  bool include_header{true};
+};
 
-//   ~Profiler() {
-//     // stopProfiling();
-//   }
+class ReportGenerator {
+public:
+  /// @brief Generate a CSV report of the events
+  /// @param servicer - The EventServicer to get the event reports from
+  /// @param os - The output stream to write the CSV report to
+  /// @param include_header [default=true] - Include the header in the CSV
+  /// report.
+  /// @param scale_time [default=true] - Scale the time to the 'most readable'
+  /// format
+  static void eventCsv(EventServicer &servicer, std::ostream &os,
+                       ReportOptions options = ReportOptions{});
 
-//   static uint32_t getCurrentTimeUs() {
-//     return 0;
-//   }
-
-// private:
-//   /// @brief The name of this profiler
-//   const std::string name_;
-
-//   /// @brief Mutex to protect the results_ map
-//   static std::mutex results_mutex_;
-
-//   /// @brief A map of profiler results, keyed by the name of the profiler
-//   // static std::map<std::string, Result> results_;
-// };
+private:
+  /// @brief Scale the time to the 'most readable' format
+  static std::string scaleTime(uint32_t time_ns);
+};
 
 } // namespace Profiler
 } // namespace bst

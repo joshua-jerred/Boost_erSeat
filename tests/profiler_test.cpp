@@ -1,4 +1,5 @@
 #include <BoosterSeat/profiler.hpp>
+#include <BoosterSeat/sleep.hpp>
 
 #include <iostream>
 #include <sstream>
@@ -14,9 +15,9 @@ TEST(bst_profiler, Event_StartStopTime) {
   time_source.setTicksNs(201);
   event.stop();
 
-  EXPECT_EQ(event.getStartTimeUs(), 100);
-  EXPECT_EQ(event.getStopTimeUs(), 201);
-  EXPECT_EQ(event.getDurationUs(), 101);
+  EXPECT_EQ(event.getStartTimeNs(), 100);
+  EXPECT_EQ(event.getStopTimeNs(), 201);
+  EXPECT_EQ(event.getDurationNs(), 101);
 
   const auto results = event.getResults();
   EXPECT_EQ(results.event_name, "event");
@@ -69,23 +70,22 @@ TEST(bst_profiler, Event_Reporting) {
     }
     EXPECT_TRUE(found);
   }
-
-  servicer.printResultsToStream(std::cout);
 }
 
-// TEST(bst_profiler, UseCaseTest) {
-//   bst::Profiler profiler{"test_profiler_1"};
+TEST(bst_profiler, UseCaseTest) {
+  bst::HighResolutionTimeSource time_source;
+  bst::Profiler::EventServicer servicer{time_source};
 
-//   {
-//     bst::Profiler::Event event{"event_1"};
-//     bst::sleep(10);
-//     bst::Profiler::Event event2{"event_2"};
-//     bst::sleep(10);
-//   }
+  bst::Profiler::Event event{"outer_event"};
+  {
+    bst::Profiler::Event event{"event_1"};
+    bst::sleep(10);
+    bst::Profiler::Event event2{"event_2"};
+    bst::sleep(10);
+  }
 
-//   // bst::sleep(10);
-
-//   // profiler.event("event_1");
-//   // bst::sleep(10);
-//   // profiler.event("event_2");
-// }
+  std::ostringstream oss;
+  bst::Profiler::ReportGenerator::eventCsv(servicer, oss);
+  std::cout << oss.str();
+  // servicer.printResultsToStream(std::cout);
+}

@@ -1,6 +1,6 @@
-/// @file profiler.cpp
+/// @file event.cpp
 /// @author Joshua Jerred (https://joshuajer.red)
-/// @brief Profiler class implementation
+/// @brief Profiler Event class implementation
 /// @date 2025-02-15
 /// @copyright Copyright (c) 2025
 
@@ -8,17 +8,32 @@
 
 namespace bst {
 
-void Profiler::Event::start() {
+namespace Profiler {
+
+Event::Event(const std::string &event_name, bool auto_start)
+    : event_name_{event_name} {
+  if (auto_start) {
+    start();
+  }
+}
+
+Event::~Event() {
+  if (!event_stopped_) {
+    stop();
+  }
+}
+
+void Event::start() {
   if (event_started_) {
     throw BstException("event already started: " + event_name_,
                        ErrorNumber::PROFILER_EVENT);
   }
 
   event_started_ = true;
-  start_time_us_ = EventServicer::getTimestampNs();
+  start_time_ns_ = EventServicer::getTimestampNs();
 }
 
-void Profiler::Event::stop() {
+void Event::stop() {
   if (event_stopped_) {
     throw BstException("event already stopped: " + event_name_,
                        ErrorNumber::PROFILER_EVENT);
@@ -27,55 +42,51 @@ void Profiler::Event::stop() {
   assertEventStarted(); // We can't stop if we never started
 
   event_stopped_ = true;
-  stop_time_us_ = EventServicer::getTimestampNs();
+  stop_time_ns_ = EventServicer::getTimestampNs();
 
   EventServicer::eventReport(getResults());
 }
 
-std::string Profiler::Event::getEventName() const {
+std::string Event::getEventName() const {
   return event_name_;
 }
 
-uint32_t Profiler::Event::getStartTimeUs() const {
+uint32_t Event::getStartTimeNs() const {
   assertEventStarted();
-  return start_time_us_;
+  return start_time_ns_;
 }
 
-uint32_t Profiler::Event::getStopTimeUs() const {
+uint32_t Event::getStopTimeNs() const {
   assertEventStopped();
-  return stop_time_us_;
+  return stop_time_ns_;
 }
 
-uint32_t Profiler::Event::getDurationUs() const {
-  assertEventStarted();
-  assertEventStopped();
-  return stop_time_us_ - start_time_us_;
-}
-
-Profiler::Event::Results Profiler::Event::getResults() const {
+uint32_t Event::getDurationNs() const {
   assertEventStarted();
   assertEventStopped();
-  return {event_name_, start_time_us_, stop_time_us_};
+  return stop_time_ns_ - start_time_ns_;
 }
 
-void Profiler::Event::assertEventStarted() const {
+Event::Results Event::getResults() const {
+  assertEventStarted();
+  assertEventStopped();
+  return {event_name_, start_time_ns_, stop_time_ns_};
+}
+
+void Event::assertEventStarted() const {
   if (!event_started_) {
     throw BstException("event not started: " + event_name_,
                        ErrorNumber::PROFILER_EVENT);
   }
 }
 
-void Profiler::Event::assertEventStopped() const {
+void Event::assertEventStopped() const {
   if (!event_stopped_) {
     throw BstException("event not stopped: " + event_name_,
                        ErrorNumber::PROFILER_EVENT);
   }
 }
 
-// static members of Profiler
-// std::mutex Profiler::results_mutex_;
-// std::map<std::string, Profiler::Result> Profiler::results_;
-std::atomic<bool> Profiler::EventServicer::initialized_{false};
-Profiler::EventServicer *Profiler::EventServicer::instance_{nullptr};
+} // namespace Profiler
 
 } // namespace bst
