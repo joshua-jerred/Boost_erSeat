@@ -15,7 +15,7 @@ void Profiler::Event::start() {
   }
 
   event_started_ = true;
-  start_time_us_ = EventServicer::getTimestampUs();
+  start_time_us_ = EventServicer::getTimestampNs();
 }
 
 void Profiler::Event::stop() {
@@ -27,7 +27,7 @@ void Profiler::Event::stop() {
   assertEventStarted(); // We can't stop if we never started
 
   event_stopped_ = true;
-  stop_time_us_ = EventServicer::getTimestampUs();
+  stop_time_us_ = EventServicer::getTimestampNs();
 
   // Report the event data to the EventServicer (which can be mocked/stubbed)
   EventServicer::eventReport(event_name_, start_time_us_, stop_time_us_);
@@ -66,5 +66,7 @@ void Profiler::Event::assertEventStopped() const {
 // static members of Profiler
 // std::mutex Profiler::results_mutex_;
 // std::map<std::string, Profiler::Result> Profiler::results_;
+std::atomic<bool> Profiler::EventServicer::initialized_{false};
+Profiler::EventServicer *Profiler::EventServicer::instance_{nullptr};
 
 } // namespace bst

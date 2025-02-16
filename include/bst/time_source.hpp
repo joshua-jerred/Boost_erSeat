@@ -64,4 +64,38 @@ public:
   // }
 };
 
+/// @brief A time source that uses a manually set time. Useful for testing, this
+/// can be used as a dummy time source.
+class StaticTimeSource : public ITimeSource {
+public:
+  uint64_t getTicksNs() const override {
+    return ticks_ns_;
+  }
+
+  uint64_t getTicksUs() const {
+    return ticks_ns_ / 1000;
+  }
+
+  uint64_t getTicksMs() const {
+    return ticks_ns_ / 1000000;
+  }
+
+  /// @brief Set the ticks to a given value.
+  /// @param ticks - The value to set the ticks to.
+  void setTicksNs(uint64_t ticks) {
+    ticks_ns_ = ticks;
+  }
+
+  /// @brief Increment the ticks by a given amount.
+  /// @param ticks - The amount to increment the ticks by.
+  void incrementTicks(uint64_t ticks = 1) {
+    ticks_ns_ += ticks;
+  }
+
+private:
+  /// @brief The current time in nanoseconds, manually set with setTicks() or
+  /// incremented with incrementTicks().
+  uint64_t ticks_ns_{0};
+};
+
 } // namespace bst
