@@ -6,7 +6,7 @@
 
 #include "gtest/gtest.h"
 
-TEST(bst_profiler, EventTest) {
+TEST(bst_profiler, EventStartStop) {
   // bst::Profiler profiler{"test_profiler_1"};
 
   {

@@ -128,6 +128,8 @@ private:
   std::string message_;
 };
 
+using BstException = BoosterSeatException;
+
 } // namespace bst
 
 #endif // BOOST_ERSEAT_HPP_

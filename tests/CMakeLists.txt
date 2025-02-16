@@ -13,6 +13,10 @@ FetchContent_Declare(
 FetchContent_MakeAvailable(googletest)
 
 add_executable(unit_tests
+  # standardized test files
+  time/time_source_test.cpp
+
+  # non-standardized test files
   filesystem_test.cpp
   filters_test.cpp
   geo_test.cpp
