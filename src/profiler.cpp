@@ -29,8 +29,11 @@ void Profiler::Event::stop() {
   event_stopped_ = true;
   stop_time_us_ = EventServicer::getTimestampNs();
 
-  // Report the event data to the EventServicer (which can be mocked/stubbed)
-  EventServicer::eventReport(event_name_, start_time_us_, stop_time_us_);
+  EventServicer::eventReport(getResults());
+}
+
+std::string Profiler::Event::getEventName() const {
+  return event_name_;
 }
 
 uint32_t Profiler::Event::getStartTimeUs() const {
@@ -47,6 +50,12 @@ uint32_t Profiler::Event::getDurationUs() const {
   assertEventStarted();
   assertEventStopped();
   return stop_time_us_ - start_time_us_;
+}
+
+Profiler::Event::Results Profiler::Event::getResults() const {
+  assertEventStarted();
+  assertEventStopped();
+  return {event_name_, start_time_us_, stop_time_us_};
 }
 
 void Profiler::Event::assertEventStarted() const {

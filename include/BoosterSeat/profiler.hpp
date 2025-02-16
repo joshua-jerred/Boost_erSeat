@@ -55,6 +55,13 @@ public:
     }
   }
 
+  /// @brief The results of the event
+  struct Results {
+    std::string event_name;
+    uint32_t start_time;
+    uint32_t stop_time;
+  };
+
   /// @brief (Called Automatically) Record the start time of the event
   /// @details With the default arguments, this method is called automatically
   /// upon construction.
@@ -67,11 +74,16 @@ public:
   /// Manually calling this method should be avoided,
   void stop();
 
+  std::string getEventName() const;
+
   uint32_t getStartTimeUs() const;
 
   uint32_t getStopTimeUs() const;
 
   uint32_t getDurationUs() const;
+
+  /// @brief Get the results data structure for the event
+  Results getResults() const;
 
 private:
   /// @brief The name of the event, used for output
@@ -111,15 +123,9 @@ public:
     }
   }
 
-  struct Results {
-    std::string event_name;
-    uint32_t start_time;
-    uint32_t stop_time;
-  };
-
   /// @brief Get the event reports in the order that they were reported
   /// @return A vector of event reports
-  const std::vector<Results> getEventReports() const {
+  const std::vector<Event::Results> getEventReports() const {
     return event_reports_;
   }
 
@@ -156,16 +162,8 @@ private:
   /// @param event_name - The name of the event
   /// @param start_time - The start time of the event
   /// @param stop_time - The stop time of the event
-  static void eventReport(const std::string &event_name, uint32_t start_time,
-                          uint32_t stop_time) {
+  static void eventReport(const Event::Results &results) {
     assertInitialized();
-
-    Results results{
-        .event_name = event_name,
-        .start_time = start_time,
-        .stop_time = stop_time,
-    };
-
     instance_->eventReportHandler(results);
   }
 
@@ -176,7 +174,7 @@ private:
     }
   }
 
-  void eventReportHandler(Results &results) {
+  void eventReportHandler(const Event::Results &results) {
     event_reports_.push_back(results);
   }
 
@@ -190,7 +188,7 @@ private:
   ITimeSource &time_source_;
 
   /// @brief A map of event reports, keyed by the name of the event
-  std::vector<Results> event_reports_;
+  std::vector<Event::Results> event_reports_;
 };
 
 // class Profiler {

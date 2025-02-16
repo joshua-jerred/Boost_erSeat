@@ -17,10 +17,16 @@ TEST(bst_profiler, Event_StartStopTime) {
   EXPECT_EQ(event.getStartTimeUs(), 100);
   EXPECT_EQ(event.getStopTimeUs(), 201);
   EXPECT_EQ(event.getDurationUs(), 101);
+
+  const auto results = event.getResults();
+  EXPECT_EQ(results.event_name, "event");
+  EXPECT_EQ(results.start_time, 100);
+  EXPECT_EQ(results.stop_time, 201);
 }
 
 TEST(bst_profiler, Event_Reporting) {
   using Event = bst::Profiler::Event;
+  using Results = bst::Profiler::Event::Results;
 
   bst::StaticTimeSource time_source;
   bst::Profiler::EventServicer servicer{time_source};
@@ -41,11 +47,11 @@ TEST(bst_profiler, Event_Reporting) {
   }
   time_source.setTicksNs(7); // ignored
 
-  const std::array<bst::Profiler::EventServicer::Results, 4> expected{
-      bst::Profiler::EventServicer::Results{"event1", 1, 6},
-      bst::Profiler::EventServicer::Results{"event2", 2, 6},
-      bst::Profiler::EventServicer::Results{"event3", 3, 4},
-      bst::Profiler::EventServicer::Results{"event4", 5, 6},
+  const std::array<bst::Profiler::Event::Results, 4> expected{
+      Results{"event1", 1, 6},
+      Results{"event2", 2, 6},
+      Results{"event3", 3, 4},
+      Results{"event4", 5, 6},
   };
 
   auto reports = servicer.getEventReports();
